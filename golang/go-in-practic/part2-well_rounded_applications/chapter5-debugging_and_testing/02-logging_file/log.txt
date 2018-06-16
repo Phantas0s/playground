@@ -1,0 +1,2 @@
+2018-03-30 11:30:26.929400189 +0200 CEST m=+0.000672978 2018/03/30 11:30:26 logging_file.go:15: This is a regular message.
+2018-03-30 11:30:26.929400189 +0200 CEST m=+0.000672978 2018/03/30 11:30:26 logging_file.go:16: This is a fatal error

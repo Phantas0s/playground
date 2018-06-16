@@ -1,0 +1,35 @@
+package main
+
+// The channel is closed and the sender continue sending to it
+// Cause an error message
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	msg := make(chan string)
+	until := time.After(5 * time.Second)
+
+	go send(msg)
+
+	for {
+		select {
+		case m := <-msg:
+			fmt.Println(m)
+		case <-until:
+			close(msg)
+			//Only useful to see the error message
+			time.Sleep(500 * time.Millisecond)
+			return
+		}
+	}
+}
+
+func send(ch chan string) {
+	for {
+		ch <- "hello"
+		time.Sleep(500 * time.Millisecond)
+	}
+}
