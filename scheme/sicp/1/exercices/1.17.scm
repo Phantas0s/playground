@@ -14,10 +14,10 @@
     ((even? b) (double (* a (halve b))))
     (else (double (* a (- b 1))))))
 
-(3 4)
-(double (3 2))
-(double (double (3 1)))
-(double (double (+ 3 1)))
-(double (double 3))
-(double 6)
-12
+; (3 4)
+; (double (3 2))
+; (double (double (3 1)))
+; (double (double (+ 3 1)))
+; (double (double 3))
+; (double 6)
+; 12
