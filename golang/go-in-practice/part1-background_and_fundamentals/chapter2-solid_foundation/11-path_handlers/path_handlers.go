@@ -14,12 +14,12 @@ func main() {
 	http.ListenAndServe(":8080", pr)
 }
 
-func newPathResolver() *pathResolver {
-	return &pathResolver{make(map[string]http.HandlerFunc)}
-}
-
 type pathResolver struct {
 	handlers map[string]http.HandlerFunc
+}
+
+func newPathResolver() *pathResolver {
+	return &pathResolver{make(map[string]http.HandlerFunc)}
 }
 
 func (p *pathResolver) Add(path string, handler http.HandlerFunc) {
@@ -28,6 +28,7 @@ func (p *pathResolver) Add(path string, handler http.HandlerFunc) {
 
 func (p *pathResolver) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 	check := req.Method + " " + req.URL.Path
+	// if  pattern method + url path match the route, execute the handler
 	for pattern, handlerFunc := range p.handlers {
 		if ok, err := path.Match(pattern, check); ok && err == nil {
 			handlerFunc(res, req)

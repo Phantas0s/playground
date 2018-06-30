@@ -1,11 +1,13 @@
+// manners gracefully shutdown a server. Avoid data loss and unexpected behavior (cleanup on shutdown).
 package main
 
 import (
 	"fmt"
-	"github.com/braintree/manners"
 	"net/http"
 	"os"
 	"os/signal"
+
+	"github.com/braintree/manners"
 )
 
 func main() {

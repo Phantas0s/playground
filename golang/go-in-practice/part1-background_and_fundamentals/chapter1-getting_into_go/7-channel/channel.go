@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func printCount(c chan int) {
+func printCount(c <-chan int) {
 	num := 0
 	for num >= 0 {
 		num = <-c
