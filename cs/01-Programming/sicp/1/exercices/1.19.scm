@@ -33,5 +33,5 @@
                         q
                         (- count 1)))))
 
-; Spend on long time on this...
+; Spend a long time on this...
 ; Impossible to find without a minimum of mathematic knowledge
