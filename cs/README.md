@@ -4,9 +4,7 @@ It's based on: [Teach yourself computer science](https://teachyourselfcs.com/#pr
 
 Here my material and my order of study:
 
-1. Discrete mathematics
-Book: *__Discrete Mathematics and Its applications, 7th edition__*
-Videos: 
+I wrote about my learning methods, if learning computer science is useful [here](https://thevaluable.dev/learning-computer-science-software-developer/).
 
 Results:
 
