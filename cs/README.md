@@ -10,7 +10,7 @@ Videos:
 
 Results:
 
-**WRONG** - Exercise tried one with wrong result. If after two times the result is still wrong, the number near **WRONG** will show the number of time tried in total (2 is the first one appearing, then 3 and so on)
-**FIXED** - Exercise **WRONG** the first time and retried some time later (results in *-2.md files). 
-**GOOD** - Solution found but with some help or with a result very close to the correction without being exactly it...
-**PERFECT** - Solution found the first time with a result very close of the solution
+* **WRONG** - Exercise tried once with wrong result. If after two times the result is still wrong, the number near **WRONG** will show the number of time tried in total (2 is the first one appearing, then 3 and so on).
+* **FIXED** - Exercise **WRONG** the first time and retried some time later with good result (results in \*-2.md files).
+* **GOOD** - Solution found but with some help or with a result very close to the correction without being exactly it...
+* **PERFECT** - Solution found the first time with a result very close of the solution.
