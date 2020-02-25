@@ -1,3 +1,5 @@
+source tmuxcomplete timeout after 2000ms
+source tmuxcomplete timeout after 2000ms
 (ns apples.core
   (:require [play-clj.core :refer :all]
             [play-clj.g2d :refer :all]
@@ -24,16 +26,15 @@
       (assoc entity :x new-x :direction direction))
     entity))
 
+; PROBLEM HERE (31:31 from the video)
+; No hitbox...
+(defn- move-player [screen entities]
+  (map #(update-player-position screen %) entities))
+
 (defn- update-hit-box [{key [:player? :apple?] :as entity}]
   (if (or :player? :apple?)
-   (assoc entity :hit-box (rectangle (:x entity) (:y entity) (:width entity) (:height entity)))
-   entity))
-
-
-; PROBLEM HERE (31:31 from the video)
-(defn- move-player [screen entities]
-  (map #(update-player-position screen %) entities)
-  (map (update-hit-box) entities))
+    (assoc entity :hit-box (rectangle (:x entity) (:y entity) (:width entity) (:height entity)))
+    entity))
 
 (defn- spawn-apple []
   (let [x (+ 50 (rand-int 1400))

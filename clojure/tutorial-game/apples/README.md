@@ -1,8 +1,10 @@
+A Game Of Cow
+
 ## Introduction
 
 Source: https://www.youtube.com/watch?v=9ilUe7Re-RA
 
-A play-clj game in which ... well, that part is up to you.
+A game where you can move a cow and apples appear...
 
 ## Contents
 
@@ -10,6 +12,12 @@ A play-clj game in which ... well, that part is up to you.
 * `desktop/resources` Images, audio, and other files
 * `desktop/src` Desktop-specific code
 * `desktop/src-common` Cross-platform game code
+
+## Running
+
+1. Run the REPL (`lein repl`)
+2. Execute `(-main)`
+3. Move the cow!
 
 ## Building
 
