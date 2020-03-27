@@ -1,5 +1,3 @@
-source tmuxcomplete timeout after 2000ms
-source tmuxcomplete timeout after 2000ms
 (ns apples.core
   (:require [play-clj.core :refer :all]
             [play-clj.g2d :refer :all]
