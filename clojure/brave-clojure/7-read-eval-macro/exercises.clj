@@ -7,7 +7,7 @@
 
 ; TODO doesn't work for 3 * 2 * 5 (when * or / signs are one after the other)
 ; TODO doesn't work for 3 * 2 + 5 either (2 twice)
-; TODO DOESNT WOOOORRKKK
+; TODO To come back... need a break :D 
 (defn first-priority [infixed]
   (loop [new-list [] 
          list-index 0
