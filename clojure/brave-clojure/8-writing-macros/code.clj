@@ -89,6 +89,8 @@
 ; Improvement and refactoring
 
 ; First version
+
+
 (defmacro code-critic
   "Phrases are courtesy Hermes Conrad from Futurama"
   [bad good]
@@ -109,7 +111,7 @@
 (defmacro code-critic
   "Phrases are courtesy Hermes Conrad from Futurama"
   [bad good]
-  `(do 
+  `(do
      (println "Great squid of Madrid, this is bad code:" (quote ~bad))
      (println "Sweet Gorilla of Manilla, this is good code:" (quote ~good))))
 (code-critic (1 + 2) (+ 1 2))
@@ -119,7 +121,7 @@
 ; ==============================================================
 
 ; Third version
-(defn criticize-code 
+(defn criticize-code
   [criticism code]
   `(println ~criticism (quote ~code)))
 
@@ -136,7 +138,8 @@
 
 ; Fourth version
 
-(defn criticize-code 
+
+(defn criticize-code
   [criticism code]
   `(println ~criticism (quote ~code)))
 
@@ -144,8 +147,8 @@
   "Phrases are courtesy Hermes Conrad from Futurama"
   [bad good]
   `(do ~(map #(apply criticize-code %)
-     [["Great squid of Madrid, this is bad code:" good]
-     ["Sweet Gorilla of Manilla, this is good code:" bad]] )))
+             [["Great squid of Madrid, this is bad code:" good]
+              ["Sweet Gorilla of Manilla, this is good code:" bad]])))
 (code-critic (1 + 2) (+ 1 2))
 ; => NullPointerException (trying to evaluate the returned nil from println)
 
@@ -164,6 +167,80 @@
   "Phrases are courtesy Hermes Conrad from Futurama"
   [bad good]
   `(do ~@(map #(apply criticize-code %)
-     [["Great squid of Madrid, this is bad code:" good]
-     ["Sweet Gorilla of Manilla, this is good code:" bad]] )))
+              [["Great squid of Madrid, this is bad code:" good]
+               ["Sweet Gorilla of Manilla, this is good code:" bad]])))
 (code-critic (1 + 2) (+ 1 2))
+
+; Things to watch for
+
+
+; variable capture
+
+(def message "Good job!")
+(defmacro with-mischief
+  [& stuff-to-do]
+  (concat (list 'let ['message "Oh, big deal!"])
+          stuff-to-do))
+(with-mischief
+  (println "Here's how I feel about what your think you did:" message))
+; => Here's how I feel about what your think you did: Oh, big deal!
+
+; with syntax quoting
+
+(def message "Good job!")
+(defmacro with-mischief
+  [& stuff-to-do]
+  `(let [message "Oh, big deal!"]
+     ~@stuff-to-do))
+
+(with-mischief
+  (println "Here's how I feel about that thing you did: " message))
+; Exception
+
+; possile rewrite
+
+(defmacro without-mischief
+  [& stuff-to-do]
+  (let [macro-message (gensym 'message)]
+    `(let [~macro-message "Oh! Big Deal!"]
+       ~@stuff-to-do
+       (println "I still need to say: " ~macro-message))))
+
+(without-mischief
+ (println "Here's how I feel about that thing you did: " message))
+
+; auto-gensym
+`(blarg# blarg#)
+; => (blarg__11196__auto__ blarg__11196__auto__)
+
+`(let [name# "Harry Poter"] name#)
+; => (clojure.core/let [name__11200__auto__ "Harry Poter"] name__11200__auto__)
+
+
+; double evaluations
+(defmacro report
+  [to-try]
+  `(if ~to-try
+    (println (quote ~to-try) "was successful:" ~to-try)
+    (println (quote ~to-try) "was not successful:" ~to-try)))
+(report (do (Thread/sleep 1000) (+ 1 1)))
+;to-try sleep evaluated two times ; not cool, especially if you replace sleep by a transfer from your bank account
+
+; solution
+(defmacro report
+  [to-try]
+  `(let [result# ~to-try]
+    (if result#
+       (println (quote ~to-try) "was successful:" result#)
+       (println (quote ~to-try) "was not successful:" result#))))
+(report (do (Thread/sleep 1000) (+ 1 1)))
+
+; Macro all the way down
+
+(report (= 1 1))
+(report (= 1 2))
+
+; doseq
+
+(doseq [code ['(= 1 1) '(= 1 2)]]
+  (report code))
