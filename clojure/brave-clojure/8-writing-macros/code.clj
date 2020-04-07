@@ -244,3 +244,21 @@
 
 (doseq [code ['(= 1 1) '(= 1 2)]]
   (report code))
+
+; what a macroexpand could look like: 
+; (if
+;  code
+;  (clojure.core/println 'code "was successful:" code)
+;  (clojure.core/println 'code "was not successful:" code))
+;
+; PROBLEM: code is not evaluated and macro expansion of report occurs before evaluation
+
+; to solve situation...
+
+(defmacro doseq-macro
+         [macroname & args]
+         `(do
+            ~@(map (fn [arg] (list macroname arg)) args)))
+
+(doseq-macro report (= 1 1) (= 1 2))
+(macroexpand '(doseq-macro report (= 1 1) (= 1 2)))
