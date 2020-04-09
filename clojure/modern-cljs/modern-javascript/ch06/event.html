@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Event Registration</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <!-- event.html -->
+    <form action="#" method="post" id="theForm">
+        <fieldset><legend>Register Your Event</legend>
+			<div id="output"></div>
+			<p>Enter the starting and ending dates of the event.</p>
+			<div><label for="start">Start</label><input type="text" name="start" id="start" placeholder="MM/DD/YYYY" required></div>
+			<div><label for="end">End</label><input type="text" name="end" id="end" placeholder="MM/DD/YYYY" required></div>
+            <input type="submit" value="Submit" id="submit">
+        </fieldset>
+    </form>
+    <script src="js/event.js"></script>
+</body>
+</html>

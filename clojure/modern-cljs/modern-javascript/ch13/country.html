@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Countries</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+</head>
+<body>
+	<div class="ui-widget">
+		<label for="country">Country: </label>
+		<input type="text" name="country" id="country">
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script>
+	$(function() { // Turn the text input into an Autocomplete widget:
+		$('#country').autocomplete({
+		    source: 'resources/countries.php',
+			minLength: 2
+		});
+	});
+	</script>
+</body>
+</html>

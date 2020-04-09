@@ -1,0 +1,33 @@
+/* Script 9.9 - modal.css */
+#modal {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100%;
+}
+
+#modalMask {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100%;
+    background-color: #eee;
+    z-index: 1000;
+    opacity: 0.9;
+    filter:alpha(opacity=90);
+    -moz-opacity: 0.9;
+}
+
+#modalContent {
+    position: relative;
+    width:300px;
+    margin: 15px auto;
+    padding:15px;
+    background-color: #fff;
+    border:1px solid #000;
+    text-align:center;
+    z-index: 9999;
+}

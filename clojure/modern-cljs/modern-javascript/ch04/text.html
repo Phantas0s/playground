@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A Restricted Text Area</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- text.html -->
+    <form action="" method="post" id="theForm">
+        <fieldset>
+            <p>Enter your comments below (100 characters max).</p>
+			<div><label for="comments">Comments</label><textarea name="comments" id="comments" maxlength="100" required></textarea></div>
+			<div><label for="count">Character Count</label><input type="number" name="count" id="count"></div>
+			<div><label for="result">Result</label><textarea name="result" id="result"></textarea></div>
+			<div><input type="submit" value="Submit" id="submit"></div>
+        </fieldset>
+    </form>
+    <script src="js/text.js"></script>
+</body>
+</html>

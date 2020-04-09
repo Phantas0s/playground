@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Operating Systems</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Script 10.2 - os.html -->
+    <form action="#" method="post" id="theForm">
+        <fieldset><legend>Choose Your Operating System</legend>
+<div><label for="os">Operating System</label><select name="os" id="os">
+    <option>Choose</option>
+    <optgroup label="Windows">
+        <option value="7 Home Basic">7 Home Basic</option>
+        <option value="7 Home Premium">7 Home Premium</option>
+        <option value="7 Professional">7 Professional</option>
+        <option value="7 Ultimate">7 Ultimate</option>
+        <option value="Vista">Vista</option>
+        <option value="XP">XP</option>
+    </optgroup>
+    <optgroup label="Mac OS X">
+        <option value="10.7 Lion">10.7 Lion</option>
+        <option value="10.6 Snow Leopard">10.7 Snow Leopard</option>
+        <option value="10.5 Leopard">Leopard</option>
+        <option value="10.4 Tiger">Tiger</option>
+    </optgroup>
+</select></div>    
+            <input type="submit" value="Submit" id="submit">
+        </fieldset>
+        <div id="output"></div>
+    </form>
+    <script src="js/os.js"></script>
+</body>
+</html>

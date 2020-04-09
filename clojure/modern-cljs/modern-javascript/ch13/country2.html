@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Countries</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="css/clean.css">
+</head>
+<body>
+	<div class="yui3-skin-sam">
+		<label for="country">Country: </label>
+		<input type="text" name="country" id="country">
+	</div>
+<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>	
+<script>
+YUI({skin: 'sam'}).use('autocomplete', 'autocomplete-filters', 'autocomplete-highlighters', function (Y) {
+	Y.on('domready', function() {
+	    Y.one('#country').plug(Y.Plugin.AutoComplete, {
+		    resultFilters    : 'phraseMatch',
+            resultHighlighter: 'phraseMatch',
+	        source: 'resources/countries.php?term={query}' //['foo', 'bar', 'baz']
+	    });
+	});
+});
+	</script>
+</body>
+</html>

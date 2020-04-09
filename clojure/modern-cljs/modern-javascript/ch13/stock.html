@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Stock Quotes</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/clean.css">
+</head>
+<body>
+	<form action="#" method="get" id="theForm">
+		<p>Enter a symbol in the field below to see the latest price.</p>
+		<p><label for="symbol">Symbol <input type="text" name="symbol" id="symbol"></label> <span id="output"></span></p>
+		<p><input type="submit" value="Submit"></p>
+	</form>
+	<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>	
+	<script>
+	// Load YUI:
+	YUI().use('node', 'yql', function(Y) {
+		
+		// When the DOM is ready, set the stage:
+		Y.on('domready', function() {
+			
+			// Get the references needed:
+			var symbol = Y.one('#symbol');
+			var output = Y.one('#output');
+			
+			// Handle form submissions:
+			Y.one('#theForm').on('submit', function(e) {
+				
+				// Prevent the form submission:
+				e.preventDefault();
+
+				// Clear the output:
+				output.set('text', '...checking...');
+				
+				// Perform the query:
+				Y.YQL('select Name, LastTradePriceOnly FROM yahoo.finance.quotes WHERE symbol="' + symbol.get('value') + '"', function(result) {
+
+					output.set('text', result.query.results.quote.Name + ': $' + result.query.results.quote.LastTradePriceOnly);
+
+				}); // YQL
+			
+			}); // Form submission
+			
+		}); // Y.on('domready')
+	
+	}); // YUI().use()
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Employee Form</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <!-- employee.html -->
+    <form action="#" method="post" id="theForm">
+        <fieldset><legend>Add an Employee</legend>
+            <div><label for="firstName">First Name</label><input type="text" name="firstName" id="firstName" required></div>
+            <div><label for="lastName">Last Name</label><input type="text" name="lastName" id="lastName" required></div>
+            <div><label for="department">Department</label><select name="department" id="department">
+                <option value="Accounting">Accounting</option>
+                <option value="Administration">Administration</option>
+                <option value="Human Resources">Human Resources</option>
+                <option value="Marketing">Marketing</option>
+            </select></div>
+            <input type="submit" value="Submit" id="submit">
+        </fieldset>
+        <div id="output"></div>
+    </form>
+    <script src="js/employee.js"></script>
+</body>
+</html>

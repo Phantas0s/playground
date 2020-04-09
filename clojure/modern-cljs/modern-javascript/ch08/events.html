@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reporting Events</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <!-- Script 8.7 - events.html -->
+    <form action="#" method="post" id="theForm">
+        <fieldset><legend>Reporting Events</legend>
+            <p>Select the events you want to listen for:</p>
+            <div><label for="mouseover">mouseover</label><input type="checkbox" name="mouseover" id="mouseover" value="mouseover"></div>
+            <div><label for="mouseout">mouseout</label><input type="checkbox" name="mouseout" id="mouseout" value="mouseout"></div>
+            <div><label for="click">click</label><input type="checkbox" name="click" id="click" value="click"></div>
+            <div><label for="keypress">keypress</label><input type="checkbox" name="keypress" id="keypress" value="keypress"></div>
+            <div><label for="blur">blur</label><input type="checkbox" name="blur" id="blur" value="blur"></div>
+            <div><input type="submit" value="Submit" id="submit"></div>
+            <div><label for="output">Output</label><textarea name="output" id="output" disabled></textarea></div>
+        </fieldset>
+    </form>
+    <script src="js/utilities.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

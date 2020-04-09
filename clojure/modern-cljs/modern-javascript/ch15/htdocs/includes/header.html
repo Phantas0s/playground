@@ -1,0 +1,20 @@
+<?php # header.html
+// This page begins the session, the HTML page, and the layout table.
+
+session_start(); // Start a session.
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Some Auction Site::<?php echo (isset($page_title)) ? $page_title : 'Welcome!'; ?></title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/a.css">
+<script src="js/utilities.js"></script>
+</head>
+<body>
+	<div id="a">
+		<header>
+			<a href="/" title="Go to Homepage"><strong>Some Auction Site</strong> This is a catchy slogan!</a>
+		</header>
+		<div id="b">
+			<article>
+		

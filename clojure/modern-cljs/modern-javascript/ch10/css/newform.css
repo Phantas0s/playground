@@ -1,0 +1,75 @@
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #0E3D59;
+}
+
+form {
+	background-color: #ffffff;
+
+	margin: 0 auto;
+	padding: 14px;
+	border: solid 2px #88A61B;
+
+}
+
+div {
+	clear: both;
+	padding-top: 10px;
+}
+
+div.two label {
+	font-weight:bold;
+	float: left;
+	width: 100px;
+	text-align: right;
+	padding-right: 10px;
+	position: relative;
+}
+
+div.two input, div.two select{
+	float: left;
+	width: 150px;
+	text-align: left;
+}
+
+div.two select {
+	width: 157px;
+	
+}
+
+div.one {
+	text-align: center;
+}
+
+#submit{
+	clear: both;
+	width: 125px;
+	height: 30px;
+	background:#F29F05;
+	text-align:center;
+	line-height:20px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.tooltip {
+	display: block; 
+	position: absolute; 
+	visibility: hidden;
+	left: 25em;
+	top: 0; 
+	width: 10em;
+	padding: 0.5em;
+	font-weight: normal;
+	color: #FFF;
+	background-color: #88A61B;
+	border:solid 2px #0E3D59;
+}
+
+.error {
+	color: #D92525;
+}
+span.error{
+	padding-left: 10px;
+}

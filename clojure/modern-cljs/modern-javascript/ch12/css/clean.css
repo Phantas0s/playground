@@ -1,0 +1,98 @@
+/*
+ * simple-and-clean.css - CSS2 style sheet
+ */
+
+body {
+    font: 75% Verdana, Helvetica, Arial, sans-serif;
+    background: White;
+    color: Black;
+    margin: 1em;
+    padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: Black;
+    clear: left;
+    font: 100% Verdana, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding-left: 0.5em;
+} 
+
+h1 {
+    font-size: 150%;
+    border-bottom: none;
+    text-align: right;
+    border-bottom: 1px solid Gray;
+}
+    
+h2 {
+    font-size: 130%;
+    border-bottom: 1px solid Gray;
+}
+
+h3 {
+    font-size: 120%;
+    padding-left: 1.0em;
+    border-bottom: 1px solid Gray;
+}
+
+h4 {
+    font-size: 110%;
+    padding-left: 1.5em;
+    border-bottom: 1px solid Gray;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: underline;
+    color: Black;
+}
+
+code,
+blockquote,
+pre {
+    font-size: 120%;
+    padding: 1em;
+    border: 1px solid Black;
+    color: Black;
+    background-color: #dedede;
+}
+
+#gallerycomment {
+    text-align: center;
+}
+
+#rss-desc {
+    text-align: right;
+    font-size: smaller;
+}
+
+.item-pubDate {
+    text-align: right;
+    padding: 1em;
+    font-size: smaller;
+}
+
+.item-technorati {
+    display: none;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+div .item-desc {
+    margin-bottom: 1em;
+}
+
+.item-title {
+    margin-bottom: 0.5em;
+}
+
+#loader {
+	visibility: hidden;
+}

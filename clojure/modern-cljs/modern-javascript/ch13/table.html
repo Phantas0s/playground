@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Data Tables</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/demo_table_jui.css">
+</head>
+<body>
+	<table id="countries">
+		<caption>Alphabetical of countries in the world.</caption>
+		<thead>
+			<tr><th>Country</th><th>Population</th><th>Size (sq. km.)</th></tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Afghanistan</td>
+				<td>29121286</td>
+				<td>645807</td>
+			</tr>
+			<tr>
+				<td>Albania</td>
+				<td>2986952</td>
+				<td>28748</td>
+			</tr>
+			<tr>
+				<td>Algeria</td>
+				<td>34586184</td>
+				<td>2381741</td>
+			</tr>
+			<tr>
+				<td>American Somoa</td>
+				<td>65628</td>
+				<td>197</td>
+			</tr>
+			<tr>
+				<td>Andora</td>
+				<td>84825</td>
+				<td>181</td>
+			</tr>
+			<tr>
+				<td>Angola</td>
+				<td>13338541</td>
+				<td>481351</td>
+			</tr>
+			<tr>
+				<td>Antigua and Barbuda</td>
+				<td>87884</td>
+				<td>171</td>
+			</tr>
+			<tr>
+				<td>Argentina</td>
+				<td>41769726</td>
+				<td>1068296</td>
+			</tr>
+			<tr>
+				<td>Armenia</td>
+				<td>2967975</td>
+				<td>11506</td>
+			</tr>
+			<tr>
+				<td>Australia</td>
+				<td>21766711</td>
+				<td>2967893</td>
+			</tr>
+			<tr>
+				<td>Austria</td>
+				<td>8217280</td>
+				<td>32382</td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script>
+	$(function() {
+		$('#countries').dataTable({"sPaginationType": "full_numbers"});
+		
+	});
+	</script>
+</body>
+</html>

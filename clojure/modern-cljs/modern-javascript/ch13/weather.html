@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/clean.css">
+</head>
+<body>
+	<form action="#" method="get" id="theForm">
+		<p>Enter a zip code in the field below to see the latest weather.</p>
+		<p><label for="zip">Zip Code <input type="text" name="zip" id="zip"></label></p>
+		<p><input type="submit" value="Submit"></p>
+	</form>
+ <p id="output"></p>
+<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+<script>
+	YUI().use('node', 'yql', function(Y) {
+		Y.on('domready', function() {
+
+			// Get the references needed:
+			var zip = Y.one('#zip');
+			var output = Y.one('#output');
+
+			// Handle form submissions:
+			Y.one('#theForm').on('submit', function(e) {
+
+				// Prevent the form submission:
+				e.preventDefault();
+
+				// Clear the output:
+				output.setContent('...checking...');
+
+				// Perform the query:
+			    Y.YQL('select item.description from weather.forecast where location=' + zip.get('value'), function(result) {
+
+					output.setContent(result.query.results.channel.item.description);
+
+			    }); // YQL
+
+			}); // Form submission
+
+		}); // Y.on('domready')
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<book>
+	<chapter id="1">Getting Started</chapter>
+	<chapter id="2">JavaScript in Action</chapter>
+</book>

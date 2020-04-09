@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>To-Do List</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <!-- tasks.html -->
+	<form action="#" method="post" id="theForm">
+	    <fieldset><legend>Enter an Item To Be Done</legend>
+	        <div><label for="task">Task</label><input type="text" name="task" id="task" required></div>
+	        <div><label for="priority">Priority</label> <select name="priority" id="priority">
+	        	<option value="high">High</option>
+	        	<option value="normal" selected>Normal</option>
+	        	<option value="low">Low</option>
+	        </select></div>
+	        <input type="submit" value="Add It!" id="submit">
+	  <div id="output"></div>
+	    </fieldset>
+	</form>
+    <script src="js/tasks.js"></script>
+</body>
+</html>

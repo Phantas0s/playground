@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/newform.css">
+</head>
+<body>
+    <!-- Script 10.6 - register.html -->
+    <form action="#" method="post" id="theForm">
+        <fieldset><legend>Register</legend>
+			<p>All fields are required.</p>
+			<div class="two"><label for="firstName">First Name</label><input type="text" name="firstName" id="firstName" required></div>
+			<div class="two"><label for="lastName">Last Name</label><input type="text" name="lastName" id="lastName" required></div>
+			<div class="two"><label for="email">Email Address</label><input type="email" name="email" id="email" required></div>
+			<div class="two"><label for="phone">Phone Number<span class="tooltip">In the format XXX XXX XXXX or XXX-XXX-XXXX or XXXXXXXXXX.</span></label><input type="text" name="phone" id="phone" required></div>
+			<div class="two"><label for="city">City</label><input type="text" name="city" id="city" required></div>
+			<div class="two"><label for="state">State</label><select name="state" id="state">
+				<option value="">Select a State</option> 
+				<option value="AL">Alabama</option> 
+				<option value="AK">Alaska</option> 
+				<option value="AZ">Arizona</option> 
+				<option value="AR">Arkansas</option> 
+				<option value="CA">California</option> 
+				<option value="CO">Colorado</option>           
+			</select></div>    
+			<div class="two"><label for="zip">Zip Code</label><input type="text" name="zip" id="zip" required></div>
+			<div class="one"><input type="checkbox" name="terms" id="terms" required> I agree to the terms, whatever they are.</div>
+			<div class="one"><input type="submit" value="Register" id="submit"></div>
+        </fieldset>
+    </form>
+    <script src="js/utilities.js"></script>
+    <script src="js/errorMessages.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
