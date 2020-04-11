@@ -122,12 +122,14 @@
 
 ;; Rolling your own queue
 
-;; wait macro
+; wait macro
 (defmacro wait
   "Sleep `timeout` seconds before evaluating body"
   [timeout & body]
   `(do (Thread/sleep ~timeout ~@body)))
 
+; All the futur created before any promise dereferenced
+; Ensure serialized portions executed in correct order
 (let [saying3 (promise)]
   (future (deliver saying3 (wait 100 "Cheerio!")))
   @(let [saying2 (promise)]
@@ -140,3 +142,22 @@
      saying2)
   (println @saying3)
   saying3)
+
+; macro for enqueue
+(defmacro enqueue
+  ([q concurrent-promise-name concurrent serialized]
+   `(let [~concurrent-promise-name (promise)]
+      (future (deliver ~concurrent-promise-name ~concurrent))
+      (deref ~q)
+      ~serialized
+      ~concurrent-promise-name))
+  ([concurrent-promise-name concurrent serialized]
+   `(enqueue (future) ~concurrent-promise-name ~concurrent ~serialized)))
+
+(time @(-> (enqueue saying (wait 200 "'Ello, gov'na!") (println @saying))
+           (enqueue saying (wait 400 "Pip pip!") (println @saying))
+           (enqueue saying (wait 100 "Cheerio!") (println @saying))))
+; => 'Ello, gov'na!
+; => Pip pip!
+; => Cheerio!
+; => "Elapsed time: 401.635 msecs"
