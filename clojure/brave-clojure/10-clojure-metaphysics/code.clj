@@ -121,3 +121,146 @@
    :validator percent-deteriorated-validator))
 (swap! bobby update-in [:percent-deteriorated] + 200)
 ; => throws "invalid reference state: That's not mathy!"
+
+
+;; Modeling sock transfers with refs
+
+
+(def sock-varieties
+  #{"darned" "argyle" "wool" "horsehair" "mulleted"
+    "passive-aggressive" "striped" "polka-dotted"
+    "athletic" "business" "power" "invisible" "gollumed"})
+
+(defn sock-count
+  [sock-variety count]
+  {:variety sock-variety
+   :count count})
+
+(defn generate-sock-gnome
+  "Create an initial sock gnome state with no socks"
+  [name]
+  {:name name
+   :socks #{}})
+
+(def sock-gnome (ref (generate-sock-gnome "Barumpharum")))
+(def dryer (ref {:name "LG 1337"
+                 :socks (set (map #(sock-count % 2) sock-varieties))}))
+(:socks @dryer)
+; #{{:variety "gollumed", :count 2}
+;   {:variety "striped", :count 2}
+;   {:variety "wool", :count 2}
+;   {:variety "passive-aggressive", :count 2}
+;   {:variety "argyle", :count 2}
+;   {:variety "business", :count 2}
+;   {:variety "darned", :count 2}
+;   {:variety "polka-dotted", :count 2}
+;   {:variety "horsehair", :count 2}
+;   {:variety "power", :count 2}
+;   {:variety "athletic", :count 2}
+;   {:variety "mulleted", :count 2}
+;   {:variety "invisible", :count 2}}
+
+(defn steal-sock
+  [gnome dryer]
+  (dosync
+   (when-let [pair (some #(if (= (:count %) 2) %) (:socks @dryer))]
+     (let [updated-count (sock-count (:variety pair) 1)]
+       (alter gnome update-in [:socks] conj updated-count)
+       (alter dryer update-in [:socks] disj pair)
+       (alter dryer update-in [:socks] conj updated-count)))))
+(steal-sock sock-gnome dryer)
+
+(defn similar-socks
+  [target-sock sock-set]
+  (filter #(= (:variety %) (:variety target-sock)) sock-set))
+
+(similar-socks (first (:socks @sock-gnome)) (:socks @dryer))
+
+; idea of in-transaction state
+
+(def counter (ref 0))
+(future
+  (dosync
+   (alter counter inc)
+   (println @counter)
+   (Thread/sleep 500)
+   (alter counter inc)
+   (println @counter)))
+(Thread/sleep 250)
+; value of counter on main thread is still 0 when future executed
+(println @counter)
+
+; safe commuting
+(defn sleep-print-update
+  [sleep-time thread-name update-fn]
+  (fn [state]
+    (Thread/sleep sleep-time)
+    (println (str thread-name ": " state))
+    (update-fn state)))
+(def counter (ref 0))
+(future (dosync (commute counter (sleep-print-update 100 "Thread A" inc))))
+(future (dosync (commute counter (sleep-print-update 150 "Thread B" inc))))
+
+; unsafe commuting
+(def receiver-a (ref #{}))
+(def receiver-b (ref #{}))
+(def giver (ref #{1}))
+(do (future (dosync (let [gift (first @giver)]
+                      (Thread/sleep 10)
+                      (commute receiver-a conj gift)
+                      (commute giver disj gift))))
+    (future (dosync (let [gift (first @giver)]
+                      (Thread/sleep 50)
+                      (commute receiver-b conj gift)
+                      (commute giver disj gift)))))
+
+@receiver-a
+; => #{1}
+
+@receiver-b
+; => #{1}
+
+@giver
+; => #{}
+
+
+
+;; Dynamic Vars
+
+
+(def
+  ^:dynamic *notification-address* ; signal the var is dynamic + asterisks (earmuffs)
+  "dobby@elf.org")
+
+(binding [*notification-address* "test@elf.org"] *notification-address*)
+
+; stack binding
+
+(binding [*notification-address* "tester-1@elf.org"]
+  (println *notification-address*)
+  (binding [*notification-address* "tester-2@elf.org"]
+    (println *notification-address*))
+  (println *notification-address*))
+
+(defn notify-email
+  [message]
+  (str "TO: " *notification-address* "\n"
+       "MESSAGE: " message))
+(notify-email "I fell.")
+; => "TO: dobby@elf.org\nMESSAGE: test!"
+
+(binding [*notification-address* "test@elf.org"]
+  (notify-email "test!"))
+; => "TO: test@elf.org\nMESSAGE: test!"
+
+; change *out* to print to a file
+(binding [*out* (clojure.java.io/writer "print-output")]
+  (println "A man who carries a cat by the tail learns something he can learn in no other way -- Mark Twain"))
+(slurp "print-output")
+
+;configuration
+(println ["Print" "all" "the" "things!"])
+; => [Print all the things!]
+
+(binding [*print-length* 1]
+  (println ["Print" "just" "one!"]))
