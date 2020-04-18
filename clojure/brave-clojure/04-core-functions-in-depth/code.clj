@@ -47,7 +47,7 @@
 (def avg #(/ (sum %) (count %)))
 (defn stats
   [numbers]
-  (map #(%numbers) [sum count avg]))
+  (map #(% numbers) [sum count avg]))
 
 (stats [3 4 10])
 
@@ -199,7 +199,7 @@
 
 ; The Collection Abstraction
 
-; into 
+; into
 
 (map identity {:sunlight-reaction "Glitter!"})
 ; => ([:sunlight-reaction "Glitter!"])

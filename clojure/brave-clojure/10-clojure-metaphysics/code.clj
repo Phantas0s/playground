@@ -1,6 +1,7 @@
 ;; atoms
 
 
+
 ; fred refers to the value {:cuddle-hunger-level 0 :percent-deteriorated 0}
 (def fred (atom {:cuddle-hunger-level 0
                  :percent-deteriorated 0}))
@@ -264,3 +265,124 @@
 
 (binding [*print-length* 1]
   (println ["Print" "just" "one!"]))
+
+(def ^:dynamic *troll-thought* nil)
+(defn troll-riddle
+  [your-answer]
+  (let [number "man meat"]
+    (when (thread-bound? #'*troll-thought*) ; use #' because thread-bound? takes var as argument, not the value it refers to
+      (set! *troll-thought* number))
+    (if (= number your-answer)
+      "TROLL: you can cross the bridge!"
+      "TROLL: time to eat you, succulent human!")))
+
+(binding [*troll-thought* nil]
+  (println (troll-riddle 2))
+  (println "SUCCULENT HUMAN: Oooooh! The answer was" *troll-thought*))
+; => TROLL: Time to eat you, succulent human!
+; => SUCCULENT HUMAN: Oooooh! The answer was man meat
+
+; see chapter 12 to understand
+(.write *out* "prints to repl")
+
+; out not bound to REPL printer; won't work
+(.start (Thread. #(.write *out* "prints to standard out")))
+
+; bound-fn carry all the current binding to new thread
+(.start (Thread. (bound-fn [] (.write *out* "prints to repl from thread"))))
+
+; altering var root
+
+(def power-source "hair") ;var root "hair"
+(alter-var-root #'power-source (fn [_] "7-eleven parking lot"))
+power-source
+; => "7-elevent parking lot"
+
+(with-redefs [*out* *out*]
+  (doto (Thread. #(println "with redefs allows me to show up in the REPL"))
+    .start
+    .join))
+
+; Stateless concurrency with pmap
+
+; function repeatedly (create lazy seq)
+(defn always-1
+  []
+  1)
+(take 5 (repeatedly always-1))
+; => (1 1 1 1 1)
+
+(take 5 (repeatedly (partial rand-int 10)))
+
+; compare performance map / pmap
+
+(def alphabet-length 26)
+(def letters (mapv (comp str char (partial + 65)) (range alphabet-length)))
+
+; mapv return a seq, map return a lazy seq
+(def test (map println [1 2 3]))
+(def test2 (mapv println [1 2 3])) ; side effect directly
+
+(defn random-string
+  "Returns a random string of specified length"
+  [length]
+  (apply str (take length (repeatedly #(rand-nth letters)))))
+
+(defn random-string-list
+  [list-length string-length]
+  (doall (take list-length (repeatedly (partial random-string string-length)))))
+
+(def orc-names (random-string-list 3000 7000))
+
+(time (dorun (map clojure.string/lower-case orc-names)))
+; time: 219ms
+(time (dorun (pmap clojure.string/lower-case orc-names)))
+; time: 115ms
+
+; concurrency overhead
+
+(def orc-names-abbrevs (random-string-list 20000 300))
+(time (dorun (map clojure.string/lower-case orc-names-abbrevs)))
+; 74 ms
+(time (dorun (pmap clojure.string/lower-case orc-names-abbrevs)))
+;124 ms
+
+; increase grain size
+
+(def numbers [1 2 3 4 5 6 7 8 9 10])
+(partition-all 3 numbers)
+; => ((1 2 3) (4 5 6) (7 8 9) (10))
+
+; grain size one - each thread apply one to element
+(pmap inc numbers)
+
+; grain size three - each thread 3 applications of the inc function
+; doall force the lazy sequence to be realized in the thread
+(pmap (fn [number-group] (doall (map inc number-group)))
+      (partition-all 3 numbers))
+; => ((2 3 4) (5 6 7) (8 9 10) (11))
+
+; ungroup the result
+(apply concat
+       (pmap (fn [number-group] (doall (map inc number-group)))
+             (partition-all 3 numbers)))
+; => (2 3 4 5 6 7 8 9 10 11)
+
+(time
+ (dorun
+  (apply concat
+         (pmap (fn [name] (doall (map clojure.string/lower-case name)))
+               (partition-all 1000 orc-names-abbrevs)))))
+; 45ms
+
+; can do a function from that, for fun
+
+(defn ppmap
+  "Partitioned pmap, for grouping maps ops together to make parallel overhead worthwhile"
+  [grain-size f & colls]
+  (apply concat
+         (apply pmap
+                (fn [& pgroups] (doall (apply map f pgroups)))
+                (map (partial partition-all grain-size) colls))))
+(time (dorun (ppmap 1000 clojure.string/lower-case orc-names-abbrevs)))
+; => 46ms
