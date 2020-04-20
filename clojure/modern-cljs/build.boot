@@ -10,7 +10,8 @@
                  [adzerk/boot-cljs-repl   "0.4.0"] ;; latest release
                  [cider/piggieback        "0.3.9"  :scope "test"]
                  [weasel                  "0.7.0"  :scope "test"]
-                 [nrepl                   "0.4.5"  :scope "test"]])
+                 [nrepl                   "0.4.5"  :scope "test"]
+                 [org.clojars.magomimmo/domina "2.0.0-SNAPSHOT"]])
 
 (require '[adzerk.boot-cljs :refer [cljs]] ;; task cljs
          '[pandeiro.boot-http :refer [serve]] ;; make serve task visible
