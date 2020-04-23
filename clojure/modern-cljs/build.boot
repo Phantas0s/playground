@@ -11,7 +11,8 @@
                  [cider/piggieback        "0.3.9"  :scope "test"]
                  [weasel                  "0.7.0"  :scope "test"]
                  [nrepl                   "0.4.5"  :scope "test"]
-                 [org.clojars.magomimmo/domina "2.0.0-SNAPSHOT"]])
+                 [org.clojars.magomimmo/domina "2.0.0-SNAPSHOT"]
+                 [hiccups "0.3.0"]])
 
 (require '[adzerk.boot-cljs :refer [cljs]] ;; task cljs
          '[pandeiro.boot-http :refer [serve]] ;; make serve task visible

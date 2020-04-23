@@ -1,4 +1,5 @@
-(ns modern-cljs.login)
+(ns modern-cljs.login
+  (:require [domina.core :refer [by-id value set-value!]]))
 
 (enable-console-print!)
 
@@ -7,7 +8,7 @@
 ; (defn validate-form []
 ;   (if (and (> (count (.-value (.getElementById js/document "email"))) 0) (> count (.-value (.getElementById js/document "password"))) 0)
 ;   true
-;   (do (js/alert "Please complete the form!") 
+;   (do (js/alert "Please complete the form!")
 ;       false)))
 
 ; (defn init []
@@ -19,18 +20,17 @@
 ; Better with let!
 
 (defn validate-form []
-  (let [email (.getElementById js/document "email")
-        password (.getElementById js/document "password")]
-    (if (and (> (count (.-value email)) 0)
-             (> (count (.-value password)) 0))
-      true
-      (do (js/alert "Please complete the form!")
-          false))))
+  (if (and (> (count (value (by-id "email"))) 0)
+           (> (count (value (by-id "password"))) 0))
+    true
+    (do (js/alert "Please complete the form!")
+        false)))
 
-(defn init []
+(defn ^:export init []
   (if (and js/document
            (.-getElementById js/document))
-  (let [login-form (.getElementById js/document "loginForm")]
-    (set! (.-onsubmit login-form) validate-form))))
+    (let [login-form (.getElementById js/document "loginForm")]
+      (set! (.-onsubmit login-form) validate-form))))
 
-(set! (.-onload js/window) init) ; attach to the onload event - need to reload the page
+; conflict with same call in multiple file - extracted in html page
+; (set! (.-onload js/window) init) ; attach to the onload event - need to reload the page

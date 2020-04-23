@@ -1,2 +1,0 @@
-{:require [modern-cljs.core modern-cljs.login]
- :compiler-options {:asset-path "js/main.out"}} ; if no :output-to passed, default value created relative to the edn file => https://github.com/boot-clj/boot-cljs/blob/master/docs/compiler-options.md
