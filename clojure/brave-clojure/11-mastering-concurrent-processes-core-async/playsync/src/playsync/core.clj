@@ -85,3 +85,71 @@
     (if headshot
       (println "Sending headshot notification for" headshot)
       (println "Timed out!"))))
+
+; alt with put operations
+(let [c1 (chan)
+      c2 (chan)]
+  (go (<! c2))
+  (let [[value channel] (alts!! [c1 [c2 "put!"]])] ; try to do a take on c1 and put "puts!" on c2
+    (println value)
+    (= channel c2)))
+; => true
+; => true
+
+
+;; Queues
+
+
+; want to get bunch of random quote from a website and write them to a single file
+; don't want your quotes interleaved
+
+(defn append-to-file
+  "Write a string to the end of a file"
+  [filename s]
+  (spit filename s :append true))
+
+(defn format-quote
+  "Delineate the beginning and end of a quote because it's convenient"
+  [quote]
+  (str "=== BEGIN QUOTE ==\n" quote "=== END QUOTE ===\n\n"))
+
+(defn random-quote
+  "Retrieve a random quote and format it"
+  []
+  (format-quote (slurp "https://www.braveclojure.com/random-quote")))
+
+(defn snag-quotes
+  [filename num-quotes]
+  (let [c (chan)]
+    (go (while true (append-to-file filename (<! c))))
+    (dotimes [n num-quotes] (go (>! c (random-quote))))))
+
+(snag-quotes "quotes" 10)
+
+
+; Escape callback hell
+
+
+(defn upper-caser
+  [in]
+  (let [out (chan)]
+    (go (while true (>! out (clojure.string/upper-case (<! in)))))
+    out))
+
+(defn reverser
+  [in]
+  (let [out (chan)]
+    (go (while true (>! out (clojure.string/reverse (<! in)))))
+    out))
+
+(defn printer
+  [in]
+  (go (while true (println (<! in)))))
+
+(def in-chan (chan))
+(def upper-caser-out (upper-caser in-chan))
+(def reverser-out (reverser upper-caser-out))
+(printer reverser-out)
+
+(>!! in-chan "redrum")
+(>!! in-chan "repaid")
