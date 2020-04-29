@@ -123,3 +123,54 @@ function! GrepOperator(type)
     silent execute "grep! -R " . shellescape(@@) . " ."
     copen
 endfunction
+
+
+" +------------+
+" | PART THREE |
+" +------------+
+
+" Don't destroy visual selection when select via motion + restore unamed register
+nnoremap <leader>g :set operatorfunc=GrepOperator<cr>g@
+vnoremap <leader>g :<c-u>call GrepOperator(visualmode())<cr>
+
+function! GrepOperator(type)
+    " save content on unamed register to bring it back at the end
+    let saved_unnamed_register = @@
+
+    if a:type ==# 'v'
+        normal! `<v`>y
+    elseif a:type ==# 'char'
+        " motion, not visual selection anymore
+        normal! `[y`]
+    else
+        return
+    endif
+    
+    silent execute "grep! -R " . shellescape(@@) . " ."
+    copen
+
+    let @@ = saved_unnamed_register
+endfunction
+
+" Add a namespace
+" SID -> tries to find function in script and not in global namespace (issu when mapping used outside of script)
+nnoremap <leader>g :set operatorfunc=<SID>GrepOperator<cr>g@
+vnoremap <leader>g :<c-u>call <SID>GrepOperator(visualmode())<cr>
+
+" s: -> current script namespace
+function! s:GrepOperator(type)
+    let saved_unnamed_register = @@
+
+    if a:type ==# 'v'
+        normal! `<v`>y
+    elseif a:type ==# 'char'
+        normal! `[v`]y
+    else
+        return
+    endif
+
+    silent execute "grep! -R " . shellescape(@@) . " ."
+    copen
+
+    let @@ = saved_unnamed_register
+endfunction
