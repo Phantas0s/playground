@@ -1,6 +1,9 @@
+# this is a comment
+
 factorial = (n):
     total = 1
     n to 1 (i):
+        # this is a comment
         total *= i.
     total.
 
