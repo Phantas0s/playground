@@ -1,6 +1,5 @@
 # Exercise to complete
 
+Not all exercises were done.
 
-* Chapter 3
-* Chapter 4
-
+Next step: go back from the beginning and do them.
