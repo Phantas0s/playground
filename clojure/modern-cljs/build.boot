@@ -1,5 +1,5 @@
 (set-env!
- :source-paths #{"src/cljs" "src/clj"}
+ :source-paths #{"src/cljs" "src/clj" "src/cljc"}
  :resource-paths #{"html"}
  :dependencies '[[org.clojure/clojure "1.8.0"]         ;; add CLJ
                  [org.clojure/clojurescript "1.9.473"] ;; add CLJS
@@ -16,7 +16,8 @@
                  [compojure "1.5.2"] ; small CLJ routing library (server side)
                  [org.clojars.magomimmo/shoreleave-remote-ring "0.3.3"]
                  [org.clojars.magomimmo/shoreleave-remote "0.3.1"] ; Ajax RPC style
-                 [javax.servlet/javax.servlet-api "3.1.0"]])     ;; for dev only 
+                 [javax.servlet/javax.servlet-api "3.1.0"]
+                 [org.clojars.magomimmo/valip "0.4.0-SNAPSHOT"]])     ;; for dev only 
 
 (require '[adzerk.boot-cljs :refer [cljs]] ;; task cljs
          '[pandeiro.boot-http :refer [serve]] ;; make serve task visible

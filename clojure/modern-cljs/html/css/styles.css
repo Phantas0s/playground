@@ -128,6 +128,10 @@ input.default {
 .error {
 	color: #FF1400;
 }
+
+.help {
+    color: red;
+}
 /*
 :invalid {
 	color:red;
