@@ -13,6 +13,12 @@ Each part of the book has its own set of exercise. Each part can have two file: 
 
 * **SKIPPED** - Skipped 'cause I have no clue how to do it, or I spent too much time on it. I will put the number of minutes for the second case.
 
+# Using Racket
+
+## Launch REPL
+
+`racket -i -p neil/sicp -l xrepl`
+
 # Solutions
 
 It's [here](http://community.schemewiki.org/?SICP-Solutions).
