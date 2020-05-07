@@ -7,7 +7,6 @@ endfor
 echom c
 " => 10
 
-
 " while loops
 
 let c = 1
@@ -19,3 +18,18 @@ while c <= 4
 endwhile
 echom total
 " => 10
+
+" on dictionary (not in the book, added for reference)
+
+let dic = {'a': 1, 'b': 2}
+echo items(dic)
+" => [['a', 1], ['b', 2]]
+
+for [key, value] in items(dic)
+    echom 'key: ' . key 
+    echom 'value: ' . value
+endfor
+" => key: a
+" => value: 1
+" => key: b
+" => value: 2
