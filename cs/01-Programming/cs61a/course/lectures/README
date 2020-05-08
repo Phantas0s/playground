@@ -1,0 +1,28 @@
+This directory contains a number of directories whose names correspond
+to sections of Abelson and Sussman.  For example, 1.3 is a directory
+whose files contain examples we used in class to illustrate ideas from
+section 1.3 of the book.
+
+Individual files whose names end in .scm are readable by Scheme.
+(Notice that all English text in any such file is preceeded by one or
+more semi-colons (;).  The rest of the line after a semicolon gets
+ignored by the interpreter.)  For example, you can try out the
+make-adder code by typing (within Scheme):
+
+> (load "~cs60a/lectures/1.3/make-adder.scm")
+
+The load itself just returns #f, but all of the definitions in that
+file have now been read, so you can play around with them.  Try, for
+example,
+
+> (sum 1 5 (make-adder 2))
+
+Some of the files in this directory are text.
+
+These are notes for various supplementary lectures
+(not all are so summarized, however.)
+
+karp.text:  Combinatorial Search Problems /R. Karp
+turing.text: An explanation of Turing computability/ R. Fateman
+zero.text: Zero Knowledge Proofs/ U. Vazirani
+proofs.text: Proving programs / R. Fateman
