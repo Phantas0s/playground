@@ -13,6 +13,7 @@
              '()
              (se (square (first nums)) (squares (bf nums)))))
 
+; **PERFECT**
 
 ; +------------+
 ; | exercise 3 |
@@ -32,6 +33,8 @@
         ((equal? w 'You) 'i)
         (else w)))
 
+; **GOOD(?)**
+
 ; +------------+
 ; | exercise 4 |
 ; +------------+
@@ -49,3 +52,17 @@
   (cond ((empty? s) '())
         ((equal? (last (first s)) 'e) (se (first s) (ends-e (bf s))))
         (else (ends-e (bf s)))))
+
+; **PERFECT**
+
+; +------------+
+; | exercise 6 |
+; +------------+
+
+(define (logical-operator-evaluation)
+  (or (= 1 1) (logical-operator-evaluation))
+  (and (= 0 1) (logical-operator-evaluation)))
+
+; If and / or follow an applicative order, this function will never end...
+; It's good for performance reasons to only evaluate the args of or / and one at a time. No need to evaluate everything
+; I don't see any advantage to treat or as an ordinary function, except maybe to catch potential error in running code otherwise not catch if the code is never executed...
