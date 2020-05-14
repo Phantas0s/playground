@@ -477,7 +477,7 @@
 
 ; (Hint: Using the observation that (b n/2 ) 2 = (b 2 ) n/2 , keep,
 ; along with the exponent n and the base b, an additional
-; state variablea, and define the state transformation in such
+; state variable, and define the state transformation in such
 ; awaythattheproductab n isunchangedfromstatetostate.
 ; At the beginning of the process a is taken to be 1, and the
 ; answer is given by the value of a at the end of the process.

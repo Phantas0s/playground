@@ -153,20 +153,6 @@
 ; +---------------+
 ; | Exercise 1.46 |
 ; +---------------+
-
-(define (iterative-improve good-enough? improve)
-  (define (sub-improve guess)
-    (if (good-enough? guess)
-      guess
-      (sub-improve (improve guess))))
-  (lambda (guess) (sub-improve guess)))
-
-; (define (improve guess x)
-;   (average guess (/ x guess)))
-
-; (define (good-enough? guess x)
-;   (< (abs (- (square guess) x)) 0.001))
-
 ; (define (sqrt-iter guess x)
 ;   (if (good-enough? guess x)
 ;     guess
@@ -175,7 +161,47 @@
 ; (define (sqrt x)
 ;   (sqrt-iter 1.0 x))
 
+(define (average x y) 
+  (/ (+ x y) 2))
+
+(define (good-enough? guess x)
+  (< (abs (- (square guess) x)) 0.001))
+
+
+(define (iterative-improve good-enough? improve)
+  (define (sub-improve guess x)
+    (if (good-enough? guess x)
+      guess
+      (sub-improve (improve guess x) x)))
+  (lambda (guess x) (sub-improve guess x)))
+
+; sqrt function
+
+(define (improve-sqrt guess x)
+  (average guess (/ x guess)))
+
+(define (good-enough-sqrt? guess x)
+  (< (abs (- (square guess) x)) 0.001))
+
 (define (sqrt x)
     ((iterative-improve 
-     good-enough? 
-     (lambda (x) (improve x 1.0))) x)
+    good-enough-sqrt?
+    improve-sqrt) 1.0 x))
+
+**GOOD**
+
+; fixed point function
+
+(define (close-enough? v1 v2)
+  (< (abs (- v1 v2)) 
+    0.00001))
+
+(define (try guess x)
+  (cos x))
+
+(define (fixed-point f x)
+  ((iterative-improve
+     (lambda (x guess) (close-enough? x (f x)))
+     (lambda (x guess) (cos x)) (cos x) x)))
+
+**SKIPPED - 30min**
