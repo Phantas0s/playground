@@ -2,6 +2,11 @@
 
 This is my attempt to get through of the SICP (at least go through the first 3 chapters)
 
+# Book
+
+The book is [available here](https://github.com/sarabander/sicp)
+Online version [here](https://sarabander.github.io/sicp/html/index.xhtml)
+
 # Exercises notation
 
 Each part of the book has its own set of exercise. Each part can have two file: the first one with the first attempt, the second one trying to fix the mistakes after the first attempt.
