@@ -21,6 +21,9 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * [Homework](./course/reader/nodate-hw.pdf)
 * [Lab assignments](./course/reader/nodate-labs.pdf)
 
+* [Project 1](./course/reader/nodate-21.pdf)
+* [Project 1 Code](./course/reader/twenty-one.scm)
+
 * [Vol. 2](./course/reader/vol2.html)
 
 ## Using Racket
