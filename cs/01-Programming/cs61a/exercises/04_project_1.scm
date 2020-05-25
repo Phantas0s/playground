@@ -81,6 +81,7 @@
       (let  ((card (first cs)))
         (let ((card-value (cond ((image-card? card) 10)
                                 ((number-card? card) (value-number-card card))
+                                ; TODO bring that outside of let to calculate everything then set cs to empty sentence
                                 ((ace-card? card) (choose-ace-value cs total))
                                 (else 0))))
           (calc-total (bf cs) (+ total card-value))))))
