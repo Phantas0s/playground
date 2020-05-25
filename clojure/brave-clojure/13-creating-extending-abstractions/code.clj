@@ -53,10 +53,9 @@
 
 (defprotocol Psychodynamics
   "Plumb the inner depths of your data types"
-  (thoughts [x] "The data ty[e's innermost thoughts")
+  (thoughts [x] "The data type's innermost thoughts")
   (feeling-about [x] [x y] "Feelings about self or other"))
-; can't have rest arguments
-; this is not allowed: (feelings-about [x] [x & others])
+; can't have rest arguments: not allowed (feelings-about [x] [x & others])
 
 ; needs to implement every method of a protocol
 (extend-type java.lang.String
