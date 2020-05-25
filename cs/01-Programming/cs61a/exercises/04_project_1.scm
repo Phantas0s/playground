@@ -47,23 +47,44 @@
 
 ; 1. Write best total
 
-(define (best-total s)
-  (define (image-card? card)
-    (or (equal? card 'J) (equal? card 'Q) (equal? card 'K)))
-  (define (choose-ace-value total)
-    (if (>= total 21)
-      1
-      10))
-  (define (total st t)
-    (if (empty? st)
-      t
-      (let ((card-type (bl (first st))))
-        (let ((card-value (cond ((equal? card-type 'A) (choose-ace-value t))
-                                ((image-card? card-type) 10) 
-                                ((number? card-type) card-type)
+; J, Q and K cards
+(define (image-card? card)
+  (or (equal? (first card) 'J) (equal? (first card) 'Q) (equal? (first card) 'K)))
+
+(define (ace-card? card)
+  (equal? (first card) 'A))
+
+; Put image cards (including As) at the end
+(define (ace-last cards)
+  (define (sort-cards-count cards acc)
+    (cond ((equal? cards '()) acc)
+          ((ace-card? (first cards)) (sort-cards-count (bf cards) (se acc (first cards))))
+          (else (sort-cards-count (bf cards) (se (first cards) acc)))))
+  (sort-cards-count cards '()))
+
+; TODO needs to calculate ace-value with every ace, otherwise total not optimal
+; (define (choose-ace-value total ace-cards)
+;   (let ((ace-values (* (length ace-cards) 11)))
+;     (if (<= (ace-values) 21)
+;       (ace-values))))
+
+(define (number-card? card)
+  (number? (bl card)))
+
+(define (value-number-card card)
+  (bl card))
+
+(define (best-total cards)
+  (define (calc-total cs total)
+    (if (empty? cs)
+      total
+      (let  ((card (first cs)))
+        (let ((card-value (cond ((image-card? card) 10)
+                                ((number-card? card) (value-number-card card))
+                                ((ace-card? card) (choose-ace-value cs total))
                                 (else 0))))
-          (total (bf st) (+ t card-value))))))
-  (total s 0))
+          (calc-total (bf cs) (+ total card-value))))))
+  (calc-total (ace-last cards) 0))
 
 ; Simple - two cards
 ; (best-total `(2S 2H))
