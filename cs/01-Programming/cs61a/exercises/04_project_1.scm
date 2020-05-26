@@ -122,9 +122,9 @@
 
 ;2. Design stop-at-17
 
-(define (stop-at-17 card)
-  (define (find-stop hand card total)
-    (if (< total 17)
-      (find-stop (se hand card)  (+ total (card-value card)))
-      (hand)))
-  (find-stop '() card 0))
+(define (stop-at-17 hand)
+  (< (best-total hand) 17))
+
+;3. play-n
+
+(play-n strategy n)
