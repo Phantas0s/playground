@@ -54,7 +54,7 @@
 (define (ace-card? card)
   (equal? (first card) 'A))
 
-; Put image cards (including As) at the end
+; Put Ace cards (including Ace) at the end of the card stack
 (define (ace-last cards)
   (define (sort-cards-count cards acc)
     (cond ((equal? cards '()) acc)
@@ -62,11 +62,25 @@
           (else (sort-cards-count (bf cards) (se (first cards) acc)))))
   (sort-cards-count cards '()))
 
-; TODO needs to calculate ace-value with every ace, otherwise total not optimal
-; (define (choose-ace-value total ace-cards)
-;   (let ((ace-values (* (length ace-cards) 11)))
-;     (if (<= (ace-values) 21)
-;       (ace-values))))
+(define (add-sentence-number s)
+  (if (empty? s)
+    0
+    (+ (first s) (add-sentence-number (bf s)))))
+
+(define (word->number s number)
+  (if (empty? s)
+    '()
+    (se number (word->number (bf s) number))))
+
+; Choose the optimum value an Ace can take
+(define (best-ace-value total ace-cards)
+  (define (choose-ace-values total ace-values)
+    (let ((total-ace-value (add-sentence-number ace-values)))
+      (cond ((= (length ace-values) total-ace-value) ace-values)
+            ((> (+ total-ace-value total) 21) 
+             (choose-ace-values total (se (bf ace-values) 1)))
+            (else ace-values))))
+  (add-sentence-number (choose-ace-values total (word->number ace-cards 11))))
 
 (define (number-card? card)
   (number? (bl card)))
@@ -74,31 +88,43 @@
 (define (value-number-card card)
   (bl card))
 
+(define (card-value card)
+   (cond ((image-card? card) 10)
+        ((number-card? card) (value-number-card card))
+        ((ace-card? card) 1)
+        (else 0)))
+
 (define (best-total cards)
   (define (calc-total cs total)
     (if (empty? cs)
       total
       (let  ((card (first cs)))
-        (let ((card-value (cond ((image-card? card) 10)
-                                ((number-card? card) (value-number-card card))
-                                ; TODO bring that outside of let to calculate everything then set cs to empty sentence
-                                ((ace-card? card) (choose-ace-value cs total))
-                                (else 0))))
-          (calc-total (bf cs) (+ total card-value))))))
+          ; if we see an Ace it means we are at the end of the hand (cards ordered with ace-last)
+          (if (ace-card? card) 
+            (calc-total '() (+ total (best-ace-value total cs)))
+            (calc-total (bf cs) (+ total (card-value card)))))))
   (calc-total (ace-last cards) 0))
 
 ; Simple - two cards
 ; (best-total `(2S 2H))
 ; => 4
 
-; One As (10)
+; One Ace (10)
 ; (best-total `(2S 2H AD))
-; => 14
+; => 15
 
-;  As (1)
+;  Ace (1)
 ; (best-total `(10S 10H AD))
 ; => 21
 
-; (best-total ’(ad as 9h))
-; 29
-; DOESN"T WORK - should be 21
+; (best-total `(AD AC 9h))
+; => 21
+
+;2. Design stop-at-17
+
+(define (stop-at-17 card)
+  (define (find-stop hand card total)
+    (if (< total 17)
+      (find-stop (se hand card)  (+ total (card-value card)))
+      (hand)))
+  (find-stop '() card 0))
