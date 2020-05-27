@@ -89,7 +89,7 @@
   (bl card))
 
 (define (card-value card)
-   (cond ((image-card? card) 10)
+  (cond ((image-card? card) 10)
         ((number-card? card) (value-number-card card))
         ((ace-card? card) 1)
         (else 0)))
@@ -99,10 +99,10 @@
     (if (empty? cs)
       total
       (let  ((card (first cs)))
-          ; if we see an Ace it means we are at the end of the hand (cards ordered with ace-last)
-          (if (ace-card? card) 
-            (calc-total '() (+ total (best-ace-value total cs)))
-            (calc-total (bf cs) (+ total (card-value card)))))))
+        ; if we see an Ace it means we are at the end of the hand (cards ordered with ace-last)
+        (if (ace-card? card) 
+          (calc-total '() (+ total (best-ace-value total cs)))
+          (calc-total (bf cs) (+ total (card-value card)))))))
   (calc-total (ace-last cards) 0))
 
 ; Simple - two cards
@@ -122,9 +122,39 @@
 
 ;2. Design stop-at-17
 
-(define (stop-at-17 hand)
+(define (stop-at-17 hand card)
   (< (best-total hand) 17))
 
 ;3. play-n
 
-(play-n strategy n)
+(define (play-n strategy n)
+  (define (play strategy n result)
+    (if (= n 0) 
+      result
+      (play strategy (- n 1) (+ result (twenty-one strategy)))))
+  (play strategy n 0))
+
+;4. dealer-sensitive
+
+(define (number-card-equal? card val)
+  (cond ((empty? val) #f)
+        ((not (number-card? card)) #f)
+        (else (if (= (first val) (value-number-card card))
+                #t
+                (number-card-equal? card (bf val))))))
+
+
+(define (dealer-sensitive hand card)
+  (or (and (if (number-card? card)
+             (number-card-equal? card '(7 8 9 10))
+             (or (image-card? card) (ace-card? card)))
+           (< (best-total hand) 17))
+      (and (if (number-card? card)
+             (number-card-equal? card '(2 3 4 5 6))
+             #f)
+           (< (best-total hand) 12))))
+
+;5. stop-at
+
+(define (stop-at n)
+  (< (best-total hand) n))
