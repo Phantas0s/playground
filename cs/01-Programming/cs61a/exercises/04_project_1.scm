@@ -157,4 +157,37 @@
 ;5. stop-at
 
 (define (stop-at n)
-  (< (best-total hand) n))
+  (lambda (hand card) 
+    (< (best-total hand) n)))
+
+;6.Valentine's day 
+
+(define (has-card? suit hand)
+  (cond ((equal? hand '()) #f)
+        ((equal? (last (first hand)) suit) #t)
+        (else (has-card? suit (bf hand)))))
+
+(define (valentine hand card)
+  (if (has-card? 'H hand)
+    ((stop-at 19) hand card)
+    ((stop-at 17) hand card)))
+
+;7.Generalize valentine 
+
+(define (suit-strategy suit suit-strat no-suit-strat)
+  (lambda (hand card) 
+    (if (has-card? suit hand)
+      (suit-strat hand card)
+      (no-suit-strat hand card))))
+
+(define (valentine hand card)
+  ((suit-strategy 'H (stop-at 19) (stop-at 17)) hand card))
+
+;8 majority
+
+(define (majority strat-1 strat-2 strat-3)
+  (lambda (hand card)
+    (or (and (strat-1 hand card) (strat-2 hand card))
+        (and (strat-1 hand card) (strat-3 hand card))
+        (and (strat-2 hand card) (strat-3 hand card)))))
+(twenty-one (majority stop-at-17 dealer-sensitive valentine))
