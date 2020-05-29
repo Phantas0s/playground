@@ -82,4 +82,5 @@
 ; And Sussman. (The Kind Of Answer We’Re Looking For Is “The Sum Of B, N, And Counter Times
 ; Product Is Always Equal To 37.”)
 
- b power counter by product is always equals to b power counter
+;b power counter by product is always equals to b power counter
+
