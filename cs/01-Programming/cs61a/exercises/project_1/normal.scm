@@ -191,3 +191,9 @@
         (and (strat-1 hand card) (strat-3 hand card))
         (and (strat-2 hand card) (strat-3 hand card)))))
 (twenty-one (majority stop-at-17 dealer-sensitive valentine))
+
+; 9. reckless!
+
+(define (reckless strat)
+  (lambda (hand card)
+    (strat (butlast hand) card)))
