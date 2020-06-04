@@ -18,46 +18,6 @@
     (make-interval (/ 1.0 (upper-bound y))
                    (/ 1.0 (lower-bound y)))))
 
-; +-------------+
-; | Execise 2.7 |
-; +-------------+
-
-(define (make-interval a b) (cons a b))
-(define (upper-bound interval)
-  (car interval))
-(define (lower-bound interval)
-  (cdr interval))
-
-; **GOOD**
-; Would work if a is ALWAYS upper-bound and b always lower-bound. 
-; This is not clear in the book, but it would be better if both could be inversed.
-
-; here's another solution, more flexible
-
-(define (upper-bound interval)
-  (max (car interval) (cdr interval)))
-(define (lower-bound interval)
-  (min (car interval) (cdr interval)))
-
-; **PERFECT**
-
-; +---------------+
-; | Exercise 2.8: |
-; +---------------+
-
-(define (sub-interval x y)
-  (let ((fi (abs (- (lower-bound x) (lower-bound y))))
-        (si (abs (- (upper-bound x) (upper-bound y)))))
-    (make-interval (min fi si)
-                   (max fi si))))
-; **WRONG**
-; doesn't work for negative interval
-
-(define (sub-interval x y)
-  (make-interval (- (lower-bound x) (lower-bound y))
-                 (- (upper-bound x) (upper-bound y))))
-
-; **WRONG** 
 
 ; +---------------+
 ; | Exercise 2.10 |
