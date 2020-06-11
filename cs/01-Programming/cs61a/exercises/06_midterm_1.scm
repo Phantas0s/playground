@@ -10,35 +10,35 @@
 (every - (keep number? ’(the 1 after 909)))
 ; -910
 
-**WRONG**
+; **WRONG**
 
 ((lambda (a b) ((if (< b a) + *) b a)) 4 6)
 ; 10
 
-**WRONG**
+; **WRONG**
 
 (word (first ’(cat)) (butlast ’dog))
 
 ; cdo
 
-**WRONG**
+; **WRONG**
 
 (cons (list 1 2) (cons 3 4))
 
 ; ((1 2) 3 . 4)
 
-**WRONG**
+; **WRONG**
 
 (let ((p (list 4 5)))
   (cons (cdr p) (cddr p)))
 
 ; ((5))
 
-**WRONG**
+; **WRONG**
 
 ; (cadadr '((a (b) c) (d (e) f) (g (h) i))
 
-**GOOD**
+; **GOOD**
 
 ; error - there is one parent missing!!
 
@@ -58,7 +58,7 @@
 
 ; Θ(n)
 
-**WRONG**
+; **WRONG** - no recursion here!!
 
 ; (b) Indicate the order of growth in time of garply below:
 (define (garply n)
@@ -72,7 +72,7 @@
 
 ; Θ(n^2)
 
-**PERFECT**
+; **PERFECT**
 
 ; +-------------------------------------------+
 ; | Problem 3 (Normal and applicative order). |
@@ -88,7 +88,7 @@
 ; under applicative order? 2
 ; under normal order? 1
 
-**WRONG**
+; **WRONG**
 
 ; +------------------------------------------------+
 ; | Problem 4 (Iterative and recursive processes). |
@@ -103,7 +103,7 @@
     (butfirst-n (- num 1) (bf stuff))))
 ; iterative process
 
-**PERFECT**
+; **PERFECT**
 
 (define (member? thing stuff)
   (cond ((empty? stuff) #f)
@@ -111,7 +111,7 @@
         (else (member? thing (bf stuff)))))
 ; iterative process
 
-**PERECT**
+; **PERFECT**
 
 (define (addup nums)
   (if (empty? nums)
@@ -120,7 +120,7 @@
        (addup (bf nums)))))
 ; recursive process
 
-**PERFECT**
+; **PERFECT**
 
 
 ; +-----------------------------------+
@@ -171,7 +171,7 @@
     (cond ((pred (first s) (second s)) (in-order? pred (bf s)))
           (else #f))))
 
-**WRONG**
+; **WRONG**
 
 ; (Part b) Write a procedure order-checker that takes as its only argument a predicate
 ; function of two arguments. Your procedure should return a predicate function with one ar-
@@ -193,7 +193,7 @@
 (define (order-checker pred)
   (lambda (s) (in-order? pred s)))
 
-**PERFECT**
+; **PERFECT**
 
 ; Problem 7 (Data abstraction).
 ; We want to write a program that uses the time of day as an abstract data type. We’ll
@@ -242,7 +242,7 @@
 (define (time-print-form time)
   (word (hour time) ': (minute time) (category time)))
 
-**GOOD**
+; **GOOD**
 
 ; (b)
 
@@ -251,7 +251,7 @@
     (+ (* (+ 12 (hour time)) 100) (minute time))
     (+ (* (hour time) 100) (minute time))))
 
-**PERFECT**
+; **PERFECT**
 
 ; (c) 
 
@@ -262,3 +262,6 @@
 (define hour car)
 (define minute cadr)
 (define category caddr)
+
+
+; FINAL SCORE: 14/22
