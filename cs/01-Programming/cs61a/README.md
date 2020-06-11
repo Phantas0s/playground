@@ -24,6 +24,10 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * [Project 1](./course/reader/nodate-21.pdf)
 * [Project 1 Code](./course/reader/twenty-one.scm)
 
+* [Midterm 1-1](./course/reader/mt1-1.pdf)
+* [Midterm 1-2](./course/reader/mt1-2.pdf)
+* [Midterm 1-3](./course/reader/mt1-3.pdf)
+
 * [Vol. 2](./course/reader/vol2.html)
 
 * [Solutions homework/projects from another student](https://github.com/Phantas0s/cs61a-sp11)
