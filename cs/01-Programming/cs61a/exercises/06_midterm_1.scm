@@ -264,4 +264,4 @@
 (define category caddr)
 
 
-; FINAL SCORE: 14/22
+; FINAL SCORE: 15/23 (1 point was given for giving your name / grade)
