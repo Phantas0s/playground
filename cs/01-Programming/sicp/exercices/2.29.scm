@@ -215,3 +215,5 @@
 
 (define (mobile? structure)
   (pair? structure))
+
+**GOOD**
