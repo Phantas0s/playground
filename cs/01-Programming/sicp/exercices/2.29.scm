@@ -10,14 +10,14 @@
 ; (for example, using list):
 
 (define (make-mobile left right)
-  (list left right))
+  (cons left right))
 
 ; A branch is constructed from a length (which must be a
 ; number) together with a structure, which may be either a
 ; number (representing a simple weight) or another mobile:
 
 (define (make-branch length structure)
-  (list length structure))
+  (cons length structure))
 
 ; a. Write the corresponding selectors left-branch and
 ; right-branch, which return the branches of a mobile,
@@ -189,3 +189,29 @@
 (balanced? mob-unb-3)
 (balanced? mob-bal)
 (balanced? mob-bal-2)
+
+
+;d 
+
+; Here are the changes to make to replace lists by pairs
+
+(define (make-mobile left right)
+  (cons left right))
+
+(define (make-branch length structure)
+  (cons length structure))
+
+(define (left-branch mobile)
+  (car mobile))
+
+(define (right-branch mobile)
+  (cdr mobile))
+
+(define (branch-length branch)
+  (car branch))
+
+(define (branch-structure branch)
+  (cdr branch))
+
+(define (mobile? structure)
+  (pair? structure))
