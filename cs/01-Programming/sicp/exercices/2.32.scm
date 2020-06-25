@@ -24,6 +24,7 @@ Complete the following definition of a
 ; (subset (1 2 3) (subset 1 2) (subset 1) (subset '()) -> return '()
 ; Last expension return '(). Then, reduction phase.
 ; Since we reached our recursion base case, the last line will be executed at each reduction.
+; Process will be map -> append
 
 ; 1. s = '(3)
 ;    rest = '(())
@@ -40,3 +41,27 @@ Complete the following definition of a
 ;    append -> '(() (3) (2) (2 3) (1) (1 3) (1 2) (1 2 3))
 
 **PERFECT**
+
+; Other interesting reflexion
+
+; This problem becomes easy when you evolve the process manually: 
+
+; (subsets '(1 2 3))
+; rest ← (subsets '(2 3))
+;        rest ← (subsets '(3))
+;               rest ← (subsets '())
+;                      '(())
+;               (append '(()) (map ⟨…⟩ '(())))
+;               '(() (3))
+;        (append '(() (3)) (map ⟨…⟩ '(() (3))))
+;        '(() (3) (2) (2 3))
+; (append '(() (3) (2) (2 3)) (map ⟨…⟩ '(() (3) (2) (2 3))))
+; '(() (3) (2) (2 3) (1) (1 3) (1 2) (1 2 3))
+
+; The problem now is to find the function (λ (x)) to map, which has the characteristics: 
+
+; '(())               ⟼ '((3))                     given s = '(3)
+; '(() (3))           ⟼ '((2) (2 3))               given s = '(2 3)
+; '(() (3) (2) (2 3)) ⟼ '((1) (1 3) (1 2) (1 2 3)) given s = '(1 2 3)
+
+; Which is plainly the result of prepending the first item of S to each sublist X; that is, to cons the car of S onto each sublist. In Scheme parlance, (λ (x) (cons (car s) x). 

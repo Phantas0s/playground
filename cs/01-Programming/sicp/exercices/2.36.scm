@@ -18,10 +18,27 @@
 ;           (accumulate-n op init
 ;                         ⟨??⟩))))
 
+(define (accumulate op initial sequence)
+  (if (null? sequence)
+    initial
+    (op (car sequence)
+        (accumulate op initial (cdr sequence)))))
+
+(accumulate + 0 (list 1 2 3 4 5))
+
 (define (accumulate-n op init seqs)
   (if (null? (car seqs))
-    nil
+    '()
     (cons (accumulate op init
-                      ⟨??⟩)
+                      (map (lambda (x) (car x)) seqs))
           (accumulate-n op init
-                        ⟨??⟩))))
+                        (map (lambda (x) (cdr x)) seqs)))))
+
+
+(accumulate-n + 0 (list (list 1 2 3) (list 4 5 6)
+(list 7 8 9) (list 10 11 12)))
+
+**PERFECT**
+
+; (lambda (x) (car x)) can be replaced by car... same for the other recursion
+; Arguably, the former is more explicit.
