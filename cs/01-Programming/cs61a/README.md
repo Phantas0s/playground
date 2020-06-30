@@ -34,10 +34,15 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 
 ## Using Racket
 
-### Source
+### Other
 
+#### Racket package
 * [Planet Racket](https://planet.racket-lang.org/)
 * [Simply scheme](https://planet.racket-lang.org/package-source/dyoo/simply-scheme.plt/2/2/planet-docs/manual/index.html)
+
+#### Sources
+
+* [Simply scheme](./scheme) # From ftp://ftp.cs.berkeley.edu/pub/scheme
 
 ### Package to install
 
