@@ -1,0 +1,72 @@
+Errata to the first edition of _Simply Scheme_:
+
+p. 25: add to list of functions:
+	*, appearances, even?, if, item, number?, odd?, vowel?
+
+p. 79: The extra parens in the cond example aren't boldface.
+
+p. 93: Same procedure is sometimes first-two, sometimes sent-of-first-two.
+
+p. 128: Remove "as we did for the tic-tac-toe program."
+
+p. 139: "The second argument to EVERY must..." should be "The first argument."
+
+p. 188: We say we wrote REVERSE in Chapter 8, but we actually called it
+	BACKWARDS there.
+
+p. 278: It's spelled "Bjarne."
+
+p. 312: The fifth line in the definition of PARSE-HELPER should be
+		(handle-op '() operators operands)
+	rather than
+		(handle-op '() operands operators)
+
+p. 315: (in-tree? 'venezia (list-ref (children world-tree) 2))
+	Change 2 to 1.
+
+pp. 158-159: The illustrations are missing some parentheses.
+
+p. 231: "Nonillion" and "decillion" spelled wrong!
+
+p. 383: ex. 21.3 should talk about procedure functions-loop
+	instead of procedure functions.
+
+p. 405:  "thie" in first line should be "this".
+
+pp. 424, 426, 427:  The totals on line 9 of the spreadsheets
+		    should be in columns D and F, not B and D.
+
+p. 455:  "a expression" should be "an expression".
+
+p. 517:  Schemers, Inc. has a new address:
+
+    Schemers Inc.
+    2136 NE 68th St., Suite 401
+    Ft. Lauderdale, FL  33308
+    (305) 776-7376.
+
+p. 522:  Aubrey Jaffer (author of SCM) has a new address:
+
+        Aubrey Jaffer
+        33 Buehler Rd.
+        Bedford MA 01730-1129
+
+p. 523: The Scheme repository has moved to cs.indiana.edu:pub/scheme-repository
+
+pp. 571, 577:  Replace the phrase "Appendix E, an alphabetical list
+of primitives with one-line descriptions of what they do" with
+"the Alphabetical Table of Scheme Primitives on page 557."
+
+----------
+
+Change to simply.scm version 3.5 --> version 3.6:
+
+At line 853 (in read-line), version 3.5 has
+
+	(helper 0 0 (string-length string)))
+
+Replace that with three lines:
+
+        (if (eof-object? string)
+            string
+            (helper 0 0 (string-length string))))
