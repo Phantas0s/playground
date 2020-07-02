@@ -22,7 +22,9 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * [Lab assignments](./course/reader/nodate-labs.pdf)
 
 * [Project 1](./course/reader/nodate-21.pdf)
+
 * [Project 1 Code](./course/reader/twenty-one.scm)
+* [Project 2 - Exercises SICP 2.2.4](./course/reader/twenty-one.scm)
 
 * [Midterm 1-1](./course/reader/mt1-1.pdf)
 * [Midterm 1-2](./course/reader/mt1-2.pdf)
@@ -31,6 +33,12 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * [Vol. 2](./course/reader/vol2.html)
 
 * [Solutions homework/projects from another student](https://github.com/Phantas0s/cs61a-sp11)
+
+## Additional Files
+
+From [cs61a library](https://inst.cs.berkeley.edu/~cs61a/sp09/library/)
+
+* [Library](./course/library)
 
 ## Using Racket
 
