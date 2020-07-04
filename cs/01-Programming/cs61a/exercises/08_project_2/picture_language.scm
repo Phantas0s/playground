@@ -32,7 +32,7 @@
       (below (flip-vert half) half))))
 
 ; +---------------+
-; | exercise 2.24 |
+; | exercise 2.44 |
 ; +---------------+
 
 (define (up-split painter n)
@@ -63,12 +63,12 @@
 
 
 ; +---------------+
-; | exercise 2.25 |
+; | exercise 2.45 |
 ; +---------------+
 
 
 ; right-split and up-split can be expressed
-; as instances of a general spliing operation. Define a pro-
+; as instances of a general splitting operation. Define a pro-
 ; cedure split with the property that evaluating
 
 (define right-split (split beside below))
@@ -77,6 +77,15 @@
 ; produces procedures right-split and up-split with the
 ; same behaviors as the ones already defined.
 
-(define split ())
+(define (split orig splitted)
+  (lambda (painter n)
+  (if (= n 0) 
+      painter
+  (let ((smaller ((split orig splitted) painter (- n 1))))
+    (orig painter (splitted smaller smaller))))))
+
+**GOOD**
 
 ; ----------------+
+
+
