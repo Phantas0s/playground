@@ -24,7 +24,7 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * [Project 1](./course/reader/nodate-21.pdf)
 
 * [Project 1 Code](./course/reader/twenty-one.scm)
-* [Project 2 - Exercises SICP 2.2.4](./course/reader/twenty-one.scm)
+* Project 2 - All exercises from SICP section 2.2.4
 
 * [Midterm 1-1](./course/reader/mt1-1.pdf)
 * [Midterm 1-2](./course/reader/mt1-2.pdf)

@@ -136,7 +136,11 @@
   (make-vect (* scalar (xcor-vect vect))
         (* scalar (ycor-vect vect))))
 
-**PERFECT**
+; **PERFECT**
+
+(define v1 (make-vect 1 1))
+(define v2 (make-vect 1 2))
+(define v3 (make-vect 1 2))
 
 ; +---------------+
 ; | exercise 2.47 |
@@ -185,7 +189,9 @@
 ; (define (edge2-frame frame)
 ;   (cddr frame))
 
-**GOOD**
+; **GOOD**
+
+(define f1 (make-frame v1 v2 v3))
 
 ; -----------------
 
@@ -214,7 +220,10 @@
 (define (end-segment s)
   (cadr s))
 
-**PEFECT**
+; **PEFECT**
+
+(define s1 (make-segment v1 v2))
+(define s2 (make-segment v2 v3))
 
 ; +---------------+
 ; | exercise 2.49 |
@@ -234,4 +243,28 @@
 
 ; d. The wave painter.
 
+(define (outline-segments frame)
+  (let ((v0 (origin-frame frame))
+        (v1 (edge1-frame frame))
+        (v2 (edge2-frame frame))) 
+    (list (make-segment v0 v1)
+          (make-segment v0 e2)
+          (make-segment e2  )
+          (make-segment (edge1-frame frame) (origin-frame frame)))))
 
+(define (outline-painter frame)
+  ((segments->painter (outline-segments frame))) frame)
+
+ ; (define (outline->painter frame) 
+ ;   (let ((origin2 (make-vect  
+ ;                   (- (xcor-vect (edge2-frame frame))  
+ ;                      (xcor-vect (origin-frame frame))) 
+ ;                   (- (ycor-vect (edge1-frame frame))  
+ ;                      (ycor-vect (origin-frame frame)))))) 
+ ;     (segments->painter  
+ ;      (list
+ ;       (make-segment (origin-frame frame) (edge1-frame frame)) 
+ ;       (make-segment (edge1-frame frame) origin2) 
+ ;       (make-segment origin2 (edge2-frame frame)) 
+ ;       (make-segment (edge2-frame frame) (origin-frame frame)))))) 
+  
