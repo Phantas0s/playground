@@ -13,6 +13,7 @@
 ; is hastily called to search for a strategy to integrate the files
 ; that will satisfy headquarters’ needs while preserving the
 ; existing autonomy of the divisions.
+
 ; Show how such a strategy can be implemented with data-
 ; directed programming. As an example, suppose that each
 ; division’s personnel records consist of a single file, which
@@ -21,6 +22,7 @@
 ; thermore, each employee’s record is itself a set (structured
 ; differently from division to division) that contains informa-
 ; tion keyed under identifiers such as address and salary.
+
 ; In particular:
 
 ; a. Implement for headquarters a get-record procedure
@@ -45,3 +47,53 @@
 ; d.When Insatiable takes over a new company, what changes
 ; must be made in order to incorporate the new person-
 ; nel information into the central system?
+
+; a.
+; Assuming we have an operation table with 
+; get-record implementation different for each division.
+; We assume too that a procedure division take a file
+; as argument and return a division tag.
+; It means that the division needs to be somehow found from the files (from the filename for example)
+
+(define (get-record employee file)
+  (let ((proc (get 'get-record (division file))))
+  (proc employee)))
+
+; The division is the type which should be supplied. 
+; How to get the record depends on the division, since every division has a different 
+
+; b.
+
+(define (get-salary record file)
+  (let ((proc (get 'get-salary (division file))))
+  (proc record)))
+
+; The good record for the division needs to be provided (using get-record), otherwise it won't work.
+; Another more secure solution would be first get the record, then the salary.
+
+(define (get-salary employee file)
+  (let ((record ((get 'get-record (division file)) employee))
+        (proc (get 'get-salary (division file))))
+  (proc record)))
+
+; c.
+; We assume that 
+(define (find-employee-record employee files)
+    (define (find record files)
+    (if (not (empty? record))
+      record
+      (find (get 'get-record (division (car files)) (cdr files)))))
+  (find '() files))
+
+; d
+; Insatiable will only need to change the operation table.
+; It needs to add new procedures in the table for the new division.
+; More precisely, it needs to implement get-salary and get-record for the new division
+; It might as well rename every files to get the division from the file.
+; Easy with a bash scripts :D
+
+**GOOD?**
+
+; Could have been better by adding the tag to each record / salary returned, to know of what type they are...
+
+
