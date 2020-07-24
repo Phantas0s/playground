@@ -64,3 +64,7 @@ You might need to require the package berkeley from the REPL.
 ## Simply Scheme
 
 * `racket -i -p dyoo/simply-scheme -l xrepl`
+
+## Point of interest
+
+* Exercise 2.76 (from the book) ask an interesting question. There are many parameters to take into account.
