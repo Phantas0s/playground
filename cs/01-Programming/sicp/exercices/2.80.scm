@@ -1,9 +1,8 @@
-; Define a generic equality predicate equ? that
-; tests the equality of two numbers, and install it in the generic
-; arithmetic package. This operation should work for ordi-
-; nary numbers, rational numbers, and complex numbers.
+; Define a generic predicate =zero? that tests
+; if its argument is zero, and install it in the generic arith-
+; metic package. This operation should work for ordinary
+; numbers, rational numbers, and complex numbers.
 
-; 
 (define (install-scheme-number-package)
   (define (tag x) (attach-tag 'scheme-number x))
 
@@ -19,8 +18,8 @@
   (put 'div '(scheme-number scheme-number)
        (lambda (x y) (tag (/ x y))))
 
-  (put 'equ? (scheme-number scheme-number)
-       (lambda (x y) (= x y)))
+  (put '=zero? (scheme-number)
+       (lambda (x) (= x 0)))
 
   (put 'make 'scheme-number (lambda (x) (tag x)))
   'done)  
@@ -56,8 +55,8 @@
     (make-rat (* (numer x) (denom y))
               (* (denom x) (numer y))))
 
-  (define (equ-rat? x y)
-    (and (= (numer x) (numer y)) (= (denom x) (denom y))))
+  (define (=zero-rat? x)
+    (and (= (numer x) 0)))
 
   ;; interface to rest of the system
   (define (tag x) (attach-tag 'rational x))
@@ -74,8 +73,8 @@
   (put 'div '(rational rational)
        (lambda (x y) (tag (div-rat x y))))
 
-  (put 'equ? '(rational rational)
-       (lambda (x y) (equ-rat? x y)))
+  (put '=zero? '(rational)
+       (lambda (x) (=zero-rat? x)))
 
   (put 'make 'rational
        (lambda (n d) (tag (make-rat n d))))
@@ -109,9 +108,9 @@
     (make-from-mag-ang (/ (magnitude z1) (magnitude z2))
                        (- (angle z1) (angle z2))))
 
-  (define (equ-complex? z1 z2)
-    (and (= (real-part z1) (real-part z2))
-         (= (imag-part z1) (imag-part z2))))
+  (define (=zero-complex? z1)
+    (and (= (real-part z1) 0)
+         (= (imag-part z1 0))))
 
   ;; interface to rest of the system
   (define (tag z) (attach-tag 'complex z))
@@ -135,7 +134,7 @@
        (lambda (r a) (tag (make-from-mag-ang r a))))
   'done)
 
-  (put 'equ? '(complex complex) equ-complex?) 
+  (put '=zero? '(complex) =zero-complex?) 
 
 (define (make-complex-from-real-imag x y)
   ((get 'make-from-real-imag 'complex) x y))
@@ -143,7 +142,4 @@
 (define (make-complex-from-mag-ang r a)
   ((get 'make-from-mag-ang 'complex) r a))
 
-; **WRONG** **GOOD**
-; The equality are not good (my poor math skills...) but the principle is correct
-
-
+; **PERFECT**
