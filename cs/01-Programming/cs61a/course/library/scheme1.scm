@@ -108,7 +108,6 @@
 (define if-exp? (exp-checker 'if))
 (define lambda-exp? (exp-checker 'lambda))
 
-
 ;; SUBSTITUTE substitutes actual arguments for *free* references to the
 ;; corresponding formal parameters.  For example, given the expression
 ;;
