@@ -22,5 +22,10 @@
 ; 9. look-up is called with '+ (and params + args)
 ; 10. Maybe-quote is called
 ; 11. It's a procedure so it's returned
-; ?????
+; 12. Look up is called with 'x
+; 13. Maybe-quote is called
+; 14. 5 is returned
+; 15. x has been replaced with 5, (+ 5 3) is returned, eval-1 is called
+; 16. The procedure + is applied to its arguments
+; 17; 8 is returned
 

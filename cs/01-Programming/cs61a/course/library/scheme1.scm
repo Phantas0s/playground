@@ -184,7 +184,7 @@
 (define (maybe-quote value)
   (cond ((lambda-exp? value) value)
 	((constant? value) value)
-	((procedure? value) value)	; real Scheme primitive procedure
+	((procedure? value) value)
 	(else (list 'quote value))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
