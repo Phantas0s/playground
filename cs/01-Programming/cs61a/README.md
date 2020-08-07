@@ -36,11 +36,19 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 
 * [Solutions homework/projects from another student](https://github.com/Phantas0s/cs61a-sp11)
 
-## Additional Files
+## Code
 
-From [cs61a library](https://inst.cs.berkeley.edu/~cs61a/sp09/library/)
+To load code in racket REPL: `(load "./course/library/scheme0.scm")`
 
-* [Library](./course/library)
+### Interpreter 
+
+* [First version](./course/library/scheme0.scm)
+* [Second version](./course/library/scheme1.scm)
+* [Third version](./course/library/scheme2.scm)
+
+### OOP
+
+* [Implementation](./course/library/obj.scm)
 
 ## Using Racket
 
