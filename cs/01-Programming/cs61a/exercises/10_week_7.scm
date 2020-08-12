@@ -12,7 +12,7 @@
 ; 0 and 9, while (ask r10 ’count) will return the number of random numbers r10 has
 ; created.
 
-(require "./course/library/obj-racket.scm")
+(require "./course/extra/cs61as/library/obj.rkt")
 (define-class (random-generator range)
   (instance-vars (c 0))
   (method (number)
