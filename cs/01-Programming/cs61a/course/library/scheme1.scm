@@ -5,7 +5,7 @@
 
 (define (scheme-1)
   (display "Scheme-1: ")
-  ; (flush)
+  (flush)
   (print (eval-1 (read)))
   (scheme-1))
 

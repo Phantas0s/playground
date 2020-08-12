@@ -39,6 +39,7 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 ## Code
 
 To load code in racket REPL: `(load "./course/library/scheme0.scm")`
+If something doesn't work in racket, see "./course/extra/cs61as". There are alternative to many things for racket.
 
 ### Interpreter 
 
@@ -48,8 +49,8 @@ To load code in racket REPL: `(load "./course/library/scheme0.scm")`
 
 ### OOP
 
-* [Implementation](./course/library/obj.scm)
-* [Implementation for Racket](./course/library/obj-racket.scm)
+* [Implementation](./course/library/obj.scm) - Doesn't work in Racket
+* [Implementation for Racket](./course/extra/cs61as/library/obj.rkt) - [Source](https://www-inst.eecs.berkeley.edu/~cs61as/library)
 
 ## Using Racket
 
