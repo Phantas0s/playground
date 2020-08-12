@@ -49,6 +49,7 @@ To load code in racket REPL: `(load "./course/library/scheme0.scm")`
 ### OOP
 
 * [Implementation](./course/library/obj.scm)
+* [Implementation for Racket](./course/library/obj-racket.scm)
 
 ## Using Racket
 
@@ -69,7 +70,7 @@ To load code in racket REPL: `(load "./course/library/scheme0.scm")`
 
 You might need to require the package berkeley from the REPL.
 
-`(require berkley)`
+`(require berkeley)`
 
 ## Simply Scheme
 
