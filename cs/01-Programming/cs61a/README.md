@@ -57,6 +57,7 @@ If something doesn't work in racket, see "./course/extra/cs61as". There are alte
 ### Other
 
 #### Racket package
+
 * [Planet Racket](https://planet.racket-lang.org/)
 * [Simply scheme](https://planet.racket-lang.org/package-source/dyoo/simply-scheme.plt/2/2/planet-docs/manual/index.html)
 

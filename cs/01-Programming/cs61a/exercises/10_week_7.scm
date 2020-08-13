@@ -21,7 +21,7 @@
             r))
   (method (count) c))
 
-**PERFECT**
+; **PERFECT**
 
 ; Define the class coke-machine. The instantiation arguments for a coke-machine are
 ; the number of Cokes that can fit in the machine and the price (in cents) of a Coke:
@@ -67,22 +67,22 @@
                       (set! money (- money price))
                       money))))
 
-**PERFECT**
+; **PERFECT**
 
 
 ; We are going to use objects to represent decks of cards.
 ;  You are given the list
 ; ordered-deck containing 52 cards in standard order:
 
-; (define ordered-deck ’(AH 2H 3H ... QH KH AS 2S ... QC KC))
+(define ordered-deck ’(AH 2H 3H ... QH KH AS 2S ... QC KC))
 
 ; You are also given a function to shuffle the elements of a list:
 
 (define (shuffle deck)
   (if (null? deck)
-    ’()
+    '()
     (let ((card (nth (random (length deck)) deck)))
-      (cons card (shuffle (remove card deck))) )))
+      (cons card (shuffle (remove card deck))))))
 
 ; A deck object responds to two messages: deal and empty?. It responds to deal by
 ; returning the top card of the deck, after removing that card from the deck; if the deck is
@@ -91,3 +91,47 @@
 ; Write a class definition for deck. When instantiated, a deck object should contain a shuffled
 ; deck of 52 cards.
 
+(define (nth n l)
+  (if (or (> n (length l)) (< n 0))
+    (error "Index out of bounds.")
+    (if (eq? n 0)
+      (car l)
+      (nth (- n 1) (cdr l)))))
+
+(define-class (deck)
+  (instance-vars (cards '(AH 2H 3H QH KH AS 2S QC KC)))
+  (initialize (set! cards (shuffle cards)))
+  (method (empty?)
+          (empty? cards))
+  (method (deal)
+          (if (empty? cards)
+            cards
+            (let ((first-card (car cards))) 
+              (set! cards (cdr cards))
+              first-card))))
+
+; **PERFECT**
+
+; We want to promote politeness among our objects. Write a class miss-manners that
+; takes an object as its instantiation argument. The new miss-manners object should accept
+; only one message, namely please. The arguments to the please message should be, first,
+; a message understood by the original object, and second, an argument to that message.
+; (Assume that all messages to the original object require exactly one additional
+; argument.) Here is an example using the person class from the upcoming adventure
+; game project:
+
+; > (define BH (instantiate person ’Brian BH-office))
+; > (ask BH ’go ’down)
+; BRIAN MOVED FROM BH-OFFICE TO SODA
+; > (define fussy-BH (instantiate miss-manners BH))
+; > (ask fussy-BH ’go ’east)
+; ERROR: NO METHOD GO
+; > (ask fussy-BH ’please ’go ’east)
+; BRIAN MOVED FROM SODA TO PSL
+
+(define-class (miss-manners obj)
+  (instance-vars (object obj))
+  (method (please msg arg)
+          (ask obj msg arg)))
+
+; **PERFECT**
