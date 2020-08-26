@@ -15,13 +15,15 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 
 ## Course Reader
 
+* [Syllabus](./course/reader/course_syllabus.pdf)
 * [Vol. 1](./course/reader/vol1.html)
 
 * [Lecture notes](./course/reader/notes.pdf)
+* [OOP Above the lines](./course/reader/aboveline.pdf)
+* [OOP Reference Manual](./course/reader/ref-man.pdf)
+
 * [Homework](./course/reader/nodate-hw.pdf)
 * [Lab assignments](./course/reader/nodate-labs.pdf)
-
-* [OOP Above the lines](./course/reader/aboveline.pdf)
 
 * [Project 1](./course/reader/nodate-21.pdf)
 
@@ -31,6 +33,10 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * [Midterm 1-1](./course/reader/mt1-1.pdf)
 * [Midterm 1-2](./course/reader/mt1-2.pdf)
 * [Midterm 1-3](./course/reader/mt1-3.pdf)
+
+* [Midterm 2-1](./course/reader/mt2-1.pdf)
+* [Midterm 2-2](./course/reader/mt2-2.pdf)
+* [Midterm 2-3](./course/reader/mt2-3.pdf)
 
 * [Vol. 2](./course/reader/vol2.html)
 
