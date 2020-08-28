@@ -20,6 +20,7 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 
 * [Lecture notes](./course/reader/notes.pdf)
 * [OOP Above the lines](./course/reader/aboveline.pdf)
+* [OOP Above the lines](./course/reader/belowline.pdf)
 * [OOP Reference Manual](./course/reader/ref-man.pdf)
 
 * [Homework](./course/reader/nodate-hw.pdf)
