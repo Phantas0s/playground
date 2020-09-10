@@ -1,0 +1,54 @@
+" https://www.youtube.com/watch?v=Gs1VDYnS-Ac&t=1917s
+" `vi -Nu NORC` launch Vim without any config
+
+In Vim:
+
+:filetype plugin indent on
+:filetype detect 
+:syntax on
+:set hidden
+
+let $RTP=split(&runtimepath, ',')[0]
+let $RC=$HOME/.vim/vimrc
+
+set shiftwidth=4 tabstop=4 expandtab=4
+" :retab
+
+" runtimepath
+
+" user home after folder ovverite $VIMRUNTIME
+" q: to go directly in command line history (same as CTRL+F)
+
+" 3. Fix your Path
+" To look for something, set your :path (every part of yor project frequently explored)
+" Most of the time current directory should be project root with :cd
+" For browsing outside project, use :lcd and :setlocale path
+
+set path=.,** " include every subdirecotry of current directory
+
+set wildignore=*.pyc " files you don't care; in ftplugin
+
+" include-search look at includes in current file and include them in the search.
+" set include?
+" :ij jump to symbole in include-search
+" :checkpath! check what files included
+" Can configure a regex for every import in a file translate to a filepath
+
+" See set include in ftplugin
+" option define can constrain the set of results from include
+" can be used with :dj to search in this new constraints set of files
+
+" Compiler error in Go
+
+let current_compiler = go
+CompilerSet makeprg=go\ build\ ./...
+CompilerSet errorformat=%E%f:%l%c:m
+" %E = Error message
+" %f = filename
+" %l = line
+" %c = column
+" %m = messages
+
+" Portable configuration
+
+
