@@ -30,6 +30,7 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 
 * [Project 1 Code](./course/reader/twenty-one.scm)
 * Project 2 - All exercises from SICP section 2.2.4
+* [Project 3](./course/reader/nodate-adv.txt)
 
 * [Midterm 1-1](./course/reader/mt1-1.pdf)
 * [Midterm 1-2](./course/reader/mt1-2.pdf)
@@ -42,6 +43,10 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * [Vol. 2](./course/reader/vol2.html)
 
 * [Solutions homework/projects from another student](https://github.com/Phantas0s/cs61a-sp11)
+
+## Tools
+
+[Envdraw](./course/cs61as-library/envdraw/envdraw.html)
 
 ## Code
 
