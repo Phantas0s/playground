@@ -50,8 +50,9 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 
 ## Code
 
-To load code in racket REPL: `(load "./course/library/scheme0.scm")`
-If something doesn't work in racket, see "./course/extra/cs61as". There are alternative to many things for racket.
+* To load code in racket REPL: `(load "./course/library/scheme0.scm")`
+* If something doesn't work in racket, see "./course/extra/cs61as". There are alternative to many things for racket.
+* To have `set-car!` and `set-cdr!`: `(require rnrs/mutable-pairs-6)`
 
 ### Interpreter 
 
@@ -86,9 +87,9 @@ You might need to require the package berkeley from the REPL.
 
 `(require berkeley)`
 
-## Simply Scheme
+## Simply Scheme and neil/sicp (for set-car! and set-cdr!)
 
-* `racket -i -p dyoo/simply-scheme -l xrepl`
+* `racket -i -p dyoo/simply-scheme -p neil/sicp -l xrepl`
 
 ## Point of interest
 
