@@ -1,5 +1,7 @@
 ; One dimension
 
+(define (make-table) (list '*table*))
+
 (define (lookup key table)
   (let ((record (assoc key (cdr table))))
     (if record
@@ -20,10 +22,11 @@
                       (cdr table)))))
   'ok)
 
+; Two dimensions
+
 (define (make-table)
   (list '*table*))
 
-; Two dimensions
 
 (define (lookup key-1 key-2 table)
   (let ((subtable
@@ -93,28 +96,28 @@
 ; lookup and insert! procedures should take as input a list
 ; of keys used to access the table.
 
-(define (lookup table . keys)
-  (let ((subtable
-          (assoc key-1 (cdr table))))
-    (if subtable
-      (let ((record
-              (assoc key-2 (cdr subtable))))
-        (if record
-          (cdr record)
-          false))
-      false)))
+(define (lookup keys table)
+  (if (empty? keys)
+    #f
+    (let ((element (assoc (car keys) (cdr table))))
+      (cond ((not element) #f)
+            ((pair? (cdr element)) (lookup (cdr keys) element))
+            (else (cdr element))))))
 
-(define (insert! value table . keys)
-  (let ((subtable (assoc key-1 (cdr table))))
-    (if subtable
-      (let ((record (assoc key-2 (cdr subtable))))
-        (if record
-          (set-cdr! record value)
-          (set-cdr! subtable
-                    (cons (cons key-2 value)
-                          (cdr subtable)))))
-      (set-cdr! table
-                (cons (list key-1
-                            (cons key-2 value))
-                      (cdr table)))))
-  'ok)
+(define (insert! keys value table)
+  (if (empty? keys)
+    #f
+    (let ((element (assoc (car keys) (cdr table))))
+      (cond ((not element) (add-keys! keys value table))
+            ((pair? (cdr element)) (lookup (cdr keys) element))))))
+
+(define (add-keys! keys value table)
+  (cond ((empty? keys) 'ok)
+        ((= (length keys) 1) 
+         (set-cdr! table
+                   (cons (cons (car keys) value)
+                         (cdr table))))
+        (else (set-cdr! table
+                        (cons (list (car keys))
+                              (cdr table)))
+              (add-keys! (cdr keys) value (cdadr table)))))
