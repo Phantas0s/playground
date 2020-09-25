@@ -120,4 +120,10 @@
         (else (set-cdr! table
                         (cons (list (car keys))
                               (cdr table)))
-              (add-keys! (cdr keys) value (cdadr table)))))
+              (add-keys! (cdr keys) value (cadr table)))))
+
+; test
+
+(define t1 (make-table))
+(insert! (list 'animal 'pet 'cat) 'meow t1)
+(lookup (list 'animal 'pet 'cat) t1)
