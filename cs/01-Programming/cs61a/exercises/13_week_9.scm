@@ -57,3 +57,51 @@
 
 (define v (vector 1 2 3))
 (vector-filter (lambda (x) (> x 1)) v)
+
+**GOOD ENOUGH**
+
+; the time complexity for both solution is Big Theta of n.
+
+; Exercise 3
+
+;
+; (a) Write bubble-sort!, which takes a vector of numbers and rearranges them to be in
+; increasing order. (You’ll modify the argument vector; don’t create a new one.) It uses the
+; following algorithm:
+
+; [1] Go through the array, looking at two adjacent elements at a time, starting with elements
+; 0 and 1. If the earlier element is larger than the later element, swap them. Then look at
+; the next overlapping pair (0 and 1, then 1 and 2, etc.).
+
+; [2] Recursively bubble-sort all but the last element (which is now the largest element).
+
+; [3] Stop when you have only one element to sort.
+
+; (b) Prove that this algorithm really does sort the vector. Hint: Prove the parenthetical
+; claim in step [2].
+
+; (c) What is the order of growth of the running time of this algorithm?
+
+(define (bubble-sort! vec)
+  (define (pass n)
+    (if (= n (- (vector-length vec) 1))
+      vec
+      (begin (cond ((> (vector-ref vec n) (vector-ref vec (+ n 1)))
+                    (let ((firstval (vector-ref vec n)))
+                      (vector-set! vec n (vector-ref vec (+ n 1)))
+                      (vector-set! vec (+ n 1) firstval))))
+             (pass (+ n 1)))))
+
+  (define (multipass n)
+    (if (= n 0)
+      vec
+      (begin (pass 0)
+             (multipass (- n 1)))))
+  (multipass (vector-length vec)))
+
+;test 
+
+(define v (vector 4 2 1 3))
+(vector-filter (lambda (x) (> x 1)) v)
+
+; This algorithm has a quadratic time of complexity.
