@@ -19,22 +19,29 @@ that avoids the amusing second meaning, while retaining the brevity of a typical
 (b)  Large hole appears in High Street. City authorities are looking into it.
 (c)  Mayor says bus passengers should be belted.
 
+(a) Sisters are reunited after ten years, in the checkout line at Safeway.
+(b) Large hole appears in High Street. City authorities try to solve the problem.
+(c) Mayor says bus passengers should wear a belt.
+
 ## Exercise 3
 
 The following notice was posted on the wall of a hospital emergency room: "No head injury is too trivial to ignore."
 
 Reformulate to avoid the unintended second reading.
-
 (The context for this sentence is so strong that many people have difficulty seeing there is an alternative meaning.)
+
+A head injury is never without consequences.
 
 ## Exercise 4
 
 You often see the following notice posted in elevators:
 
-" In case of fire, do not use elevator." 
+"In case of fire, do not use elevator." 
 
 This one always amuses me. Comment on the two meanings and reformulate to avoid the unintended second reading.
 (Again, given the context for this notice, the ambiguity is not problematic.)
+
+Someone could think that someone else could try to use the elevator to stop the fire. Better solution: The elevator is prohibited in case of fire.
 
 ## Exercise 5
 
@@ -43,9 +50,15 @@ bottom:
 
 "This page intentionally left blank."
 
-Does  the  sentence  make  a  true  statement?  
+Does  the  sentence  make  a  true  statement?
 What  is  the  purpose  of  making  such  a  statement?
 What reformulation of the sentence would avoid any logical problems about truth? 
+
+Writing the statement on the page invalidate the statement itself. Thus it's false.
+
+The purpose of making this statement is to reassure the reader that the blank page is not an error (missing page, for example).
+
+We could have "the next page is intentionally left blank" on the page before it.
 
 (Once again, the  context  means  that  in  practice  everyone  understands  the  intended  meaning  and  there  is  no problem.
 But the formulation of a similar sentence in mathematics at the start of the twentieth
@@ -63,11 +76,14 @@ Comment on the sentence “The temperature is hot today.” You hear people say 
 all the time, and everyone understands what is meant. But using language in this sloppy way in
 mathematics would be disastrous.
 
+A temperature is not hot; it's a quantitative measurement, not a qualitative one. Temperature can be high or low, not "hot".
+
 ## Exercise 8
 
 How would you show that not every number of the form
-`N= (p1·p2·p3·. . .·pn) + 1` is prime,
-where p1, p2, p3, . . . , pn, . . . is the list of all prime numbers?
+`N= (p1·p2·p3·. . .·pn) + 1` is prime, where p1, p2, p3, . . . , pn, . . . is the list of all prime numbers?
+
+I would find a case where `N= (p1·p2·p3·. . .·pn) + 1` is not prime (proof by contradiction).
 
 # JUST FOR FUN
 
