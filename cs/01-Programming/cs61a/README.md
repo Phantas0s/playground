@@ -32,6 +32,16 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * Project 2 - All exercises from SICP section 2.2.4
 * [Project 3](./course/reader/nodate-adv.txt)
 
+Project 3 is crashing badly with every scheme interpreter I tried...
+
+```
+(load "./course/library/obj.scm")
+(load "./course/library/adv.scm")
+(load "./course/library/tables.scm")
+(load "./course/library/adv-world.scm")
+(load "./course/library/small-world.scm")
+```
+
 * [Midterm 1-1](./course/reader/mt1-1.pdf)
 * [Midterm 1-2](./course/reader/mt1-2.pdf)
 * [Midterm 1-3](./course/reader/mt1-3.pdf)
@@ -65,6 +75,18 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * [Implementation](./course/library/obj.scm) - Doesn't work in Racket
 * [Implementation for Racket](./course/extra/cs61as/library/obj.rkt) - [Source](https://www-inst.eecs.berkeley.edu/~cs61as/library)
 
+### Client Server
+
+REPL needs to run from directory `cs61a`.
+Can't figure out how to make it work with racket.
+Tried with chez-scheme REPL but doesn't have procedure "make-socket-server"
+
+```
+(load "./course/library/im-client.scm")
+(load "./course/library/im-server.scm")
+(load "./course/library/im-common.scm")
+```
+
 ## Using Racket
 
 ### Other
@@ -87,10 +109,6 @@ You might need to require the package berkeley from the REPL.
 
 `(require berkeley)`
 
-## Simply Scheme and neil/sicp (for set-car! and set-cdr!)
+## Running REPL with simply-scheme
 
-* `racket -i -p dyoo/simply-scheme -p neil/sicp -l xrepl`
-
-## Point of interest
-
-* Exercise 2.76 (from the book) ask an interesting question. There are many parameters to take into account.
+* `racket -i -p dyoo/simply-scheme -l sicp --repl`

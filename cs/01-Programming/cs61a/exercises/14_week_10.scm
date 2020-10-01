@@ -8,13 +8,12 @@
 
 (load "course/library/im-common.scm")
 
-
 (define logging #t) ; set to true to see logging
 
-(define socket-to-server #f)  	; Socket to server
-(define port-to-server #f)  	; write port to server
-(define port-from-server #f)  	; Read port from server
-(define clients #f)  		; List of known clients
+(define socket-to-server #f)    ; Socket to server
+(define port-to-server #f)      ; write port to server
+(define port-from-server #f)    ; Read port from server
+(define clients #f)         ; List of known clients
 
 ; Your name (can be changed before im-enroll)
 (define whoiam (string->word (getenv "USER"))) 
@@ -37,34 +36,34 @@
   (format logging "Sending 'hello' request to server.~%")
   (if (not
        (send-request (make-request whoiam 'server 'hello nil)
-		     port-to-server))
+             port-to-server))
       (close-connection)
       (begin
-	(format logging "Waiting for 'welcome' from server.~%")
-	(let ((req (get-request port-from-server)))
-	  (if (not req)
-	      (close-connection)
-	      (begin
-		(format logging "Response received: ~S~%" req)
-		(cond ((equal? 'sorry (request-action req))
-		       (format #t "Another client using same login!~%")
-		       (close-connection))
-		      
-		      ((equal? 'welcome (request-action req))
-		       (format logging "Received 'welcome' message.~%")
-		       (format logging "Sending 'thanks'.~%")
-		       (if (not
-			    (send-request (make-request whoiam 'server 'thanks nil)
-					  port-to-server))
-			   (close-connection)
-			   ;; Finally, can set up the handler
-			   (begin
-			     (setup-request-handler port-from-server)
-			     (format logging "(im-enroll) done.~%~%")) ))
-		      
-		      (else
-		       (format #t "Bad response from server: ~S" req)
-		       (close-connection)))) ))))
+    (format logging "Waiting for 'welcome' from server.~%")
+    (let ((req (get-request port-from-server)))
+      (if (not req)
+          (close-connection)
+          (begin
+        (format logging "Response received: ~S~%" req)
+        (cond ((equal? 'sorry (request-action req))
+               (format #t "Another client using same login!~%")
+               (close-connection))
+              
+              ((equal? 'welcome (request-action req))
+               (format logging "Received 'welcome' message.~%")
+               (format logging "Sending 'thanks'.~%")
+               (if (not
+                (send-request (make-request whoiam 'server 'thanks nil)
+                      port-to-server))
+               (close-connection)
+               ;; Finally, can set up the handler
+               (begin
+                 (setup-request-handler port-from-server)
+                 (format logging "(im-enroll) done.~%~%")) ))
+              
+              (else
+               (format #t "Bad response from server: ~S" req)
+               (close-connection)))) ))))
   'okay)
 
 
@@ -76,23 +75,23 @@
   (define (request-handler)
     (let ((req (get-request port-from-server)))
       (if (not req)
-	  (close-connection)
-	  (begin
-	    (format logging "Received request: ~S~%" req)
-	    (cond
-	     ((equal? 'receive-msg (request-action req))
-	      (received-msg (request-src req) (request-data req)))
-	     ((equal? 'client-list (request-action req))
-	      (update-client-list (request-data req)))
-	     ((equal? 'goodbye (request-action req))
-	      (close-connection))
-	     (else
-	      (format #t "Unknown action requested: ~A~%" (request-action req))
-	      (close-connection)))) ))
+      (close-connection)
+      (begin
+        (format logging "Received request: ~S~%" req)
+        (cond
+         ((equal? 'receive-msg (request-action req))
+          (received-msg (request-src req) (request-data req)))
+         ((equal? 'client-list (request-action req))
+          (update-client-list (request-data req)))
+         ((equal? 'goodbye (request-action req))
+          (close-connection))
+         (else
+          (format #t "Unknown action requested: ~A~%" (request-action req))
+          (close-connection)))) ))
     ;; if there is more data to handle.
     (if (and (not (port-closed? port-from-server))
-	     (char-ready? port-from-server))
-	(request-handler)))
+         (char-ready? port-from-server))
+    (request-handler)))
   ;; Now set up handler
   (when-port-readable port-from-server request-handler))
 

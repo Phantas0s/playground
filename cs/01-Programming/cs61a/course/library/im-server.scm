@@ -16,7 +16,7 @@
 ;client-list -- List of clients logged into the server; server->client.
 
 
-(load "~cs61a/lib/im-common.scm")
+(load "course/library/im-common.scm")
 
 (define logging #t)
 
