@@ -13,6 +13,8 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * [CS61 attempt](https://github.com/labria/cs61a)
     * [Fork](https://github.com/Phantas0s/cs61a)
 
+* [Solutions homework/projects from another student](https://github.com/Phantas0s/cs61a-sp11)
+
 ## Course Reader
 
 * [Syllabus](./course/reader/course_syllabus.pdf)
@@ -52,7 +54,6 @@ Project 3 is crashing badly with every scheme interpreter I tried...
 
 * [Vol. 2](./course/reader/vol2.html)
 
-* [Solutions homework/projects from another student](https://github.com/Phantas0s/cs61a-sp11)
 
 ## Tools
 
