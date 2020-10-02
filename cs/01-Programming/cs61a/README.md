@@ -65,7 +65,7 @@ Project 3 is crashing badly with every scheme interpreter I tried...
 * If something doesn't work in racket, see "./course/extra/cs61as". There are alternative to many things for racket.
 * To have `set-car!` and `set-cdr!`: `(require rnrs/mutable-pairs-6)`
 
-### Interpreter 
+### Interpreter
 
 * [First version](./course/library/scheme0.scm)
 * [Second version](./course/library/scheme1.scm)
@@ -90,14 +90,12 @@ Tried with chez-scheme REPL but doesn't have procedure "make-socket-server"
 
 ## Using Racket
 
-### Other
-
 #### Racket package
 
 * [Planet Racket](https://planet.racket-lang.org/)
 * [Simply scheme](https://planet.racket-lang.org/package-source/dyoo/simply-scheme.plt/2/2/planet-docs/manual/index.html)
 
-#### Sources
+## stk Sources
 
 * [Simply scheme](./scheme) # From ftp://ftp.cs.berkeley.edu/pub/scheme
 
