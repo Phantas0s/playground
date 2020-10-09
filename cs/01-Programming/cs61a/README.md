@@ -93,11 +93,13 @@ Tried with chez-scheme REPL but doesn't have procedure "make-socket-server"
 #### Racket package
 
 * [Planet Racket](https://planet.racket-lang.org/)
-* [Simply scheme](https://planet.racket-lang.org/package-source/dyoo/simply-scheme.plt/2/2/planet-docs/manual/index.html)
+* [Simply scheme package](https://planet.racket-lang.org/package-source/dyoo/simply-scheme.plt/2/2/planet-docs/manual/index.html)
+* [SICP scheme](https://docs.racket-lang.org/sicp-manual/SICP_Language.html)
 
-## stk Sources
+## STK Sources
 
-* [Simply scheme](./scheme) # From ftp://ftp.cs.berkeley.edu/pub/scheme
+* [Simply scheme](./simply-scheme) # From ftp://ftp.cs.berkeley.edu/pub/scheme
+* [STK sources](./stk) - If you succeed to compile that on Arch Linux, please contact me or write a quick tutorial!
 
 ### Package to install
 
