@@ -1,0 +1,20 @@
+{ print NF, $1, $NF }
+{ print $1, $2 * $3 }
+{ print NR, $0 }
+{ print "total pay for", $1, "is", $2 * $3 }
+
+{ printf("total pay for %s is $%.2f\n", $1, $2 * $3) }
+
+$2 * $3 > 50 { printf("$%.2f for %s\n", $2 * $3, $1) }
+
+NF I= 3 { print $0, "number of fields is not equal to 3" }
+$2 < 3.35 { print SO, "rate is below minimum wage" }
+$2 > 10 { print $0, "rate exceeds $10 per hour" }
+$3 < 0 { print $0, "negative hours worked" }
+$3 > 60 { print $0, "too many hours worked" }
+
+$3 > 15 { emp = emp + 1  } 
+END { print emp, "employees worked more than 15 hours" }
+
+{ names = names $1 " " } 
+END { print names }
