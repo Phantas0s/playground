@@ -12,6 +12,9 @@
     (cons-stream (proc (stream-car s))
                  (stream-map proc (stream-cdr s)))))
 
+(define (add-streams s1 s2)
+  (stream-map + s1 s2))
+
 (define (stream-for-each proc s)
   (if (stream-null? s)
     'done
