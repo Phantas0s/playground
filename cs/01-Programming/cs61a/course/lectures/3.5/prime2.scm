@@ -9,6 +9,9 @@
       the-empty-stream
       (cons-stream from (stream-range (+ from 1) to))))
 
+(define (stream-range from to)
+      (cons-stream from (stream-range (+ from 1) to)))
+
 (define (stream-filter predicate data)
   (cond ((stream-null? data) the-empty-stream)
         ((predicate (stream-car data))
