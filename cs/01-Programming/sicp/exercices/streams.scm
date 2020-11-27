@@ -49,8 +49,6 @@
                  (interleave s2 (stream-cdr s1)))))
 
 ; Stream of integers
-
-
 (define ones (cons-stream 1 ones))
 (define (add-streams s1 s2) (stream-map + s1 s2))
 (define integers

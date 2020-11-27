@@ -17,6 +17,7 @@ Each part of the book has its own set of exercise. Each part can have two file: 
 * **FIXED** - Exercise **WRONG** the first time and retried some time later with good result (results in \*-2.md files). The number attached to it is  be the number of attempts before it has been fixed.
 
 * **SKIPPED** - Skipped 'cause I have no clue how to do it, or I spent too much time on it. I will put the number of minutes for the second case.
+* **TO REVIEW** - Stuff I didn't feel I fully understood.
 
 # Using Racket
 
