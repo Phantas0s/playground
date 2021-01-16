@@ -80,3 +80,7 @@
   (if (null? args)
     (ss1 strm 10 10)
     (ss1 strm (car args) (car args))))
+
+(define (scale-stream stream factor)
+  (stream-map (lambda (x) (* x factor))
+              stream))
