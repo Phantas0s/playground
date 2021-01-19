@@ -41,6 +41,8 @@
 
 ; OTHER SOLUTION
 
+; -1 because 0 indexed
+
 ; (1,100):198;
 ; (100,100):2^100 - 1;
 ; ---------------
@@ -58,6 +60,13 @@
 ; .
 ; .
 ; 100 ------------------------------------- (2^100 - 1)
+
+; Other formula
+
+; - 2 here instead of - 1 because the text says "precede"
+
+; f(i,j) = 2^i - 2, i = j
+; f(i,j) = 2^i * (j-i) + 2^(i-1) - 2, i < j
 
 ; in scheme
 
