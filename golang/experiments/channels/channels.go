@@ -4,9 +4,9 @@
 // Writing doesn't block for buffered channel iff the channel has some space
 // Writing always block for unbuffured channel if the channel is nowhere read (on another goroutine)
 
-// Is make(chan bool, 0) and make(chan bool) the same?
-
 // It means that the only difference between make(chan bool) and make(chan bool, 1) is at the write level: the first one will block, the second won't.
+
+// Stupid question: is make(chan bool, 0) and make(chan bool) the same? I would never write make(chan bool, 0)... but still? :D
 
 package main
 
