@@ -1,0 +1,6 @@
+print("I will now count chickens:")
+print(3 + 2 + 3 + 5)
+print(3 + 2 < 5 - 7)
+print("What is 3 + 2?", 3 + 2)
+print("What is 5 - 5?", 5 - 5)
+print("Is it greater?", 5 < 2)
