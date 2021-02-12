@@ -11,3 +11,7 @@
 
 ; Does this work? Consider what happens if we evaluate (pairs
 ; integers integers) using Louis’s definition of pairs.
+
+; It will create an infinite loop: pairs will be called indefinitely.
+
+; **GOOD**
