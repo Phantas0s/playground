@@ -14,4 +14,6 @@
 ; (approximation (fract-stream '(1 7)) 4) should return (1 4 2 8)
 ; (approximation (fract-stream '(1 2)) 4) should return (5 0 0 0)
 
-
+; It's a pain to load eveything in scheme... especially the div part
+; I'll come back to that later...
+; **WRONG**
