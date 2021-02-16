@@ -257,6 +257,14 @@ c. none of the above (correct parallelism) **PERFECT**
 
 ; TOTAL: 1/3 (good try :D)
 
+; SOLUTION
+
+; (define foo
+;   (cons-stream '()
+;                (interleave (stream-map (lambda (p) (cons 'over p)) foo)
+;                            (stream-map (lambda (p) (cons 'under p)) foo))))
+
 ; GRAND TOTAL: 20/30
 
 ; PASSED!
+
