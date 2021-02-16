@@ -20,8 +20,7 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * [Syllabus](./course/reader/course_syllabus.pdf)
 * [Vol. 1](./course/reader/vol1.html)
 
-* [Lecture notes](./course/reader/notes.pdf)
-* [OOP Above the lines](./course/reader/aboveline.pdf)
+* [Lecture notes](./course/reader/notes.pdf) [OOP Above the lines](./course/reader/aboveline.pdf)
 * [OOP Above the lines](./course/reader/belowline.pdf)
 * [OOP Reference Manual](./course/reader/ref-man.pdf)
 
@@ -51,6 +50,10 @@ Project 3 is crashing badly with every scheme interpreter I tried...
 * [Midterm 2-1](./course/reader/mt2-1.pdf)
 * [Midterm 2-2](./course/reader/mt2-2.pdf)
 * [Midterm 2-3](./course/reader/mt2-3.pdf)
+
+* [Midterm 3-1](./course/reader/mt3-1.pdf)
+* [Midterm 3-2](./course/reader/mt3-2.pdf)
+* [Midterm 3-3](./course/reader/mt3-3.pdf)
 
 * [Vol. 2](./course/reader/vol2.html)
 
