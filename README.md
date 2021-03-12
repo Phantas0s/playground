@@ -2,7 +2,7 @@
 
 Hello and welcome to my personal playground!
 
-This place is a bit the courtyard of my [Alexandria Library](https://githu.com/Phantas0s/alexandria-library), where I practice what I'm learning. 
+This place is a bit the courtyard of my [Alexandria Library](https://github.com/Phantas0s/alexandria-library), where I practice what I'm learning. 
 
 It's mostly exercises or [code I copy from a book to learn new languages](https://thevaluable.dev//how-to-learn-programming-language/).
 
