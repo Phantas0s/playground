@@ -32,6 +32,7 @@ For opening *vol1* and *vol2*: `gf` then `!firefox %`
 * [Project 1 Code](./course/reader/twenty-one.scm)
 * Project 2 - All exercises from SICP section 2.2.4
 * [Project 3](./course/reader/nodate-adv.txt)
+* [Project 4](./course/reader/nodate-logo.txt)
 
 Project 3 is crashing badly with every scheme interpreter I tried...
 
@@ -41,6 +42,12 @@ Project 3 is crashing badly with every scheme interpreter I tried...
 (load "./course/library/tables.scm")
 (load "./course/library/adv-world.scm")
 (load "./course/library/small-world.scm")
+
+Project 4
+```
+(load "./course/library/logo.scm")
+(load "./course/library/logo-meta.scm")
+(initialize-logo)
 ```
 
 * [Midterm 1-1](./course/reader/mt1-1.pdf)
