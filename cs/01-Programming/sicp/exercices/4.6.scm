@@ -49,7 +49,7 @@
         ((assignment? exp) (eval-assignment exp env))
         ((definition? exp) (eval-definition exp env))
         ((if? exp) (eval-if exp env))
-        ((let? exp) (eval (let->combination exp)))
+        ((let? exp) (eval (let->combination exp) env))
         ((lambda? exp) (make-procedure (lambda-parameters exp)
                                        (lambda-body exp)
                                        env))
@@ -67,7 +67,7 @@
 ; other solution
 ; Clever to extract vars / exps
 
-  ((let? expr) (evaln (let->combination expr) env)) 
+; ((let? expr) (evaln (let->combination expr) env)) 
 
  ;; let expression 
  (define (let? expr) (tagged-list? expr 'let))
