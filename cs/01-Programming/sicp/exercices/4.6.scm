@@ -36,6 +36,8 @@
 (define (let->combination exp)
   (cons (make-lambda (let-exps exp) (let-body exp)) (let-vars exp)))
 
+; TESTS
+
 (let->combination 
   (list 'let (list 'a 1 'b 2) (list '+ 'a 'b)))
 
