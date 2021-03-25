@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Steven Skiena</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="../css/skiena.css" rel="stylesheet" type="text/css">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet" type="text/css">    
+    </head>  
+  
+    <body>       
+        <div id="header_nav" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <!-- <a href="http://www.stonybrook.edu" style="float:left; margin-right: 15px"><img src="../img/sbu_logo.jpg" /></a> -->
+            <a class="brand" href="http://www.cs.sunysb.edu/~skiena">Steven Skiena</a>
+            <ul class="nav">
+                <li><a href="http://www.amazon.com/Steve-Skiena/e/B000APVVYO">Books</a></li>
+                <li><a href="../teaching">Teaching</a></li>
+                <li><a href="mailto:skiena@cs.stonybrook.edu">Email</a></li>
+                <li><a href="https://twitter.com/StevenSkiena">Twitter</a></li>
+                <li><a href="https://sites.google.com/site/datascienceslab/">Data Science Lab</a></li>
+            </ul>
+        </div>
+    </div>
+</div> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45564823-1', 'sunysb.edu');
+  ga('send', 'pageview');
+
+</script>
+        <div class="container">            
+            <div class="row" style="margin-top: 80px">             
+                <div class="span10 centered">
+                    <H1>CSE 373 - Analysis of Algorithms</H1>
+<h2>Fall 2020</h2>
+
+<ul>
+
+<li>
+Course Time: 3PM - 4:20PM Tuesday-Thursday <br>
+Place: on Zoom
+<b>The Zoom link is available on Piazza if you can't find it on Blackboard</b>
+
+
+<li>
+Steven Skiena's office hours are 11:05AM-12:35PM Tuesday-Thursday,
+on Zoom, and by appointment.
+You can also catch me right after class.
+
+<!--
+<li>
+<b>The course is currently full, although I am trying to figure out a solution
+for those in need of taking it.  Show up the first day of class: I will do nothing to admit anyone before then.
+</b>
+-->
+
+
+
+
+<li>
+The course bulletin board will be <a href="http://piazza.com/stonybrook/fall2020/csemat373/home">Piazza</a>.
+Sign up by clicking <a href="https://piazza.com/stonybrook/fall2020/csemat373">here</a>.
+
+<li>
+Our graduate TAs and their special responsibilities are:
+
+<ul>
+
+<!--
+
+<li>
+<a href="http://www.cs.stonybrook.edu/">Rory Bennett</a> (Head TA).
+His email address is
+<a href="mailto://rory.bennett@stonybrook.edu">rory.bennett@stonybrook.edu</a>.
+His office hours will be 10:30AM-noon on Monday and 11:30-1PM Wednesday
+in the CS TA room 2217 old Computer Science.
+
+<li>
+<a href="http://www.cs.stonybrook.edu/">Cristina Mata</a>.
+Her email address is
+<a href="mailto://cristina.mata@stonybrook.edu">cristina.mata@stonybrook.edu</a>.
+Her office hours will be 10:00-11AM, Tuesday and Thursday and 2:00-3PM Wednesday
+in the CS TA room 2217 old Computer Science.
+
+<li>
+<a href="yaoli2@cs.stonybrook.edu">Yao Li</a> (grader).
+His email address is
+<a href="mailto://yaoli2@cs.stonybrook.edu">yaoli2@cs.stonybrook.edu</a>.
+<!--
+His office hours will be XXX PM, YYYday
+in the CS TA room 2203 old Computer Science.
+-->
+
+
+<!--
+<li>
+<a href="http://www.cs.stonybrook.edu/">Tianchi Mo</a> (Maverick).
+His email address is
+<a href="mailto://timo@cs.stonybrook.edu">timo@cs.stonybrook.edu</a>.
+His office hours will be Wednesday 3PM-5PM and Friday 4-5PM in 
+the CS TA room 2207 old Computer Science.
+<b>Maverick serves as the head TA for CSE 373 -- all discussions about
+HW or exam regrades go to him, not Prof. Skiena!</b>
+-->
+
+<!--
+<li>
+Yao Li.
+His email address is
+<a href="mailto://yaoli2@cs.stonybrook.edu">yaoli2@cs.stonybrook.edu</a>.
+His office hours will be 2PM to 3PM on Monday in the CS TA room 2203 old Computer Science.
+-->
+
+
+<!--
+<li>
+Dzejla Medjedovic (pronounced Jayla).
+Her email address is
+<a href="mailto://dmededov@cs.stonybrook.edu">dmededov@cs.stonybrook.edu</a>.
+She will have office hours Monday and Wednesday from 1PM to 2:30PM in room 1306 Computer Science.
+-->
+
+
+</ul>
+
+
+<li>
+The undergraduate course assistants are listed below.
+Their office hours will be in the undergrad TA rooms 2203 and 2217 Old Computer Science.
+
+<ul>
+
+<!-- 
+
+<li>
+Omar Amin (omar.amin@stonybrook.edu).
+Office hour: Wednesday 4:00-5PM.
+
+<li>
+Gaurav Gandhi (gaurav.gandhi@stonybrook.edu).
+Office hour: Monday 4:30-5:30PM.
+
+<li>
+Danny Guo (danny.guo.1@stonybrook.edu).
+Office hour: Tuesday 10:00-11AM.
+
+<li>
+Ricky Wu (ricky.wu@stonybrook.edu).
+Office hour: Wednesday 2:00-3PM.
+
+-->
+
+</ul>
+
+
+<li>
+The undergraduate TAs will have one review session each week on Zoom (two before midterms).
+The schedule is:
+
+<ul>
+<li>
+
+<!--
+9/11 -- Omar and Danny -- Group 1
+
+<li>
+9/18 -- Ricky and Gaurav -- Group 2
+
+<li>
+9/23 -- Group 1
+
+<li>
+9/25  -- Midterm 1 extra review -- Both groups . (8-9PM)
+
+<li>
+10/2 -- Group 2
+
+<li>
+10/9 -- Group 2
+
+<li>
+10/16 -- Group 1
+
+<li>
+10/23 -- Group 2
+
+<li>
+10/30 -- Group 1
+
+<li>
+11/6 -- Group 2
+
+<li>
+11/13 -- Group 1
+
+<li>
+11/18 -- Midterm 2 extra review -- Both groups (8-9PM)
+
+<li>
+11/20 -- Group 2
+
+<li>
+12/4 -- Group 1
+
+-->
+
+</ul>
+
+<!--
+<p>
+Here is a <a href="https://calendar.google.com/calendar?cid=MjI1ZnZlbTFnOHVxam9pcWQyMnU1NjZyNG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">calendar</a>
+of all TA office hours and review sessions.
+-->
+
+
+<!--
+<li>
+The CEAS tutoring services claims to offer help in CSE 373 every Monday (6:00-8:00PM) evening, in Engineering room 236B.
+Students may request tutoring information by visiting or calling the CEAS Undergraduate Student Office or visiting the <a href="http://www.stonybrook.edu/commcms/ceas-undergrad/academic_advising/tutoring_services/default.html">CEAS Tutoring Services Website</a>.
+-->
+
+<!--
+<li>
+The course final exam will be held on Thursday, December 20
+from 11:15AM-1:45PM.
+<b>Students whose last name begins A-H will take the exam New Computer Science 120.
+ 
+Students whose last name begins H-Z will take the exam in the assigned exam room.
+ </b>
+It will be cumulative and cover everything we did this semester.
+
+Good luck!
+-->
+
+</b>
+
+</ul>
+
+<h3>Lecture Notes</h3>
+
+<ul>
+
+<li>
+Lecture notes from 
+<a href="current-lectures/">current semester</a>.
+
+
+<li>
+Video and audio lectures with links to lecture notes from previous offerings
+of my course are available at
+<a href="http://www.youtube.com/channel/UCh27N8m4Jp_rkwx26Q4iclQ">my YouTube channel</a> or
+<a href="./videos">
+http://www.cs.stonybrook.edu/~skiena/373/videos/</a>.
+<!--
+The lecture slides are available from <a href="http://www.cs.stonybrook.edu/~algorith/video-lectures/">
+http://www.cs.stonybrook.edu/~algorith/video-lectures/</a>.
+-->
+The associated lecture notes from these old offerings are available
+<a href="oldlectures/">here</a>.
+
+<!--
+<li>
+Even older lecture notes from previous semesters are available
+in <a href="notes/">HTML</a>,
+<A HREF="notes/all.ps">
+postscript</A>
+and
+<A HREF="notes/all.pdf">pdf</A>
+formats.
+The complete set is 300 pages -- do not print them on departmental machines!
+-->
+
+<li>
+There is a <a href="http://www.algorist.com/algowiki">Wiki</a>
+with possible solutions to odd numbered problems from the book.
+
+<li>
+Adam Conrad wrote an <a href="https://www.adamconrad.dev/tag/algorithms/">extensive set of blog posts</a> based on auditing my
+algorithms course via video.
+These notes include Javascript implementations of algorithms and
+might be helpful to those learning the material.
+
+<!--
+<P>
+An excellent way to impress the Prof would be for someone to volunteer
+to moderate the Wiki to eliminate spam (not necessarily wrong answers).
+This involves getting mediawiki privileges, and figuring out
+ccount settings to minimize this.
+Spam from writable web sites (like Algowiki) are primarily about adding
+links to spam sites (gives them page rank for web search algorithms).
+-->
+
+
+<!--
+<li>
+Lecture notes from previous semesters
+with <a href="http://www.cs.stonybrook.edu/~algorith/lectures-good/">audio</a>
+and (maybe, but probably not)
+<a href="http://moon.ams.stonybrook.edu/courses99/cse373/default.html">video</a>
+are available online!
+
+<li>
+Full-lecture 
+<a href="http://www.algorithm.cs.stonybrook.edu/cse373/">audio</a>
+from Fall 2004 is also available, although they are not keyed directly to
+the lecture notes.
+-->
+
+<!---Begin Award of Excellence--->
+<!--
+<A HREF=http://www.studysphere.com>
+<IMG SRC="http://www.studysphere.com/Award.gif" ALT="Computer Algorithms" BORDER=0> </A>
+<!---End Award of Excellence--->
+
+
+</ul>
+
+
+<h3>Course Documents</h3>
+
+<ul>
+
+<li>
+Course Syllabus and lecture schedule
+in 
+<A HREF="syllabus.pdf">pdf</A>
+format.
+
+<li>
+Daily Homework Problems in
+<A HREF="daily/daily.pdf">pdf</A>
+format.
+
+
+<li>
+A <a href="./hard.txt">list of hard problems</a> suitable to challenge me on.
+
+</ul>
+
+<h3>Homework Assignments</h3>
+
+
+<li>
+Homework 1 - DUE 9/17/20 in
+<A HREF="hw/hw1.pdf">pdf</A>
+format.
+
+<p>
+An <a href="hw/keys/key1.pdf">answer key</a> is now available.
+
+<!--
+<li>
+<b>
+Come by my office door to sign up for Pizza with the Prof, September 11 at 12PM.
+Registration is limited to the first 15 students to sign up.
+</b>
+-->
+
+
+<!--
+<li>HW1 
+<A HREF="programs/"> programs</A> for experimenting with execution times.
+Note that one of them must be compiled with the -lm option..
+-->
+
+
+<li>
+Homework 2 - DUE 10/1/20 in
+<A HREF="hw/hw2.pdf">pdf</A>
+format.
+<p>
+An <a href="hw/keys/key2.pdf">answer key</a> is now available.
+
+<li>
+Midterm 1 will be held Thursday, September 24 and will cover
+big oh, data structures, and sorting.
+I have <a href="exams/z2.pdf">posted a copy of a prior year's Midterm 1</a> to
+help you study.
+Note: we will <i>not</i> provide an answer key, especially for the multiple choice 
+problems, to encourage you to work them out on your own.
+
+<!--
+<b> Students whose last names begin A-I will take the midterm in New Computer Science 120.</b>
+Students j-Z should go to the usual classroom Javits 102.
+-->
+
+<!--
+<li>
+<a href="https://docs.google.com/presentation/d/1BP-6KhXMKMQIEU_Om75bAq5MX25amJrKnig81EiWYdA/edit?usp=sharing">Midterm 1 grade breakdown</a>
+-->
+
+
+<!--
+<li>
+<b>
+Come by my office door to sign up for Pizza with the Prof, Wednesday October 23 at 12PM.
+Registration is limited to the first 15 students to sign up.
+</b>
+-->
+
+<!--
+<li>
+Many students in the class have been submitting homeworks with strong resemblance
+to previous answer keys.
+This is a self-defeating strategy.
+My TAs identified 39 students who submitted blatant copies of the key.
+<b>
+The copiers average on Midterm 1 was 52.74, compared to an average of 63.57 for the
+rest of the class.
+</b>
+The key to doing well in CSE 373 is beating your head on the HW problems, and
+getting help when you are stuck.
+-->
+
+<li>
+Homework 3 - DUE 10/20/20 in
+<A HREF="hw/hw3.pdf">pdf</A>
+format.
+
+The four testfiles for Homework 3 are
+<A HREF="hw/s-1-9-10">file 1</A>,
+<A HREF="hw/s-2-54-50">file 2</A>,
+<A HREF="hw/s-3-96-100">file 3</A>,
+<A HREF="hw/s-4-2450-100">file 4</A>.
+The first number represents the number of edges, the second the number
+of vertices, and each subsequent line represents an edge between the pair
+of numbered vertices.
+
+<p>
+An <a href="hw/keys/key3.pdf">answer key</a> is now available.
+
+<!--
+<li>
+<b>
+Come by my office door to sign up for Pizza with the Prof, November 13 at 12PM.
+Registration is limited to the first 15 students to sign up.
+</b>
+-->
+
+<!--
+<li>
+CSE 392 backtracking Lecture Notes in
+<a href="../392/lectures/week8/">html</a> and 
+<a href="../392/lectures/week8.pdf">PDF</a>.
+-->
+
+<li>
+Homework 4 - DUE 11/3/20 in
+<A HREF="hw/hw4.pdf">pdf</A>
+format.
+ 
+Test your program on our collection of
+<a href="bandwidth/">datasets for HW4</a>.
+
+<!--
+<p>
+Contest <a href="https://drive.google.com/file/d/1A3JgIcb1PCawp7_a5wRXZA5ubUYp2DLf/view?usp=sharing">results</a> for HW4.
+-->
+
+<!--
+<li>Homework 4
+<A HREF="hw/keys/key4.pdf">
+Solutions</A>
+-->
+
+<li>
+Midterm 2 will be held <b>Thursday, November 12</b> and will cover
+graph algorithms, backtracking, and dynamic programming.
+I have <a href="exams/z1.pdf">posted a copy of a prior year's Midterm 2</a> to
+help you study.
+Note: we will <i>not</i> provide an answer key, especially for the multiple choice 
+problems, to encourage you to work them out on your own.
+
+<!--
+See the score distribution for <a href="https://docs.google.com/document/d/142_C3fxlte8coC1TDZZm686Dep8BOQdaBdYLutH0OZY/edit?usp=sharing">Midterm 2</a>.
+-->
+
+<!--
+<p>
+<b> Students whose last names begin A-H will take the midterm in New Computer Science 120.</b>
+Students I-Z should go to the usual classroom Javits 102.
+-->
+
+<!--
+<p>
+Graph Traversal Lecture Notes in
+<a href="../392/lectures/week9/">html</a> and
+<a href="../392/lectures/week9.pdf">PDF</a>.
+-->
+
+<!--
+<li><A HREF="hw/keys/key4.pdf">
+Homework 4 Solutions </A>
+-->
+
+<!--
+<li><A HREF="exams/midterm2_key_real.pdf">
+Midterm 2 solution -- Fall 2016</A>
+-->
+
+<li>
+Homework 5 - DUE 12/3/20 in
+<A HREF="hw/hw5.pdf">pdf</A>.  Try to do the dynamic programming problems before the midterm.
+
+The <a href="hw/keys/HW5_Solution.pdf">answer key</a> is now available.
+
+<li>
+<b>
+Please fill out the course evaluation form on line.
+I do value your feedback to improve the course the next time it is offered.
+</b>
+
+</ul>
+
+<h3>Related Links</h3>
+
+<ul>
+
+<li>
+A picture of the <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=51%C2%B047'38%22N,+19%C2%B035'23%22E&aq=&sll=37.0625,-95.677068&sspn=40.460237,52.822266&ie=UTF8&ll=51.793873,19.589267&spn=0.007737,0.012896&z=16">
+highest degree node in the road network</a> that I am aware of.
+A competing <a href="https://www.google.com/maps?t=m&ll=28.61236470000006%2C77.23193129999996&q=C+-+Hexagon%2C+India+Gate%2C+New+Delhi%2C+Delhi%2C+India&spn=0.012808411487520885%2C0.019453654257500664&output=classic">claim</a> from New Delhi, India connects 12 roads through a hexagonal structure, but I need to see the park paved before I will accept it.
+Dupont Circle in Washington DC appears to have degree <a href="https://www.google.com/maps/place/38%C2%B054'37.4%22N+77%C2%B002'33.4%22W/@38.9090519,-77.0435693,155m/data=!3m1!1e3!4m2!3m1!1s0x0:0x0">10 to 13</a>, depending on whether
+a divided two-way road counts as 1 or 2 edges. 
+But the circle needs to be paved over in any case.
+
+Paris is a city of circles with many connections, like 
+the <a href="https://www.google.com/maps/place/Arc+de+Triomphe/@48.8737945,2.2932754,17z/data=!4m12!1m6!3m5!1s0x47e66fec70fb1d8f:0xd9b5676e112e643d!2sArc+de+Triomphe!8m2!3d48.8737917!4d2.2950275!3m4!1s0x47e66fec70fb1d8f:0xd9b5676e112e643d!8m2!3d48.8737917!4d2.2950275">Arc de Triomphe</a>.
+It also contains nodes of 
+<a href="https://www.google.com/maps/place/48%C2%B052'04.3%22N+2%C2%B016'51.9%22E/@48.867866,2.2804817,18z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d48.8678649!4d2.2810862">degree at least seven</a>.
+
+<li>
+The third edition of <a target="_blank" href="https://www.amazon.com/gp/product/3030542556/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=3030542556&linkCode=as2&tag=algorist-20&linkId=00b8675b374dcd56244e23efeecc80b0">The Algorithm Design Manual</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=algorist-20&l=am2&o=1&a=3030542556" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+is now available!
+
+
+<li>
+The course textbook as the way to <a href="https://sites.google.com/site/nyocoachingsessions/technical-interview-resources">get a job at Google</a>
+
+<li>
+Check out this <a href="http://www.comp.nus.edu.sg/~stevenha/visualization/">comprehensive collection of algorithm animations</a> from Steve Halim at the National University of Singapore.
+
+<li>
+Videos of sorting algorithms as <a href="http://www.i-programmer.info/news/150-training-a-education/2255-sorting-algorithms-as-dances.html">folk dances</a>.
+
+
+</ul>
+
+<h3>Extra Credit</h3>
+
+
+Interested students
+<!--who are <i>not</i> taking
+<a href="http://www.cs.stonybrook.edu/~skiena/392">CSE 392</a>
+-->
+may attempt the following
+extra credit programming challenges from
+Skiena/Revilla
+for a small amount of
+additional points -- small enough that you should be motivated primarily
+by interest and not greed.
+<!--
+<p>
+The solutions to these problems must be submitted on
+<a href="http://www.programming-challenges.com">www.programming-challenges.com</a>.
+Register for an account and join my CSE 373 extra credit class if you
+are intersted.
+-->
+<p>
+You can submit these problems through
+the <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=1">UVA Online Judge</a>.
+I have given the corresponding UVA Judge number for each problem in parentheses.
+Google "
+
+<p>
+A schedule for doing these problems that is somewhat consistant
+with this course is:
+
+<ul>
+
+<li>
+week 1:	110101  <a href="https://uva.onlinejudge.org/index.php?Itemid=8&option=com_onlinejudge&page=show_problem&problem=36">3n+1  (100)</a>
+
+<li>
+week 2: 110201	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=979">Jolly Jumpers (10038)</a>
+
+<li>
+week 3:	110303	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1193">Common Permutation (10252)</a>
+
+<li>
+week 4: 110401	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=982">Vito's family (10041)</a>
+
+<li>
+week 5: 110405	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=967">Shoemakers problem (10026)</a>
+
+<li>
+week 6: 111101	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1072">Is Bigger Smarter? (10131)</a>
+
+<li>
+week 7: 111104	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=52">Unidirectional TSP (116)</a>
+
+<li>
+week 8: 110801	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=802">Little Bishops (861)</a>
+
+<li>
+week 9: 110901	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=945">Bicoloring (10004)</a>
+
+<li>
+week 10: 110902	<a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1008">Playing with Wheels (10067)</a>
+
+<li>
+week 11: 111006	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1040">Tourist Guide (10099)</a>
+
+<li>
+week 12: 111105	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=944">Cutting Sticks (10003)</a>
+
+<li>
+week 13: 110806	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=942">Garden of Eden (10001)</a>
+
+<li>
+week 14: 111005	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1099">War (10158)</a>
+
+<li>
+week 15: 110805	<a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=973">Tug of War (10032)</a>
+
+</ul>
+
+<p>
+Send me all your work at the end of the semester to receive credit.
+
+
+<h3>Objectives</h3>
+
+<p>
+Read about the CS accreditation <a href="https://www.dropbox.com/s/u5ftxndak92vulr/ABET-Students.pptx?dl=0">ABET</a> program.
+The ABET objectives for the course are
+
+<ul>
+<li>
+Provide a rigorous introduction to worst-case asymptotic algorithm analysis.
+<li>
+Develop classical graph and combinatorial algorithms for such problems as sorting, shortest paths and minimum spanning trees.
+<li>
+Introduce the concept of computational intractability and NP completeness.
+</ul>
+
+<p>
+The course will also satisfy the following
+<a href="http://www.cs.stonybrook.edu/admissions/ObjectivesMapping.html">
+program objective</a>:
+
+<ul>
+<li>
+(S6) have a solid understanding of computational theory and
+foundational mathematics.
+
+</ul>
+
+
+
+<h2>Professor</h2>
+<blockquote>
+<dd> <a href="http://www.cs.stonybrook.edu/~skiena">Steven S. Skiena</a>
+<dd> 251 New Computer Science Building
+<dd> Department of Computer Science
+<dd> State University of New York at Stony Brook
+<dd> Stony Brook, NY 11794-4400, USA
+<dd> <a href="mailto:skiena@cs.stonybrook.edu">skiena@cs.stonybrook.edu</a>
+<dd> 631-632-9026
+<dd>
+</dl>
+</blockquote>
+
+<!--
+<A HREF="mailto:skiena@cs.stonybrook.edu">Send Skiena mail</A>
+<br>
+<A HREF="http://www.cs.stonybrook.edu/cgi-bin/finger?skiena">
+Finger Skiena</A>
+-->
+
+<p>
+Join the 
+<a href="http://stonybrook.acm.org">
+Stony Brook Computer Science Society
+</a>
+                </div>    
+            </div> <!-- /row -->
+            
+        </div> <!-- /container -->  
+
+        <script src="../js/jquery-latest.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/skiena.js"></script>        
+    
+    </body>
+</html>

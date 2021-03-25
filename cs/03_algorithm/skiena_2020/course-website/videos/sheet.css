@@ -1,0 +1,309 @@
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+#header_nav .navbar-inner {
+  background-color: #7D0612;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border-color: #777777;
+}
+
+.ImageBorder {
+    border-width: 5px;
+    border-color: black;
+}
+
+#header_nav .brand {
+  
+    font-size: 28px;
+    font-family:"Lato",'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+}
+
+#narrow {
+    width: 80%;
+}
+
+body {
+    color: #3E3F3C;
+    font-family: open sans;
+    width: 70%;
+    margin-left: 15% !important;
+}
+
+table {
+    /*width: 88%;
+*/    /*margin-left: 15%;*/
+}
+
+.customButton {
+    font-size: 15px;
+    text-align: center;
+    width: 75px;
+    
+    background-color: #FFF;
+    color:#7C0612 !important;
+    
+    border: 1px solid #7C0612;
+    margin:5px;
+    padding: 3px;
+    border-radius: 2px;
+   
+}
+
+th {
+    text-align: left;
+    font-size: 19px;
+    padding-right: 70px;
+}
+
+td {
+    /*margin: 10px;*/
+    padding: 9px;
+}
+
+.buttons {
+    text-align:right;
+    /*float: left;*/
+}
+
+.customButton a {
+    color: #FFF !important;
+}
+
+.customButton:hover {
+    
+    background-color:#7C0612;
+    color: #FFF !important;
+    text-decoration: none;
+}
+
+.index {
+    /*text-align: center*/
+}
+
+.emptySpace {
+    margin: 80px;
+}
+
+#emptySpace2 {
+    margin: 30px;
+}
+
+.nav a {
+    color: #FFF !important;
+}
+
+.nav a:hover {
+    color: #999999 !important;
+}
+
+#echo {
+    color: #b30000;
+}
+
+#echo:hover {
+    color: #ff1a1a;
+}
+
+dt img{float:left;}
+
+a {
+    color: #7D0612 !important;
+    /*text-decoration: none;*/
+}
+
+a:hover {
+    color: #697791;
+}
+
+
+.video{
+        float:left;
+/*         margin-left: 10px; */
+        text-align: center;
+}
+
+.video embed{
+        width:400px;
+        height:326px;
+}
+
+.otherLinks{
+        float: right;
+/*         margin:1%; */
+        text-align: center;
+        height:326px;
+        width:370px;
+}
+
+.otherLinks img{
+        border:none;
+}
+
+.years{
+        float: left;
+}
+
+.years td{
+        background:white;
+        padding: 5px; 
+        border:3px solid #889962;
+}
+
+.lecture{
+        text-align: center;
+}
+
+
+.clear {
+    clear:both;
+    height:1px;
+    overflow:hidden;
+}
+
+#bothTables {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#leftTable {
+    width: 30%;
+    margin-left: 10%;
+}
+
+#rightTable {
+    margin-left: 10%;
+    width: 30%;
+}
+
+
+
+.stext {
+    text-align: center;
+    font-size: .75em;
+}
+
+#top{
+        text-align: center;
+}
+
+.filler{
+        font-size:1em;
+}
+
+#top a:link{
+    color:black;
+}
+
+#implink dd{
+    font-size: 75%
+}
+
+#implink A:link{color: black}
+
+#implink c1 {color: #000}
+#implink c2 {color: #200}
+#implink c3 {color: #420}
+#implink c4 {color: #420}
+#implink c5 {color: #630}
+#implink c6 {color: #630}
+#implink c7 {color: #950}
+#implink c8 {color: #950}
+#implink c9 {color: #C80}
+#implink c10 {color: #C80}
+
+#section {
+    padding-top: 0;
+    text-align: center
+}
+
+#section pre{
+    min-height: 100px
+}
+
+#section td{
+    padding:20px;
+}
+
+#section table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#section IMG{
+    border: 3px solid #889962;
+}
+
+table.books {
+    border-width: 0px 0px 0px 0px;
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+table.books td {
+    border-width: 0px 0px 0px 0px;
+    padding: 4px 4px 4px 4px;
+}
+table.books img {
+    float:left;
+    border:1px solid black;
+    margin:0px 15px 15px 20px;
+    width: 60px;
+    height: 90px;
+}
+
+table.books a:hover img {
+    border: 1px solid #0000ff;
+}
+
+img.corner {
+   width: 15px;
+   height: 15px;
+   border: none;
+   display: block !important;
+}
+
+.current{
+    color:red;
+}
+
+#cover{
+    float:left;
+    margin:0 5px 0px 0;
+    border: 1px dotted;
+    padding:0 0px 0px 0px;
+    text-align:center;
+}
+
+.content{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav{
+    /*padding:2px;*/
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav td{
+    padding: 0px 10px 5px 10px;
+}
+
+.nav img{
+        border:none;
+}
+
+
+#imps{
+    clear:both;
+}

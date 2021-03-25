@@ -1,0 +1,5269 @@
+#! /bin/sh
+# This is a shell archive.  Remove anything before this line, then unpack
+# it by saving it into a file and typing "sh file".  To overwrite existing
+# files, type "sh file -c".  You can also feed this as standard input via
+# unshar, or by typing "sh <file", e.g..  If this archive is complete, you
+# will see the following message at the end:
+#		"End of shell archive."
+# Contents:  g-bt-10-9 g-bt-11-10 g-bt-12-11 g-bt-127-126 g-bt-13-12
+#   g-bt-14-13 g-bt-15-14 g-bt-16-15 g-bt-17-16 g-bt-18-17 g-bt-19-18
+#   g-bt-20-19 g-bt-63-62 g-gg-100-180 g-gg-12-17 g-gg-15-22
+#   g-gg-16-24 g-gg-18-27 g-gg-20-31 g-gg-24-38 g-gg-25-40 g-gg-28-45
+#   g-gg-30-49 g-gg-33-52 g-gg-35-58 g-gg-36-60 g-gg-9-12 g-gg-91-162
+#   g-k-50-1225 g-p-10-9 g-p-100-99 g-p-11-10 g-p-12-11 g-p-13-12
+#   g-p-14-13 g-p-15-14 g-p-16-15 g-p-17-16 g-p-18-17 g-p-19-18
+#   g-p-20-19 g-p-25-24 g-p-30-29 g-p-40-39 g-p-50-49 g-r-10-14
+#   g-r-10-9 g-r-100-501 g-r-11-15 g-r-12-15 g-r-13-15 g-r-15-24
+#   g-r-18-46 g-r-20-42 g-r-25-83 g-r-30-109 g-r-50-301 g-r-7-7
+#   g-r-8-11 g-r-8-4 g-r-8-6 g-r-9-13 g-t-10-9 g-t-11-10 g-t-12-11
+#   g-t-13-12 g-t-14-13 g-t-15-14 g-t-17-16 g-t-20-19 g-t-25-24
+#   g-t-30-29 g-t-35-34 g-t-40-39 g-t-7-6 g-t-8-7 g-t-9-8
+# Wrapped by skiena@sbskiena on Mon Mar  4 10:49:17 1996
+PATH=/bin:/usr/bin:/usr/ucb ; export PATH
+if test -f g-bt-10-9 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-10-9\"
+else
+echo shar: Extracting \"g-bt-10-9\" \(69 characters\)
+sed "s/^X//" >g-bt-10-9 <<'END_OF_g-bt-10-9'
+X10
+X9
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+END_OF_g-bt-10-9
+if test 69 -ne `wc -c <g-bt-10-9`; then
+    echo shar: \"g-bt-10-9\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-11-10 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-11-10\"
+else
+echo shar: Extracting \"g-bt-11-10\" \(78 characters\)
+sed "s/^X//" >g-bt-11-10 <<'END_OF_g-bt-11-10'
+X11
+X10
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+END_OF_g-bt-11-10
+if test 78 -ne `wc -c <g-bt-11-10`; then
+    echo shar: \"g-bt-11-10\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-12-11 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-12-11\"
+else
+echo shar: Extracting \"g-bt-12-11\" \(86 characters\)
+sed "s/^X//" >g-bt-12-11 <<'END_OF_g-bt-12-11'
+X12
+X11
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+X6    12
+END_OF_g-bt-12-11
+if test 86 -ne `wc -c <g-bt-12-11`; then
+    echo shar: \"g-bt-12-11\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-127-126 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-127-126\"
+else
+echo shar: Extracting \"g-bt-127-126\" \(1144 characters\)
+sed "s/^X//" >g-bt-127-126 <<'END_OF_g-bt-127-126'
+X127
+X126
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+X6    12
+X6    13
+X7    14
+X7    15
+X8    16
+X8    17
+X9    18
+X9    19
+X10    20
+X10    21
+X11    22
+X11    23
+X12    24
+X12    25
+X13    26
+X13    27
+X14    28
+X14    29
+X15    30
+X15    31
+X16    32
+X16    33
+X17    34
+X17    35
+X18    36
+X18    37
+X19    38
+X19    39
+X20    40
+X20    41
+X21    42
+X21    43
+X22    44
+X22    45
+X23    46
+X23    47
+X24    48
+X24    49
+X25    50
+X25    51
+X26    52
+X26    53
+X27    54
+X27    55
+X28    56
+X28    57
+X29    58
+X29    59
+X30    60
+X30    61
+X31    62
+X31    63
+X32    64
+X32    65
+X33    66
+X33    67
+X34    68
+X34    69
+X35    70
+X35    71
+X36    72
+X36    73
+X37    74
+X37    75
+X38    76
+X38    77
+X39    78
+X39    79
+X40    80
+X40    81
+X41    82
+X41    83
+X42    84
+X42    85
+X43    86
+X43    87
+X44    88
+X44    89
+X45    90
+X45    91
+X46    92
+X46    93
+X47    94
+X47    95
+X48    96
+X48    97
+X49    98
+X49    99
+X50    100
+X50    101
+X51    102
+X51    103
+X52    104
+X52    105
+X53    106
+X53    107
+X54    108
+X54    109
+X55    110
+X55    111
+X56    112
+X56    113
+X57    114
+X57    115
+X58    116
+X58    117
+X59    118
+X59    119
+X60    120
+X60    121
+X61    122
+X61    123
+X62    124
+X62    125
+X63    126
+X63    127
+END_OF_g-bt-127-126
+if test 1144 -ne `wc -c <g-bt-127-126`; then
+    echo shar: \"g-bt-127-126\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-13-12 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-13-12\"
+else
+echo shar: Extracting \"g-bt-13-12\" \(94 characters\)
+sed "s/^X//" >g-bt-13-12 <<'END_OF_g-bt-13-12'
+X13
+X12
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+X6    12
+X6    13
+END_OF_g-bt-13-12
+if test 94 -ne `wc -c <g-bt-13-12`; then
+    echo shar: \"g-bt-13-12\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-14-13 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-14-13\"
+else
+echo shar: Extracting \"g-bt-14-13\" \(102 characters\)
+sed "s/^X//" >g-bt-14-13 <<'END_OF_g-bt-14-13'
+X14
+X13
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+X6    12
+X6    13
+X7    14
+END_OF_g-bt-14-13
+if test 102 -ne `wc -c <g-bt-14-13`; then
+    echo shar: \"g-bt-14-13\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-15-14 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-15-14\"
+else
+echo shar: Extracting \"g-bt-15-14\" \(110 characters\)
+sed "s/^X//" >g-bt-15-14 <<'END_OF_g-bt-15-14'
+X15
+X14
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+X6    12
+X6    13
+X7    14
+X7    15
+END_OF_g-bt-15-14
+if test 110 -ne `wc -c <g-bt-15-14`; then
+    echo shar: \"g-bt-15-14\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-16-15 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-16-15\"
+else
+echo shar: Extracting \"g-bt-16-15\" \(118 characters\)
+sed "s/^X//" >g-bt-16-15 <<'END_OF_g-bt-16-15'
+X16
+X15
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+X6    12
+X6    13
+X7    14
+X7    15
+X8    16
+END_OF_g-bt-16-15
+if test 118 -ne `wc -c <g-bt-16-15`; then
+    echo shar: \"g-bt-16-15\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-17-16 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-17-16\"
+else
+echo shar: Extracting \"g-bt-17-16\" \(126 characters\)
+sed "s/^X//" >g-bt-17-16 <<'END_OF_g-bt-17-16'
+X17
+X16
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+X6    12
+X6    13
+X7    14
+X7    15
+X8    16
+X8    17
+END_OF_g-bt-17-16
+if test 126 -ne `wc -c <g-bt-17-16`; then
+    echo shar: \"g-bt-17-16\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-18-17 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-18-17\"
+else
+echo shar: Extracting \"g-bt-18-17\" \(134 characters\)
+sed "s/^X//" >g-bt-18-17 <<'END_OF_g-bt-18-17'
+X18
+X17
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+X6    12
+X6    13
+X7    14
+X7    15
+X8    16
+X8    17
+X9    18
+END_OF_g-bt-18-17
+if test 134 -ne `wc -c <g-bt-18-17`; then
+    echo shar: \"g-bt-18-17\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-19-18 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-19-18\"
+else
+echo shar: Extracting \"g-bt-19-18\" \(142 characters\)
+sed "s/^X//" >g-bt-19-18 <<'END_OF_g-bt-19-18'
+X19
+X18
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+X6    12
+X6    13
+X7    14
+X7    15
+X8    16
+X8    17
+X9    18
+X9    19
+END_OF_g-bt-19-18
+if test 142 -ne `wc -c <g-bt-19-18`; then
+    echo shar: \"g-bt-19-18\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-20-19 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-20-19\"
+else
+echo shar: Extracting \"g-bt-20-19\" \(151 characters\)
+sed "s/^X//" >g-bt-20-19 <<'END_OF_g-bt-20-19'
+X20
+X19
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+X6    12
+X6    13
+X7    14
+X7    15
+X8    16
+X8    17
+X9    18
+X9    19
+X10    20
+END_OF_g-bt-20-19
+if test 151 -ne `wc -c <g-bt-20-19`; then
+    echo shar: \"g-bt-20-19\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-bt-63-62 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-bt-63-62\"
+else
+echo shar: Extracting \"g-bt-63-62\" \(538 characters\)
+sed "s/^X//" >g-bt-63-62 <<'END_OF_g-bt-63-62'
+X63
+X62
+X1    2
+X1    3
+X2    4
+X2    5
+X3    6
+X3    7
+X4    8
+X4    9
+X5    10
+X5    11
+X6    12
+X6    13
+X7    14
+X7    15
+X8    16
+X8    17
+X9    18
+X9    19
+X10    20
+X10    21
+X11    22
+X11    23
+X12    24
+X12    25
+X13    26
+X13    27
+X14    28
+X14    29
+X15    30
+X15    31
+X16    32
+X16    33
+X17    34
+X17    35
+X18    36
+X18    37
+X19    38
+X19    39
+X20    40
+X20    41
+X21    42
+X21    43
+X22    44
+X22    45
+X23    46
+X23    47
+X24    48
+X24    49
+X25    50
+X25    51
+X26    52
+X26    53
+X27    54
+X27    55
+X28    56
+X28    57
+X29    58
+X29    59
+X30    60
+X30    61
+X31    62
+X31    63
+END_OF_g-bt-63-62
+if test 538 -ne `wc -c <g-bt-63-62`; then
+    echo shar: \"g-bt-63-62\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-100-180 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-100-180\"
+else
+echo shar: Extracting \"g-gg-100-180\" \(1601 characters\)
+sed "s/^X//" >g-gg-100-180 <<'END_OF_g-gg-100-180'
+X100
+X180
+X1    27
+X1    31
+X1    32
+X2    55
+X2    57
+X2    64
+X2    73
+X3    12
+X3    19
+X3    24
+X3    39
+X4    19
+X4    35
+X4    39
+X4    85
+X5    46
+X5    53
+X5    71
+X5    95
+X6    44
+X6    66
+X6    99
+X7    11
+X7    61
+X7    73
+X8    10
+X8    63
+X8    79
+X9    42
+X9    68
+X9    74
+X10    36
+X10    82
+X11    28
+X11    80
+X12    16
+X12    54
+X12    79
+X13    27
+X13    31
+X13    51
+X13    62
+X14    41
+X14    44
+X14    66
+X15    55
+X15    57
+X15    59
+X15    97
+X16    39
+X16    77
+X16    100
+X17    36
+X17    82
+X17    87
+X17    90
+X18    27
+X18    51
+X18    65
+X18    86
+X19    20
+X19    37
+X20    24
+X20    48
+X20    67
+X21    29
+X21    32
+X21    45
+X22    35
+X22    76
+X22    88
+X22    92
+X23    71
+X23    83
+X23    95
+X24    63
+X24    79
+X25    26
+X25    38
+X25    94
+X25    98
+X26    42
+X26    99
+X27    47
+X28    55
+X28    62
+X28    73
+X29    30
+X29    47
+X29    72
+X30    33
+X30    37
+X30    65
+X31    80
+X32    47
+X33    34
+X33    67
+X33    72
+X34    43
+X34    84
+X35    75
+X35    86
+X36    60
+X37    67
+X37    85
+X38    56
+X38    66
+X38    99
+X39    75
+X40    52
+X40    87
+X40    90
+X41    53
+X41    95
+X42    98
+X43    48
+X43    67
+X45    70
+X45    72
+X46    49
+X46    56
+X46    81
+X47    65
+X48    63
+X49    93
+X49    94
+X49    96
+X50    51
+X50    55
+X50    62
+X50    97
+X51    88
+X52    83
+X52    89
+X53    56
+X53    66
+X54    82
+X54    90
+X54    100
+X56    94
+X57    68
+X57    74
+X58    61
+X58    64
+X58    73
+X59    74
+X59    76
+X59    78
+X60    87
+X62    80
+X64    68
+X65    85
+X69    71
+X69    83
+X69    89
+X69    91
+X70    84
+X71    81
+X72    84
+X74    98
+X75    77
+X75    92
+X76    93
+X76    97
+X77    91
+X77    96
+X78    93
+X78    94
+X78    98
+X79    82
+X81    91
+X81    96
+X85    86
+X86    88
+X88    97
+X89    90
+X89    100
+X91    100
+X92    93
+X92    96
+END_OF_g-gg-100-180
+if test 1601 -ne `wc -c <g-gg-100-180`; then
+    echo shar: \"g-gg-100-180\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-12-17 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-12-17\"
+else
+echo shar: Extracting \"g-gg-12-17\" \(133 characters\)
+sed "s/^X//" >g-gg-12-17 <<'END_OF_g-gg-12-17'
+X12
+X17
+X1    5
+X1    7
+X1    11
+X2    6
+X2    10
+X3    5
+X3    7
+X3    9
+X3    12
+X4    5
+X4    9
+X6    7
+X6    11
+X7    10
+X8    9
+X8    12
+X10    12
+END_OF_g-gg-12-17
+if test 133 -ne `wc -c <g-gg-12-17`; then
+    echo shar: \"g-gg-12-17\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-15-22 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-15-22\"
+else
+echo shar: Extracting \"g-gg-15-22\" \(177 characters\)
+sed "s/^X//" >g-gg-15-22 <<'END_OF_g-gg-15-22'
+X15
+X22
+X1    4
+X1    5
+X1    9
+X2    6
+X2    11
+X2    14
+X3    6
+X3    8
+X3    11
+X4    6
+X4    8
+X5    6
+X5    12
+X5    14
+X7    9
+X7    13
+X9    12
+X10    13
+X10    15
+X12    13
+X12    15
+X14    15
+END_OF_g-gg-15-22
+if test 177 -ne `wc -c <g-gg-15-22`; then
+    echo shar: \"g-gg-15-22\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-16-24 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-16-24\"
+else
+echo shar: Extracting \"g-gg-16-24\" \(195 characters\)
+sed "s/^X//" >g-gg-16-24 <<'END_OF_g-gg-16-24'
+X16
+X24
+X1    5
+X1    16
+X2    3
+X2    8
+X2    13
+X2    15
+X3    9
+X3    16
+X4    6
+X4    7
+X4    14
+X5    12
+X5    13
+X6    10
+X6    15
+X7    12
+X7    13
+X7    15
+X8    9
+X8    11
+X10    11
+X11    15
+X12    14
+X13    16
+END_OF_g-gg-16-24
+if test 195 -ne `wc -c <g-gg-16-24`; then
+    echo shar: \"g-gg-16-24\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-18-27 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-18-27\"
+else
+echo shar: Extracting \"g-gg-18-27\" \(220 characters\)
+sed "s/^X//" >g-gg-18-27 <<'END_OF_g-gg-18-27'
+X18
+X27
+X1    7
+X1    10
+X1    17
+X2    3
+X2    11
+X2    13
+X3    6
+X4    7
+X4    8
+X4    17
+X4    18
+X5    7
+X5    15
+X5    18
+X6    12
+X6    13
+X7    16
+X8    9
+X8    12
+X8    13
+X9    14
+X9    18
+X10    16
+X11    14
+X12    17
+X13    14
+X15    16
+END_OF_g-gg-18-27
+if test 220 -ne `wc -c <g-gg-18-27`; then
+    echo shar: \"g-gg-18-27\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-20-31 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-20-31\"
+else
+echo shar: Extracting \"g-gg-20-31\" \(257 characters\)
+sed "s/^X//" >g-gg-20-31 <<'END_OF_g-gg-20-31'
+X20
+X31
+X1    16
+X1    20
+X2    7
+X2    13
+X2    16
+X2    20
+X3    11
+X3    13
+X3    16
+X4    8
+X4    15
+X4    18
+X5    6
+X5    14
+X6    9
+X6    12
+X7    10
+X7    12
+X7    17
+X8    9
+X8    12
+X8    17
+X9    18
+X10    14
+X10    20
+X11    19
+X12    14
+X13    17
+X13    19
+X15    17
+X15    19
+END_OF_g-gg-20-31
+if test 257 -ne `wc -c <g-gg-20-31`; then
+    echo shar: \"g-gg-20-31\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-24-38 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-24-38\"
+else
+echo shar: Extracting \"g-gg-24-38\" \(320 characters\)
+sed "s/^X//" >g-gg-24-38 <<'END_OF_g-gg-24-38'
+X24
+X38
+X1    5
+X1    11
+X1    16
+X2    6
+X2    9
+X2    20
+X3    6
+X3    15
+X3    16
+X3    24
+X4    5
+X4    9
+X5    12
+X6    12
+X6    13
+X7    8
+X7    17
+X7    23
+X8    15
+X8    24
+X9    12
+X10    11
+X10    15
+X10    16
+X12    16
+X13    19
+X13    20
+X13    24
+X14    19
+X14    21
+X14    22
+X17    19
+X17    22
+X17    24
+X18    19
+X18    20
+X18    21
+X22    23
+END_OF_g-gg-24-38
+if test 320 -ne `wc -c <g-gg-24-38`; then
+    echo shar: \"g-gg-24-38\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-25-40 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-25-40\"
+else
+echo shar: Extracting \"g-gg-25-40\" \(336 characters\)
+sed "s/^X//" >g-gg-25-40 <<'END_OF_g-gg-25-40'
+X25
+X40
+X1    9
+X1    12
+X1    23
+X2    9
+X2    12
+X2    17
+X2    25
+X3    9
+X3    22
+X3    23
+X4    9
+X4    17
+X4    22
+X4    24
+X5    8
+X5    18
+X5    19
+X5    21
+X6    13
+X6    14
+X6    25
+X7    16
+X7    20
+X8    11
+X8    13
+X10    18
+X10    20
+X10    21
+X11    21
+X12    15
+X13    19
+X14    15
+X15    25
+X16    22
+X16    24
+X17    18
+X17    19
+X18    24
+X19    25
+X20    24
+END_OF_g-gg-25-40
+if test 336 -ne `wc -c <g-gg-25-40`; then
+    echo shar: \"g-gg-25-40\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-28-45 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-28-45\"
+else
+echo shar: Extracting \"g-gg-28-45\" \(381 characters\)
+sed "s/^X//" >g-gg-28-45 <<'END_OF_g-gg-28-45'
+X28
+X45
+X1    6
+X1    19
+X1    23
+X1    24
+X2    4
+X2    7
+X2    25
+X3    4
+X3    5
+X3    25
+X4    15
+X4    26
+X5    15
+X5    27
+X6    12
+X6    21
+X7    22
+X7    26
+X8    19
+X8    20
+X8    23
+X9    10
+X9    14
+X9    22
+X9    26
+X10    11
+X10    16
+X10    24
+X11    15
+X11    26
+X11    28
+X12    23
+X13    17
+X13    19
+X13    20
+X14    17
+X14    19
+X14    24
+X15    18
+X16    21
+X16    28
+X17    22
+X18    27
+X18    28
+X21    24
+END_OF_g-gg-28-45
+if test 381 -ne `wc -c <g-gg-28-45`; then
+    echo shar: \"g-gg-28-45\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-30-49 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-30-49\"
+else
+echo shar: Extracting \"g-gg-30-49\" \(415 characters\)
+sed "s/^X//" >g-gg-30-49 <<'END_OF_g-gg-30-49'
+X30
+X49
+X1    15
+X1    16
+X1    18
+X1    23
+X2    4
+X2    6
+X2    10
+X2    26
+X3    8
+X3    9
+X3    15
+X3    28
+X4    13
+X4    29
+X5    7
+X5    14
+X5    29
+X6    16
+X6    17
+X6    18
+X7    20
+X7    30
+X8    24
+X8    27
+X9    11
+X9    24
+X9    30
+X10    13
+X10    17
+X11    14
+X11    15
+X11    18
+X12    15
+X12    23
+X12    28
+X14    26
+X14    30
+X16    19
+X16    25
+X17    19
+X18    26
+X19    22
+X20    21
+X21    24
+X21    30
+X22    25
+X23    25
+X26    29
+X27    28
+END_OF_g-gg-30-49
+if test 415 -ne `wc -c <g-gg-30-49`; then
+    echo shar: \"g-gg-30-49\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-33-52 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-33-52\"
+else
+echo shar: Extracting \"g-gg-33-52\" \(442 characters\)
+sed "s/^X//" >g-gg-33-52 <<'END_OF_g-gg-33-52'
+X33
+X52
+X1    5
+X1    6
+X1    21
+X1    29
+X2    7
+X2    20
+X2    24
+X3    11
+X3    15
+X3    30
+X4    9
+X4    10
+X4    13
+X4    14
+X5    28
+X5    31
+X5    33
+X6    30
+X6    33
+X7    18
+X7    26
+X7    31
+X8    13
+X8    14
+X8    22
+X9    11
+X9    15
+X9    17
+X10    17
+X10    32
+X11    23
+X11    29
+X12    26
+X12    28
+X12    31
+X13    15
+X14    25
+X14    32
+X16    21
+X16    23
+X16    29
+X17    23
+X18    20
+X18    27
+X19    25
+X19    32
+X21    28
+X22    25
+X24    26
+X27    31
+X27    33
+X29    30
+END_OF_g-gg-33-52
+if test 442 -ne `wc -c <g-gg-33-52`; then
+    echo shar: \"g-gg-33-52\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-35-58 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-35-58\"
+else
+echo shar: Extracting \"g-gg-35-58\" \(498 characters\)
+sed "s/^X//" >g-gg-35-58 <<'END_OF_g-gg-35-58'
+X35
+X58
+X1    9
+X1    17
+X2    10
+X2    19
+X2    28
+X3    11
+X3    15
+X3    18
+X3    34
+X4    26
+X4    32
+X4    35
+X5    11
+X5    18
+X5    26
+X5    32
+X6    12
+X6    21
+X6    29
+X6    31
+X7    10
+X7    28
+X7    29
+X7    33
+X8    21
+X8    29
+X8    33
+X9    11
+X9    34
+X10    14
+X10    15
+X11    17
+X12    23
+X12    24
+X13    16
+X13    23
+X13    30
+X14    25
+X14    29
+X14    31
+X15    19
+X15    25
+X16    22
+X16    27
+X17    26
+X18    25
+X18    27
+X19    34
+X20    28
+X20    33
+X21    24
+X22    32
+X22    35
+X23    31
+X25    30
+X27    30
+X27    32
+X30    31
+END_OF_g-gg-35-58
+if test 498 -ne `wc -c <g-gg-35-58`; then
+    echo shar: \"g-gg-35-58\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-36-60 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-36-60\"
+else
+echo shar: Extracting \"g-gg-36-60\" \(516 characters\)
+sed "s/^X//" >g-gg-36-60 <<'END_OF_g-gg-36-60'
+X36
+X60
+X1    2
+X1    14
+X1    25
+X1    27
+X2    15
+X2    36
+X3    4
+X3    23
+X4    7
+X4    20
+X5    13
+X5    18
+X5    26
+X6    7
+X6    9
+X6    20
+X6    30
+X7    12
+X8    9
+X8    17
+X8    20
+X8    32
+X9    34
+X9    35
+X10    14
+X10    16
+X10    22
+X10    35
+X11    13
+X11    18
+X11    25
+X11    34
+X12    21
+X12    30
+X13    33
+X14    29
+X14    36
+X15    27
+X16    24
+X16    28
+X16    32
+X17    23
+X17    31
+X18    21
+X18    30
+X19    24
+X19    28
+X20    23
+X21    26
+X22    28
+X22    36
+X24    31
+X25    29
+X25    33
+X27    33
+X29    34
+X29    35
+X30    34
+X31    32
+X32    35
+END_OF_g-gg-36-60
+if test 516 -ne `wc -c <g-gg-36-60`; then
+    echo shar: \"g-gg-36-60\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-9-12 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-9-12\"
+else
+echo shar: Extracting \"g-gg-9-12\" \(89 characters\)
+sed "s/^X//" >g-gg-9-12 <<'END_OF_g-gg-9-12'
+X9
+X12
+X1    3
+X1    4
+X1    9
+X2    3
+X2    8
+X2    9
+X3    5
+X3    7
+X4    7
+X5    6
+X5    8
+X6    7
+END_OF_g-gg-9-12
+if test 89 -ne `wc -c <g-gg-9-12`; then
+    echo shar: \"g-gg-9-12\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-gg-91-162 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-gg-91-162\"
+else
+echo shar: Extracting \"g-gg-91-162\" \(1433 characters\)
+sed "s/^X//" >g-gg-91-162 <<'END_OF_g-gg-91-162'
+X91
+X162
+X1    6
+X1    48
+X1    67
+X1    79
+X2    13
+X2    16
+X2    19
+X2    44
+X3    37
+X3    38
+X3    75
+X3    90
+X4    16
+X4    27
+X4    42
+X4    61
+X5    23
+X5    26
+X5    29
+X6    23
+X6    84
+X7    24
+X7    28
+X7    72
+X7    78
+X8    26
+X8    29
+X8    39
+X9    43
+X9    57
+X9    63
+X10    21
+X10    41
+X10    50
+X10    71
+X11    27
+X11    42
+X11    64
+X11    91
+X12    30
+X12    35
+X12    56
+X12    73
+X13    36
+X13    45
+X13    73
+X14    44
+X14    52
+X14    85
+X15    38
+X15    46
+X15    90
+X16    55
+X16    82
+X17    25
+X17    80
+X17    83
+X18    39
+X18    58
+X18    68
+X19    30
+X19    55
+X19    73
+X20    43
+X20    57
+X20    76
+X21    51
+X21    70
+X22    74
+X22    80
+X23    48
+X24    57
+X24    76
+X24    87
+X25    65
+X25    87
+X25    89
+X27    65
+X27    77
+X28    65
+X28    77
+X28    87
+X29    31
+X29    48
+X30    41
+X30    71
+X31    34
+X31    39
+X31    68
+X32    60
+X32    63
+X32    70
+X33    42
+X33    52
+X33    64
+X34    48
+X34    62
+X34    67
+X35    59
+X35    67
+X35    79
+X36    44
+X36    47
+X36    85
+X37    62
+X37    66
+X37    88
+X38    49
+X40    64
+X40    74
+X40    91
+X41    54
+X41    55
+X42    82
+X44    82
+X45    47
+X45    59
+X45    88
+X46    47
+X46    85
+X47    90
+X49    75
+X49    86
+X50    54
+X50    60
+X50    70
+X51    53
+X51    71
+X52    82
+X53    56
+X53    84
+X54    61
+X54    72
+X55    61
+X56    71
+X56    79
+X57    78
+X58    66
+X58    81
+X59    69
+X59    73
+X60    72
+X60    78
+X61    77
+X62    68
+X62    69
+X63    78
+X65    91
+X66    68
+X66    75
+X67    69
+X69    88
+X72    77
+X74    89
+X75    81
+X76    83
+X79    84
+X80    89
+X81    86
+X83    87
+X88    90
+X89    91
+END_OF_g-gg-91-162
+if test 1433 -ne `wc -c <g-gg-91-162`; then
+    echo shar: \"g-gg-91-162\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-k-50-1225 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-k-50-1225\"
+else
+echo shar: Extracting \"g-k-50-1225\" \(10592 characters\)
+sed "s/^X//" >g-k-50-1225 <<'END_OF_g-k-50-1225'
+X50
+X1225
+X1    2
+X1    3
+X1    4
+X1    5
+X1    6
+X1    7
+X1    8
+X1    9
+X1    10
+X1    11
+X1    12
+X1    13
+X1    14
+X1    15
+X1    16
+X1    17
+X1    18
+X1    19
+X1    20
+X1    21
+X1    22
+X1    23
+X1    24
+X1    25
+X1    26
+X1    27
+X1    28
+X1    29
+X1    30
+X1    31
+X1    32
+X1    33
+X1    34
+X1    35
+X1    36
+X1    37
+X1    38
+X1    39
+X1    40
+X1    41
+X1    42
+X1    43
+X1    44
+X1    45
+X1    46
+X1    47
+X1    48
+X1    49
+X1    50
+X2    3
+X2    4
+X2    5
+X2    6
+X2    7
+X2    8
+X2    9
+X2    10
+X2    11
+X2    12
+X2    13
+X2    14
+X2    15
+X2    16
+X2    17
+X2    18
+X2    19
+X2    20
+X2    21
+X2    22
+X2    23
+X2    24
+X2    25
+X2    26
+X2    27
+X2    28
+X2    29
+X2    30
+X2    31
+X2    32
+X2    33
+X2    34
+X2    35
+X2    36
+X2    37
+X2    38
+X2    39
+X2    40
+X2    41
+X2    42
+X2    43
+X2    44
+X2    45
+X2    46
+X2    47
+X2    48
+X2    49
+X2    50
+X3    4
+X3    5
+X3    6
+X3    7
+X3    8
+X3    9
+X3    10
+X3    11
+X3    12
+X3    13
+X3    14
+X3    15
+X3    16
+X3    17
+X3    18
+X3    19
+X3    20
+X3    21
+X3    22
+X3    23
+X3    24
+X3    25
+X3    26
+X3    27
+X3    28
+X3    29
+X3    30
+X3    31
+X3    32
+X3    33
+X3    34
+X3    35
+X3    36
+X3    37
+X3    38
+X3    39
+X3    40
+X3    41
+X3    42
+X3    43
+X3    44
+X3    45
+X3    46
+X3    47
+X3    48
+X3    49
+X3    50
+X4    5
+X4    6
+X4    7
+X4    8
+X4    9
+X4    10
+X4    11
+X4    12
+X4    13
+X4    14
+X4    15
+X4    16
+X4    17
+X4    18
+X4    19
+X4    20
+X4    21
+X4    22
+X4    23
+X4    24
+X4    25
+X4    26
+X4    27
+X4    28
+X4    29
+X4    30
+X4    31
+X4    32
+X4    33
+X4    34
+X4    35
+X4    36
+X4    37
+X4    38
+X4    39
+X4    40
+X4    41
+X4    42
+X4    43
+X4    44
+X4    45
+X4    46
+X4    47
+X4    48
+X4    49
+X4    50
+X5    6
+X5    7
+X5    8
+X5    9
+X5    10
+X5    11
+X5    12
+X5    13
+X5    14
+X5    15
+X5    16
+X5    17
+X5    18
+X5    19
+X5    20
+X5    21
+X5    22
+X5    23
+X5    24
+X5    25
+X5    26
+X5    27
+X5    28
+X5    29
+X5    30
+X5    31
+X5    32
+X5    33
+X5    34
+X5    35
+X5    36
+X5    37
+X5    38
+X5    39
+X5    40
+X5    41
+X5    42
+X5    43
+X5    44
+X5    45
+X5    46
+X5    47
+X5    48
+X5    49
+X5    50
+X6    7
+X6    8
+X6    9
+X6    10
+X6    11
+X6    12
+X6    13
+X6    14
+X6    15
+X6    16
+X6    17
+X6    18
+X6    19
+X6    20
+X6    21
+X6    22
+X6    23
+X6    24
+X6    25
+X6    26
+X6    27
+X6    28
+X6    29
+X6    30
+X6    31
+X6    32
+X6    33
+X6    34
+X6    35
+X6    36
+X6    37
+X6    38
+X6    39
+X6    40
+X6    41
+X6    42
+X6    43
+X6    44
+X6    45
+X6    46
+X6    47
+X6    48
+X6    49
+X6    50
+X7    8
+X7    9
+X7    10
+X7    11
+X7    12
+X7    13
+X7    14
+X7    15
+X7    16
+X7    17
+X7    18
+X7    19
+X7    20
+X7    21
+X7    22
+X7    23
+X7    24
+X7    25
+X7    26
+X7    27
+X7    28
+X7    29
+X7    30
+X7    31
+X7    32
+X7    33
+X7    34
+X7    35
+X7    36
+X7    37
+X7    38
+X7    39
+X7    40
+X7    41
+X7    42
+X7    43
+X7    44
+X7    45
+X7    46
+X7    47
+X7    48
+X7    49
+X7    50
+X8    9
+X8    10
+X8    11
+X8    12
+X8    13
+X8    14
+X8    15
+X8    16
+X8    17
+X8    18
+X8    19
+X8    20
+X8    21
+X8    22
+X8    23
+X8    24
+X8    25
+X8    26
+X8    27
+X8    28
+X8    29
+X8    30
+X8    31
+X8    32
+X8    33
+X8    34
+X8    35
+X8    36
+X8    37
+X8    38
+X8    39
+X8    40
+X8    41
+X8    42
+X8    43
+X8    44
+X8    45
+X8    46
+X8    47
+X8    48
+X8    49
+X8    50
+X9    10
+X9    11
+X9    12
+X9    13
+X9    14
+X9    15
+X9    16
+X9    17
+X9    18
+X9    19
+X9    20
+X9    21
+X9    22
+X9    23
+X9    24
+X9    25
+X9    26
+X9    27
+X9    28
+X9    29
+X9    30
+X9    31
+X9    32
+X9    33
+X9    34
+X9    35
+X9    36
+X9    37
+X9    38
+X9    39
+X9    40
+X9    41
+X9    42
+X9    43
+X9    44
+X9    45
+X9    46
+X9    47
+X9    48
+X9    49
+X9    50
+X10    11
+X10    12
+X10    13
+X10    14
+X10    15
+X10    16
+X10    17
+X10    18
+X10    19
+X10    20
+X10    21
+X10    22
+X10    23
+X10    24
+X10    25
+X10    26
+X10    27
+X10    28
+X10    29
+X10    30
+X10    31
+X10    32
+X10    33
+X10    34
+X10    35
+X10    36
+X10    37
+X10    38
+X10    39
+X10    40
+X10    41
+X10    42
+X10    43
+X10    44
+X10    45
+X10    46
+X10    47
+X10    48
+X10    49
+X10    50
+X11    12
+X11    13
+X11    14
+X11    15
+X11    16
+X11    17
+X11    18
+X11    19
+X11    20
+X11    21
+X11    22
+X11    23
+X11    24
+X11    25
+X11    26
+X11    27
+X11    28
+X11    29
+X11    30
+X11    31
+X11    32
+X11    33
+X11    34
+X11    35
+X11    36
+X11    37
+X11    38
+X11    39
+X11    40
+X11    41
+X11    42
+X11    43
+X11    44
+X11    45
+X11    46
+X11    47
+X11    48
+X11    49
+X11    50
+X12    13
+X12    14
+X12    15
+X12    16
+X12    17
+X12    18
+X12    19
+X12    20
+X12    21
+X12    22
+X12    23
+X12    24
+X12    25
+X12    26
+X12    27
+X12    28
+X12    29
+X12    30
+X12    31
+X12    32
+X12    33
+X12    34
+X12    35
+X12    36
+X12    37
+X12    38
+X12    39
+X12    40
+X12    41
+X12    42
+X12    43
+X12    44
+X12    45
+X12    46
+X12    47
+X12    48
+X12    49
+X12    50
+X13    14
+X13    15
+X13    16
+X13    17
+X13    18
+X13    19
+X13    20
+X13    21
+X13    22
+X13    23
+X13    24
+X13    25
+X13    26
+X13    27
+X13    28
+X13    29
+X13    30
+X13    31
+X13    32
+X13    33
+X13    34
+X13    35
+X13    36
+X13    37
+X13    38
+X13    39
+X13    40
+X13    41
+X13    42
+X13    43
+X13    44
+X13    45
+X13    46
+X13    47
+X13    48
+X13    49
+X13    50
+X14    15
+X14    16
+X14    17
+X14    18
+X14    19
+X14    20
+X14    21
+X14    22
+X14    23
+X14    24
+X14    25
+X14    26
+X14    27
+X14    28
+X14    29
+X14    30
+X14    31
+X14    32
+X14    33
+X14    34
+X14    35
+X14    36
+X14    37
+X14    38
+X14    39
+X14    40
+X14    41
+X14    42
+X14    43
+X14    44
+X14    45
+X14    46
+X14    47
+X14    48
+X14    49
+X14    50
+X15    16
+X15    17
+X15    18
+X15    19
+X15    20
+X15    21
+X15    22
+X15    23
+X15    24
+X15    25
+X15    26
+X15    27
+X15    28
+X15    29
+X15    30
+X15    31
+X15    32
+X15    33
+X15    34
+X15    35
+X15    36
+X15    37
+X15    38
+X15    39
+X15    40
+X15    41
+X15    42
+X15    43
+X15    44
+X15    45
+X15    46
+X15    47
+X15    48
+X15    49
+X15    50
+X16    17
+X16    18
+X16    19
+X16    20
+X16    21
+X16    22
+X16    23
+X16    24
+X16    25
+X16    26
+X16    27
+X16    28
+X16    29
+X16    30
+X16    31
+X16    32
+X16    33
+X16    34
+X16    35
+X16    36
+X16    37
+X16    38
+X16    39
+X16    40
+X16    41
+X16    42
+X16    43
+X16    44
+X16    45
+X16    46
+X16    47
+X16    48
+X16    49
+X16    50
+X17    18
+X17    19
+X17    20
+X17    21
+X17    22
+X17    23
+X17    24
+X17    25
+X17    26
+X17    27
+X17    28
+X17    29
+X17    30
+X17    31
+X17    32
+X17    33
+X17    34
+X17    35
+X17    36
+X17    37
+X17    38
+X17    39
+X17    40
+X17    41
+X17    42
+X17    43
+X17    44
+X17    45
+X17    46
+X17    47
+X17    48
+X17    49
+X17    50
+X18    19
+X18    20
+X18    21
+X18    22
+X18    23
+X18    24
+X18    25
+X18    26
+X18    27
+X18    28
+X18    29
+X18    30
+X18    31
+X18    32
+X18    33
+X18    34
+X18    35
+X18    36
+X18    37
+X18    38
+X18    39
+X18    40
+X18    41
+X18    42
+X18    43
+X18    44
+X18    45
+X18    46
+X18    47
+X18    48
+X18    49
+X18    50
+X19    20
+X19    21
+X19    22
+X19    23
+X19    24
+X19    25
+X19    26
+X19    27
+X19    28
+X19    29
+X19    30
+X19    31
+X19    32
+X19    33
+X19    34
+X19    35
+X19    36
+X19    37
+X19    38
+X19    39
+X19    40
+X19    41
+X19    42
+X19    43
+X19    44
+X19    45
+X19    46
+X19    47
+X19    48
+X19    49
+X19    50
+X20    21
+X20    22
+X20    23
+X20    24
+X20    25
+X20    26
+X20    27
+X20    28
+X20    29
+X20    30
+X20    31
+X20    32
+X20    33
+X20    34
+X20    35
+X20    36
+X20    37
+X20    38
+X20    39
+X20    40
+X20    41
+X20    42
+X20    43
+X20    44
+X20    45
+X20    46
+X20    47
+X20    48
+X20    49
+X20    50
+X21    22
+X21    23
+X21    24
+X21    25
+X21    26
+X21    27
+X21    28
+X21    29
+X21    30
+X21    31
+X21    32
+X21    33
+X21    34
+X21    35
+X21    36
+X21    37
+X21    38
+X21    39
+X21    40
+X21    41
+X21    42
+X21    43
+X21    44
+X21    45
+X21    46
+X21    47
+X21    48
+X21    49
+X21    50
+X22    23
+X22    24
+X22    25
+X22    26
+X22    27
+X22    28
+X22    29
+X22    30
+X22    31
+X22    32
+X22    33
+X22    34
+X22    35
+X22    36
+X22    37
+X22    38
+X22    39
+X22    40
+X22    41
+X22    42
+X22    43
+X22    44
+X22    45
+X22    46
+X22    47
+X22    48
+X22    49
+X22    50
+X23    24
+X23    25
+X23    26
+X23    27
+X23    28
+X23    29
+X23    30
+X23    31
+X23    32
+X23    33
+X23    34
+X23    35
+X23    36
+X23    37
+X23    38
+X23    39
+X23    40
+X23    41
+X23    42
+X23    43
+X23    44
+X23    45
+X23    46
+X23    47
+X23    48
+X23    49
+X23    50
+X24    25
+X24    26
+X24    27
+X24    28
+X24    29
+X24    30
+X24    31
+X24    32
+X24    33
+X24    34
+X24    35
+X24    36
+X24    37
+X24    38
+X24    39
+X24    40
+X24    41
+X24    42
+X24    43
+X24    44
+X24    45
+X24    46
+X24    47
+X24    48
+X24    49
+X24    50
+X25    26
+X25    27
+X25    28
+X25    29
+X25    30
+X25    31
+X25    32
+X25    33
+X25    34
+X25    35
+X25    36
+X25    37
+X25    38
+X25    39
+X25    40
+X25    41
+X25    42
+X25    43
+X25    44
+X25    45
+X25    46
+X25    47
+X25    48
+X25    49
+X25    50
+X26    27
+X26    28
+X26    29
+X26    30
+X26    31
+X26    32
+X26    33
+X26    34
+X26    35
+X26    36
+X26    37
+X26    38
+X26    39
+X26    40
+X26    41
+X26    42
+X26    43
+X26    44
+X26    45
+X26    46
+X26    47
+X26    48
+X26    49
+X26    50
+X27    28
+X27    29
+X27    30
+X27    31
+X27    32
+X27    33
+X27    34
+X27    35
+X27    36
+X27    37
+X27    38
+X27    39
+X27    40
+X27    41
+X27    42
+X27    43
+X27    44
+X27    45
+X27    46
+X27    47
+X27    48
+X27    49
+X27    50
+X28    29
+X28    30
+X28    31
+X28    32
+X28    33
+X28    34
+X28    35
+X28    36
+X28    37
+X28    38
+X28    39
+X28    40
+X28    41
+X28    42
+X28    43
+X28    44
+X28    45
+X28    46
+X28    47
+X28    48
+X28    49
+X28    50
+X29    30
+X29    31
+X29    32
+X29    33
+X29    34
+X29    35
+X29    36
+X29    37
+X29    38
+X29    39
+X29    40
+X29    41
+X29    42
+X29    43
+X29    44
+X29    45
+X29    46
+X29    47
+X29    48
+X29    49
+X29    50
+X30    31
+X30    32
+X30    33
+X30    34
+X30    35
+X30    36
+X30    37
+X30    38
+X30    39
+X30    40
+X30    41
+X30    42
+X30    43
+X30    44
+X30    45
+X30    46
+X30    47
+X30    48
+X30    49
+X30    50
+X31    32
+X31    33
+X31    34
+X31    35
+X31    36
+X31    37
+X31    38
+X31    39
+X31    40
+X31    41
+X31    42
+X31    43
+X31    44
+X31    45
+X31    46
+X31    47
+X31    48
+X31    49
+X31    50
+X32    33
+X32    34
+X32    35
+X32    36
+X32    37
+X32    38
+X32    39
+X32    40
+X32    41
+X32    42
+X32    43
+X32    44
+X32    45
+X32    46
+X32    47
+X32    48
+X32    49
+X32    50
+X33    34
+X33    35
+X33    36
+X33    37
+X33    38
+X33    39
+X33    40
+X33    41
+X33    42
+X33    43
+X33    44
+X33    45
+X33    46
+X33    47
+X33    48
+X33    49
+X33    50
+X34    35
+X34    36
+X34    37
+X34    38
+X34    39
+X34    40
+X34    41
+X34    42
+X34    43
+X34    44
+X34    45
+X34    46
+X34    47
+X34    48
+X34    49
+X34    50
+X35    36
+X35    37
+X35    38
+X35    39
+X35    40
+X35    41
+X35    42
+X35    43
+X35    44
+X35    45
+X35    46
+X35    47
+X35    48
+X35    49
+X35    50
+X36    37
+X36    38
+X36    39
+X36    40
+X36    41
+X36    42
+X36    43
+X36    44
+X36    45
+X36    46
+X36    47
+X36    48
+X36    49
+X36    50
+X37    38
+X37    39
+X37    40
+X37    41
+X37    42
+X37    43
+X37    44
+X37    45
+X37    46
+X37    47
+X37    48
+X37    49
+X37    50
+X38    39
+X38    40
+X38    41
+X38    42
+X38    43
+X38    44
+X38    45
+X38    46
+X38    47
+X38    48
+X38    49
+X38    50
+X39    40
+X39    41
+X39    42
+X39    43
+X39    44
+X39    45
+X39    46
+X39    47
+X39    48
+X39    49
+X39    50
+X40    41
+X40    42
+X40    43
+X40    44
+X40    45
+X40    46
+X40    47
+X40    48
+X40    49
+X40    50
+X41    42
+X41    43
+X41    44
+X41    45
+X41    46
+X41    47
+X41    48
+X41    49
+X41    50
+X42    43
+X42    44
+X42    45
+X42    46
+X42    47
+X42    48
+X42    49
+X42    50
+X43    44
+X43    45
+X43    46
+X43    47
+X43    48
+X43    49
+X43    50
+X44    45
+X44    46
+X44    47
+X44    48
+X44    49
+X44    50
+X45    46
+X45    47
+X45    48
+X45    49
+X45    50
+X46    47
+X46    48
+X46    49
+X46    50
+X47    48
+X47    49
+X47    50
+X48    49
+X48    50
+X49    50
+END_OF_g-k-50-1225
+if test 10592 -ne `wc -c <g-k-50-1225`; then
+    echo shar: \"g-k-50-1225\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-10-9 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-10-9\"
+else
+echo shar: Extracting \"g-p-10-9\" \(70 characters\)
+sed "s/^X//" >g-p-10-9 <<'END_OF_g-p-10-9'
+X10
+X9
+X1    5
+X2    7
+X2    10
+X3    9
+X4    6
+X4    7
+X5    6
+X8    9
+X8    10
+END_OF_g-p-10-9
+if test 70 -ne `wc -c <g-p-10-9`; then
+    echo shar: \"g-p-10-9\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-100-99 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-100-99\"
+else
+echo shar: Extracting \"g-p-100-99\" \(882 characters\)
+sed "s/^X//" >g-p-100-99 <<'END_OF_g-p-100-99'
+X100
+X99
+X1    2
+X1    58
+X2    56
+X3    41
+X3    44
+X4    14
+X4    94
+X5    39
+X5    98
+X6    71
+X6    92
+X7    55
+X7    69
+X8    41
+X8    67
+X9    27
+X9    28
+X10    25
+X10    27
+X11    61
+X11    95
+X12    37
+X12    90
+X13    14
+X13    18
+X15    33
+X15    44
+X16    21
+X16    86
+X17    45
+X17    51
+X18    53
+X19    25
+X19    59
+X20    67
+X20    100
+X21    45
+X22    40
+X22    71
+X23    49
+X23    50
+X24    93
+X24    100
+X26    60
+X26    76
+X28    29
+X29    35
+X30    43
+X30    73
+X31    83
+X31    95
+X32    33
+X32    48
+X34    62
+X34    74
+X35    92
+X36    47
+X36    57
+X37    64
+X38    56
+X38    89
+X39    82
+X42    47
+X42    60
+X43    83
+X46    88
+X46    97
+X48    72
+X49    96
+X50    65
+X51    78
+X52    70
+X52    72
+X53    85
+X54    65
+X54    76
+X55    63
+X57    62
+X58    73
+X59    94
+X61    80
+X63    91
+X64    69
+X66    85
+X66    99
+X68    77
+X68    87
+X70    77
+X74    88
+X75    82
+X75    96
+X78    99
+X79    90
+X79    97
+X80    91
+X81    89
+X81    93
+X84    86
+X84    98
+END_OF_g-p-100-99
+if test 882 -ne `wc -c <g-p-100-99`; then
+    echo shar: \"g-p-100-99\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-11-10 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-11-10\"
+else
+echo shar: Extracting \"g-p-11-10\" \(79 characters\)
+sed "s/^X//" >g-p-11-10 <<'END_OF_g-p-11-10'
+X11
+X10
+X1    3
+X2    4
+X2    9
+X3    7
+X4    5
+X5    10
+X6    10
+X6    11
+X7    8
+X8    9
+END_OF_g-p-11-10
+if test 79 -ne `wc -c <g-p-11-10`; then
+    echo shar: \"g-p-11-10\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-12-11 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-12-11\"
+else
+echo shar: Extracting \"g-p-12-11\" \(88 characters\)
+sed "s/^X//" >g-p-12-11 <<'END_OF_g-p-12-11'
+X12
+X11
+X1    5
+X1    10
+X2    6
+X2    7
+X3    4
+X3    5
+X4    6
+X7    8
+X8    9
+X10    11
+X11    12
+END_OF_g-p-12-11
+if test 88 -ne `wc -c <g-p-12-11`; then
+    echo shar: \"g-p-12-11\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-13-12 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-13-12\"
+else
+echo shar: Extracting \"g-p-13-12\" \(97 characters\)
+sed "s/^X//" >g-p-13-12 <<'END_OF_g-p-13-12'
+X13
+X12
+X1    3
+X1    4
+X2    10
+X2    13
+X3    8
+X4    12
+X5    8
+X6    9
+X6    11
+X7    12
+X7    13
+X9    10
+END_OF_g-p-13-12
+if test 97 -ne `wc -c <g-p-13-12`; then
+    echo shar: \"g-p-13-12\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-14-13 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-14-13\"
+else
+echo shar: Extracting \"g-p-14-13\" \(106 characters\)
+sed "s/^X//" >g-p-14-13 <<'END_OF_g-p-14-13'
+X14
+X13
+X1    4
+X1    9
+X2    3
+X2    5
+X3    10
+X4    13
+X5    6
+X6    14
+X7    8
+X8    10
+X9    12
+X11    12
+X11    14
+END_OF_g-p-14-13
+if test 106 -ne `wc -c <g-p-14-13`; then
+    echo shar: \"g-p-14-13\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-15-14 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-15-14\"
+else
+echo shar: Extracting \"g-p-15-14\" \(114 characters\)
+sed "s/^X//" >g-p-15-14 <<'END_OF_g-p-15-14'
+X15
+X14
+X1    8
+X1    10
+X2    4
+X2    9
+X3    4
+X3    5
+X5    13
+X6    7
+X6    15
+X7    14
+X8    11
+X9    14
+X11    13
+X12    15
+END_OF_g-p-15-14
+if test 114 -ne `wc -c <g-p-15-14`; then
+    echo shar: \"g-p-15-14\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-16-15 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-16-15\"
+else
+echo shar: Extracting \"g-p-16-15\" \(125 characters\)
+sed "s/^X//" >g-p-16-15 <<'END_OF_g-p-16-15'
+X16
+X15
+X1    2
+X1    15
+X2    6
+X3    5
+X3    16
+X4    7
+X4    16
+X7    14
+X8    9
+X8    13
+X9    15
+X10    11
+X10    13
+X11    12
+X12    14
+END_OF_g-p-16-15
+if test 125 -ne `wc -c <g-p-16-15`; then
+    echo shar: \"g-p-16-15\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-17-16 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-17-16\"
+else
+echo shar: Extracting \"g-p-17-16\" \(132 characters\)
+sed "s/^X//" >g-p-17-16 <<'END_OF_g-p-17-16'
+X17
+X16
+X1    4
+X1    17
+X2    3
+X2    8
+X3    9
+X4    12
+X5    15
+X5    16
+X6    7
+X6    14
+X7    11
+X8    14
+X9    17
+X10    16
+X12    13
+X13    15
+END_OF_g-p-17-16
+if test 132 -ne `wc -c <g-p-17-16`; then
+    echo shar: \"g-p-17-16\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-18-17 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-18-17\"
+else
+echo shar: Extracting \"g-p-18-17\" \(142 characters\)
+sed "s/^X//" >g-p-18-17 <<'END_OF_g-p-18-17'
+X18
+X17
+X1    8
+X1    9
+X2    5
+X2    7
+X3    12
+X3    16
+X4    11
+X4    14
+X5    6
+X7    10
+X8    13
+X9    10
+X11    18
+X12    17
+X13    17
+X15    16
+X15    18
+END_OF_g-p-18-17
+if test 142 -ne `wc -c <g-p-18-17`; then
+    echo shar: \"g-p-18-17\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-19-18 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-19-18\"
+else
+echo shar: Extracting \"g-p-19-18\" \(151 characters\)
+sed "s/^X//" >g-p-19-18 <<'END_OF_g-p-19-18'
+X19
+X18
+X1    14
+X1    16
+X2    9
+X2    17
+X3    4
+X3    12
+X4    10
+X5    9
+X5    19
+X6    7
+X6    13
+X7    11
+X8    18
+X10    19
+X11    16
+X12    14
+X13    18
+X15    17
+END_OF_g-p-19-18
+if test 151 -ne `wc -c <g-p-19-18`; then
+    echo shar: \"g-p-19-18\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-20-19 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-20-19\"
+else
+echo shar: Extracting \"g-p-20-19\" \(159 characters\)
+sed "s/^X//" >g-p-20-19 <<'END_OF_g-p-20-19'
+X20
+X19
+X1    12
+X1    18
+X2    8
+X2    15
+X3    4
+X3    10
+X4    20
+X5    16
+X5    17
+X6    17
+X6    20
+X7    8
+X7    13
+X9    13
+X9    19
+X10    18
+X11    12
+X11    14
+X15    16
+END_OF_g-p-20-19
+if test 159 -ne `wc -c <g-p-20-19`; then
+    echo shar: \"g-p-20-19\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-25-24 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-25-24\"
+else
+echo shar: Extracting \"g-p-25-24\" \(205 characters\)
+sed "s/^X//" >g-p-25-24 <<'END_OF_g-p-25-24'
+X25
+X24
+X1    8
+X1    10
+X2    17
+X2    22
+X3    4
+X4    14
+X5    6
+X5    12
+X6    17
+X7    23
+X7    25
+X8    12
+X9    14
+X9    15
+X10    19
+X11    21
+X11    24
+X13    16
+X15    21
+X16    22
+X18    20
+X18    24
+X19    23
+X20    25
+END_OF_g-p-25-24
+if test 205 -ne `wc -c <g-p-25-24`; then
+    echo shar: \"g-p-25-24\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-30-29 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-30-29\"
+else
+echo shar: Extracting \"g-p-30-29\" \(250 characters\)
+sed "s/^X//" >g-p-30-29 <<'END_OF_g-p-30-29'
+X30
+X29
+X1    3
+X1    11
+X2    17
+X2    27
+X4    14
+X4    26
+X5    6
+X5    10
+X6    27
+X7    15
+X7    18
+X8    9
+X8    24
+X9    13
+X10    19
+X11    28
+X12    15
+X12    24
+X13    29
+X14    16
+X16    22
+X17    30
+X18    22
+X19    29
+X20    23
+X20    25
+X21    26
+X23    28
+X25    30
+END_OF_g-p-30-29
+if test 250 -ne `wc -c <g-p-30-29`; then
+    echo shar: \"g-p-30-29\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-40-39 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-40-39\"
+else
+echo shar: Extracting \"g-p-40-39\" \(339 characters\)
+sed "s/^X//" >g-p-40-39 <<'END_OF_g-p-40-39'
+X40
+X39
+X1    8
+X1    32
+X2    27
+X2    33
+X3    22
+X3    31
+X4    13
+X4    20
+X5    9
+X5    18
+X6    21
+X6    35
+X7    16
+X7    23
+X8    17
+X9    28
+X10    11
+X10    34
+X11    38
+X12    24
+X12    37
+X13    14
+X14    37
+X15    22
+X15    24
+X17    39
+X18    34
+X19    32
+X19    36
+X20    25
+X21    40
+X23    26
+X25    35
+X26    29
+X27    28
+X29    38
+X30    33
+X30    40
+X31    36
+END_OF_g-p-40-39
+if test 339 -ne `wc -c <g-p-40-39`; then
+    echo shar: \"g-p-40-39\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-p-50-49 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-p-50-49\"
+else
+echo shar: Extracting \"g-p-50-49\" \(429 characters\)
+sed "s/^X//" >g-p-50-49 <<'END_OF_g-p-50-49'
+X50
+X49
+X1    33
+X1    42
+X2    33
+X2    50
+X3    11
+X3    18
+X4    11
+X4    27
+X5    10
+X5    24
+X6    16
+X6    38
+X7    9
+X7    45
+X8    29
+X8    38
+X9    13
+X10    18
+X12    35
+X12    50
+X13    14
+X14    23
+X15    21
+X15    40
+X16    48
+X17    44
+X19    20
+X19    34
+X20    36
+X21    30
+X22    48
+X22    49
+X23    41
+X24    30
+X25    31
+X25    44
+X26    28
+X26    35
+X27    47
+X28    32
+X31    39
+X32    45
+X34    39
+X36    37
+X37    40
+X41    46
+X42    49
+X43    46
+X43    47
+END_OF_g-p-50-49
+if test 429 -ne `wc -c <g-p-50-49`; then
+    echo shar: \"g-p-50-49\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-10-14 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-10-14\"
+else
+echo shar: Extracting \"g-r-10-14\" \(107 characters\)
+sed "s/^X//" >g-r-10-14 <<'END_OF_g-r-10-14'
+X10
+X14
+X1    3
+X1    4
+X1    6
+X1    8
+X2    5
+X2    9
+X3    5
+X3    6
+X4    5
+X4    9
+X4    10
+X5    9
+X7    10
+X9    10
+END_OF_g-r-10-14
+if test 107 -ne `wc -c <g-r-10-14`; then
+    echo shar: \"g-r-10-14\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-10-9 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-10-9\"
+else
+echo shar: Extracting \"g-r-10-9\" \(69 characters\)
+sed "s/^X//" >g-r-10-9 <<'END_OF_g-r-10-9'
+X10
+X9
+X1    4
+X1    5
+X1    7
+X1    9
+X3    7
+X4    6
+X5    9
+X5    10
+X6    7
+END_OF_g-r-10-9
+if test 69 -ne `wc -c <g-r-10-9`; then
+    echo shar: \"g-r-10-9\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-100-501 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-100-501\"
+else
+echo shar: Extracting \"g-r-100-501\" \(4426 characters\)
+sed "s/^X//" >g-r-100-501 <<'END_OF_g-r-100-501'
+X100
+X501
+X1    19
+X1    27
+X1    36
+X1    45
+X1    46
+X1    58
+X1    75
+X1    77
+X1    80
+X1    81
+X1    90
+X1    100
+X2    14
+X2    22
+X2    26
+X2    30
+X2    35
+X2    40
+X2    48
+X2    60
+X2    64
+X2    66
+X2    77
+X2    80
+X2    83
+X2    94
+X3    5
+X3    27
+X3    28
+X3    40
+X3    42
+X3    62
+X3    72
+X3    80
+X3    82
+X3    86
+X3    90
+X4    13
+X4    21
+X4    23
+X4    26
+X4    30
+X4    34
+X4    36
+X4    51
+X4    55
+X4    82
+X4    97
+X5    9
+X5    16
+X5    30
+X5    34
+X5    39
+X5    40
+X5    53
+X5    75
+X5    85
+X5    89
+X6    12
+X6    23
+X6    25
+X6    45
+X6    61
+X6    68
+X6    90
+X6    95
+X7    12
+X7    29
+X7    40
+X7    47
+X7    49
+X7    52
+X7    53
+X7    61
+X7    62
+X7    68
+X7    85
+X7    98
+X8    14
+X8    20
+X8    47
+X8    48
+X8    65
+X8    67
+X8    73
+X8    78
+X8    81
+X8    94
+X8    100
+X9    16
+X9    39
+X9    50
+X9    51
+X9    58
+X9    60
+X9    69
+X9    78
+X9    80
+X9    82
+X9    84
+X9    85
+X9    87
+X10    13
+X10    23
+X10    54
+X10    62
+X10    64
+X10    69
+X10    81
+X10    99
+X11    23
+X11    26
+X11    47
+X11    72
+X11    80
+X11    86
+X11    88
+X11    92
+X11    100
+X12    15
+X12    16
+X12    53
+X12    56
+X12    63
+X12    73
+X12    77
+X12    89
+X13    35
+X13    43
+X13    55
+X13    60
+X13    61
+X13    63
+X13    64
+X13    73
+X13    80
+X13    98
+X14    15
+X14    23
+X14    31
+X14    59
+X14    71
+X14    85
+X14    91
+X14    95
+X15    18
+X15    21
+X15    23
+X15    26
+X15    52
+X15    69
+X15    88
+X16    21
+X16    39
+X16    50
+X16    68
+X16    71
+X16    75
+X17    33
+X17    39
+X17    63
+X17    66
+X17    85
+X18    27
+X18    29
+X18    51
+X18    61
+X18    86
+X18    95
+X19    23
+X19    30
+X19    69
+X19    79
+X19    81
+X19    83
+X19    95
+X20    25
+X20    28
+X20    31
+X20    38
+X20    48
+X20    49
+X20    61
+X20    70
+X20    79
+X20    83
+X20    86
+X20    92
+X21    22
+X21    23
+X21    33
+X21    36
+X21    51
+X21    56
+X21    60
+X21    68
+X21    86
+X22    41
+X22    46
+X22    47
+X22    48
+X22    49
+X22    55
+X22    64
+X22    67
+X22    71
+X22    73
+X22    76
+X22    96
+X22    100
+X23    35
+X23    38
+X23    46
+X23    51
+X23    80
+X23    91
+X23    93
+X23    98
+X23    100
+X24    28
+X24    42
+X24    43
+X24    52
+X24    53
+X24    61
+X24    64
+X24    81
+X24    82
+X24    83
+X25    31
+X25    32
+X25    33
+X25    42
+X25    45
+X25    50
+X25    81
+X25    86
+X25    98
+X26    39
+X26    50
+X26    52
+X26    57
+X26    71
+X26    74
+X26    80
+X26    93
+X26    100
+X27    38
+X27    39
+X27    52
+X27    67
+X27    69
+X27    72
+X27    76
+X27    89
+X27    93
+X28    48
+X28    62
+X28    65
+X28    67
+X28    68
+X28    73
+X28    75
+X28    82
+X28    85
+X28    86
+X29    41
+X29    44
+X29    55
+X29    56
+X29    61
+X29    73
+X29    80
+X30    37
+X30    67
+X30    69
+X30    76
+X30    92
+X30    97
+X31    66
+X31    80
+X31    97
+X31    100
+X32    41
+X32    43
+X32    55
+X32    69
+X32    71
+X32    94
+X32    96
+X32    98
+X32    99
+X32    100
+X33    62
+X33    63
+X33    79
+X33    82
+X33    89
+X33    91
+X34    39
+X34    57
+X34    70
+X34    71
+X34    87
+X34    100
+X35    37
+X35    43
+X35    48
+X35    53
+X35    69
+X35    93
+X35    95
+X36    39
+X36    41
+X36    44
+X36    47
+X36    55
+X36    59
+X36    63
+X36    98
+X37    58
+X37    73
+X37    82
+X38    59
+X38    65
+X38    68
+X38    75
+X39    55
+X39    63
+X39    74
+X39    91
+X40    60
+X40    80
+X40    86
+X41    59
+X41    91
+X41    96
+X41    98
+X42    46
+X42    68
+X42    79
+X42    81
+X42    97
+X43    54
+X43    59
+X43    61
+X43    66
+X43    73
+X43    81
+X43    85
+X44    49
+X44    53
+X44    56
+X44    60
+X44    65
+X44    78
+X45    48
+X45    58
+X45    83
+X45    91
+X46    54
+X46    65
+X46    76
+X46    81
+X46    86
+X47    60
+X47    93
+X47    94
+X47    98
+X48    52
+X48    60
+X48    67
+X48    73
+X48    78
+X48    79
+X48    86
+X49    55
+X49    56
+X49    58
+X49    70
+X49    74
+X49    98
+X50    67
+X50    79
+X50    80
+X50    84
+X51    56
+X51    78
+X51    93
+X51    94
+X52    60
+X52    61
+X52    96
+X53    77
+X53    78
+X53    86
+X54    55
+X54    63
+X54    66
+X54    71
+X54    72
+X54    73
+X54    74
+X54    87
+X54    96
+X55    60
+X55    70
+X55    97
+X56    71
+X56    84
+X56    96
+X57    81
+X57    91
+X57    99
+X58    75
+X58    77
+X58    81
+X58    87
+X58    97
+X59    70
+X59    88
+X59    91
+X59    97
+X60    81
+X60    86
+X60    90
+X60    97
+X60    98
+X60    99
+X61    95
+X62    63
+X62    69
+X62    70
+X62    77
+X62    78
+X62    81
+X62    86
+X62    91
+X63    67
+X63    91
+X64    65
+X64    73
+X64    84
+X65    70
+X65    71
+X65    72
+X65    91
+X65    92
+X66    99
+X67    71
+X67    78
+X68    85
+X68    88
+X69    72
+X69    84
+X69    85
+X69    92
+X70    73
+X71    80
+X71    81
+X71    91
+X71    99
+X72    97
+X72    100
+X73    81
+X73    88
+X74    99
+X74    100
+X77    80
+X77    97
+X78    81
+X78    88
+X78    94
+X78    95
+X78    97
+X78    99
+X79    93
+X80    84
+X80    90
+X80    91
+X80    93
+X80    97
+X80    98
+X81    86
+X83    91
+X83    96
+X84    89
+X84    95
+X84    99
+X86    95
+X87    95
+X87    96
+X87    97
+X88    95
+X91    97
+X93    95
+X93    99
+X94    95
+X95    97
+X95    100
+X97    100
+END_OF_g-r-100-501
+if test 4426 -ne `wc -c <g-r-100-501`; then
+    echo shar: \"g-r-100-501\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-11-15 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-11-15\"
+else
+echo shar: Extracting \"g-r-11-15\" \(113 characters\)
+sed "s/^X//" >g-r-11-15 <<'END_OF_g-r-11-15'
+X11
+X15
+X1    4
+X1    8
+X2    3
+X2    5
+X2    6
+X2    7
+X2    8
+X2    11
+X3    8
+X3    9
+X4    5
+X4    6
+X4    8
+X4    11
+X5    6
+END_OF_g-r-11-15
+if test 113 -ne `wc -c <g-r-11-15`; then
+    echo shar: \"g-r-11-15\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-12-15 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-12-15\"
+else
+echo shar: Extracting \"g-r-12-15\" \(117 characters\)
+sed "s/^X//" >g-r-12-15 <<'END_OF_g-r-12-15'
+X12
+X15
+X1    6
+X1    8
+X2    6
+X2    9
+X2    11
+X3    5
+X3    10
+X3    11
+X4    6
+X4    8
+X5    7
+X5    9
+X7    11
+X8    11
+X9    11
+END_OF_g-r-12-15
+if test 117 -ne `wc -c <g-r-12-15`; then
+    echo shar: \"g-r-12-15\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-13-15 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-13-15\"
+else
+echo shar: Extracting \"g-r-13-15\" \(119 characters\)
+sed "s/^X//" >g-r-13-15 <<'END_OF_g-r-13-15'
+X13
+X15
+X1    6
+X1    9
+X2    4
+X3    4
+X3    12
+X4    5
+X4    8
+X5    7
+X5    11
+X6    7
+X6    13
+X7    9
+X7    11
+X10    12
+X10    13
+END_OF_g-r-13-15
+if test 119 -ne `wc -c <g-r-13-15`; then
+    echo shar: \"g-r-13-15\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-15-24 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-15-24\"
+else
+echo shar: Extracting \"g-r-15-24\" \(195 characters\)
+sed "s/^X//" >g-r-15-24 <<'END_OF_g-r-15-24'
+X15
+X24
+X1    7
+X1    10
+X1    13
+X1    15
+X2    11
+X3    7
+X3    11
+X3    13
+X3    14
+X3    15
+X4    9
+X4    13
+X4    15
+X5    9
+X6    7
+X6    10
+X6    12
+X6    15
+X7    9
+X8    9
+X10    14
+X11    12
+X11    15
+X12    13
+END_OF_g-r-15-24
+if test 195 -ne `wc -c <g-r-15-24`; then
+    echo shar: \"g-r-15-24\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-18-46 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-18-46\"
+else
+echo shar: Extracting \"g-r-18-46\" \(369 characters\)
+sed "s/^X//" >g-r-18-46 <<'END_OF_g-r-18-46'
+X18
+X46
+X1    13
+X1    14
+X1    17
+X2    3
+X2    9
+X2    13
+X2    15
+X2    16
+X3    7
+X3    8
+X3    14
+X3    17
+X3    18
+X4    7
+X4    12
+X4    14
+X4    18
+X5    6
+X5    7
+X5    9
+X5    18
+X6    9
+X6    10
+X6    12
+X6    13
+X6    15
+X7    8
+X7    9
+X7    12
+X7    16
+X7    17
+X7    18
+X8    9
+X8    10
+X8    18
+X9    13
+X9    16
+X9    17
+X9    18
+X11    18
+X13    16
+X13    17
+X14    16
+X15    16
+X16    17
+X17    18
+END_OF_g-r-18-46
+if test 369 -ne `wc -c <g-r-18-46`; then
+    echo shar: \"g-r-18-46\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-20-42 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-20-42\"
+else
+echo shar: Extracting \"g-r-20-42\" \(352 characters\)
+sed "s/^X//" >g-r-20-42 <<'END_OF_g-r-20-42'
+X20
+X42
+X1    9
+X2    6
+X2    13
+X2    15
+X2    18
+X3    5
+X3    11
+X3    13
+X3    14
+X4    7
+X4    10
+X4    11
+X4    16
+X4    17
+X5    13
+X6    8
+X6    12
+X6    16
+X6    17
+X6    18
+X7    17
+X7    18
+X7    19
+X8    11
+X8    18
+X9    10
+X9    20
+X10    11
+X10    12
+X10    13
+X10    14
+X10    20
+X11    15
+X11    18
+X11    20
+X12    13
+X12    17
+X13    16
+X13    17
+X13    20
+X14    20
+X17    20
+END_OF_g-r-20-42
+if test 352 -ne `wc -c <g-r-20-42`; then
+    echo shar: \"g-r-20-42\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-25-83 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-25-83\"
+else
+echo shar: Extracting \"g-r-25-83\" \(686 characters\)
+sed "s/^X//" >g-r-25-83 <<'END_OF_g-r-25-83'
+X25
+X83
+X1    13
+X1    15
+X2    3
+X2    6
+X2    9
+X2    10
+X2    12
+X2    14
+X2    23
+X3    4
+X3    7
+X3    8
+X3    10
+X3    13
+X3    15
+X3    17
+X3    20
+X3    23
+X3    25
+X4    6
+X4    7
+X4    8
+X4    10
+X4    11
+X4    14
+X4    15
+X4    18
+X4    19
+X4    23
+X4    24
+X5    9
+X5    13
+X5    14
+X5    16
+X5    18
+X5    19
+X5    22
+X5    24
+X6    15
+X6    18
+X6    21
+X6    24
+X7    8
+X7    10
+X7    12
+X7    20
+X7    22
+X8    11
+X8    15
+X8    19
+X8    21
+X8    24
+X8    25
+X9    17
+X9    20
+X9    23
+X10    12
+X10    14
+X10    18
+X10    19
+X10    20
+X10    22
+X11    19
+X12    24
+X13    15
+X13    17
+X13    19
+X13    24
+X13    25
+X14    15
+X15    16
+X15    24
+X16    25
+X17    21
+X18    21
+X18    23
+X19    25
+X20    21
+X20    22
+X20    24
+X22    23
+X23    24
+X23    25
+END_OF_g-r-25-83
+if test 686 -ne `wc -c <g-r-25-83`; then
+    echo shar: \"g-r-25-83\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-30-109 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-30-109\"
+else
+echo shar: Extracting \"g-r-30-109\" \(923 characters\)
+sed "s/^X//" >g-r-30-109 <<'END_OF_g-r-30-109'
+X30
+X109
+X1    2
+X1    5
+X1    15
+X1    17
+X1    25
+X1    28
+X2    3
+X2    6
+X2    8
+X2    11
+X2    14
+X2    17
+X2    18
+X2    20
+X2    21
+X2    24
+X2    25
+X3    4
+X3    9
+X3    12
+X3    17
+X3    19
+X3    21
+X3    29
+X3    30
+X4    7
+X4    9
+X4    12
+X4    20
+X4    25
+X4    26
+X4    30
+X5    12
+X5    15
+X5    20
+X5    22
+X5    27
+X6    10
+X6    13
+X6    20
+X6    23
+X6    24
+X6    27
+X7    10
+X7    11
+X7    14
+X7    25
+X7    26
+X7    27
+X8    16
+X8    19
+X8    20
+X8    21
+X8    26
+X9    21
+X9    24
+X10    12
+X10    17
+X10    18
+X10    23
+X10    28
+X10    29
+X11    18
+X11    21
+X11    29
+X12    15
+X12    18
+X12    21
+X12    25
+X12    30
+X13    14
+X13    16
+X13    18
+X13    27
+X13    28
+X14    16
+X14    18
+X14    25
+X15    24
+X15    26
+X16    18
+X16    19
+X16    22
+X16    23
+X17    18
+X17    26
+X17    30
+X18    20
+X18    22
+X18    24
+X19    25
+X20    21
+X20    22
+X20    23
+X20    24
+X20    25
+X20    27
+X20    30
+X21    24
+X21    25
+X22    24
+X22    28
+X22    29
+X23    27
+X23    28
+X24    27
+X25    28
+X27    28
+X29    30
+END_OF_g-r-30-109
+if test 923 -ne `wc -c <g-r-30-109`; then
+    echo shar: \"g-r-30-109\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-50-301 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-50-301\"
+else
+echo shar: Extracting \"g-r-50-301\" \(2611 characters\)
+sed "s/^X//" >g-r-50-301 <<'END_OF_g-r-50-301'
+X50
+X301
+X1    5
+X1    13
+X1    14
+X1    16
+X1    24
+X1    32
+X1    39
+X1    41
+X1    44
+X1    46
+X2    3
+X2    8
+X2    10
+X2    13
+X2    16
+X2    29
+X2    30
+X2    34
+X2    43
+X2    48
+X3    4
+X3    9
+X3    13
+X3    16
+X3    20
+X3    34
+X3    35
+X3    47
+X3    48
+X3    50
+X4    5
+X4    10
+X4    17
+X4    20
+X4    22
+X4    26
+X4    27
+X4    28
+X4    34
+X4    37
+X4    40
+X4    41
+X4    42
+X4    43
+X4    44
+X4    46
+X5    14
+X5    18
+X5    34
+X5    35
+X5    36
+X5    38
+X6    12
+X6    15
+X6    17
+X6    25
+X6    39
+X6    41
+X6    43
+X6    46
+X6    48
+X7    18
+X7    24
+X7    26
+X7    29
+X7    31
+X7    34
+X7    37
+X7    39
+X7    40
+X7    41
+X8    9
+X8    11
+X8    14
+X8    18
+X8    20
+X8    22
+X8    26
+X8    29
+X8    37
+X8    45
+X8    47
+X8    48
+X8    49
+X8    50
+X9    11
+X9    12
+X9    16
+X9    20
+X9    21
+X9    22
+X9    23
+X9    29
+X9    30
+X9    38
+X9    40
+X9    44
+X9    49
+X10    11
+X10    13
+X10    14
+X10    17
+X10    18
+X10    20
+X10    24
+X10    28
+X10    31
+X10    39
+X10    42
+X10    44
+X10    45
+X10    46
+X10    48
+X11    13
+X11    15
+X11    22
+X11    28
+X11    29
+X11    31
+X11    32
+X11    35
+X11    36
+X11    38
+X11    39
+X11    41
+X11    46
+X11    48
+X12    14
+X12    23
+X12    26
+X12    28
+X12    32
+X12    33
+X12    44
+X13    17
+X13    18
+X13    23
+X13    27
+X13    32
+X13    33
+X13    34
+X13    35
+X13    42
+X13    44
+X13    48
+X14    15
+X14    16
+X14    17
+X14    20
+X14    23
+X14    24
+X14    29
+X14    30
+X14    31
+X14    42
+X14    48
+X14    50
+X15    18
+X15    23
+X15    24
+X15    30
+X15    31
+X15    32
+X15    33
+X15    40
+X15    43
+X15    44
+X15    46
+X15    48
+X16    20
+X16    28
+X16    31
+X16    36
+X16    38
+X16    41
+X16    43
+X16    49
+X17    18
+X17    23
+X17    24
+X17    27
+X17    29
+X17    30
+X17    31
+X17    34
+X17    37
+X17    41
+X17    47
+X18    19
+X18    24
+X18    35
+X18    36
+X18    37
+X18    40
+X18    47
+X19    37
+X19    45
+X19    46
+X19    48
+X20    21
+X20    41
+X20    44
+X21    22
+X21    27
+X21    29
+X21    38
+X21    41
+X21    42
+X21    43
+X21    46
+X22    23
+X22    24
+X22    38
+X22    39
+X22    44
+X22    48
+X22    49
+X23    27
+X23    37
+X23    41
+X23    48
+X24    29
+X24    36
+X24    39
+X24    41
+X24    43
+X25    30
+X25    32
+X25    33
+X25    39
+X25    40
+X25    49
+X26    31
+X26    34
+X26    36
+X26    37
+X26    39
+X26    42
+X26    44
+X27    30
+X27    36
+X27    37
+X27    41
+X27    42
+X27    45
+X28    29
+X28    33
+X28    42
+X28    48
+X29    30
+X29    33
+X29    35
+X29    37
+X29    40
+X29    42
+X29    43
+X29    45
+X30    35
+X30    37
+X30    41
+X30    43
+X30    48
+X31    32
+X31    33
+X31    45
+X31    46
+X32    40
+X32    41
+X32    48
+X33    35
+X33    36
+X33    40
+X33    42
+X34    35
+X34    37
+X34    41
+X34    42
+X34    50
+X35    39
+X36    37
+X36    43
+X37    41
+X37    46
+X37    48
+X38    40
+X38    43
+X38    46
+X38    49
+X39    41
+X39    48
+X40    42
+X40    46
+X40    49
+X42    50
+X43    50
+X44    46
+X44    47
+X44    49
+X45    50
+X47    48
+X47    50
+END_OF_g-r-50-301
+if test 2611 -ne `wc -c <g-r-50-301`; then
+    echo shar: \"g-r-50-301\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-7-7 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-7-7\"
+else
+echo shar: Extracting \"g-r-7-7\" \(53 characters\)
+sed "s/^X//" >g-r-7-7 <<'END_OF_g-r-7-7'
+X7
+X7
+X1    2
+X1    5
+X1    6
+X1    7
+X3    5
+X3    7
+X4    7
+END_OF_g-r-7-7
+if test 53 -ne `wc -c <g-r-7-7`; then
+    echo shar: \"g-r-7-7\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-8-11 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-8-11\"
+else
+echo shar: Extracting \"g-r-8-11\" \(82 characters\)
+sed "s/^X//" >g-r-8-11 <<'END_OF_g-r-8-11'
+X8
+X11
+X1    2
+X1    5
+X1    6
+X1    7
+X2    3
+X2    6
+X2    8
+X3    4
+X4    5
+X4    7
+X5    7
+END_OF_g-r-8-11
+if test 82 -ne `wc -c <g-r-8-11`; then
+    echo shar: \"g-r-8-11\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-8-4 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-8-4\"
+else
+echo shar: Extracting \"g-r-8-4\" \(32 characters\)
+sed "s/^X//" >g-r-8-4 <<'END_OF_g-r-8-4'
+X8
+X4
+X1    7
+X2    8
+X3    6
+X5    6
+END_OF_g-r-8-4
+if test 32 -ne `wc -c <g-r-8-4`; then
+    echo shar: \"g-r-8-4\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-8-6 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-8-6\"
+else
+echo shar: Extracting \"g-r-8-6\" \(46 characters\)
+sed "s/^X//" >g-r-8-6 <<'END_OF_g-r-8-6'
+X8
+X6
+X1    4
+X1    6
+X1    7
+X2    6
+X2    7
+X4    5
+END_OF_g-r-8-6
+if test 46 -ne `wc -c <g-r-8-6`; then
+    echo shar: \"g-r-8-6\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-r-9-13 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-r-9-13\"
+else
+echo shar: Extracting \"g-r-9-13\" \(96 characters\)
+sed "s/^X//" >g-r-9-13 <<'END_OF_g-r-9-13'
+X9
+X13
+X1    4
+X1    7
+X1    8
+X1    9
+X3    7
+X3    8
+X3    9
+X4    6
+X5    7
+X5    8
+X5    9
+X7    9
+X8    9
+END_OF_g-r-9-13
+if test 96 -ne `wc -c <g-r-9-13`; then
+    echo shar: \"g-r-9-13\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-10-9 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-10-9\"
+else
+echo shar: Extracting \"g-t-10-9\" \(69 characters\)
+sed "s/^X//" >g-t-10-9 <<'END_OF_g-t-10-9'
+X10
+X9
+X1    6
+X2    5
+X2    10
+X3    4
+X3    8
+X5    6
+X5    7
+X7    8
+X7    9
+END_OF_g-t-10-9
+if test 69 -ne `wc -c <g-t-10-9`; then
+    echo shar: \"g-t-10-9\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-11-10 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-11-10\"
+else
+echo shar: Extracting \"g-t-11-10\" \(78 characters\)
+sed "s/^X//" >g-t-11-10 <<'END_OF_g-t-11-10'
+X11
+X10
+X1    4
+X2    5
+X2    9
+X3    7
+X3    9
+X4    8
+X4    9
+X5    11
+X6    8
+X6    10
+END_OF_g-t-11-10
+if test 78 -ne `wc -c <g-t-11-10`; then
+    echo shar: \"g-t-11-10\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-12-11 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-12-11\"
+else
+echo shar: Extracting \"g-t-12-11\" \(89 characters\)
+sed "s/^X//" >g-t-12-11 <<'END_OF_g-t-12-11'
+X12
+X11
+X1    3
+X1    9
+X2    11
+X2    12
+X3    7
+X4    5
+X4    12
+X6    10
+X6    12
+X7    8
+X7    11
+END_OF_g-t-12-11
+if test 89 -ne `wc -c <g-t-12-11`; then
+    echo shar: \"g-t-12-11\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-13-12 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-13-12\"
+else
+echo shar: Extracting \"g-t-13-12\" \(97 characters\)
+sed "s/^X//" >g-t-13-12 <<'END_OF_g-t-13-12'
+X13
+X12
+X1    10
+X2    10
+X3    5
+X4    5
+X4    13
+X5    8
+X6    8
+X6    10
+X7    9
+X7    11
+X8    11
+X8    12
+END_OF_g-t-13-12
+if test 97 -ne `wc -c <g-t-13-12`; then
+    echo shar: \"g-t-13-12\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-14-13 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-14-13\"
+else
+echo shar: Extracting \"g-t-14-13\" \(105 characters\)
+sed "s/^X//" >g-t-14-13 <<'END_OF_g-t-14-13'
+X14
+X13
+X1    4
+X1    5
+X1    9
+X1    13
+X2    3
+X2    10
+X4    11
+X4    14
+X5    7
+X6    8
+X6    13
+X7    10
+X10    12
+END_OF_g-t-14-13
+if test 105 -ne `wc -c <g-t-14-13`; then
+    echo shar: \"g-t-14-13\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-15-14 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-15-14\"
+else
+echo shar: Extracting \"g-t-15-14\" \(118 characters\)
+sed "s/^X//" >g-t-15-14 <<'END_OF_g-t-15-14'
+X15
+X14
+X1    6
+X1    12
+X2    10
+X3    7
+X4    15
+X5    11
+X7    15
+X8    9
+X8    15
+X9    10
+X9    13
+X11    12
+X11    14
+X14    15
+END_OF_g-t-15-14
+if test 118 -ne `wc -c <g-t-15-14`; then
+    echo shar: \"g-t-15-14\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-17-16 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-17-16\"
+else
+echo shar: Extracting \"g-t-17-16\" \(131 characters\)
+sed "s/^X//" >g-t-17-16 <<'END_OF_g-t-17-16'
+X17
+X16
+X1    8
+X1    13
+X1    16
+X2    3
+X2    12
+X3    5
+X3    7
+X3    11
+X4    16
+X5    17
+X6    10
+X8    10
+X8    12
+X9    13
+X9    14
+X15    17
+END_OF_g-t-17-16
+if test 131 -ne `wc -c <g-t-17-16`; then
+    echo shar: \"g-t-17-16\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-20-19 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-20-19\"
+else
+echo shar: Extracting \"g-t-20-19\" \(159 characters\)
+sed "s/^X//" >g-t-20-19 <<'END_OF_g-t-20-19'
+X20
+X19
+X1    3
+X1    18
+X2    15
+X2    17
+X3    5
+X3    20
+X4    7
+X4    9
+X4    19
+X5    17
+X6    11
+X6    12
+X8    16
+X9    13
+X10    14
+X10    17
+X12    20
+X13    16
+X16    20
+END_OF_g-t-20-19
+if test 159 -ne `wc -c <g-t-20-19`; then
+    echo shar: \"g-t-20-19\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-25-24 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-25-24\"
+else
+echo shar: Extracting \"g-t-25-24\" \(204 characters\)
+sed "s/^X//" >g-t-25-24 <<'END_OF_g-t-25-24'
+X25
+X24
+X1    13
+X1    17
+X2    8
+X2    12
+X2    15
+X3    5
+X3    11
+X3    25
+X4    22
+X6    9
+X6    20
+X7    10
+X7    19
+X8    21
+X9    11
+X10    25
+X14    16
+X14    22
+X14    23
+X17    20
+X17    23
+X18    21
+X21    24
+X21    25
+END_OF_g-t-25-24
+if test 204 -ne `wc -c <g-t-25-24`; then
+    echo shar: \"g-t-25-24\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-30-29 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-30-29\"
+else
+echo shar: Extracting \"g-t-30-29\" \(248 characters\)
+sed "s/^X//" >g-t-30-29 <<'END_OF_g-t-30-29'
+X30
+X29
+X1    8
+X1    30
+X2    5
+X2    21
+X3    24
+X4    6
+X4    14
+X4    29
+X5    8
+X7    8
+X7    9
+X8    11
+X9    12
+X10    23
+X12    19
+X13    22
+X15    16
+X15    27
+X15    28
+X17    20
+X18    19
+X18    27
+X20    24
+X20    30
+X21    29
+X22    23
+X22    26
+X23    25
+X24    26
+END_OF_g-t-30-29
+if test 248 -ne `wc -c <g-t-30-29`; then
+    echo shar: \"g-t-30-29\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-35-34 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-35-34\"
+else
+echo shar: Extracting \"g-t-35-34\" \(294 characters\)
+sed "s/^X//" >g-t-35-34 <<'END_OF_g-t-35-34'
+X35
+X34
+X1    12
+X1    27
+X2    25
+X3    9
+X4    14
+X4    33
+X4    34
+X4    35
+X5    15
+X5    19
+X6    11
+X7    26
+X8    23
+X8    24
+X8    25
+X9    24
+X9    29
+X10    15
+X10    18
+X11    12
+X11    16
+X11    29
+X12    20
+X12    34
+X13    17
+X13    31
+X14    19
+X14    21
+X14    31
+X16    22
+X22    26
+X24    30
+X26    32
+X28    35
+END_OF_g-t-35-34
+if test 294 -ne `wc -c <g-t-35-34`; then
+    echo shar: \"g-t-35-34\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-40-39 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-40-39\"
+else
+echo shar: Extracting \"g-t-40-39\" \(338 characters\)
+sed "s/^X//" >g-t-40-39 <<'END_OF_g-t-40-39'
+X40
+X39
+X1    8
+X1    11
+X1    16
+X1    39
+X2    10
+X3    13
+X3    28
+X3    33
+X4    23
+X5    40
+X6    7
+X7    19
+X7    20
+X7    31
+X7    34
+X8    36
+X9    36
+X10    15
+X10    24
+X10    38
+X12    29
+X14    31
+X15    33
+X15    37
+X16    21
+X17    18
+X18    33
+X19    26
+X21    29
+X22    25
+X22    26
+X23    28
+X23    29
+X23    40
+X24    32
+X27    35
+X30    36
+X34    36
+X35    39
+END_OF_g-t-40-39
+if test 338 -ne `wc -c <g-t-40-39`; then
+    echo shar: \"g-t-40-39\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-7-6 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-7-6\"
+else
+echo shar: Extracting \"g-t-7-6\" \(46 characters\)
+sed "s/^X//" >g-t-7-6 <<'END_OF_g-t-7-6'
+X7
+X6
+X1    4
+X2    6
+X3    5
+X3    6
+X4    7
+X6    7
+END_OF_g-t-7-6
+if test 46 -ne `wc -c <g-t-7-6`; then
+    echo shar: \"g-t-7-6\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-8-7 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-8-7\"
+else
+echo shar: Extracting \"g-t-8-7\" \(53 characters\)
+sed "s/^X//" >g-t-8-7 <<'END_OF_g-t-8-7'
+X8
+X7
+X1    4
+X1    5
+X1    6
+X2    8
+X3    6
+X5    8
+X6    7
+END_OF_g-t-8-7
+if test 53 -ne `wc -c <g-t-8-7`; then
+    echo shar: \"g-t-8-7\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+if test -f g-t-9-8 -a "${1}" != "-c" ; then 
+  echo shar: Will not over-write existing file \"g-t-9-8\"
+else
+echo shar: Extracting \"g-t-9-8\" \(60 characters\)
+sed "s/^X//" >g-t-9-8 <<'END_OF_g-t-9-8'
+X9
+X8
+X1    8
+X2    8
+X3    4
+X3    8
+X4    5
+X5    7
+X5    9
+X6    7
+END_OF_g-t-9-8
+if test 60 -ne `wc -c <g-t-9-8`; then
+    echo shar: \"g-t-9-8\" unpacked with wrong size!
+fi
+# end of overwriting check
+fi
+echo shar: End of shell archive.
+exit 0
