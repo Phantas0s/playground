@@ -26,4 +26,27 @@ var response: Any = 0
 
 # 1.5 Calling Functions and Methods
 
+* Scala has functions too
+* Import packages
+    * `scala.math._` (equivalent `math._`)
+    * `_` is a wildcard
+* Doesn't have static methods but *singleton objects*
+    * Example: `scala.util.Random`
+* Scala methods without parameters don't use parentheses
 
+# 1.6 The apply method
+
+* `"Hello"(4)`
+    => o
+    * Overloaded form of the operator `()`
+    * Shortcut for "Hello".apply(4)
+* Idiom to construct new objects without using "new"
+
+# 1.7 Scaladoc
+
+* Quite difficult for beginners
+
+# Exercises
+
+1. Many of them...
+2. val res6: Double = 2.9999999999999996
