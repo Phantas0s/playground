@@ -72,4 +72,40 @@ while (n > 0) {
 
 ## 2.6 Advanced for Loops and for Comprehensions
 
+* for loops are richer than language like Scala or C++
+* Multiple generator separated with semicolons
+* Can use multiple generators
+    * A generator can have a guard (a predicate)
+* Yield construct collection of value at each iteration
+    * Called *for comprehension*
+
+## 2.7 Functions
+
+* Method operates on an object, function doesn't
+    * Specify function name, parameters, and body 
+    * Must specify type of all parameters
+    * Don't need to specify return type if no parameters
+* Use a block if function require more than one expression
+    * Last expression determines the return
+    * Can use return if you want (but not common in scala)
+        * More like a break for a function
+
+## 2.8 Default and Named Arguments
+
+* Default value for argument if you don't want to give explicit value
+* Can specify parameter name when calling function
+    * In that case, arguments don't have to be in order
+
+## 2.9 Variable Arguments
+
+## 2.10 Procedures
+
+* Special notation for a function which returns no value
+* No symbol "="
+    * Deprecated apparently (always return Unit)
+
+## 2.11 Lazy Values
+
+* Evaluation deferred till access 
+    * Stream / lazy seq / and other names in Scheme / Clojure
 
