@@ -1,4 +1,6 @@
 import scala.io.StdIn._
+import scala.collection.immutable.StringOps
+import scala.collection.mutable.ArrayBuffer
 
 // Scala program to print Hello World! 
 object Geeks 
@@ -10,6 +12,8 @@ object Geeks
     // this.functions()
     // this.lazyVal()
     // this.exceptions()
+    // this.fixedArrays()
+    this.arrayBuffers()
   }
 
   def inputOutput(): Unit = {
@@ -132,5 +136,64 @@ object Geeks
   }
 
   def exceptions(): Unit = {
+    try {
+      println(this.sqrt(-1))
+      println(this.sqrt(2))
+    } catch {
+      // general exception should come after the specific ones (like in C++)
+      // Can use _ instead of e if e not needed
+      case e: IllegalArgumentException => println(s"Illegal argument $e")
+    } finally {
+      // Let dispose of a resource
+      println("finally")
+      // This line throw an exception, superseeded like in Java
+      // println(this.sqrt(-1))
+    }
+  }
+
+  def sqrt(x: Int): Int = {
+    if (x >= 0) {
+      x * x
+    } else {
+      throw new IllegalArgumentException("x should not be negative")
+    }
+  }
+
+  def fixedArrays(): Unit = {
+    // Fixed length array
+
+    // Initialized to 0
+    val nums = new Array[Int](10)
+    // Initialized to null
+    val a = new Array[String](10)
+    val strings = Array("Hello", "Welcome")
+    // () to access elements
+    println(strings(0))
+  }
+
+  def arrayBuffers(): Unit = {
+    // Or new ArrayBuffer[Int]
+    val b = ArrayBuffer[Int]()
+    // Add element a the end with +=
+    b += 1
+    b += (2, 3, 4, 5)
+    println(b)
+    // Constant time
+    b.trimEnd(2)
+    println(b)
+
+    // Not efficient operation (element after need to be shifted)
+    b.insert(2, 2)
+    println(b)
+    b.remove(2)
+    println(b)
+    b.remove(1, 2)
+    println(b)
+
+    val a = Array(1, 2, 3)
+    a.toBuffer
+    b.toArray
+    println(a(1))
+    println(b)
   }
 }

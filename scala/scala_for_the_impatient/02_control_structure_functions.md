@@ -109,3 +109,13 @@ while (n > 0) {
 * Evaluation deferred till access 
     * Stream / lazy seq / and other names in Scheme / Clojure
 
+## 2.12 Exceptions
+
+* Same as Java or C++ or PHP
+    * When exception is thrown
+    * ... bubble up and search the execution handler
+    * No *checked exceptions* like in Java
+    * Thrown exception has a special type `Nothing`
+* try catch blocks 
+    * General exception comes after more specific ones
+
