@@ -59,7 +59,7 @@ object Geeks
 
     for (c <- "Hello"; i <- 0 to 1) yield (c + i).toChar
     // => val res3: IndexedSeq[Char] = Vector(H, I, e, f, l, m, l, m, o, p)
-    
+
     // Alternative
     // for {
     //   c <- "Hello"
@@ -195,5 +195,59 @@ object Geeks
     b.toArray
     println(a(1))
     println(b)
+
+    // Traversing an array
+    println("\nTraversing Array")
+    // Until return all number excluded upper bound
+    for (i <- 0 until a.length) {
+      println(i + ": " + a(i))
+    }
+
+    // Every two elements
+    // Or 0.until(a.length, 2)
+    println("\nTraversing Array")
+    for (i <- 0 until (a.length, 2)) {
+      println(i + ": " + a(i))
+    }
+
+    println((0 until a.length).reverse)
+
+    for (item <- a) {
+      println(s"traversing: ${item}")
+    }
+
+    // Transform array (create new ones)
+    val c = Array(2, 3, 5, 7, 11)
+    // guard (if inside for)
+    val result = for (elem <- c if elem % 2 == 0) yield 2 * elem
+    val result2 = c filter (_ % 2 == 0) map { 2 * _ }
+
+    for (item <- result) {
+      println(s"traversing result: ${item}")
+    }
+    for (item <- result2) {
+      println(s"traversing result 2: ${item}")
+    }
+
+    // Want to delete all negative elements
+    val d = ArrayBuffer(2, 3, 5, 7, 11, -2, 25, 82, 90)
+    val indexes = for (i <- d.indices if d(i) >= 0) yield i
+    for (j <- indexes.indices) d(j) = d(indexes(j))
+    d.trimEnd(a.length - indexes.length)
+
+    for (item <- d) {
+      println(s"traversing d: ${item}")
+    }
+
+    println(s"Sum: ${Array(2, 3, 5).sum}")
+    println(s"Max: ${Array("Mary", "had", "a", "little", "lamb").max}")
+
+    val e = ArrayBuffer(1, 7, 2, 9)
+    val eSorted = e.sortWith(_ < _)
+    // val eSorted = scala.util.Sorting.quickSort(e)
+    println(eSorted.mkString(" "))
+
+    // Multidimensional array
+
   }
 }

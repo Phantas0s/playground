@@ -17,4 +17,24 @@ Key points of this chapter:
 
 ## 3.3 Traversing Arrays and Array Buffers
 
+* Can use same code for arrays or array buffer (array lists / vectors)
+
+## 3.4 Transforming Arrays
+
+## 3.5 Common Algorithms
+
+## 3.6 Deciphering Scaladoc
+
+* Methods for array are in object ArrayOps (every Array are converted to this object)
+    * `def count(p: (A) => Boolean): Int` - Function takes a predicate (function from A to boolean)
+        * Example: `a.count(_ > 0)`
+    * `def append(elems: A*): Unit` - Take one or more elements of type A
+    * `def appendAll(xs: TraversableOnce[A]): Unit` - Any collection with the TraversableOnce trait
+        * Most general trait in collections hierarchy
+        * Think "any collection" (same for `Traversable` and `Iterable`
+    * Seq trait require element access by integer (array, list, or string)
+    ....
+
+## 3.7 Multidimensional Arrays
+
 
