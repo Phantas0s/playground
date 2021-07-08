@@ -1,6 +1,7 @@
 import scala.io.StdIn._
 import scala.collection.immutable.StringOps
 import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable.SortedMap
 
 // Scala program to print Hello World! 
 object Geeks 
@@ -13,7 +14,8 @@ object Geeks
     // this.lazyVal()
     // this.exceptions()
     // this.fixedArrays()
-    this.arrayBuffers()
+    // this.arrayBuffers()
+    this.maps()
   }
 
   def inputOutput(): Unit = {
@@ -247,7 +249,92 @@ object Geeks
     // val eSorted = scala.util.Sorting.quickSort(e)
     println(eSorted.mkString(" "))
 
-    // Multidimensional array
+    // Multidimensional array of 3 rows 4 columns
+    val matrix = Array.ofDim[Double](3, 4)
 
+    // Ragged array
+    println("Triangle!")
+    val triangle = new Array[Array[Int]](10)
+    for (i <- triangle.indices) {
+      triangle(i) = new Array[Int](i + 1)
+      triangle(i)(i) = i + 1
+    }
+
+    for (i <- triangle.indices) {
+      println(triangle(i).mkString)
+    }
+  }
+
+  def maps(): Unit = {
+    // Immutable Map[String, int]
+    val scores = Map("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
+    // val scores = Map(("Alice", 10), ("Bob", 3), ("Cindy", 8))
+    println(scores)
+
+    // Mutable
+    val mutable = scala.collection.mutable.Map("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
+    println(mutable)
+
+    // Blank
+    var blank = scala.collection.mutable.Map[String, Int]()
+    println(blank)
+
+    val bobScore = scores("Bob")
+    println(s"Bob Score: ${bobScore}")
+    // If no value, exception thrown
+
+    // Option: either Some(value) or None
+    val bobScoreOption = scores.get("Bob")
+    println(bobScoreOption)
+
+    mutable("Bob") = 10
+    println(mutable("Bob"))
+
+    mutable += ("Bob" -> 20, "Fred" -> 7)
+    println(mutable)
+    // Remove key Alice with its value
+    mutable -= "Alice"
+    println(mutable)
+
+    // Create new map from immutable one
+    val newScores = scores + ("Bob" -> 10, "Fred" -> 7)
+    println(newScores)
+
+    // Can update a var
+    var varScore = Map("Bob" -> 5, "Alice" -> 6)
+    varScore +=  ("Bob" -> 10, "Fred" -> 7)
+    println(varScore)
+
+    for ((k, v) <- varScore) println(s"${k} -> ${v}")
+    println(varScore.keySet.mkString(" "))
+    println(varScore.values.mkString(" "))
+
+    // Reversing a map
+    val newMutable = for ((k, v) <- mutable) yield (v, k)
+    println(newMutable)
+
+    // Sorted map
+    // LinkedHashMap for keys in insertion order
+    val sortedScores = scala.collection.immutable.SortedMap("Alice" -> 10, "Fred" -> 7, "Bob" -> 3, "Cindy" -> 8)
+    println(sortedScores)
+    
+    // Tuples
+    // Useful for functions returning more than one value
+    val tuple = (1, 3.14, "Fred")
+    
+    // Access (1 indexed)
+    println(tuple._2)
+    // Better initialization
+    val (first, second, third) = tuple 
+    val (one, two, _) = tuple 
+    println(first, second, third, one, two)
+
+    // Using tuple to bundle value together
+    val symbols = Array("<", "-", ">")
+    val counts = Array(2, 10, 2)
+    val pairs = symbols.zip(counts)
+
+    println(pairs.mkString(" "))
+    for ((s, n) <- pairs) print(s * n)
   }
 }

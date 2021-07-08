@@ -37,4 +37,8 @@ Key points of this chapter:
 
 ## 3.7 Multidimensional Arrays
 
+* type Array[Array[Double]] for example
+
+## 3.8 Interoperating with Java
+
 
