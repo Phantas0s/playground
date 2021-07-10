@@ -8,14 +8,14 @@ object Geeks
 {
   // Main Method 
   def main (args: Array[String]): Unit = {
-    // this.inputOutput()
-    // this.loop()
-    // this.functions()
-    // this.lazyVal()
-    // this.exceptions()
-    // this.fixedArrays()
-    // this.arrayBuffers()
-    this.maps()
+    this.inputOutput
+    this.loop
+    this.functions
+    this.lazyVal
+    this.exceptions
+    this.fixedArrays
+    this.arrayBuffers
+    this.maps
   }
 
   def inputOutput(): Unit = {
@@ -336,5 +336,11 @@ object Geeks
 
     println(pairs.mkString(" "))
     for ((s, n) <- pairs) print(s * n)
+  }
+
+  def classes(): Unit = {
+    val myCounter = new Counter // or new Counter()
+    myCounter.increment() // Mutator
+    println(myCounter.current) // Assesor
   }
 }
