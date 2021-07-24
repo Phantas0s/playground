@@ -1,0 +1,2 @@
+#!/bin/sh
+java -jar "$(cd "$(dirname "$0")"; pwd)/code-maat-0.8.5-standalone.jar" $@
