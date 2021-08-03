@@ -1,0 +1,11 @@
+entity,coupled,degree,average-revs
+source/Craft.Net.Server/MinecraftServer.cs,source/Craft.Net.Server/RemoteClient.cs,68,24
+source/Craft.Net.Server/Craft.Net.Server.csproj,source/Craft.Net.Server/MinecraftServer.cs,48,21
+source/Craft.Net.Server/Handlers/PacketHandlers.cs,source/Craft.Net.Server/MinecraftServer.cs,45,18
+source/Craft.Net.Server/Handlers/LoginHandlers.cs,source/Craft.Net.Server/MinecraftServer.cs,44,18
+source/Craft.Net.Server/EntityManager.cs,source/Craft.Net.Server/MinecraftServer.cs,43,19
+source/Craft.Net.Server/MinecraftServer.cs,source/Test/TestServer/Program.cs,37,22
+Craft.Net.Server/MinecraftServer.cs,Craft.Net/Packets.cs,37,14
+source/Craft.Net.Server/Handlers/InteractionHandlers.cs,source/Craft.Net.Server/MinecraftServer.cs,35,20
+source/Craft.Net.Anvil/Level.cs,source/Craft.Net.Server/MinecraftServer.cs,34,18
+source/Craft.Net.Networking/Packets.cs,source/Craft.Net.Server/MinecraftServer.cs,31,29

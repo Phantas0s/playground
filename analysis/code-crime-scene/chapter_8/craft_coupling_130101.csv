@@ -1,0 +1,3 @@
+entity,coupled,degree,average-revs
+Craft.Net.Server/Craft.Net.Server.csproj,Craft.Net.Server/MinecraftServer.cs,41,91
+Craft.Net.Server/MinecraftClient.cs,Craft.Net.Server/MinecraftServer.cs,38,89
