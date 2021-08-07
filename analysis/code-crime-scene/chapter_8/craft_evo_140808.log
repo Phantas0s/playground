@@ -1,0 +1,3973 @@
+[62afbc4] Drew DeVault 2014-07-06 Merge pull request #218 from NSDex/master
+[8149e29] NSDex 2014-07-06 Don't add empty 'extra' fields to chat msg JSON
+8	2	source/Craft.Net.Networking/ChatTransciever.cs
+
+[b490d6d] Drew DeVault 2014-06-22 Fix Program.cs
+2	2	source/Test/TestServer/Program.cs
+
+[86ce9b2] Drew DeVault 2014-06-22 Revert "Merge pull request #215 from JBou/master"
+178	201	source/Craft.Net.Client/Session.cs
+
+[ee490c8] Drew DeVault 2014-06-22 Revert "Merge pull request #216 from JBou/master"
+5	35	source/Craft.Net.Client/Session.cs
+
+[8cb22bd] Drew DeVault 2014-06-13 Merge pull request #216 from JBou/master
+[a0e3652] gabrielpatzleiner 2014-06-06 Fixed naming conventions to follow .NET standards and some other errors
+19	15	source/Craft.Net.Client/Session.cs
+
+[b2e2c09] gabrielpatzleiner 2014-06-06 Added method to get Service Statuses and fixed some errors in Session.cs  #214
+28	2	source/Craft.Net.Client/Session.cs
+
+[5df916c] Drew DeVault 2014-06-06 Merge pull request #215 from JBou/master
+[9618d8d] gabrielpatzleiner 2014-06-06 Added "requestUser" to the authentication to receive a json User Object which contains "userproperties" and "userid" #214
+201	178	source/Craft.Net.Client/Session.cs
+
+[757ef4f] Drew DeVault 2014-04-30 Merge pull request #207 from bobtwinkles/chat-patch
+[fedd5f4] bobtwinkles 2014-04-29 Update everything to use the new APIs
+0	34	source/Craft.Net.Common/ChatColors.cs
+0	1	source/Craft.Net.Common/Craft.Net.Common.csproj
+13	7	source/Craft.Net.Networking/ChatTransciever.cs
+2	2	source/Craft.Net.Server/Handlers/PacketHandlers.cs
+10	2	source/Craft.Net.Server/MinecraftServer.cs
+3	2	source/Craft.Net.Server/RemoteClient.cs
+1	1	source/Test/TestServer/Program.cs
+
+[ac7e94e] Drew DeVault 2014-04-27 Merge pull request #213 from Aragas/patch-5
+[97061ff] Vitalij 2014-04-27 Using BouncyCastle BigInteger
+0	3133	source/Craft.Net.Common/BigInteger.cs
+4	2	source/Craft.Net.Common/Craft.Net.Common.csproj
+2	0	source/Craft.Net.Common/Cryptography.cs
+
+[3ae859a] Drew DeVault 2014-04-27 Merge pull request #212 from Aragas/patch-2
+[5d3d37c] Drew DeVault 2014-04-27 Merge pull request #211 from Aragas/patch-1
+[773900e] Vitalij 2014-04-27 Implemented stuff from Coordinates
+33	63	source/Craft.Net.Common/Vector3.cs
+
+[0c06fb8] Vitalij 2014-04-27 Implemented stuff from Vector3
+258	70	source/Craft.Net.Common/Coordinates.cs
+
+[29f6999] Drew DeVault 2014-04-10 Remove hardcoded minecraft.net certificate
+1	1	Craft.Net.sln
+0	5	source/Craft.Net.Client/Session.cs
+
+[862bea0] Drew DeVault 2014-04-06 Sort of implement moving between worlds
+5	2	source/Craft.Net.Anvil/Level.cs
+1	0	source/Craft.Net.Logic/Entity.cs
+15	6	source/Craft.Net.Server/EntityManager.cs
+30	0	source/Craft.Net.Server/MinecraftServer.cs
+15	1	source/Craft.Net.Server/RemoteClient.cs
+1	0	source/Craft.Net.TerrainGeneration/FlatlandGenerator.cs
+10	3	source/Test/TestServer/Program.cs
+
+[da1fea7] Drew DeVault 2014-04-06 Merge branch 'master' of github.com:SirCmpwn/Craft.Net
+[5d0668d] Drew DeVault 2014-04-06 Unload idle chunks and save worlds periodically
+27	0	source/Craft.Net.Anvil/Chunk.cs
+10	1	source/Craft.Net.Anvil/Region.cs
+8	0	source/Craft.Net.Server/MinecraftServer.cs
+6	0	source/Craft.Net.Server/ServerSettings.cs
+28	28	source/Craft.Net.TerrainGeneration/StandardGenerator.cs
+2	2	source/Test/TestServer/Program.cs
+
+[c70a332] bobtwinkles 2014-04-03 Remove regions
+0	11	source/Craft.Net.Networking/ChatTransciever.cs
+
+[3ecfa2a] bobtwinkles 2014-04-03 Uppercase is love, uppercase is life
+17	22	source/Craft.Net.Networking/ChatTransciever.cs
+
+[596adb1] bobtwinkles 2014-04-03 implement fulltext
+9	2	source/Craft.Net.Networking/ChatTransciever.cs
+
+[f570b69] bobtwinkles 2014-04-03 Don't build JSON by hand, use Newtonsoft
+33	15	source/Craft.Net.Networking/ChatTransciever.cs
+
+[fd74678] bobtwinkles 2014-04-01 fix event parsing
+9	6	source/Craft.Net.Networking/ChatTransciever.cs
+
+[ce227e3] bobtwinkles 2014-04-01 Cleanup parsing logic
+85	112	source/Craft.Net.Networking/ChatTransciever.cs
+
+[10ffa9a] bobtwinkles 2014-03-28 Submessages and ToString()
+54	3	source/Craft.Net.Networking/ChatTransciever.cs
+
+[54be234] bobtwinkles 2014-03-28 parsing
+198	5	source/Craft.Net.Networking/ChatTransciever.cs
+
+[1794748] bobtwinkles 2014-03-28 Break everything
+6	4	source/Craft.Net.Client/Events/ChatMessageEventArgs.cs
+46	0	source/Craft.Net.Networking/ChatTransciever.cs
+1	0	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+4	4	source/Craft.Net.Networking/Packets.cs
+4	3	source/Craft.Net.Server/Events/ChatMessageEventArgs.cs
+1	1	source/Test/TestClient/Program.cs
+4	3	source/Test/TestServer/Program.cs
+
+[57e8d5b] Drew DeVault 2014-03-30 Merge pull request #205 from NSDex/master
+[b95329a] NSDex 2014-03-29 Make Block BoundingBox a delegate.  Add ladder logic.
+48	19	source/Craft.Net.Logic/Block.cs
+7	1	source/Craft.Net.Logic/Blocks/AirBlock.cs
+13	2	source/Craft.Net.Logic/Blocks/DecorativeGrassBlock.cs
+13	2	source/Craft.Net.Logic/Blocks/FlowerBlock.cs
+78	0	source/Craft.Net.Logic/Blocks/LadderBlock.cs
+7	1	source/Craft.Net.Logic/Blocks/WheatBlock.cs
+1	0	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+
+[557c37e] Drew DeVault 2014-03-29 Implement tool damage and mining time enforcement
+119	12	source/Craft.Net.Logic/Block.cs
+1	1	source/Craft.Net.Logic/Blocks/DirtBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/GrassBlock.cs
+1	0	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+63	9	source/Craft.Net.Logic/Item.cs
+57	0	source/Craft.Net.Logic/Items/PickaxeItem.cs
+2	1	source/Craft.Net.Logic/ToolType.cs
+17	15	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+
+[a647d6b] Drew DeVault 2014-03-29 Wire up right click handlers
+5	0	source/Craft.Net.Logic/Block.cs
+
+[6c67693] Drew DeVault 2014-03-29 Make Block class derive from Item
+6	16	source/Craft.Net.Logic/Block.cs
+1	0	source/Craft.Net.Logic/Blocks/DirtBlock.cs
+4	3	source/Craft.Net.Logic/Item.cs
+2	2	source/Craft.Net.Server/MinecraftServer.cs
+1	1	source/Craft.Net.Server/PlayerManager.cs
+1	0	source/Test/TestServer/Program.cs
+
+[41edcb8] Drew DeVault 2014-03-28 Merge branch 'master' of github.com:SirCmpwn/Craft.Net
+[97c954a] Drew DeVault 2014-03-28 Implement block placement sound effects
+14	0	source/Craft.Net.Logic/Block.cs
+2	0	source/Craft.Net.Logic/Blocks/DirtBlock.cs
+1	0	source/Craft.Net.Logic/Blocks/GrassBlock.cs
+9	6	source/Craft.Net.Networking/Packets.cs
+12	0	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+
+[86ff7aa] Drew DeVault 2014-03-26 Merge pull request #204 from bobtwinkles/client_physics_integration
+[ac9b65b] bobtwinkles 2014-03-26 Replace LogicManager with Block
+1	1	source/Craft.Net.Client/MinecraftClient.cs
+
+[f9766be] bobtwinkles 2014-03-26 Merge branch 'master' of github.com:SirCmpwn/Craft.Net into client_physics_integration
+[78f8be5] Drew DeVault 2014-03-26 Refactor Block logic and implement items
+1	0	source/Craft.Net.Anvil/BlockChangeEventArgs.cs
+0	1	source/Craft.Net.Anvil/Craft.Net.Anvil.csproj
+1	0	source/Craft.Net.Anvil/World.cs
+1	0	source/Craft.Net.Client/Handlers/WorldHandlers.cs
+3	2	source/Craft.Net.Client/MinecraftClient.Properties.cs
+14	0	source/Craft.Net.Common/BlockFace.cs
+1	1	source/{Craft.Net.Anvil => Craft.Net.Common}/Coordinates.cs
+2	0	source/Craft.Net.Common/Craft.Net.Common.csproj
+19	0	source/Craft.Net.Common/MathHelper.cs
+126	6	source/Craft.Net.Logic/Block.cs
+3	3	source/Craft.Net.Logic/Blocks/AirBlock.cs
+6	6	source/Craft.Net.Logic/Blocks/DecorativeGrassBlock.cs
+2	2	source/Craft.Net.Logic/Blocks/DirtBlock.cs
+6	6	source/Craft.Net.Logic/Blocks/FlowerBlock.cs
+3	3	source/Craft.Net.Logic/Blocks/GrassBlock.cs
+3	3	source/Craft.Net.Logic/Blocks/WheatBlock.cs
+5	1	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+79	0	source/Craft.Net.Logic/Item.cs
+1	1	source/Craft.Net.Logic/ItemInfo.cs
+13	0	source/Craft.Net.Logic/ItemMaterial.cs
+17	0	source/Craft.Net.Logic/Items/FlintAndSteelItem.cs
+0	87	source/Craft.Net.Logic/LogicManager.cs
+14	0	source/Craft.Net.Logic/ToolType.cs
+19	1	source/Craft.Net.Logic/WorldExtensions.cs
+0	10	source/Craft.Net.Networking/Packets.cs
+17	36	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+7	7	source/Craft.Net.Server/MinecraftServer.cs
+4	0	source/Test/Craft.Net.Anvil.Test/Craft.Net.Anvil.Test.csproj
+1	0	source/Test/Craft.Net.Anvil.Test/WorldTest.cs
+1	0	source/Test/TestClient/Program.cs
+
+[cf97cdf] bobtwinkles 2014-03-26 Make MS/Update tuneable
+2	1	source/Craft.Net.Client/MinecraftClient.cs
+3	3	source/Craft.Net.Physics/PhysicsEngine.cs
+4	2	source/Craft.Net.Server/MinecraftServer.cs
+
+[17ef405] bobtwinkles 2014-03-26 stylin
+4	2	source/Craft.Net.Client/MinecraftClient.cs
+
+[8220d32] bobtwinkles 2014-03-26 make MillisBetweenUpdates static so things work
+1	1	source/Craft.Net.Physics/PhysicsEngine.cs
+
+[69c8ddf] bobtwinkles 2014-03-26 spleling
+1	1	source/Craft.Net.Client/MinecraftClient.cs
+
+[e9d82f1] bobtwinkles 2014-03-26 More style
+5	3	source/Craft.Net.Client/MinecraftClient.cs
+8	5	source/Craft.Net.Physics/PhysicsEngine.cs
+
+[57e17a8] bobtwinkles 2014-03-26 Style
+1	2	source/Craft.Net.Client/MinecraftClient.Properties.cs
+
+[2088af6] bobtwinkles 2014-03-26 Fix boog in player physics
+1	2	source/Craft.Net.Client/MinecraftClient.Physics.cs
+
+[2f17a5e] bobtwinkles 2014-03-26 syntax
+1	1	source/Craft.Net.Client/MinecraftClient.cs
+
+[2ca7ab7] bobtwinkles 2014-03-26 Prevent negative timeouts
+5	1	source/Craft.Net.Client/MinecraftClient.cs
+
+[54eb5a3] bobtwinkles 2014-03-26 Remove locking velocity for full physics update as it had a tendancy to cause deadlocks if client code tried to modify it
+0	2	source/Craft.Net.Client/MinecraftClient.Physics.cs
+
+[8c19f4f] bobtwinkles 2014-03-26 Hook C.N.Client up to C.N.Physics so client code gets some dumb stuff handled for free
+1	0	source/Craft.Net.Client/Craft.Net.Client.csproj
+94	0	source/Craft.Net.Client/MinecraftClient.Physics.cs
+7	64	source/Craft.Net.Client/MinecraftClient.Properties.cs
+20	19	source/Craft.Net.Client/MinecraftClient.cs
+38	25	source/Craft.Net.Physics/PhysicsEngine.cs
+
+[8b1d7d2] bobtwinkles 2014-03-26 Add OffsetBy to BoundingBox
+14	0	source/Craft.Net.Common/BoundingBox.cs
+
+[3748a4e] bobtwinkles 2014-03-25 implement copy constructors
+6	0	source/Craft.Net.Common/BoundingBox.cs
+7	0	source/Craft.Net.Common/Size.cs
+7	0	source/Craft.Net.Common/Vector3.cs
+
+[a446bed] bobtwinkles 2014-03-24 Add project reference for TestClient
+4	0	source/Test/TestClient/TestClient.csproj
+
+[0a9129b] bobtwinkles 2014-03-24 Initial implementation, probably doesn't work
+4	0	source/Craft.Net.Client/Craft.Net.Client.csproj
+2	2	source/Craft.Net.Client/Handlers/EntityHandlers.cs
+79	20	source/Craft.Net.Client/MinecraftClient.Properties.cs
+49	1	source/Craft.Net.Client/MinecraftClient.cs
+
+[d82ff7b] Drew DeVault 2014-03-26 Merge pull request #201 from bobtwinkles/client_fixes
+[acbd5bc] bobtwinkles 2014-03-23 Add some more blocks
+1	1	source/Craft.Net.Logic/Blocks/AirBlock.cs
+28	0	source/Craft.Net.Logic/Blocks/DecorativeGrassBlock.cs
+27	0	source/Craft.Net.Logic/Blocks/FlowerBlock.cs
+15	0	source/Craft.Net.Logic/Blocks/WheatBlock.cs
+3	0	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+
+[c60bf3f] Drew DeVault 2014-03-23 Merge pull request #200 from bobtwinkles/client_fixes
+[d10f193] bobtwinkles 2014-03-23 semicolons are hard
+1	1	source/Craft.Net.Client/MinecraftClient.Properties.cs
+
+[ca34189] Drew DeVault 2014-03-23 Merge pull request #199 from bobtwinkles/client_fixes
+[81d7764] bobtwinkles 2014-03-23 Moar style cleanup
+20	22	source/Craft.Net.Client/MinecraftClient.Properties.cs
+0	2	source/Craft.Net.Client/MinecraftClient.cs
+
+[53ed4aa] bobtwinkles 2014-03-23 Style cleanup
+1	4	source/Craft.Net.Client/MinecraftClient.Properties.cs
+
+[635021e] bobtwinkles 2014-03-23 Underp on-ground tracking
+27	12	source/Craft.Net.Client/MinecraftClient.Properties.cs
+2	0	source/Craft.Net.Client/MinecraftClient.cs
+3	5	source/Craft.Net.Common/BoundingBox.cs
+2	4	source/Craft.Net.Logic/LogicManager.cs
+
+[9a81da7] Drew DeVault 2014-03-23 Merge pull request #198 from bobtwinkles/inventory
+[9ef70a2] bobtwinkles 2014-03-23 Fix HeldItemChange write
+4	1	source/Craft.Net.Networking/Packets.cs
+
+[d371f5a] Drew DeVault 2014-03-23 Merge pull request #197 from bobtwinkles/inventory
+[4c5719b] bobtwinkles 2014-03-23 Read correct packet lengths for HeldItemChange
+4	1	source/Craft.Net.Networking/Packets.cs
+
+[dead09c] Drew DeVault 2014-03-23 Merge pull request #196 from bobtwinkles/master
+[6b8c44b] bobtwinkles 2014-03-23 Use OnGround in player updates
+1	1	source/Craft.Net.Client/MinecraftClient.cs
+
+[71c9eb2] bobtwinkles 2014-03-22 add a packet handler to update the world on BlockChange packets
+1	0	source/Craft.Net.Client/Handlers/PacketHandlers.cs
+9	1	source/Craft.Net.Client/Handlers/WorldHandlers.cs
+9	1	source/Craft.Net.Client/ReadOnlyWorld.cs
+
+[51f6569] bobtwinkles 2014-03-23 Implement OnGround tracking
+17	6	source/Craft.Net.Client/MinecraftClient.Properties.cs
+4	2	source/Craft.Net.Logic/LogicManager.cs
+
+[06eaf79] bobtwinkles 2014-03-23 Implement _onGround for C.N.Client.MCC
+10	1	source/Craft.Net.Client/MinecraftClient.Properties.cs
+9	0	source/Craft.Net.Common/BoundingBox.cs
+9	0	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+12	6	source/Craft.Net.Logic/LogicManager.cs
+
+[2de1b1e] bobtwinkles 2014-03-23 Add reference from C.N.Client to C.N.Logic
+1	1	source/Classic/Craft.Net.Classic.Common/Craft.Net.Classic.Common.csproj
+1	1	source/Classic/Craft.Net.Classic.Networking/Craft.Net.Classic.Networking.csproj
+8	8	source/Craft.Net.Anvil/Craft.Net.Anvil.csproj
+12	8	source/Craft.Net.Client/Craft.Net.Client.csproj
+6	6	source/Craft.Net.Common/Craft.Net.Common.csproj
+1	1	source/Test/TestClient/TestClient.csproj
+4	4	source/Test/TestServer/TestServer.csproj
+
+[aadc39b] Drew DeVault 2014-03-22 Merge pull request #195 from bobtwinkles/client_fixes
+[be00064] bobtwinkles 2014-03-22 add a packet handler to update the world on BlockChange packets
+1	0	source/Craft.Net.Client/Handlers/PacketHandlers.cs
+9	1	source/Craft.Net.Client/Handlers/WorldHandlers.cs
+9	1	source/Craft.Net.Client/ReadOnlyWorld.cs
+
+[3e61ae6] Drew DeVault 2014-03-18 Implement means of specifying custom block drops
+21	1	source/Craft.Net.Logic/Block.cs
+3	2	source/Craft.Net.Logic/Blocks/AirBlock.cs
+14	0	source/Craft.Net.Logic/Blocks/DirtBlock.cs
+17	0	source/Craft.Net.Logic/Blocks/GrassBlock.cs
+2	0	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+13	15	source/Craft.Net.Logic/LogicManager.cs
+
+[d063e10] Drew DeVault 2014-03-18 Start refactoring Craft.Net.Logic
+0	7	source/Craft.Net.Entities/Craft.Net.Entities.csproj
+9	0	source/Craft.Net.Logic/Block.cs
+20	0	source/Craft.Net.Logic/BlockInfo.cs
+14	0	source/Craft.Net.Logic/Blocks/AirBlock.cs
+20	0	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+1	1	source/{Craft.Net.Entities => Craft.Net.Logic}/Entity.cs
+1	1	source/{Craft.Net.Entities => Craft.Net.Logic}/EntityEventArgs.cs
+2	2	source/{Craft.Net.Entities => Craft.Net.Logic}/ItemEntity.cs
+16	0	source/Craft.Net.Logic/ItemInfo.cs
+1	1	source/{Craft.Net.Entities => Craft.Net.Logic}/LivingEntity.cs
+83	0	source/Craft.Net.Logic/LogicManager.cs
+1	1	source/{Craft.Net.Entities => Craft.Net.Logic}/ObjectEntity.cs
+1	1	source/{Craft.Net.Entities => Craft.Net.Logic}/PlayerAbilities.cs
+1	1	source/{Craft.Net.Entities => Craft.Net.Logic}/PlayerEntity.cs
+15	16	source/Craft.Net.Logic/WorldExtensions.cs
+1	4	source/Craft.Net.Physics/Craft.Net.Physics.csproj
+11	0	source/Craft.Net.Physics/IBlockPhysicsProvider.cs
+9	13	source/Craft.Net.Physics/PhysicsEngine.cs
+0	5	source/Craft.Net.Server/Craft.Net.Server.csproj
+1	1	source/Craft.Net.Server/EntityManager.cs
+1	1	source/Craft.Net.Server/ExtensionMethods.cs
+6	8	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+1	1	source/Craft.Net.Server/Handlers/InventoryHandler.cs
+1	1	source/Craft.Net.Server/Handlers/LoginHandlers.cs
+0	22	source/Craft.Net.Server/LogicHelpers.cs
+1	3	source/Craft.Net.Server/MinecraftServer.cs
+1	1	source/Craft.Net.Server/PlayerManager.cs
+1	1	source/Craft.Net.Server/RemoteClient.cs
+
+[fff9022] Drew DeVault 2014-03-18 Remove old and crappy C.N.Logic code
+0	7	Craft.Net.sln
+0	18	source/Craft.Net.Logic/Blocks/ActivatorRailBlock.cs
+0	22	source/Craft.Net.Logic/Blocks/AirBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/AnvilBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BeaconBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BedBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BedrockBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BirchWoodStairsBlock.cs
+0	375	source/Craft.Net.Logic/Blocks/Block.cs
+0	18	source/Craft.Net.Logic/Blocks/BlockofDiamondBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BlockofEmeraldBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BlockofGoldBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BlockofIronBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BlockofRedstoneBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BookshelfBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BrewingStandBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BrickStairsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/BricksBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/ButtonBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/CactusBlock.cs
+0	40	source/Craft.Net.Logic/Blocks/CakeBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/CarrotsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/CauldronBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/ChestBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/ClayBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/CoalOreBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/CobbleWallBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/CobblestoneBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/CobwebBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/CocoaBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/CommandBlockBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/ComparatorBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/CraftingTableBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/CropsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/DaylightSensorBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/DeadBushBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/DetectorRailBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/DiamondOreBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/DiodeBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/DirtBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/DispenserBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/DragonEggBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/DropperBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/EmeraldOreBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/EnchantmentTableBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/EndPortalBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/EndStoneBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/EnderChestBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/FarmlandBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/FenceBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/FenceGateBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/FireBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/FlowerBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/FlowerPotBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/FurnaceBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/GlassBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/GlassPaneBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/GlowstoneBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/GoldOreBlock.cs
+0	25	source/Craft.Net.Logic/Blocks/GrassBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/GravelBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/HopperBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/IceBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/IronBarsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/IronDoorBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/IronOreBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/JackoLanternBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/JukeboxBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/JungleWoodStairsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/LadderBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/LapisLazuliBlockBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/LapisLazuliOreBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/LavaBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/LeavesBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/LeverBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/LilyPadBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/LockedchestBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/MelonBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/MonsterSpawnerBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/MonsterStoneEggBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/MossStoneBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/MushroomBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/MyceliumBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/NetherBrickBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/NetherBrickFenceBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/NetherBrickStairsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/NetherQuartzOreBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/NetherWartBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/NetherrackBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/NoteBlockBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/OakWoodStairsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/ObsidianBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/PistonBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/PortalBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/PotatoesBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/PoweredRailBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/PressurePlateBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/PumpkinBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/PumpkinStemBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/QuartzBlockBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/QuartzStairsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/RailBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/RedstoneDustBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/RedstoneLampBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/RedstoneOreBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/RedstoneTorchBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/RoseBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/SandBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/SandstoneBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/SandstoneStairsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/SaplingBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/SignBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/SkullBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/SnowBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/SoulSandBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/SpongeBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/SpruceWoodStairsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/StickyPistonBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/StoneBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/StoneBrickStairsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/StoneBricksBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/StoneSlabBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/StoneStairsBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/SugarcaneBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/TNTBlock.cs
+0	25	source/Craft.Net.Logic/Blocks/TallGrassBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/TorchBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/TrapdoorBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/TrappedChestBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/TripwireBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/TripwireHookBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/VinesBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/WaterBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/WeightedPressurePlateHeavyBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/WeightedPressurePlateLightBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/WoodBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/WoodSlabBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/WoodenDoorBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/WoodenPlanksBlock.cs
+0	14	source/Craft.Net.Logic/Blocks/WoolBlock.cs
+0	302	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+0	16	source/Craft.Net.Logic/Items/AppleItem.cs
+0	16	source/Craft.Net.Logic/Items/ArrowItem.cs
+0	16	source/Craft.Net.Logic/Items/BakedPotatoItem.cs
+0	16	source/Craft.Net.Logic/Items/BedItem.cs
+0	16	source/Craft.Net.Logic/Items/BlazePowderItem.cs
+0	16	source/Craft.Net.Logic/Items/BlazeRodItem.cs
+0	16	source/Craft.Net.Logic/Items/BoatItem.cs
+0	16	source/Craft.Net.Logic/Items/BoneItem.cs
+0	16	source/Craft.Net.Logic/Items/BookItem.cs
+0	16	source/Craft.Net.Logic/Items/BookandQuillItem.cs
+0	16	source/Craft.Net.Logic/Items/BottleoEnchantingItem.cs
+0	16	source/Craft.Net.Logic/Items/BowItem.cs
+0	16	source/Craft.Net.Logic/Items/BowlItem.cs
+0	16	source/Craft.Net.Logic/Items/BreadItem.cs
+0	16	source/Craft.Net.Logic/Items/BrewingStandItem.cs
+0	16	source/Craft.Net.Logic/Items/BrickItem.cs
+0	16	source/Craft.Net.Logic/Items/BucketItem.cs
+0	29	source/Craft.Net.Logic/Items/CakeItem.cs
+0	16	source/Craft.Net.Logic/Items/CarrotItem.cs
+0	16	source/Craft.Net.Logic/Items/CarrotonaStickItem.cs
+0	16	source/Craft.Net.Logic/Items/CauldronItem.cs
+0	16	source/Craft.Net.Logic/Items/ChainBootsItem.cs
+0	16	source/Craft.Net.Logic/Items/ChainChestplateItem.cs
+0	16	source/Craft.Net.Logic/Items/ChainHelmetItem.cs
+0	16	source/Craft.Net.Logic/Items/ChainLeggingsItem.cs
+0	16	source/Craft.Net.Logic/Items/ClayItem.cs
+0	16	source/Craft.Net.Logic/Items/ClockItem.cs
+0	16	source/Craft.Net.Logic/Items/CoalItem.cs
+0	16	source/Craft.Net.Logic/Items/CompassItem.cs
+0	16	source/Craft.Net.Logic/Items/CookedChickenItem.cs
+0	16	source/Craft.Net.Logic/Items/CookedFishItem.cs
+0	16	source/Craft.Net.Logic/Items/CookedPorkchopItem.cs
+0	16	source/Craft.Net.Logic/Items/CookieItem.cs
+0	16	source/Craft.Net.Logic/Items/DiamondAxeItem.cs
+0	16	source/Craft.Net.Logic/Items/DiamondBootsItem.cs
+0	16	source/Craft.Net.Logic/Items/DiamondChestplateItem.cs
+0	16	source/Craft.Net.Logic/Items/DiamondHelmetItem.cs
+0	16	source/Craft.Net.Logic/Items/DiamondHoeItem.cs
+0	16	source/Craft.Net.Logic/Items/DiamondItem.cs
+0	16	source/Craft.Net.Logic/Items/DiamondLeggingsItem.cs
+0	16	source/Craft.Net.Logic/Items/DiamondPickaxeItem.cs
+0	16	source/Craft.Net.Logic/Items/DiamondShovelItem.cs
+0	16	source/Craft.Net.Logic/Items/DiamondSwordItem.cs
+0	16	source/Craft.Net.Logic/Items/DyePowderItem.cs
+0	16	source/Craft.Net.Logic/Items/EggItem.cs
+0	16	source/Craft.Net.Logic/Items/EmeraldItem.cs
+0	16	source/Craft.Net.Logic/Items/EmptyMapItem.cs
+0	16	source/Craft.Net.Logic/Items/EnchantedBookItem.cs
+0	16	source/Craft.Net.Logic/Items/EnderPearlItem.cs
+0	16	source/Craft.Net.Logic/Items/EyeofEnderItem.cs
+0	16	source/Craft.Net.Logic/Items/FeatherItem.cs
+0	16	source/Craft.Net.Logic/Items/FermentedSpiderEyeItem.cs
+0	16	source/Craft.Net.Logic/Items/FireChargeItem.cs
+0	16	source/Craft.Net.Logic/Items/FireworkRocketItem.cs
+0	16	source/Craft.Net.Logic/Items/FireworkStarItem.cs
+0	16	source/Craft.Net.Logic/Items/FishingRodItem.cs
+0	16	source/Craft.Net.Logic/Items/FlintItem.cs
+0	16	source/Craft.Net.Logic/Items/FlintandSteelItem.cs
+0	16	source/Craft.Net.Logic/Items/FlowerPotItem.cs
+0	16	source/Craft.Net.Logic/Items/GhastTearItem.cs
+0	16	source/Craft.Net.Logic/Items/GlassBottleItem.cs
+0	16	source/Craft.Net.Logic/Items/GlisteringMelonItem.cs
+0	16	source/Craft.Net.Logic/Items/GlowstoneDustItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldIngotItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldNuggetItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldenAppleItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldenAxeItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldenBootsItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldenCarrotItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldenChestplateItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldenHelmetItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldenHoeItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldenLeggingsItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldenPickaxeItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldenShovelItem.cs
+0	16	source/Craft.Net.Logic/Items/GoldenSwordItem.cs
+0	16	source/Craft.Net.Logic/Items/GunpowderItem.cs
+0	16	source/Craft.Net.Logic/Items/IronAxeItem.cs
+0	16	source/Craft.Net.Logic/Items/IronBootsItem.cs
+0	16	source/Craft.Net.Logic/Items/IronChestplateItem.cs
+0	16	source/Craft.Net.Logic/Items/IronDoorItem.cs
+0	16	source/Craft.Net.Logic/Items/IronHelmetItem.cs
+0	16	source/Craft.Net.Logic/Items/IronHoeItem.cs
+0	16	source/Craft.Net.Logic/Items/IronIngotItem.cs
+0	16	source/Craft.Net.Logic/Items/IronLeggingsItem.cs
+0	16	source/Craft.Net.Logic/Items/IronPickaxeItem.cs
+0	16	source/Craft.Net.Logic/Items/IronShovelItem.cs
+0	16	source/Craft.Net.Logic/Items/IronSwordItem.cs
+0	123	source/Craft.Net.Logic/Items/Item.cs
+0	16	source/Craft.Net.Logic/Items/ItemFrameItem.cs
+0	16	source/Craft.Net.Logic/Items/LavaBucketItem.cs
+0	16	source/Craft.Net.Logic/Items/LeatherBootsItem.cs
+0	16	source/Craft.Net.Logic/Items/LeatherCapItem.cs
+0	16	source/Craft.Net.Logic/Items/LeatherItem.cs
+0	16	source/Craft.Net.Logic/Items/LeatherPantsItem.cs
+0	16	source/Craft.Net.Logic/Items/LeatherTunicItem.cs
+0	16	source/Craft.Net.Logic/Items/MagmaCreamItem.cs
+0	16	source/Craft.Net.Logic/Items/MapItem.cs
+0	16	source/Craft.Net.Logic/Items/MelonItem.cs
+0	16	source/Craft.Net.Logic/Items/MelonSeedsItem.cs
+0	16	source/Craft.Net.Logic/Items/MilkItem.cs
+0	16	source/Craft.Net.Logic/Items/MinecartItem.cs
+0	16	source/Craft.Net.Logic/Items/MinecartwithChestItem.cs
+0	16	source/Craft.Net.Logic/Items/MinecartwithFurnaceItem.cs
+0	16	source/Craft.Net.Logic/Items/MinecartwithHopperItem.cs
+0	16	source/Craft.Net.Logic/Items/MinecartwithTNTItem.cs
+0	16	source/Craft.Net.Logic/Items/MushroomStewItem.cs
+0	16	source/Craft.Net.Logic/Items/MusicDiscItem.cs
+0	16	source/Craft.Net.Logic/Items/NetherBrickItem.cs
+0	16	source/Craft.Net.Logic/Items/NetherQuartzItem.cs
+0	16	source/Craft.Net.Logic/Items/NetherStarItem.cs
+0	16	source/Craft.Net.Logic/Items/NetherWartItem.cs
+0	16	source/Craft.Net.Logic/Items/PaintingItem.cs
+0	16	source/Craft.Net.Logic/Items/PaperItem.cs
+0	16	source/Craft.Net.Logic/Items/PoisonousPotatoItem.cs
+0	16	source/Craft.Net.Logic/Items/PotatoItem.cs
+0	16	source/Craft.Net.Logic/Items/PotionItem.cs
+0	16	source/Craft.Net.Logic/Items/PumpkinPieItem.cs
+0	16	source/Craft.Net.Logic/Items/PumpkinSeedsItem.cs
+0	16	source/Craft.Net.Logic/Items/RawBeefItem.cs
+0	16	source/Craft.Net.Logic/Items/RawChickenItem.cs
+0	16	source/Craft.Net.Logic/Items/RawFishItem.cs
+0	16	source/Craft.Net.Logic/Items/RawPorkchopItem.cs
+0	16	source/Craft.Net.Logic/Items/RedstoneComparatorItem.cs
+0	16	source/Craft.Net.Logic/Items/RedstoneItem.cs
+0	16	source/Craft.Net.Logic/Items/RedstoneRepeaterItem.cs
+0	16	source/Craft.Net.Logic/Items/RottenFleshItem.cs
+0	16	source/Craft.Net.Logic/Items/SaddleItem.cs
+0	16	source/Craft.Net.Logic/Items/SeedsItem.cs
+0	16	source/Craft.Net.Logic/Items/ShearsItem.cs
+0	16	source/Craft.Net.Logic/Items/SignItem.cs
+0	16	source/Craft.Net.Logic/Items/SkullItem.cs
+0	16	source/Craft.Net.Logic/Items/SlimeballItem.cs
+0	16	source/Craft.Net.Logic/Items/SnowballItem.cs
+0	16	source/Craft.Net.Logic/Items/SpawnItem.cs
+0	16	source/Craft.Net.Logic/Items/SpiderEyeItem.cs
+0	16	source/Craft.Net.Logic/Items/SteakItem.cs
+0	16	source/Craft.Net.Logic/Items/StickItem.cs
+0	16	source/Craft.Net.Logic/Items/StoneAxeItem.cs
+0	16	source/Craft.Net.Logic/Items/StoneHoeItem.cs
+0	16	source/Craft.Net.Logic/Items/StonePickaxeItem.cs
+0	16	source/Craft.Net.Logic/Items/StoneShovelItem.cs
+0	16	source/Craft.Net.Logic/Items/StoneSwordItem.cs
+0	16	source/Craft.Net.Logic/Items/StringItem.cs
+0	16	source/Craft.Net.Logic/Items/SugarCanesItem.cs
+0	16	source/Craft.Net.Logic/Items/SugarItem.cs
+0	16	source/Craft.Net.Logic/Items/WaterBucketItem.cs
+0	16	source/Craft.Net.Logic/Items/WheatItem.cs
+0	16	source/Craft.Net.Logic/Items/WoodenAxeItem.cs
+0	16	source/Craft.Net.Logic/Items/WoodenDoorItem.cs
+0	16	source/Craft.Net.Logic/Items/WoodenHoeItem.cs
+0	16	source/Craft.Net.Logic/Items/WoodenPickaxeItem.cs
+0	16	source/Craft.Net.Logic/Items/WoodenShovelItem.cs
+0	16	source/Craft.Net.Logic/Items/WoodenSwordItem.cs
+0	16	source/Craft.Net.Logic/Items/WrittenBookItem.cs
+2	3	source/Craft.Net.Logic/Windows/InventoryWindow.cs
+3	2	source/Craft.Net.Logic/Windows/WindowArea.cs
+9	7	source/Craft.Net.Physics/PhysicsEngine.cs
+26	26	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+6	4	source/Craft.Net.Server/Handlers/InventoryHandler.cs
+0	12	source/Craft.Net.Server/LogicHelpers.cs
+3	5	source/Craft.Net.Server/MinecraftServer.cs
+0	29	source/Test/Craft.Net.Logic.Test/BlockTest.cs
+0	76	source/Test/Craft.Net.Logic.Test/Craft.Net.Logic.Test.csproj
+0	29	source/Test/Craft.Net.Logic.Test/ItemTest.cs
+0	36	source/Test/Craft.Net.Logic.Test/Properties/AssemblyInfo.cs
+0	12	source/Test/TestServer/Program.cs
+
+[a1f9d4a] Drew DeVault 2014-03-18 Fix held item change packet
+3	3	source/Craft.Net.Networking/Packets.cs
+
+[9cd7939] Drew DeVault 2014-03-18 Fix issue with changing game modes
+12	14	source/Craft.Net.Networking/Packets.cs
+1	1	source/Craft.Net.Server/PlayerManager.cs
+
+[691e2fa] Drew DeVault 2014-03-07 Merge pull request #193 from kaltinril/master
+[49a3868] kaltinril 2014-03-05 Fixes item # 192 in SirCmpwn/Craft.net
+1	1	source/Craft.Net.Anvil/Level.cs
+
+[3572685] Drew DeVault 2014-03-03 Update latest supported version
+2	2	README.md
+
+[36f1618] Drew DeVault 2014-03-03 Remove some test code
+0	2	source/Craft.Net.Client/MinecraftClient.cs
+
+[2e77d72] Drew DeVault 2014-03-03 Merge branch 'master' into 1.7.x
+[3a58391] Drew DeVault 2014-03-03 Fix online mode on C.N.Server
+13	10	source/Craft.Net.Server/Handlers/LoginHandlers.cs
+4	1	source/Craft.Net.Server/RemoteClient.cs
+1	1	source/Test/TestServer/Program.cs
+
+[71603df] Drew DeVault 2014-03-03 Update Craft.Net.Server to 1.7.5
+1	1	Craft.Net.sln
+5	0	source/Craft.Net.Client/MinecraftClient.cs
+1	0	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+17	0	source/Craft.Net.Networking/Extensions.cs
+4	0	source/Craft.Net.Networking/NetworkManager.cs
+3	2	source/Craft.Net.Networking/Packets.cs
+2	1	source/Craft.Net.Server/EntityManager.cs
+9	3	source/Craft.Net.Server/Handlers/LoginHandlers.cs
+32	37	source/Craft.Net.Server/MinecraftServer.cs
+5	4	source/Craft.Net.Server/RemoteClient.cs
+1	1	source/Craft.Net.TerrainGeneration/StandardGenerator.cs
+
+[8f1ee6d] Drew DeVault 2014-03-03 Do not fail to fully read any packets
+1	1	Craft.Net.sln
+1	1	README.md
+0	4	source/Craft.Net.Client/Handlers/WorldHandlers.cs
+0	2	source/Craft.Net.Client/MinecraftClient.cs
+7	3	source/Craft.Net.Networking/NetworkManager.cs
+5	3	source/Craft.Net.Networking/Packets.cs
+2	13	source/Craft.Net.Networking/ServerStatus.cs
+73	65	source/Craft.Net.Server/Handlers/LoginHandlers.cs
+1	0	source/Craft.Net.Server/Handlers/PacketHandlers.cs
+16	11	source/Craft.Net.Server/MinecraftServer.cs
+1	1	source/Craft.Net.Server/RemoteClient.cs
+1	1	source/Test/TestClient/TestClient.csproj
+
+[0f2edfd] Drew DeVault 2014-03-03 Fix build and respond to pings
+1	1	Craft.Net.sln
+2	2	source/Craft.Net.Networking/NetworkManager.cs
+14	4	source/Craft.Net.Networking/Packets.cs
+13	2	source/Craft.Net.Networking/ServerStatus.cs
+3	0	source/Craft.Net.Server/Craft.Net.Server.csproj
+16	16	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+13	9	source/Craft.Net.Server/Handlers/InventoryHandler.cs
+59	65	source/Craft.Net.Server/Handlers/LoginHandlers.cs
+36	27	source/Craft.Net.Server/Handlers/PacketHandlers.cs
+49	47	source/Craft.Net.Server/MinecraftServer.cs
+2	1	source/Craft.Net.Server/RemoteClient.cs
+
+[06e70ee] Drew DeVault 2014-01-24 Add link to TkTech script
+1	0	source/Craft.Net.Common/SoundEffect.cs
+
+[24293d0] Drew DeVault 2014-01-24 Add notes to SoundEffect.cs
+4	0	source/Craft.Net.Common/SoundEffect.cs
+
+[77f26f4] Drew DeVault 2014-01-24 Progress towards 1.7.x Craft.Net.Server
+1	1	source/Craft.Net.Anvil/Coordinates.cs
+4	1	source/Craft.Net.Client/Handlers/WorldHandlers.cs
+8	2	source/Craft.Net.Client/MinecraftClient.cs
+4	2	source/Test/TestClient/Program.cs
+
+[f774c82] Drew DeVault 2013-12-20 Merge pull request #191 from Sergeeeek/master
+[b9e82e9] Sergeeeek 2013-12-20 Implemented a cake eating! :D
+15	0	source/Craft.Net.Logic/Blocks/CakeBlock.cs
+
+[d184c17] Drew DeVault 2013-12-08 Ignore weird position updates from server
+2	0	source/Craft.Net.Client/Handlers/EntityHandlers.cs
+6	11	source/Craft.Net.Client/Handlers/WorldHandlers.cs
+2	2	source/Craft.Net.Client/MinecraftClient.cs
+7	8	source/Test/TestClient/Program.cs
+4	0	source/Test/TestClient/TestClient.csproj
+
+[1fc1d80] Drew DeVault 2013-12-08 Remove test code from C.N.Client
+0	1	source/Craft.Net.Client/Handlers/LoginHandlers.cs
+0	5	source/Craft.Net.Client/MinecraftClient.cs
+
+[54c2946] Drew DeVault 2013-12-08 Fix movement in Craft.Net.Client
+1	1	source/Craft.Net.Client/Handlers/EntityHandlers.cs
+1	2	source/Craft.Net.Client/MinecraftClient.Properties.cs
+2	2	source/Craft.Net.Networking/Packets.cs
+
+[0db18ae] Drew DeVault 2013-12-08 Refresh tokens with Mojang at /refresh
+1	1	source/Craft.Net.Client/Session.cs
+
+[63b0011] Drew DeVault 2013-12-08 Standardize stance use with new networking API
+1	2	source/Craft.Net.Client/Handlers/EntityHandlers.cs
+1	0	source/Craft.Net.Client/Handlers/LoginHandlers.cs
+1	0	source/Craft.Net.Client/Handlers/PacketHandlers.cs
+2	1	source/Craft.Net.Client/MinecraftClient.Properties.cs
+1	3	source/Craft.Net.Client/MinecraftClient.cs
+1	1	source/Craft.Net.Networking/NetworkManager.cs
+2	2	source/Craft.Net.Networking/Packets.cs
+8	1	source/Test/TestClient/Program.cs
+4	0	source/Test/TestClient/TestClient.csproj
+
+[dede5f9] Drew DeVault 2013-12-07 Missed a packet in Play mode
+1	0	source/Craft.Net.Client/MinecraftClient.cs
+1	0	source/Craft.Net.Networking/NetworkManager.cs
+
+[acd6479] Drew DeVault 2013-12-07 Modify how IDs are assigned to packets
+9	3	source/Craft.Net.Client/Handlers/LoginHandlers.cs
+5	0	source/Craft.Net.Client/MinecraftClient.cs
+132	90	source/Craft.Net.Networking/NetworkManager.cs
+1	1	source/Craft.Net.Networking/PacketLogger.cs
+3	2	source/Test/TestClient/Program.cs
+
+[5d3b2ca] Drew DeVault 2013-12-07 Modify log to return string instead of write stream
+4	1	source/Craft.Net.Networking/PacketLogger.cs
+
+[b7b3d6d] Drew DeVault 2013-12-07 Bring SMProxy packet log into C.N.Networking
+1	0	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+124	0	source/Craft.Net.Networking/PacketLogger.cs
+
+[e1b6efb] Drew DeVault 2013-12-07 Update TestClient
+3	3	source/Craft.Net.Client/Handlers/LoginHandlers.cs
+13	11	source/Test/TestClient/Program.cs
+
+[d35c638] Drew DeVault 2013-12-07 Resolve Craft.Net.Client build errors
+2	2	source/Craft.Net.Client/Handlers/EntityHandlers.cs
+9	13	source/Craft.Net.Client/Handlers/LoginHandlers.cs
+1	2	source/Craft.Net.Client/Handlers/PacketHandlers.cs
+12	0	source/Craft.Net.Client/MinecraftClient.cs
+
+[cadaf99] Drew DeVault 2013-12-07 Update MinecraftClient.cs to new networking model
+11	11	source/Craft.Net.Client/Handlers/PacketHandlers.cs
+19	16	source/Craft.Net.Client/MinecraftClient.cs
+
+[55e0760] Drew DeVault 2013-12-07 Re-enable the rest of Craft.Net.Client
+13	15	source/Craft.Net.Client/Craft.Net.Client.csproj
+
+[a8e21b1] Drew DeVault 2013-12-04 Fix issue with ServerStatus player sample
+3	3	source/Craft.Net.Networking/ServerStatus.cs
+8	2	source/Test/TestClient/Program.cs
+
+[ba3293b] Drew DeVault 2013-12-04 Update ServerPing to use 1.7.x server ping
+1	1	Craft.Net.sln
+28	22	source/Craft.Net.Client/ServerPing.cs
+10	9	source/Craft.Net.Networking/NetworkManager.cs
+2	0	source/Craft.Net.Networking/ServerStatus.cs
+17	12	source/Test/TestClient/Program.cs
+7	2	source/Test/TestClient/TestClient.csproj
+
+[144b2aa] Drew DeVault 2013-12-04 Disable most of Craft.Net.Client
+15	13	source/Craft.Net.Client/Craft.Net.Client.csproj
+
+[6c717c6] Drew DeVault 2013-11-30 Switch into Play mode after handling Login Start
+2	2	source/Craft.Net.Networking/Packets.cs
+
+[a4b4024] Drew DeVault 2013-11-30 Assign packet IDs to packet implementations
+68	21	source/Craft.Net.Networking/NetworkManager.cs
+
+[a45aa53] Drew DeVault 2013-11-30 Implement remaining 1.7.x packet definitions
+2	2	source/Craft.Net.Networking/NetworkManager.cs
+828	175	source/Craft.Net.Networking/Packets.cs
+
+[681d75f] Drew DeVault 2013-11-17 varints are actually up to 28 bits long
+44	46	Craft.Net.sln
+19	18	source/Craft.Net.Common/MinecraftStream.cs
+6	3	source/Craft.Net.Networking/NetworkManager.cs
+31	31	source/Craft.Net.Networking/Packets.cs
+
+[eefc358] Drew DeVault 2013-11-17 Move packet IDs out of packet structs and modify ID logic
+41	29	source/Craft.Net.Networking/NetworkManager.cs
+2	2	source/Craft.Net.Networking/PacketDirection.cs
+1	225	source/Craft.Net.Networking/Packets.cs
+
+[2de05f3] Drew DeVault 2013-11-01 Don't flush BufferedStream if not initialized
+2	1	source/Craft.Net.Networking/NetworkManager.cs
+
+[22710ab] Drew DeVault 2013-10-31 Add all clientbound play mode packets
+5	5	source/Craft.Net.Networking/NetworkManager.cs
+2	2	source/Craft.Net.Networking/PacketDirection.cs
+2233	0	source/Craft.Net.Networking/Packets.cs
+
+[a2783f4] Drew DeVault 2013-10-28 Fix problems with length handling in NetworkManager
+14	0	source/Craft.Net.Common/MinecraftStream.cs
+4	4	source/Craft.Net.Networking/NetworkManager.cs
+
+[4a93110] Drew DeVault 2013-10-28 Implement 0x00-0x0B play mode packets
+403	21	source/Craft.Net.Networking/Packets.cs
+
+[d925e90] Drew DeVault 2013-10-28 Fix NetworkStream string implementation
+3	3	source/Craft.Net.Common/MinecraftStream.cs
+33	24	source/Craft.Net.Networking/NetworkManager.cs
+29	0	source/Craft.Net.Networking/Packets.cs
+
+[0df3b8a] Drew DeVault 2013-10-26 Implement login protocol mode
+2	11	source/Craft.Net.Networking/NetworkManager.cs
+174	1	source/Craft.Net.Networking/Packets.cs
+
+[c1ae5b4] Drew DeVault 2013-10-26 Altered stream handling in NetworkManager
+23	0	source/Craft.Net.Networking/NetworkManager.cs
+
+[85c8ac2] Drew DeVault 2013-10-26 Implement status protocol mode
+4	0	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+5	5	source/Craft.Net.Networking/NetworkManager.cs
+40	3269	source/Craft.Net.Networking/Packets.cs
+91	0	source/Craft.Net.Networking/ServerStatus.cs
+
+[eaf1129] Drew DeVault 2013-10-26 PacketReader -> NetworkManager
+2	2	source/Craft.Net.Client/MinecraftClient.cs
+1	1	source/Craft.Net.Client/ServerPing.cs
+50	3	source/Craft.Net.Common/MinecraftStream.cs
+16	5	source/Craft.Net.Networking/BufferedStream.cs
+2	1	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+109	0	source/Craft.Net.Networking/NetworkManager.cs
+11	0	source/Craft.Net.Networking/PacketDirection.cs
+0	333	source/Craft.Net.Networking/PacketReader.cs
+49	37	source/Craft.Net.Networking/Packets.cs
+2	2	source/Craft.Net.Server/Handlers/LoginHandlers.cs
+2	2	source/Craft.Net.Server/Handlers/PacketHandlers.cs
+1	1	source/Craft.Net.Server/MinecraftServer.cs
+
+[8e96b19] Drew DeVault 2013-10-26 Switch to UTF-8 strings
+1	1	source/Craft.Net.Common/MinecraftStream.cs
+
+[c7a45f4] Drew DeVault 2013-10-25 Modified network infrastructure a bit
+1	1	source/Craft.Net.Common/MinecraftStream.cs
+3	2	source/Craft.Net.Networking/PacketReader.cs
+6	5	source/Craft.Net.Networking/Packets.cs
+
+[aff5dba] Drew DeVault 2013-10-25 Update README
+2	2	README.md
+6	3	source/Craft.Net.Networking/PacketReader.cs
+21	3	source/Craft.Net.Networking/Packets.cs
+
+[0f4955e] Drew DeVault 2013-10-25 Rework PacketReader to support multiple network modes
+1	0	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+13	0	source/Craft.Net.Networking/NetworkMode.cs
+41	11	source/Craft.Net.Networking/PacketReader.cs
+2	2	source/Craft.Net.Networking/Packets.cs
+
+[244ad1e] Drew DeVault 2013-10-25 Add VarInt methods to MinecraftStream
+31	0	source/Craft.Net.Common/MinecraftStream.cs
+
+[a93b3c7] Drew DeVault 2013-10-08 Merge pull request #190 from owen2/master
+[345cacd] Owen Johnson 2013-10-08 Deleted commented code
+2	5	source/Craft.Net.Anvil/Region.cs
+
+[6810430] Owen Johnson 2013-10-07 Merge branch 'master' of github.com:owen2/Craft.Net into HEAD
+[edbde9b] Owen Johnson 2013-10-07 Pretending to be version 1.6.4
+2	2	source/Craft.Net.Networking/PacketReader.cs
+
+[4212140] Owen Johnson 2013-10-07 Fixed regionFile never getting opened.
+47	48	Craft.Net.sln
+5	4	source/Craft.Net.Anvil/Region.cs
+2	2	source/Craft.Net.Anvil/World.cs
+
+[a8acf1d] Drew DeVault 2013-09-24 Merge pull request #189 from Slowpython/patch-1
+[447fd2f] Slowpython 2013-09-24 Update DotMinecraft.cs
+1	1	source/Craft.Net.Client/DotMinecraft.cs
+
+[5a12cd0] Drew DeVault 2013-09-23 Add error handler around saving player.dat files
+38	34	source/Craft.Net.Server/ExtensionMethods.cs
+
+[13878ea] Drew DeVault 2013-09-22 Change default test server generator, remove test code
+0	2	source/Craft.Net.Server/RemoteClient.cs
+1	1	source/Test/TestServer/Program.cs
+
+[0eed627] Drew DeVault 2013-09-22 Improve player entity tracking with respect to stationary entities
+13	0	source/Craft.Net.Server/EntityManager.cs
+2	0	source/Craft.Net.Server/RemoteClient.cs
+1	1	source/Test/TestServer/Program.cs
+
+[8988ea6] Drew DeVault 2013-09-22 Dispose clients after disconnect
+1	0	source/Craft.Net.Server/MinecraftServer.cs
+
+[9bb5fdd] Drew DeVault 2013-09-22 Implement inventory "painting"
+2	0	source/Craft.Net.Common/ItemStack.cs
+8	0	source/Craft.Net.Logic/Windows/Window.cs
+54	30	source/Craft.Net.Server/Handlers/InventoryHandler.cs
+1	0	source/Craft.Net.Server/RemoteClient.cs
+15	1	source/Test/TestServer/Program.cs
+
+[ea4490b] Drew DeVault 2013-09-22 Fix dropping items from inventory
+14	4	source/Craft.Net.Networking/Packets.cs
+1	1	source/Craft.Net.Server/Handlers/InventoryHandler.cs
+
+[40da9bf] Drew DeVault 2013-09-22 Fixed most inventory transactions
+5	0	source/Craft.Net.Common/ItemStack.cs
+3	0	source/Craft.Net.Server/ExtensionMethods.cs
+139	92	source/Craft.Net.Server/Handlers/InventoryHandler.cs
+4	1	source/Craft.Net.Server/PlayerManager.cs
+1	4	source/Craft.Net.TerrainGeneration/StandardGenerator.cs
+4	0	source/Test/TestServer/Program.cs
+
+[a5779d1] Drew DeVault 2013-09-22 Fix #187
+1	1	source/Craft.Net.Networking/PacketReader.cs
+1	4	source/Craft.Net.TerrainGeneration/Craft.Net.TerrainGeneration.csproj
+
+[9468478] Drew DeVault 2013-09-22 Save player information in player.dat files
+3	3	source/Craft.Net.Anvil/Level.cs
+123	9	source/Craft.Net.Networking/Packets.cs
+1	0	source/Craft.Net.Server/Craft.Net.Server.csproj
+105	2	source/Craft.Net.Server/ExtensionMethods.cs
+53	9	source/Craft.Net.Server/Handlers/InventoryHandler.cs
+3	7	source/Craft.Net.Server/MinecraftServer.cs
+
+[fab24fe] Drew DeVault 2013-09-22 Fix bug causing crashes when digging too low
+1	1	source/Craft.Net.Anvil/Chunk.cs
+
+[5ab9be4] Drew DeVault 2013-09-22 Fix problem with spawning underwater
+12	0	source/Craft.Net.Server/ExtensionMethods.cs
+4	1	source/Craft.Net.TerrainGeneration/StandardGenerator.cs
+
+[34de326] Drew DeVault 2013-09-21 Initial 1.4.6 support, prevent server from crashing on client-side network errors
+3	2	README.md
+2	2	source/Craft.Net.Networking/PacketReader.cs
+9	1	source/Craft.Net.Server/MinecraftServer.cs
+
+[8e52371] Drew DeVault 2013-09-21 Tweak terrain generation and reformat code
+24	0	source/Craft.Net.Anvil/Chunk.cs
+1	0	source/Craft.Net.Anvil/Level.cs
+22	22	source/Craft.Net.Common/BigInteger.cs
+1	1	source/Craft.Net.Entities/ItemEntity.cs
+1	1	source/Craft.Net.Logic/Blocks/ActivatorRailBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/AnvilBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BeaconBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BedBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BedrockBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BirchWoodStairsBlock.cs
+77	77	source/Craft.Net.Logic/Blocks/Block.cs
+1	1	source/Craft.Net.Logic/Blocks/BlockofDiamondBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BlockofEmeraldBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BlockofGoldBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BlockofIronBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BlockofRedstoneBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BookshelfBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BrewingStandBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BrickStairsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/BricksBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/ButtonBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/CactusBlock.cs
+6	6	source/Craft.Net.Logic/Blocks/CakeBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/CarrotsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/CauldronBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/ChestBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/ClayBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/CoalOreBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/CobbleWallBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/CobblestoneBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/CobwebBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/CocoaBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/CommandBlockBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/ComparatorBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/CraftingTableBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/CropsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/DaylightSensorBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/DeadBushBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/DetectorRailBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/DiamondOreBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/DiodeBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/DirtBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/DispenserBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/DragonEggBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/DropperBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/EmeraldOreBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/EnchantmentTableBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/EndPortalBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/EndStoneBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/EnderChestBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/FarmlandBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/FenceBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/FenceGateBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/FireBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/FlowerBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/FlowerPotBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/FurnaceBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/GlassBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/GlassPaneBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/GlowstoneBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/GoldOreBlock.cs
+6	6	source/Craft.Net.Logic/Blocks/GrassBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/GravelBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/HopperBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/IceBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/IronBarsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/IronDoorBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/IronOreBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/JackoLanternBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/JukeboxBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/JungleWoodStairsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/LadderBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/LapisLazuliBlockBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/LapisLazuliOreBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/LavaBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/LeavesBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/LeverBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/LilyPadBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/LockedchestBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/MelonBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/MonsterSpawnerBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/MonsterStoneEggBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/MossStoneBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/MushroomBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/MyceliumBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/NetherBrickBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/NetherBrickFenceBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/NetherBrickStairsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/NetherQuartzOreBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/NetherWartBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/NetherrackBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/NoteBlockBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/OakWoodStairsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/ObsidianBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/PistonBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/PortalBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/PotatoesBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/PoweredRailBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/PressurePlateBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/PumpkinBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/PumpkinStemBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/QuartzBlockBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/QuartzStairsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/RailBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/RedstoneDustBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/RedstoneLampBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/RedstoneOreBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/RedstoneTorchBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/RoseBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/SandBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/SandstoneBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/SandstoneStairsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/SaplingBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/SignBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/SkullBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/SnowBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/SoulSandBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/SpongeBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/SpruceWoodStairsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/StickyPistonBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/StoneBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/StoneBrickStairsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/StoneBricksBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/StoneSlabBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/StoneStairsBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/SugarcaneBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/TNTBlock.cs
+6	6	source/Craft.Net.Logic/Blocks/TallGrassBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/TorchBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/TrapdoorBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/TrappedChestBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/TripwireBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/TripwireHookBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/VinesBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/WaterBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/WeightedPressurePlateHeavyBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/WeightedPressurePlateLightBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/WoodBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/WoodSlabBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/WoodenDoorBlock.cs
+1	1	source/Craft.Net.Logic/Blocks/WoodenPlanksBlock.cs
+7	7	source/Craft.Net.Logic/Blocks/WoolBlock.cs
+12	12	source/Craft.Net.Server/Events/ConnectionEstablishedEventArgs.cs
+14	14	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+17	17	source/Craft.Net.Server/Handlers/LoginHandlers.cs
+4	4	source/Craft.Net.Server/LogicHelpers.cs
+15	12	source/Craft.Net.Server/MinecraftServer.cs
+10	10	source/Craft.Net.Server/PlayerManager.cs
+11	11	source/Craft.Net.Server/RemoteClient.cs
+90	123	source/Craft.Net.TerrainGeneration/Noise.cs
+156	166	source/Craft.Net.TerrainGeneration/StandardGenerator.cs
+
+[978350f] Drew DeVault 2013-09-21 Merge remote-tracking branch 'tuomas56/master'
+[033cefe] tuomas56 2013-09-21 Update Craft.Net.Server.csproj
+1	4	source/Craft.Net.Server/Craft.Net.Server.csproj
+
+[4d36ab1] tuomas56 2013-09-21 Update Craft.Net.Common.csproj
+0	1	source/Craft.Net.Common/Craft.Net.Common.csproj
+
+[c403ad0] tuomas56 2013-09-21 Update Noise.cs
+1	1	source/Craft.Net.TerrainGeneration/Noise.cs
+
+[4465462] tuomas56 2013-09-21 Update Craft.Net.Common.csproj
+1	4	source/Craft.Net.Common/Craft.Net.Common.csproj
+
+[af8c6a4] tuomas56 2013-09-21 Delete Vector2.cs
+0	12	source/Craft.Net.Common/Vector2.cs
+
+[48af332] tuomas56 2013-09-21 Delete PerlinNoise2D.cs
+0	12	source/Craft.Net.TerrainGeneration/PerlinNoise2D.cs
+
+[26dc4bd] tuomas56 2013-09-21 Delete Noise2d.cs
+0	12	source/Craft.Net.TerrainGeneration/Noise2d.cs
+
+[5289639] tuomas56 2013-09-21 Delete MidpointDisplacement.cs
+0	12	source/Craft.Net.TerrainGeneration/MidpointDisplacement.cs
+
+[af4f026] tuomas56 2013-09-21 fixed trees, added biomes, removed unused methods
+4	138	source/Craft.Net.TerrainGeneration/Noise.cs
+97	65	source/Craft.Net.TerrainGeneration/StandardGenerator.cs
+
+[a9a1140] tuomas56 2013-09-12 standard terrain generation and experimental trees
+4	0	source/Craft.Net.Common/Craft.Net.Common.csproj
+12	0	source/Craft.Net.Common/Vector2.cs
+2	1	source/Craft.Net.Server/Craft.Net.Server.csproj
+5	0	source/Craft.Net.TerrainGeneration/Craft.Net.TerrainGeneration.csproj
+12	0	source/Craft.Net.TerrainGeneration/MidpointDisplacement.cs
+267	0	source/Craft.Net.TerrainGeneration/Noise.cs
+12	0	source/Craft.Net.TerrainGeneration/Noise2d.cs
+12	0	source/Craft.Net.TerrainGeneration/PerlinNoise2D.cs
+156	0	source/Craft.Net.TerrainGeneration/StandardGenerator.cs
+1	1	source/Test/TestServer/Program.cs
+
+[f83db2d] Drew DeVault 2013-09-01 Fix typo in README
+1	1	README.md
+
+[37ec74e] Drew DeVault 2013-08-18 Merge pull request #185 from dogwatch/patch-2
+[5801f7f] dogwatch 2013-08-15 Update MetadataDictionary.cs
+2	2	source/Craft.Net.Common/MetadataDictionary.cs
+
+[ecead05] dogwatch 2013-08-15 Update MetadataDictionary.cs
+10	4	source/Craft.Net.Common/MetadataDictionary.cs
+
+[4b18cbe] dogwatch 2013-08-13 Update MetadataDictionary.cs
+3	1	source/Craft.Net.Common/MetadataDictionary.cs
+
+[5c1de69] dogwatch 2013-08-12 Update MetadataDictionary.cs
+33	22	source/Craft.Net.Common/MetadataDictionary.cs
+
+[657adf8] Drew DeVault 2013-08-12 Merge pull request #184 from dogwatch/patch-1
+[edbbceb] dogwatch 2013-08-12 Update MinecraftStream.cs
+1	1	source/Craft.Net.Common/MinecraftStream.cs
+
+[984fa59] dogwatch 2013-08-12 Update ItemStack.cs
+2	3	source/Craft.Net.Common/ItemStack.cs
+
+[70151e7] dogwatch 2013-08-12 Update MinecraftStream.cs
+9	5	source/Craft.Net.Common/MinecraftStream.cs
+
+[a326f52] Drew DeVault 2013-08-12 Merge pull request #183 from dogwatch/patch-1
+[edc5814] dogwatch 2013-08-12 Update BufferedStream.cs
+5	15	source/Craft.Net.Networking/BufferedStream.cs
+
+[2627201] Drew DeVault 2013-08-10 Merge pull request #181 from dogwatch/patch-1
+[bf6ff3c] dogwatch 2013-08-10 Update AesStream.cs
+2	2	source/Craft.Net.Networking/AesStream.cs
+
+[f12232f] dogwatch 2013-08-10 Update MinecraftStream.cs
+7	1	source/Craft.Net.Common/MinecraftStream.cs
+
+[ac85a62] Drew DeVault 2013-08-09 Merge pull request #180 from dogwatch/patch-1
+[2aea9c3] dogwatch 2013-08-09 Update Program.cs
+1	1	source/Test/TestClient/Program.cs
+
+[3b1c832] Drew DeVault 2013-08-09 Fix small issues with chat and levels
+8	2	source/Craft.Net.Anvil/Level.cs
+0	1	source/Craft.Net.Server/MinecraftServer.cs
+2	2	source/Craft.Net.Server/RemoteClient.cs
+
+[f29e591] Drew DeVault 2013-08-08 Add more useful methods and events
+1	1	source/Craft.Net.Anvil/Level.cs
+5	0	source/Craft.Net.Server/EntityManager.cs
+55	27	source/Craft.Net.Server/MinecraftServer.cs
+2	0	source/Craft.Net.Server/RemoteClient.cs
+
+[a07dcf1] Drew DeVault 2013-08-08 Update fNbt reference
+1	1	externals/fNbt
+
+[6e3ecc4] Drew DeVault 2013-08-08 Fix bug with previous pull request
+1	1	Craft.Net.sln
+1	1	source/Classic/Craft.Net.Classic.Networking/PacketReader.cs
+1	1	source/Craft.Net.Networking/PacketReader.cs
+
+[fa2b7cb] Drew DeVault 2013-08-08 Merge pull request #179 from dogwatch/patch-1
+[ca57e6f] Drew DeVault 2013-08-07 Merge branch 'master' of github.com:SirCmpwn/Craft.Net
+[f804f5e] Drew DeVault 2013-08-07 Fixed authentication for 1.6+
+-	-	lib/Newtonsoft.Json.dll
+4	1	source/Craft.Net.Client/Craft.Net.Client.csproj
+4	1	source/Craft.Net.Client/Handlers/LoginHandlers.cs
+2	1	source/Craft.Net.Client/MinecraftClient.cs
+166	22	source/Craft.Net.Client/Session.cs
+
+[62d22ca] dogwatch 2013-08-05 Update PacketReader.cs
+2	2	source/Craft.Net.Networking/PacketReader.cs
+
+[8e6024d] dogwatch 2013-08-05 Update PacketReader.cs
+30	29	source/Classic/Craft.Net.Classic.Networking/PacketReader.cs
+
+[b3d7cf1] dogwatch 2013-08-05 Update PacketReader.cs
+6	7	source/Craft.Net.Networking/PacketReader.cs
+
+[de32b9b] dogwatch 2013-08-05 Update PacketReader.cs
+2	0	source/Craft.Net.Networking/PacketReader.cs
+
+[a4f7112] dogwatch 2013-08-05 Update PacketReader.cs
+91	92	source/Craft.Net.Networking/PacketReader.cs
+
+[999d8e8] Drew DeVault 2013-08-05 Update LICENSE
+2	2	LICENSE
+
+[be19131] Drew DeVault 2013-08-05 No reason to reference .Entities from .Client
+0	4	source/Craft.Net.Client/Craft.Net.Client.csproj
+0	1	source/Craft.Net.Client/Handlers/StateHandlers.cs
+
+[d4da58f] Drew DeVault 2013-08-05 Added Craft.Net.Client
+14	1	Craft.Net.sln
+11	0	source/Craft.Net.Anvil/World.cs
+88	0	source/Craft.Net.Client/Craft.Net.Client.csproj
+19	0	source/Craft.Net.Client/DotMinecraft.cs
+18	0	source/Craft.Net.Client/Events/ChatMessageEventArgs.cs
+17	0	source/Craft.Net.Client/Events/DisconnectEventArgs.cs
+21	0	source/Craft.Net.Client/Events/EntitySpawnEventArgs.cs
+29	0	source/Craft.Net.Client/Events/HealthAndFoodEventArgs.cs
+14	0	source/Craft.Net.Client/Handlers/ChatHandler.cs
+33	0	source/Craft.Net.Client/Handlers/EntityHandlers.cs
+75	0	source/Craft.Net.Client/Handlers/LoginHandlers.cs
+33	0	source/Craft.Net.Client/Handlers/PacketHandlers.cs
+36	0	source/Craft.Net.Client/Handlers/StateHandlers.cs
+110	0	source/Craft.Net.Client/Handlers/WorldHandlers.cs
+68	0	source/Craft.Net.Client/LastLogin.cs
+82	0	source/Craft.Net.Client/MinecraftClient.Actions.cs
+47	0	source/Craft.Net.Client/MinecraftClient.Properties.cs
+183	0	source/Craft.Net.Client/MinecraftClient.cs
+156	0	source/Craft.Net.Client/PKCSKeyGenerator.cs
+27	0	source/Craft.Net.Client/Properties/AssemblyInfo.cs
+147	0	source/Craft.Net.Client/ReadOnlyWorld.cs
+89	0	source/Craft.Net.Client/ServerList.cs
+38	0	source/Craft.Net.Client/ServerPing.cs
+40	0	source/Craft.Net.Client/Session.cs
+1	0	source/Craft.Net.Common/Craft.Net.Common.csproj
+10	0	source/Craft.Net.Common/MathHelper.cs
+50	0	source/Craft.Net.Common/RuntimeInfo.cs
+61	0	source/Test/TestClient/Program.cs
+27	0	source/Test/TestClient/Properties/AssemblyInfo.cs
+47	0	source/Test/TestClient/TestClient.csproj
+
+[96aa891] Drew DeVault 2013-08-05 Set chunk position on add
+2	0	source/Craft.Net.Anvil/Region.cs
+
+[6802830] Drew DeVault 2013-08-04 Fix bug with LevelDataPacket
+1	1	source/Classic/Craft.Net.Classic.Networking/Packets.cs
+
+[13ddb1d] Drew DeVault 2013-08-04 Fix problem with classic MinecraftStream
+1	1	source/Classic/Craft.Net.Classic.Common/MinecraftStream.cs
+
+[b971c8e] Drew DeVault 2013-08-04 Fix BufferedStream namespace
+1	1	source/Classic/Craft.Net.Classic.Common/BufferedStream.cs
+0	1	source/Classic/Craft.Net.Classic.Networking/PacketReader.cs
+
+[4ff1a42] Drew DeVault 2013-08-04 Add Classic PacketReader
+0	6	source/Classic/Craft.Net.Classic.Common/Craft.Net.Classic.Common.csproj
+1	0	source/Classic/Craft.Net.Classic.Networking/Craft.Net.Classic.Networking.csproj
+298	0	source/Classic/Craft.Net.Classic.Networking/PacketReader.cs
+2	2	source/Classic/Craft.Net.Classic.Networking/Packets.cs
+
+[c138b3b] Drew DeVault 2013-08-04 Fixed more build warnings, xbuild
+2	2	source/Classic/Craft.Net.Classic.Networking/Craft.Net.Classic.Networking.csproj
+1	1	source/Craft.Net.Common/BigInteger.cs
+1	1	source/Craft.Net.Common/Cryptography.cs
+
+[0c3d90c] Drew DeVault 2013-08-04 Fixed botched classic source layout
+2	2	Craft.Net.sln
+0	0	{Craft.Net.Classic.Common => source/Classic/Craft.Net.Classic.Common}/BufferedStream.cs
+6	0	{Craft.Net.Classic.Common => source/Classic/Craft.Net.Classic.Common}/Craft.Net.Classic.Common.csproj
+0	0	{Craft.Net.Classic.Common => source/Classic/Craft.Net.Classic.Common}/MinecraftStream.Stream.cs
+0	0	{Craft.Net.Classic.Common => source/Classic/Craft.Net.Classic.Common}/MinecraftStream.cs
+0	0	{Craft.Net.Classic.Common => source/Classic/Craft.Net.Classic.Common}/Properties/AssemblyInfo.cs
+0	0	{Craft.Net.Classic.Common => source/Classic}/Craft.Net.Classic.Networking/Craft.Net.Classic.Networking.csproj
+0	0	{Craft.Net.Classic.Common => source/Classic}/Craft.Net.Classic.Networking/Packets.cs
+0	0	{Craft.Net.Classic.Common => source/Classic}/Craft.Net.Classic.Networking/Properties/AssemblyInfo.cs
+
+[713118b] Drew DeVault 2013-08-04 Fixed build warnings in Craft.Net.Anvil
+2	2	source/Craft.Net.Anvil/Region.cs
+
+[875bdb2] Drew DeVault 2013-08-04 Added basic support for Minecraft Classic
+76	0	Craft.Net.Classic.Common/BufferedStream.cs
+41	0	Craft.Net.Classic.Common/Craft.Net.Classic.Common.csproj
+45	0	Craft.Net.Classic.Common/Craft.Net.Classic.Networking/Craft.Net.Classic.Networking.csproj
+507	0	Craft.Net.Classic.Common/Craft.Net.Classic.Networking/Packets.cs
+27	0	Craft.Net.Classic.Common/Craft.Net.Classic.Networking/Properties/AssemblyInfo.cs
+58	0	Craft.Net.Classic.Common/MinecraftStream.Stream.cs
+103	0	Craft.Net.Classic.Common/MinecraftStream.cs
+27	0	Craft.Net.Classic.Common/Properties/AssemblyInfo.cs
+16	0	Craft.Net.sln
+11	0	README.md
+1	1	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+
+[4e5c1c6] Drew DeVault 2013-08-04 Fix client-side movement speed
+6	6	source/Craft.Net.Entities/PlayerAbilities.cs
+2	2	source/Craft.Net.Server/MinecraftServer.cs
+
+[caba6f0] Drew DeVault 2013-08-04 Update README.md
+1	5	README.md
+
+[3773b9e] Drew DeVault 2013-08-04 Switch to BouncyCastle for crypto on all platforms
+0	54	Craft.Net.sln
+0	9	source/Craft.Net.Anvil/Craft.Net.Anvil.csproj
+0	9	source/Craft.Net.Common/Craft.Net.Common.csproj
+0	9	source/Craft.Net.Entities/Craft.Net.Entities.csproj
+0	9	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+0	68	source/Craft.Net.Networking/AesStream.cs
+1	26	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+0	9	source/Craft.Net.Physics/Craft.Net.Physics.csproj
+0	9	source/Craft.Net.Server/Craft.Net.Server.csproj
+0	9	source/Craft.Net.TerrainGeneration/Craft.Net.TerrainGeneration.csproj
+0	9	source/Test/Craft.Net.Anvil.Test/Craft.Net.Anvil.Test.csproj
+0	9	source/Test/Craft.Net.Logic.Test/Craft.Net.Logic.Test.csproj
+0	9	source/Test/Craft.Net.Networking.Test/Craft.Net.Networking.Test.csproj
+0	10	source/Test/TestServer/TestServer.csproj
+
+[da678db] Drew DeVault 2013-08-04 Getting caught back up to 1.6.2
+7	7	source/Craft.Net.Networking/PacketReader.cs
+242	72	source/Craft.Net.Networking/Packets.cs
+40	0	source/Craft.Net.Server/Channels/PluginChannel.cs
+50	0	source/Craft.Net.Server/Channels/ServerPingChannel.cs
+53	0	source/Craft.Net.Server/Channels/TexturePackChannel.cs
+6	0	source/Craft.Net.Server/Craft.Net.Server.csproj
+1	0	source/Craft.Net.Server/Events/PlayerLogInEventArgs.cs
+14	5	source/Craft.Net.Server/MinecraftServer.cs
+
+[e62559c] Drew DeVault 2013-08-04 Update README.md
+6	5	README.md
+
+[05a40cc] Drew DeVault 2013-08-04 Merge branch 'master' into refactoring
+[2c5794f] Drew DeVault 2013-07-25 Merge pull request #176 from TheMonkey1415/master
+[307876d] Dan 2013-07-25 1.6.2 is protocol version 74.
+1	1	README.md
+
+[e7405c5] Drew DeVault 2013-07-23 Merge pull request #174 from dogwatch/patch-2
+[6f11130] Drew DeVault 2013-07-23 Merge pull request #173 from dogwatch/patch-1
+[a88da40] dogwatch 2013-07-23 Update MinecraftClient.cs
+4	0	Craft.Net.Client/MinecraftClient.cs
+
+[62f4f17] dogwatch 2013-07-23 Update LoginHandlers.cs
+3	0	Craft.Net.Client/Handlers/LoginHandlers.cs
+
+[e094216] Drew DeVault 2013-07-10 Update README to reflect 1.6.2 changes
+5	5	README.md
+
+[60c4281] Drew DeVault 2013-07-10 Client-side 1.6.2 support
+2	1	Craft.Net.Client/Handlers/WorldHandlers.cs
+1	1	Craft.Net.sln
+1	0	TestClient/TestClient.csproj
+
+[7ec102b] Drew DeVault 2013-07-10 Update packets and server-side support to Minecraft 1.6.2
+1	1	Craft.Net.Server/MinecraftServer.cs
+2	2	Craft.Net/PacketReader.cs
+92	13	Craft.Net/Packets.cs
+
+[357b393] Drew DeVault 2013-07-09 Tabs to spaces
+11	11	Craft.Net.Client/DotMinecraft.cs
+1	1	Craft.Net.Data/Blocks/DiamondOreBlock.cs
+22	22	Craft.Net/BigInteger.cs
+1	1	Craft.Net/PacketReader.cs
+88	86	Craft.Net/Packets.cs
+
+[abed89f] Drew DeVault 2013-07-09 Fix build problems
+1	1	Craft.Net.Client/ServerPing.cs
+1	2	Craft.Net/Packets.cs
+
+[f07ba3f] Drew DeVault 2013-07-02 Added 1.6.1 support
+49	0	Craft.Net.Server/Channels/ServerPingChannel.cs
+1	0	Craft.Net.Server/Craft.Net.Server.csproj
+2	2	Craft.Net/PacketReader.cs
+2	9	Craft.Net/Packets.cs
+5	5	README.md
+
+[c54daeb] Drew DeVault 2013-07-01 Added packet events to client
+1	0	Craft.Net.Client/Craft.Net.Client.csproj
+15	0	Craft.Net.Client/Events/PacketEventArgs.cs
+12	0	Craft.Net.Client/MinecraftClient.Events.cs
+6	0	Craft.Net.Client/MinecraftClient.cs
+
+[3a3ac91] Drew DeVault 2013-06-25 Update README
+5	5	README.md
+
+[6eab3ef] Drew DeVault 2013-06-25 Fixed walking/flying speed for 1.6, fixed another changed packet
+6	6	Craft.Net.Data/PlayerAbilities.cs
+6	2	Craft.Net.Server/MinecraftServer.cs
+6	5	Craft.Net/Packets.cs
+
+[5580ab9] Drew DeVault 2013-06-25 Basic 1.6 support
+1	1	Craft.Net.Server/Handlers/PacketHandlers.cs
+1	0	Craft.Net.Server/MinecraftClient.cs
+586	587	Craft.Net.Server/MinecraftServer.cs
+23	18	Craft.Net/Packets.cs
+
+[ff1eac9] Drew DeVault 2013-06-25 Merge master into snapshot
+[78cff86] Drew DeVault 2013-06-25 Add new packets
+3	3	Craft.Net/PacketReader.cs
+78	0	Craft.Net/Packets.cs
+1	1	externals/fNbt
+
+[7aa8fdf] Drew DeVault 2013-06-15 Merged master into refactoring
+[a1dd676] Drew DeVault 2013-06-15 Merge pull request #169 from pdelvo/ipv6
+[4cb24c7] Dennis Fischer 2013-06-15 Does now support IpV6!
+1	1	Craft.Net.Client/MinecraftClient.cs
+
+[f085442] Drew DeVault 2013-06-09 Added opportunity for servers to prevent players from logging in (bans)
+0	1	source/Craft.Net.Common/BoundingBox.cs
+1	1	source/Craft.Net.Common/MathHelper.cs
+0	1	source/Craft.Net.Entities/ItemEntity.cs
+1	2	source/Craft.Net.Networking/Packets.cs
+1	0	source/Craft.Net.Server/Craft.Net.Server.csproj
+19	0	source/Craft.Net.Server/Events/ConnectionEstablishedEventArgs.cs
+2	4	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+17	5	source/Craft.Net.Server/Handlers/LoginHandlers.cs
+18	18	source/Craft.Net.Server/Handlers/PlayerMovementHandlers.cs
+8	3	source/Craft.Net.Server/MinecraftServer.cs
+12	5	source/Craft.Net.Server/RemoteClient.cs
+1	1	source/Craft.Net.Server/ServerSettings.cs
+
+[a7b062a] Drew DeVault 2013-06-08 Fixed inventory bug related to placing blocks
+10	0	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+
+[d686966] Drew DeVault 2013-06-01 Fixed build on MS.NET
+2	3	source/Test/Craft.Net.Anvil.Test/Craft.Net.Anvil.Test.csproj
+2	3	source/Test/Craft.Net.Networking.Test/Craft.Net.Networking.Test.csproj
+
+[d652422] Drew DeVault 2013-06-01 Added wool, fixed metadata bug for block placement
+14	0	source/Craft.Net.Logic/Blocks/WoolBlock.cs
+1	0	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+1	1	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+
+[a463524] Drew DeVault 2013-06-01 Prevented entities from spawning when creative players destroy blocks
+5	1	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+
+[5140ec8] Drew DeVault 2013-06-01 Added block update logic and configurable drops
+54	54	Craft.Net.sln
+4	6	source/Craft.Net.Anvil/Craft.Net.Anvil.csproj
+4	6	source/Craft.Net.Common/Craft.Net.Common.csproj
+9	0	source/Craft.Net.Entities/Craft.Net.Entities.csproj
+93	0	source/Craft.Net.Logic/Blocks/Block.cs
+10	1	source/Craft.Net.Logic/Blocks/CakeBlock.cs
+11	4	source/Craft.Net.Logic/Blocks/GrassBlock.cs
+0	18	source/Craft.Net.Logic/Blocks/GrassBlockBlock.cs
+25	0	source/Craft.Net.Logic/Blocks/TallGrassBlock.cs
+11	2	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+26	24	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+9	0	source/Craft.Net.Physics/Craft.Net.Physics.csproj
+0	2	source/Craft.Net.Server/ChunkHelper.cs
+9	0	source/Craft.Net.Server/Craft.Net.Server.csproj
+1	1	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+0	1	source/Craft.Net.Server/Handlers/LoginHandlers.cs
+0	1	source/Craft.Net.Server/Handlers/PacketHandlers.cs
+2	2	source/Craft.Net.Server/Handlers/PlayerMovementHandlers.cs
+4	2	source/Craft.Net.Server/LogicHelpers.cs
+3	1	source/Craft.Net.Server/MinecraftServer.cs
+11	0	source/Craft.Net.Server/PlayerManager.cs
+9	0	source/Craft.Net.TerrainGeneration/Craft.Net.TerrainGeneration.csproj
+4	9	source/Test/Craft.Net.Anvil.Test/Craft.Net.Anvil.Test.csproj
+9	3	source/Test/Craft.Net.Logic.Test/Craft.Net.Logic.Test.csproj
+4	9	source/Test/Craft.Net.Networking.Test/Craft.Net.Networking.Test.csproj
+10	0	source/Test/TestServer/TestServer.csproj
+
+[019d7c9] Drew DeVault 2013-06-01 Fixed more issues with build on Mono
+1	4	.gitignore
+79	79	Craft.Net.sln
+5	7	source/Craft.Net.Anvil/Craft.Net.Anvil.csproj
+5	3	source/Craft.Net.Common/Craft.Net.Common.csproj
+7	7	source/Craft.Net.Entities/Craft.Net.Entities.csproj
+5	5	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+5	3	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+6	6	source/Craft.Net.Physics/Craft.Net.Physics.csproj
+9	9	source/Craft.Net.Server/Craft.Net.Server.csproj
+5	5	source/Craft.Net.TerrainGeneration/Craft.Net.TerrainGeneration.csproj
+8	8	source/Test/Craft.Net.Anvil.Test/Craft.Net.Anvil.Test.csproj
+6	5	source/Test/Craft.Net.Logic.Test/Craft.Net.Logic.Test.csproj
+3	0	source/Test/Craft.Net.Networking.Test/Craft.Net.Networking.Test.csproj
+10	10	source/Test/TestServer/TestServer.csproj
+
+[156253a] Drew DeVault 2013-06-01 Update fNbt, fix solution file for Mono
+1	1	Craft.Net.sln
+1	1	externals/fNbt
+
+[a3d5ff7] Drew DeVault 2013-06-01 Update fNbt
+1	1	externals/fNbt
+
+[ca33ffd] Drew DeVault 2013-05-30 Implemented item entity merging
+7	0	source/Craft.Net.Common/MathHelper.cs
+21	4	source/Craft.Net.Entities/ItemEntity.cs
+1	0	source/Craft.Net.Physics/PhysicsEngine.cs
+10	1	source/Craft.Net.Server/EntityManager.cs
+
+[11914b7] Drew DeVault 2013-05-29 Fixed bug with empty held items
+1	1	source/Craft.Net.Physics/PhysicsEngine.cs
+1	1	source/Craft.Net.Server/EntityManager.cs
+5	5	source/Craft.Net.Server/MinecraftServer.cs
+3	1	source/Craft.Net.Server/RemoteClient.cs
+
+[52b44bd] Drew DeVault 2013-05-29 Cleaned up event handlers on disconnect to avoid leaks
+1	0	source/Craft.Net.Server/EntityManager.cs
+4	0	source/Craft.Net.Server/MinecraftServer.cs
+13	0	source/Craft.Net.Server/PlayerManager.cs
+7	1	source/Craft.Net.Server/RemoteClient.cs
+14	0	source/Test/TestServer/Program.cs
+
+[64f9923] Drew DeVault 2013-05-29 Added dropped items and physics engine
+1	0	source/Craft.Net.Anvil/Craft.Net.Anvil.csproj
+17	0	source/Craft.Net.Anvil/SpawnEntityEventArgs.cs
+6	0	source/Craft.Net.Anvil/World.cs
+5	0	source/Craft.Net.Entities/Craft.Net.Entities.csproj
+4	6	source/Craft.Net.Entities/Entity.cs
+17	0	source/Craft.Net.Entities/EntityEventArgs.cs
+44	2	source/Craft.Net.Entities/ItemEntity.cs
+7	0	source/Craft.Net.Entities/PlayerEntity.cs
+7	1	source/Craft.Net.Logic/Blocks/AirBlock.cs
+15	5	source/Craft.Net.Logic/Blocks/Block.cs
+2	1	source/Craft.Net.Logic/Items/CakeItem.cs
+2	2	source/Craft.Net.Logic/Items/Item.cs
+10	5	source/Craft.Net.Physics/PhysicsEngine.cs
+6	0	source/Craft.Net.Server/Craft.Net.Server.csproj
+39	13	source/Craft.Net.Server/EntityManager.cs
+32	0	source/Craft.Net.Server/LogicHelpers.cs
+41	2	source/Craft.Net.Server/MinecraftServer.cs
+48	0	source/Craft.Net.Server/PlayerManager.cs
+25	10	source/Craft.Net.Server/RemoteClient.cs
+1	0	source/Test/TestServer/Program.cs
+
+[f3601eb] Drew DeVault 2013-05-29 Added Craft.Net.Physics
+10	0	Craft.Net.sln
+6	3	README.md
+15	0	source/Craft.Net.Logic/Blocks/Block.cs
+74	0	source/Craft.Net.Physics/Craft.Net.Physics.csproj
+16	0	source/Craft.Net.Physics/IAABBEntity.cs
+19	0	source/Craft.Net.Physics/IPhysicsEntity.cs
+383	0	source/Craft.Net.Physics/PhysicsEngine.cs
+36	0	source/Craft.Net.Physics/Properties/AssemblyInfo.cs
+
+[0643ca8] Drew DeVault 2013-05-29 Show blocks digging from other clients
+3	0	Craft.Net.sln
+4	4	source/Craft.Net.Anvil/World.cs
+16	0	source/Craft.Net.Logic/Blocks/AirBlock.cs
+1	0	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+1	0	source/Craft.Net.Networking/Packets.cs
+19	3	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+10	0	source/Craft.Net.Server/MinecraftServer.cs
+2	0	source/Craft.Net.Server/RemoteClient.cs
+
+[851046a] Drew DeVault 2013-05-29 Reimplemented block placement/mining
+17	0	source/Craft.Net.Anvil/BlockChangeEventArgs.cs
+17	0	source/Craft.Net.Anvil/Coordinates.cs
+1	0	source/Craft.Net.Anvil/Craft.Net.Anvil.csproj
+1	1	source/Craft.Net.Anvil/Level.cs
+8	0	source/Craft.Net.Anvil/World.cs
+53	0	source/Craft.Net.Common/MathHelper.cs
+3	0	source/Craft.Net.Entities/Craft.Net.Entities.csproj
+8	0	source/Craft.Net.Entities/Entity.cs
+55	0	source/Craft.Net.Entities/ItemEntity.cs
+13	0	source/Craft.Net.Entities/ObjectEntity.cs
+127	0	source/Craft.Net.Entities/PlayerAbilities.cs
+25	4	source/Craft.Net.Entities/PlayerEntity.cs
+15	8	source/Craft.Net.Logic/Blocks/Block.cs
+1	1	source/Craft.Net.Logic/Items/CakeItem.cs
+3	3	source/Craft.Net.Logic/Items/Item.cs
+2	0	source/Craft.Net.Server/Craft.Net.Server.csproj
+143	0	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+138	0	source/Craft.Net.Server/Handlers/InventoryHandler.cs
+8	0	source/Craft.Net.Server/Handlers/PacketHandlers.cs
+43	2	source/Craft.Net.Server/MinecraftServer.cs
+11	0	source/Craft.Net.Server/RemoteClient.cs
+1	1	source/Test/Craft.Net.Logic.Test/BlockTest.cs
+1	1	source/Test/Craft.Net.Logic.Test/ItemTest.cs
+
+[6722dee] Drew DeVault 2013-05-29 Started on Craft.Net.Server rewrite
+4	1	source/Craft.Net.Anvil/Chunk.cs
+1	0	source/Craft.Net.Anvil/Level.cs
+2	0	source/Craft.Net.Anvil/Section.cs
+10	0	source/Craft.Net.Anvil/World.cs
+3	0	source/Craft.Net.Entities/Craft.Net.Entities.csproj
+96	0	source/Craft.Net.Entities/Entity.cs
+51	0	source/Craft.Net.Entities/LivingEntity.cs
+82	0	source/Craft.Net.Entities/PlayerEntity.cs
+97	0	source/Craft.Net.Server/ChunkHelper.cs
+26	0	source/Craft.Net.Server/ClientSettings.cs
+11	0	source/Craft.Net.Server/Craft.Net.Server.csproj
+149	0	source/Craft.Net.Server/EntityManager.cs
+18	0	source/Craft.Net.Server/Events/ChatMessageEventArgs.cs
+26	0	source/Craft.Net.Server/Events/PlayerLogInEventArgs.cs
+21	0	source/Craft.Net.Server/Events/TabCompleteEventArgs.cs
+146	0	source/Craft.Net.Server/Handlers/LoginHandlers.cs
+42	0	source/Craft.Net.Server/Handlers/PacketHandlers.cs
+104	0	source/Craft.Net.Server/Handlers/PlayerMovementHandlers.cs
+147	13	source/Craft.Net.Server/MinecraftServer.cs
+165	2	source/Craft.Net.Server/RemoteClient.cs
+3	0	source/Test/TestServer/Program.cs
+
+[1c63a9d] Drew DeVault 2013-05-29 Started on Craft.Net.Server rewrite
+21	0	Craft.Net.sln
+83	0	source/Craft.Net.Server/Craft.Net.Server.csproj
+29	0	source/Craft.Net.Server/Handlers/PacketHandlers.cs
+204	0	source/Craft.Net.Server/MinecraftServer.cs
+36	0	source/Craft.Net.Server/Properties/AssemblyInfo.cs
+39	0	source/Craft.Net.Server/RemoteClient.cs
+52	0	source/Craft.Net.Server/ServerSettings.cs
+27	0	source/Test/TestServer/Program.cs
+36	0	source/Test/TestServer/Properties/AssemblyInfo.cs
+90	0	source/Test/TestServer/TestServer.csproj
+
+[72ac441] Drew DeVault 2013-05-29 Craft.Net.Data -> Craft.Net.Common
+2	48	Craft.Net.sln
+1	1	source/Craft.Net.Anvil/Chunk.cs
+1	1	source/Craft.Net.Anvil/Coordinates.cs
+3	3	source/Craft.Net.Anvil/Craft.Net.Anvil.csproj
+1	1	source/Craft.Net.Anvil/IWorldGenerator.cs
+1	1	source/Craft.Net.Anvil/Level.cs
+1	1	source/Craft.Net.Anvil/Region.cs
+1	1	source/Craft.Net.Anvil/Section.cs
+1	1	source/Craft.Net.Anvil/TileEntity.cs
+0	36	source/Craft.Net.Client/ConsoleLogWriter.cs
+0	117	source/Craft.Net.Client/Craft.Net.Client.csproj
+0	18	source/Craft.Net.Client/DotMinecraft.cs
+0	20	source/Craft.Net.Client/Events/ChatMessageEventArgs.cs
+0	20	source/Craft.Net.Client/Events/ChunkRecievedEventArgs.cs
+0	17	source/Craft.Net.Client/Events/DisconnectEventArgs.cs
+0	21	source/Craft.Net.Client/Events/EntitySpawnEventArgs.cs
+0	19	source/Craft.Net.Client/Events/GameModeChangeEventArgs.cs
+0	31	source/Craft.Net.Client/Events/HealthAndFoodEventArgs.cs
+0	22	source/Craft.Net.Client/Events/SignUpdateReceivedEventArgs.cs
+0	43	source/Craft.Net.Client/FileLogWriter.cs
+0	26	source/Craft.Net.Client/Handlers/ChatHandler.cs
+0	32	source/Craft.Net.Client/Handlers/EntityHandlers.cs
+0	78	source/Craft.Net.Client/Handlers/LoginHandlers.cs
+0	33	source/Craft.Net.Client/Handlers/PacketHandlers.cs
+0	35	source/Craft.Net.Client/Handlers/StateHandlers.cs
+0	123	source/Craft.Net.Client/Handlers/WorldHandlers.cs
+0	23	source/Craft.Net.Client/ILogProvider.cs
+0	71	source/Craft.Net.Client/LastLogin.cs
+0	23	source/Craft.Net.Client/LevelInformation.cs
+0	156	source/Craft.Net.Client/LogProvider.cs
+0	87	source/Craft.Net.Client/MinecraftClient.Actions.cs
+0	65	source/Craft.Net.Client/MinecraftClient.Events.cs
+0	78	source/Craft.Net.Client/MinecraftClient.Properties.cs
+0	174	source/Craft.Net.Client/MinecraftClient.cs
+0	158	source/Craft.Net.Client/PKCSKeyGenerator.cs
+0	36	source/Craft.Net.Client/Properties/AssemblyInfo.cs
+0	116	source/Craft.Net.Client/ReadOnlyWorld.cs
+0	50	source/Craft.Net.Client/RuntimeInfo.cs
+0	92	source/Craft.Net.Client/ServerList.cs
+0	45	source/Craft.Net.Client/ServerPing.cs
+0	40	source/Craft.Net.Client/Session.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/BigInteger.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/Biome.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/BoundingBox.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/ChatColors.cs
+2	2	source/{Craft.Net.Data/Craft.Net.Data.csproj => Craft.Net.Common/Craft.Net.Common.csproj}
+1	3	source/{Craft.Net.Data => Craft.Net.Common}/Cryptography.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/Difficulty.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/Dimension.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/GameMode.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/GameRules.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/ItemStack.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/MathHelper.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/MetadataByte.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/MetadataDictionary.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/MetadataEntry.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/MetadataFloat.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/MetadataInt.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/MetadataShort.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/MetadataSlot.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/MetadataString.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/MinecraftStream.Stream.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/MinecraftStream.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/ParticleEffect.cs
+2	2	source/{Craft.Net.Data => Craft.Net.Common}/Properties/AssemblyInfo.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/Ray.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/Size.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/SoundEffect.cs
+1	1	source/{Craft.Net.Data => Craft.Net.Common}/Vector3.cs
+5	5	{Craft.Net.Entities => source/Craft.Net.Entities}/Craft.Net.Entities.csproj
+0	0	{Craft.Net.Entities => source/Craft.Net.Entities}/Properties/AssemblyInfo.cs
+2	2	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+1	1	source/Craft.Net.Logic/Windows/ArmorWindowArea.cs
+1	1	source/Craft.Net.Logic/Windows/CraftingWindowArea.cs
+1	1	source/Craft.Net.Logic/Windows/InventoryWindow.cs
+1	1	source/Craft.Net.Logic/Windows/Window.cs
+1	1	source/Craft.Net.Logic/Windows/WindowArea.cs
+1	1	source/Craft.Net.Logic/Windows/WindowChangeEventArgs.cs
+3	3	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+1	1	source/Craft.Net.Networking/PacketReader.cs
+1	1	source/Craft.Net.Networking/Packets.cs
+0	25	source/Craft.Net.Server/AssemblyInfo.cs
+0	54	source/Craft.Net.Server/Channels/TexturePackChannel.cs
+0	96	source/Craft.Net.Server/ChunkHelper.cs
+0	36	source/Craft.Net.Server/ConsoleLogWriter.cs
+0	115	source/Craft.Net.Server/Craft.Net.Server.csproj
+0	539	source/Craft.Net.Server/EntityManager.cs
+0	18	source/Craft.Net.Server/Events/ChatMessageEventArgs.cs
+0	22	source/Craft.Net.Server/Events/PacketEventArgs.cs
+0	29	source/Craft.Net.Server/Events/PlayerDeathEventArgs.cs
+0	26	source/Craft.Net.Server/Events/PlayerLogInEventArgs.cs
+0	21	source/Craft.Net.Server/Events/TabCompleteEventArgs.cs
+0	43	source/Craft.Net.Server/FileLogWriter.cs
+0	204	source/Craft.Net.Server/Handlers/InteractionHandlers.cs
+0	137	source/Craft.Net.Server/Handlers/InventoryHandlers.cs
+0	147	source/Craft.Net.Server/Handlers/LoginHandlers.cs
+0	104	source/Craft.Net.Server/Handlers/PacketHandlers.cs
+0	101	source/Craft.Net.Server/Handlers/PlayerMovementHandlers.cs
+0	23	source/Craft.Net.Server/ILogProvider.cs
+0	156	source/Craft.Net.Server/LogProvider.cs
+0	286	source/Craft.Net.Server/MinecraftClient.cs
+0	588	source/Craft.Net.Server/MinecraftServer.cs
+0	13	source/Craft.Net.Server/PacketContext.cs
+0	40	source/Craft.Net.Server/PluginChannel.cs
+0	60	source/Craft.Net.Server/Scoreboard.cs
+0	115	source/Craft.Net.Server/ScoreboardManager.cs
+0	52	source/Craft.Net.Server/ServerSettings.cs
+0	117	source/Craft.Net.Server/Team.cs
+0	47	source/Craft.Net.Server/WeatherManager.cs
+2	2	source/Craft.Net.TerrainGeneration/Craft.Net.TerrainGeneration.csproj
+1	1	source/Craft.Net.TerrainGeneration/FlatlandGenerator.cs
+2	2	source/Test/Craft.Net.Logic.Test/Craft.Net.Logic.Test.csproj
+0	92	source/Test/Craft.Net.Server.Test/Craft.Net.Server.Test.csproj
+0	172	source/Test/Craft.Net.Server.Test/PacketTests.cs
+0	36	source/Test/Craft.Net.Server.Test/Properties/AssemblyInfo.cs
+0	6	source/TestClient/App.config
+0	84	source/TestClient/Program.cs
+0	36	source/TestClient/Properties/AssemblyInfo.cs
+0	88	source/TestClient/TestClient.csproj
+0	27	source/TestServer/AssemblyInfo.cs
+0	25	source/TestServer/CustomLeatherItem.cs
+0	173	source/TestServer/Main.cs
+0	71	source/TestServer/TestServer.csproj
+
+[db97e8b] Drew DeVault 2013-05-29 Added Craft.Net.Entities and window management
+71	0	Craft.Net.Entities/Craft.Net.Entities.csproj
+36	0	Craft.Net.Entities/Properties/AssemblyInfo.cs
+10	0	Craft.Net.sln
+50	0	source/Craft.Net.Anvil/Coordinates.cs
+1	0	source/Craft.Net.Anvil/Level.cs
+5	0	source/Craft.Net.Anvil/World.cs
+1	1	source/Craft.Net.Data/Craft.Net.Data.csproj
+2	2	source/Craft.Net.Logic/Blocks/Block.cs
+8	1	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+2	2	source/Craft.Net.Logic/Items/Item.cs
+56	0	source/Craft.Net.Logic/Windows/ArmorWindowArea.cs
+24	0	source/Craft.Net.Logic/Windows/CraftingWindowArea.cs
+88	0	source/Craft.Net.Logic/Windows/InventoryWindow.cs
+122	0	source/Craft.Net.Logic/Windows/Window.cs
+94	0	source/Craft.Net.Logic/Windows/WindowArea.cs
+22	0	source/Craft.Net.Logic/Windows/WindowChangeEventArgs.cs
+
+[424934a] Drew DeVault 2013-05-29 Fleshed out Block classes
+4	4	source/Craft.Net.Anvil/Chunk.cs
+15	15	source/Craft.Net.Anvil/World.cs
+198	4	source/Craft.Net.Logic/Blocks/Block.cs
+1	0	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+26	10	source/Craft.Net.Logic/Items/Item.cs
+28	0	source/Craft.Net.Logic/WorldExtensions.cs
+
+[4effc27] Drew DeVault 2013-05-29 Update readme
+6	4	README.md
+
+[b05ed79] Drew DeVault 2013-05-29 Generated all 1.5.2 block classes
+6	4	source/Craft.Net.Logic/BlockAttribute.cs
+18	0	source/Craft.Net.Logic/Blocks/ActivatorRailBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/AnvilBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BeaconBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BedBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BedrockBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BirchWoodStairsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BlockofDiamondBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BlockofEmeraldBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BlockofGoldBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BlockofIronBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BlockofRedstoneBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BookshelfBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BrewingStandBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BrickStairsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/BricksBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/ButtonBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/CactusBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/CarrotsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/CauldronBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/ChestBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/ClayBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/CoalOreBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/CobbleWallBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/CobblestoneBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/CobwebBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/CocoaBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/CommandBlockBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/ComparatorBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/CraftingTableBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/CropsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/DaylightSensorBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/DeadBushBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/DetectorRailBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/DiamondOreBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/DiodeBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/DirtBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/DispenserBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/DragonEggBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/DropperBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/EmeraldOreBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/EnchantmentTableBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/EndPortalBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/EndStoneBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/EnderChestBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/FarmlandBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/FenceBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/FenceGateBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/FireBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/FlowerBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/FlowerPotBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/FurnaceBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/GlassBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/GlassPaneBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/GlowstoneBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/GoldOreBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/GrassBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/GrassBlockBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/GravelBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/HopperBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/IceBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/IronBarsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/IronDoorBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/IronOreBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/JackoLanternBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/JukeboxBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/JungleWoodStairsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/LadderBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/LapisLazuliBlockBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/LapisLazuliOreBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/LavaBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/LeavesBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/LeverBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/LilyPadBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/LockedchestBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/MelonBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/MonsterSpawnerBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/MonsterStoneEggBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/MossStoneBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/MushroomBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/MyceliumBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/NetherBrickBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/NetherBrickFenceBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/NetherBrickStairsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/NetherQuartzOreBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/NetherWartBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/NetherrackBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/NoteBlockBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/OakWoodStairsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/ObsidianBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/PistonBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/PortalBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/PotatoesBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/PoweredRailBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/PressurePlateBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/PumpkinBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/PumpkinStemBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/QuartzBlockBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/QuartzStairsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/RailBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/RedstoneDustBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/RedstoneLampBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/RedstoneOreBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/RedstoneTorchBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/RoseBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/SandBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/SandstoneBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/SandstoneStairsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/SaplingBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/SignBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/SkullBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/SnowBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/SoulSandBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/SpongeBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/SpruceWoodStairsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/StickyPistonBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/StoneBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/StoneBrickStairsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/StoneBricksBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/StoneSlabBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/StoneStairsBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/SugarcaneBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/TNTBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/TorchBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/TrapdoorBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/TrappedChestBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/TripwireBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/TripwireHookBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/VinesBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/WaterBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/WeightedPressurePlateHeavyBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/WeightedPressurePlateLightBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/WoodBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/WoodSlabBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/WoodenDoorBlock.cs
+18	0	source/Craft.Net.Logic/Blocks/WoodenPlanksBlock.cs
+141	2	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+
+[93844ff] Drew DeVault 2013-05-28 Started block code
+23	0	source/Craft.Net.Logic/BlockAttribute.cs
+45	0	source/Craft.Net.Logic/Blocks/Block.cs
+3	0	source/Craft.Net.Logic/Blocks/CakeBlock.cs
+6	1	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+5	2	source/Craft.Net.Logic/{MinecraftItemAttribute.cs => ItemAttribute.cs}
+1	1	source/Craft.Net.Logic/Items/AppleItem.cs
+1	1	source/Craft.Net.Logic/Items/ArrowItem.cs
+1	1	source/Craft.Net.Logic/Items/BakedPotatoItem.cs
+1	1	source/Craft.Net.Logic/Items/BedItem.cs
+1	1	source/Craft.Net.Logic/Items/BlazePowderItem.cs
+1	1	source/Craft.Net.Logic/Items/BlazeRodItem.cs
+1	1	source/Craft.Net.Logic/Items/BoatItem.cs
+1	1	source/Craft.Net.Logic/Items/BoneItem.cs
+1	1	source/Craft.Net.Logic/Items/BookItem.cs
+1	1	source/Craft.Net.Logic/Items/BookandQuillItem.cs
+1	1	source/Craft.Net.Logic/Items/BottleoEnchantingItem.cs
+1	1	source/Craft.Net.Logic/Items/BowItem.cs
+1	1	source/Craft.Net.Logic/Items/BowlItem.cs
+1	1	source/Craft.Net.Logic/Items/BreadItem.cs
+1	1	source/Craft.Net.Logic/Items/BrewingStandItem.cs
+1	1	source/Craft.Net.Logic/Items/BrickItem.cs
+1	1	source/Craft.Net.Logic/Items/BucketItem.cs
+1	1	source/Craft.Net.Logic/Items/CakeItem.cs
+1	1	source/Craft.Net.Logic/Items/CarrotItem.cs
+1	1	source/Craft.Net.Logic/Items/CarrotonaStickItem.cs
+1	1	source/Craft.Net.Logic/Items/CauldronItem.cs
+1	1	source/Craft.Net.Logic/Items/ChainBootsItem.cs
+1	1	source/Craft.Net.Logic/Items/ChainChestplateItem.cs
+1	1	source/Craft.Net.Logic/Items/ChainHelmetItem.cs
+1	1	source/Craft.Net.Logic/Items/ChainLeggingsItem.cs
+1	1	source/Craft.Net.Logic/Items/ClayItem.cs
+1	1	source/Craft.Net.Logic/Items/ClockItem.cs
+1	1	source/Craft.Net.Logic/Items/CoalItem.cs
+1	1	source/Craft.Net.Logic/Items/CompassItem.cs
+1	1	source/Craft.Net.Logic/Items/CookedChickenItem.cs
+1	1	source/Craft.Net.Logic/Items/CookedFishItem.cs
+1	1	source/Craft.Net.Logic/Items/CookedPorkchopItem.cs
+1	1	source/Craft.Net.Logic/Items/CookieItem.cs
+1	1	source/Craft.Net.Logic/Items/DiamondAxeItem.cs
+1	1	source/Craft.Net.Logic/Items/DiamondBootsItem.cs
+1	1	source/Craft.Net.Logic/Items/DiamondChestplateItem.cs
+1	1	source/Craft.Net.Logic/Items/DiamondHelmetItem.cs
+1	1	source/Craft.Net.Logic/Items/DiamondHoeItem.cs
+1	1	source/Craft.Net.Logic/Items/DiamondItem.cs
+1	1	source/Craft.Net.Logic/Items/DiamondLeggingsItem.cs
+1	1	source/Craft.Net.Logic/Items/DiamondPickaxeItem.cs
+1	1	source/Craft.Net.Logic/Items/DiamondShovelItem.cs
+1	1	source/Craft.Net.Logic/Items/DiamondSwordItem.cs
+16	0	source/Craft.Net.Logic/Items/DyePowderItem.cs
+1	1	source/Craft.Net.Logic/Items/EggItem.cs
+1	1	source/Craft.Net.Logic/Items/EmeraldItem.cs
+1	1	source/Craft.Net.Logic/Items/EmptyMapItem.cs
+1	1	source/Craft.Net.Logic/Items/EnchantedBookItem.cs
+1	1	source/Craft.Net.Logic/Items/EnderPearlItem.cs
+1	1	source/Craft.Net.Logic/Items/EyeofEnderItem.cs
+1	1	source/Craft.Net.Logic/Items/FeatherItem.cs
+1	1	source/Craft.Net.Logic/Items/FermentedSpiderEyeItem.cs
+1	1	source/Craft.Net.Logic/Items/FireChargeItem.cs
+1	1	source/Craft.Net.Logic/Items/FireworkRocketItem.cs
+1	1	source/Craft.Net.Logic/Items/FireworkStarItem.cs
+1	1	source/Craft.Net.Logic/Items/FishingRodItem.cs
+1	1	source/Craft.Net.Logic/Items/FlintItem.cs
+1	1	source/Craft.Net.Logic/Items/FlintandSteelItem.cs
+1	1	source/Craft.Net.Logic/Items/FlowerPotItem.cs
+1	1	source/Craft.Net.Logic/Items/GhastTearItem.cs
+1	1	source/Craft.Net.Logic/Items/GlassBottleItem.cs
+1	1	source/Craft.Net.Logic/Items/GlisteringMelonItem.cs
+1	1	source/Craft.Net.Logic/Items/GlowstoneDustItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldIngotItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldNuggetItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldenAppleItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldenAxeItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldenBootsItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldenCarrotItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldenChestplateItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldenHelmetItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldenHoeItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldenLeggingsItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldenPickaxeItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldenShovelItem.cs
+1	1	source/Craft.Net.Logic/Items/GoldenSwordItem.cs
+1	1	source/Craft.Net.Logic/Items/GunpowderItem.cs
+1	1	source/Craft.Net.Logic/Items/IronAxeItem.cs
+1	1	source/Craft.Net.Logic/Items/IronBootsItem.cs
+1	1	source/Craft.Net.Logic/Items/IronChestplateItem.cs
+1	1	source/Craft.Net.Logic/Items/IronDoorItem.cs
+1	1	source/Craft.Net.Logic/Items/IronHelmetItem.cs
+1	1	source/Craft.Net.Logic/Items/IronHoeItem.cs
+1	1	source/Craft.Net.Logic/Items/IronIngotItem.cs
+1	1	source/Craft.Net.Logic/Items/IronLeggingsItem.cs
+1	1	source/Craft.Net.Logic/Items/IronPickaxeItem.cs
+1	1	source/Craft.Net.Logic/Items/IronShovelItem.cs
+1	1	source/Craft.Net.Logic/Items/IronSwordItem.cs
+12	4	source/Craft.Net.Logic/Items/Item.cs
+1	1	source/Craft.Net.Logic/Items/ItemFrameItem.cs
+1	1	source/Craft.Net.Logic/Items/LavaBucketItem.cs
+1	1	source/Craft.Net.Logic/Items/LeatherBootsItem.cs
+1	1	source/Craft.Net.Logic/Items/LeatherCapItem.cs
+1	1	source/Craft.Net.Logic/Items/LeatherItem.cs
+1	1	source/Craft.Net.Logic/Items/LeatherPantsItem.cs
+1	1	source/Craft.Net.Logic/Items/LeatherTunicItem.cs
+1	1	source/Craft.Net.Logic/Items/MagmaCreamItem.cs
+1	1	source/Craft.Net.Logic/Items/MapItem.cs
+1	1	source/Craft.Net.Logic/Items/MelonItem.cs
+1	1	source/Craft.Net.Logic/Items/MelonSeedsItem.cs
+1	1	source/Craft.Net.Logic/Items/MilkItem.cs
+1	1	source/Craft.Net.Logic/Items/MinecartItem.cs
+1	1	source/Craft.Net.Logic/Items/MinecartwithChestItem.cs
+1	1	source/Craft.Net.Logic/Items/MinecartwithFurnaceItem.cs
+1	1	source/Craft.Net.Logic/Items/MinecartwithHopperItem.cs
+1	1	source/Craft.Net.Logic/Items/MinecartwithTNTItem.cs
+1	1	source/Craft.Net.Logic/Items/MushroomStewItem.cs
+1	1	source/Craft.Net.Logic/Items/MusicDiscItem.cs
+1	1	source/Craft.Net.Logic/Items/NetherBrickItem.cs
+1	1	source/Craft.Net.Logic/Items/NetherQuartzItem.cs
+1	1	source/Craft.Net.Logic/Items/NetherStarItem.cs
+1	1	source/Craft.Net.Logic/Items/NetherWartItem.cs
+1	1	source/Craft.Net.Logic/Items/PaintingItem.cs
+1	1	source/Craft.Net.Logic/Items/PaperItem.cs
+1	1	source/Craft.Net.Logic/Items/PoisonousPotatoItem.cs
+1	1	source/Craft.Net.Logic/Items/PotatoItem.cs
+1	1	source/Craft.Net.Logic/Items/PotionItem.cs
+1	1	source/Craft.Net.Logic/Items/PumpkinPieItem.cs
+1	1	source/Craft.Net.Logic/Items/PumpkinSeedsItem.cs
+1	1	source/Craft.Net.Logic/Items/RawBeefItem.cs
+1	1	source/Craft.Net.Logic/Items/RawChickenItem.cs
+1	1	source/Craft.Net.Logic/Items/RawFishItem.cs
+1	1	source/Craft.Net.Logic/Items/RawPorkchopItem.cs
+1	1	source/Craft.Net.Logic/Items/RedstoneComparatorItem.cs
+1	1	source/Craft.Net.Logic/Items/RedstoneItem.cs
+1	1	source/Craft.Net.Logic/Items/RedstoneRepeaterItem.cs
+1	1	source/Craft.Net.Logic/Items/RottenFleshItem.cs
+1	1	source/Craft.Net.Logic/Items/SaddleItem.cs
+1	1	source/Craft.Net.Logic/Items/SeedsItem.cs
+1	1	source/Craft.Net.Logic/Items/ShearsItem.cs
+1	1	source/Craft.Net.Logic/Items/SignItem.cs
+16	0	source/Craft.Net.Logic/Items/SkullItem.cs
+1	1	source/Craft.Net.Logic/Items/SlimeballItem.cs
+1	1	source/Craft.Net.Logic/Items/SnowballItem.cs
+1	1	source/Craft.Net.Logic/Items/SpawnItem.cs
+1	1	source/Craft.Net.Logic/Items/SpiderEyeItem.cs
+1	1	source/Craft.Net.Logic/Items/SteakItem.cs
+1	1	source/Craft.Net.Logic/Items/StickItem.cs
+1	1	source/Craft.Net.Logic/Items/StoneAxeItem.cs
+1	1	source/Craft.Net.Logic/Items/StoneHoeItem.cs
+1	1	source/Craft.Net.Logic/Items/StonePickaxeItem.cs
+1	1	source/Craft.Net.Logic/Items/StoneShovelItem.cs
+1	1	source/Craft.Net.Logic/Items/StoneSwordItem.cs
+1	1	source/Craft.Net.Logic/Items/StringItem.cs
+1	1	source/Craft.Net.Logic/Items/SugarCanesItem.cs
+1	1	source/Craft.Net.Logic/Items/SugarItem.cs
+1	1	source/Craft.Net.Logic/Items/WaterBucketItem.cs
+1	1	source/Craft.Net.Logic/Items/WheatItem.cs
+1	1	source/Craft.Net.Logic/Items/WoodenAxeItem.cs
+1	1	source/Craft.Net.Logic/Items/WoodenDoorItem.cs
+1	1	source/Craft.Net.Logic/Items/WoodenHoeItem.cs
+1	1	source/Craft.Net.Logic/Items/WoodenPickaxeItem.cs
+1	1	source/Craft.Net.Logic/Items/WoodenShovelItem.cs
+1	1	source/Craft.Net.Logic/Items/WoodenSwordItem.cs
+1	1	source/Craft.Net.Logic/Items/WrittenBookItem.cs
+29	0	source/Test/Craft.Net.Logic.Test/BlockTest.cs
+1	0	source/Test/Craft.Net.Logic.Test/Craft.Net.Logic.Test.csproj
+1	2	source/Test/Craft.Net.Logic.Test/ItemTest.cs
+
+[b498369] Drew DeVault 2013-05-28 Generated files for all 1.5.2 items
+156	2	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+16	0	source/Craft.Net.Logic/Items/AppleItem.cs
+16	0	source/Craft.Net.Logic/Items/ArrowItem.cs
+16	0	source/Craft.Net.Logic/Items/BakedPotatoItem.cs
+16	0	source/Craft.Net.Logic/Items/BedItem.cs
+16	0	source/Craft.Net.Logic/Items/BlazePowderItem.cs
+16	0	source/Craft.Net.Logic/Items/BlazeRodItem.cs
+16	0	source/Craft.Net.Logic/Items/BoatItem.cs
+16	0	source/Craft.Net.Logic/Items/BoneItem.cs
+16	0	source/Craft.Net.Logic/Items/BookItem.cs
+16	0	source/Craft.Net.Logic/Items/BookandQuillItem.cs
+16	0	source/Craft.Net.Logic/Items/BottleoEnchantingItem.cs
+16	0	source/Craft.Net.Logic/Items/BowItem.cs
+16	0	source/Craft.Net.Logic/Items/BowlItem.cs
+16	0	source/Craft.Net.Logic/Items/BreadItem.cs
+16	0	source/Craft.Net.Logic/Items/BrewingStandItem.cs
+16	0	source/Craft.Net.Logic/Items/BrickItem.cs
+16	0	source/Craft.Net.Logic/Items/BucketItem.cs
+4	3	source/Craft.Net.Logic/Items/CakeItem.cs
+16	0	source/Craft.Net.Logic/Items/CarrotItem.cs
+16	0	source/Craft.Net.Logic/Items/CarrotonaStickItem.cs
+16	0	source/Craft.Net.Logic/Items/CauldronItem.cs
+16	0	source/Craft.Net.Logic/Items/ChainBootsItem.cs
+16	0	source/Craft.Net.Logic/Items/ChainChestplateItem.cs
+16	0	source/Craft.Net.Logic/Items/ChainHelmetItem.cs
+16	0	source/Craft.Net.Logic/Items/ChainLeggingsItem.cs
+16	0	source/Craft.Net.Logic/Items/ClayItem.cs
+16	0	source/Craft.Net.Logic/Items/ClockItem.cs
+16	0	source/Craft.Net.Logic/Items/CoalItem.cs
+16	0	source/Craft.Net.Logic/Items/CompassItem.cs
+16	0	source/Craft.Net.Logic/Items/CookedChickenItem.cs
+16	0	source/Craft.Net.Logic/Items/CookedFishItem.cs
+16	0	source/Craft.Net.Logic/Items/CookedPorkchopItem.cs
+16	0	source/Craft.Net.Logic/Items/CookieItem.cs
+16	0	source/Craft.Net.Logic/Items/DiamondAxeItem.cs
+16	0	source/Craft.Net.Logic/Items/DiamondBootsItem.cs
+16	0	source/Craft.Net.Logic/Items/DiamondChestplateItem.cs
+16	0	source/Craft.Net.Logic/Items/DiamondHelmetItem.cs
+16	0	source/Craft.Net.Logic/Items/DiamondHoeItem.cs
+16	0	source/Craft.Net.Logic/Items/DiamondItem.cs
+16	0	source/Craft.Net.Logic/Items/DiamondLeggingsItem.cs
+16	0	source/Craft.Net.Logic/Items/DiamondPickaxeItem.cs
+16	0	source/Craft.Net.Logic/Items/DiamondShovelItem.cs
+16	0	source/Craft.Net.Logic/Items/DiamondSwordItem.cs
+16	0	source/Craft.Net.Logic/Items/EggItem.cs
+16	0	source/Craft.Net.Logic/Items/EmeraldItem.cs
+16	0	source/Craft.Net.Logic/Items/EmptyMapItem.cs
+16	0	source/Craft.Net.Logic/Items/EnchantedBookItem.cs
+16	0	source/Craft.Net.Logic/Items/EnderPearlItem.cs
+16	0	source/Craft.Net.Logic/Items/EyeofEnderItem.cs
+16	0	source/Craft.Net.Logic/Items/FeatherItem.cs
+16	0	source/Craft.Net.Logic/Items/FermentedSpiderEyeItem.cs
+16	0	source/Craft.Net.Logic/Items/FireChargeItem.cs
+16	0	source/Craft.Net.Logic/Items/FireworkRocketItem.cs
+16	0	source/Craft.Net.Logic/Items/FireworkStarItem.cs
+16	0	source/Craft.Net.Logic/Items/FishingRodItem.cs
+16	0	source/Craft.Net.Logic/Items/FlintItem.cs
+16	0	source/Craft.Net.Logic/Items/FlintandSteelItem.cs
+16	0	source/Craft.Net.Logic/Items/FlowerPotItem.cs
+16	0	source/Craft.Net.Logic/Items/GhastTearItem.cs
+16	0	source/Craft.Net.Logic/Items/GlassBottleItem.cs
+16	0	source/Craft.Net.Logic/Items/GlisteringMelonItem.cs
+16	0	source/Craft.Net.Logic/Items/GlowstoneDustItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldIngotItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldNuggetItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldenAppleItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldenAxeItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldenBootsItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldenCarrotItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldenChestplateItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldenHelmetItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldenHoeItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldenLeggingsItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldenPickaxeItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldenShovelItem.cs
+16	0	source/Craft.Net.Logic/Items/GoldenSwordItem.cs
+16	0	source/Craft.Net.Logic/Items/GunpowderItem.cs
+16	0	source/Craft.Net.Logic/Items/IronAxeItem.cs
+16	0	source/Craft.Net.Logic/Items/IronBootsItem.cs
+16	0	source/Craft.Net.Logic/Items/IronChestplateItem.cs
+16	0	source/Craft.Net.Logic/Items/IronDoorItem.cs
+16	0	source/Craft.Net.Logic/Items/IronHelmetItem.cs
+16	0	source/Craft.Net.Logic/Items/IronHoeItem.cs
+16	0	source/Craft.Net.Logic/Items/IronIngotItem.cs
+16	0	source/Craft.Net.Logic/Items/IronLeggingsItem.cs
+16	0	source/Craft.Net.Logic/Items/IronPickaxeItem.cs
+16	0	source/Craft.Net.Logic/Items/IronShovelItem.cs
+16	0	source/Craft.Net.Logic/Items/IronSwordItem.cs
+2	6	source/Craft.Net.Logic/Items/Item.cs
+16	0	source/Craft.Net.Logic/Items/ItemFrameItem.cs
+16	0	source/Craft.Net.Logic/Items/LavaBucketItem.cs
+16	0	source/Craft.Net.Logic/Items/LeatherBootsItem.cs
+16	0	source/Craft.Net.Logic/Items/LeatherCapItem.cs
+16	0	source/Craft.Net.Logic/Items/LeatherItem.cs
+16	0	source/Craft.Net.Logic/Items/LeatherPantsItem.cs
+16	0	source/Craft.Net.Logic/Items/LeatherTunicItem.cs
+16	0	source/Craft.Net.Logic/Items/MagmaCreamItem.cs
+16	0	source/Craft.Net.Logic/Items/MapItem.cs
+16	0	source/Craft.Net.Logic/Items/MelonItem.cs
+16	0	source/Craft.Net.Logic/Items/MelonSeedsItem.cs
+16	0	source/Craft.Net.Logic/Items/MilkItem.cs
+16	0	source/Craft.Net.Logic/Items/MinecartItem.cs
+16	0	source/Craft.Net.Logic/Items/MinecartwithChestItem.cs
+16	0	source/Craft.Net.Logic/Items/MinecartwithFurnaceItem.cs
+16	0	source/Craft.Net.Logic/Items/MinecartwithHopperItem.cs
+16	0	source/Craft.Net.Logic/Items/MinecartwithTNTItem.cs
+16	0	source/Craft.Net.Logic/Items/MushroomStewItem.cs
+16	0	source/Craft.Net.Logic/Items/MusicDiscItem.cs
+16	0	source/Craft.Net.Logic/Items/NetherBrickItem.cs
+16	0	source/Craft.Net.Logic/Items/NetherQuartzItem.cs
+16	0	source/Craft.Net.Logic/Items/NetherStarItem.cs
+16	0	source/Craft.Net.Logic/Items/NetherWartItem.cs
+16	0	source/Craft.Net.Logic/Items/PaintingItem.cs
+16	0	source/Craft.Net.Logic/Items/PaperItem.cs
+16	0	source/Craft.Net.Logic/Items/PoisonousPotatoItem.cs
+16	0	source/Craft.Net.Logic/Items/PotatoItem.cs
+16	0	source/Craft.Net.Logic/Items/PotionItem.cs
+16	0	source/Craft.Net.Logic/Items/PumpkinPieItem.cs
+16	0	source/Craft.Net.Logic/Items/PumpkinSeedsItem.cs
+16	0	source/Craft.Net.Logic/Items/RawBeefItem.cs
+16	0	source/Craft.Net.Logic/Items/RawChickenItem.cs
+16	0	source/Craft.Net.Logic/Items/RawFishItem.cs
+16	0	source/Craft.Net.Logic/Items/RawPorkchopItem.cs
+16	0	source/Craft.Net.Logic/Items/RedstoneComparatorItem.cs
+16	0	source/Craft.Net.Logic/Items/RedstoneItem.cs
+16	0	source/Craft.Net.Logic/Items/RedstoneRepeaterItem.cs
+16	0	source/Craft.Net.Logic/Items/RottenFleshItem.cs
+16	0	source/Craft.Net.Logic/Items/SaddleItem.cs
+16	0	source/Craft.Net.Logic/Items/SeedsItem.cs
+16	0	source/Craft.Net.Logic/Items/ShearsItem.cs
+16	0	source/Craft.Net.Logic/Items/SignItem.cs
+16	0	source/Craft.Net.Logic/Items/SlimeballItem.cs
+16	0	source/Craft.Net.Logic/Items/SnowballItem.cs
+16	0	source/Craft.Net.Logic/Items/SpawnItem.cs
+16	0	source/Craft.Net.Logic/Items/SpiderEyeItem.cs
+16	0	source/Craft.Net.Logic/Items/SteakItem.cs
+16	0	source/Craft.Net.Logic/Items/StickItem.cs
+16	0	source/Craft.Net.Logic/Items/StoneAxeItem.cs
+16	0	source/Craft.Net.Logic/Items/StoneHoeItem.cs
+16	0	source/Craft.Net.Logic/Items/StonePickaxeItem.cs
+16	0	source/Craft.Net.Logic/Items/StoneShovelItem.cs
+16	0	source/Craft.Net.Logic/Items/StoneSwordItem.cs
+16	0	source/Craft.Net.Logic/Items/StringItem.cs
+16	0	source/Craft.Net.Logic/Items/SugarCanesItem.cs
+16	0	source/Craft.Net.Logic/Items/SugarItem.cs
+16	0	source/Craft.Net.Logic/Items/WaterBucketItem.cs
+16	0	source/Craft.Net.Logic/Items/WheatItem.cs
+16	0	source/Craft.Net.Logic/Items/WoodenAxeItem.cs
+16	0	source/Craft.Net.Logic/Items/WoodenDoorItem.cs
+16	0	source/Craft.Net.Logic/Items/WoodenHoeItem.cs
+16	0	source/Craft.Net.Logic/Items/WoodenPickaxeItem.cs
+16	0	source/Craft.Net.Logic/Items/WoodenShovelItem.cs
+16	0	source/Craft.Net.Logic/Items/WoodenSwordItem.cs
+16	0	source/Craft.Net.Logic/Items/WrittenBookItem.cs
+3	1	source/Craft.Net.Logic/MinecraftItemAttribute.cs
+
+[3cd19db] Drew DeVault 2013-05-28 Added item descriptor struct
+2	2	source/Craft.Net.Logic/Items/CakeItem.cs
+52	29	source/Craft.Net.Logic/Items/Item.cs
+4	0	source/Test/Craft.Net.Logic.Test/Craft.Net.Logic.Test.csproj
+11	1	source/Test/Craft.Net.Logic.Test/ItemTest.cs
+
+[ca99cc1] Drew DeVault 2013-05-28 Started work on Craft.Net.Logic
+11	0	Craft.Net.sln
+13	0	source/Craft.Net.Logic/Blocks/CakeBlock.cs
+3	0	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+27	0	source/Craft.Net.Logic/Items/CakeItem.cs
+68	1	source/Craft.Net.Logic/Items/Item.cs
+22	0	source/Craft.Net.Logic/MinecraftItemAttribute.cs
+73	0	source/Test/Craft.Net.Logic.Test/Craft.Net.Logic.Test.csproj
+20	0	source/Test/Craft.Net.Logic.Test/ItemTest.cs
+36	0	source/Test/Craft.Net.Logic.Test/Properties/AssemblyInfo.cs
+
+[4477255] Drew DeVault 2013-05-28 Rename Craft.Net.World to Craft.Net.Anvil to avoid namespace problems
+13	3	Craft.Net.sln
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/Chunk.cs
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/Coordinates.cs
+2	2	source/{Craft.Net.World/Craft.Net.World.csproj => Craft.Net.Anvil/Craft.Net.Anvil.csproj}
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/IDiskEntity.cs
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/IWorldGenerator.cs
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/Level.cs
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/NibbleArray.cs
+0	0	source/{Craft.Net.World => Craft.Net.Anvil}/Properties/AssemblyInfo.cs
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/Region.cs
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/RuntimeInfo.cs
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/Section.cs
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/TileEntity.cs
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/UnrecognizedEntity.cs
+1	1	source/{Craft.Net.World => Craft.Net.Anvil}/World.cs
+11	0	source/Craft.Net.Logic/Blocks/Block.cs
+64	0	source/Craft.Net.Logic/Craft.Net.Logic.csproj
+13	0	source/Craft.Net.Logic/Items/Item.cs
+36	0	source/Craft.Net.Logic/Properties/AssemblyInfo.cs
+2	2	source/Craft.Net.TerrainGeneration/Craft.Net.TerrainGeneration.csproj
+1	1	source/Craft.Net.TerrainGeneration/FlatlandGenerator.cs
+4	4	source/Test/{Craft.Net.World.Test/Craft.Net.World.Test.csproj => Craft.Net.Anvil.Test/Craft.Net.Anvil.Test.csproj}
+1	1	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/LevelTest.cs
+0	0	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Properties/AssemblyInfo.cs
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/data/villages.dat
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/level.dat
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/level.dat_mcr
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/level.dat_old
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/players/SirCmpwn.dat
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/region/r.-1.-1.mca
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/region/r.-1.-2.mca
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/region/r.-1.0.mca
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/region/r.0.-1.mca
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/region/r.0.-2.mca
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/region/r.0.0.mca
+-	-	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/Test World/session.lock
+1	1	source/Test/{Craft.Net.World.Test => Craft.Net.Anvil.Test}/WorldTest.cs
+
+[d402274] Drew DeVault 2013-05-28 Update fNbt
+1	1	externals/fNbt
+
+[67c92de] Drew DeVault 2013-05-28 Fixed build issues on Mono
+2	3	source/Craft.Net.Data/Craft.Net.Data.csproj
+2	2	source/Craft.Net.Networking/Craft.Net.Networking.csproj
+3	2	source/Craft.Net.World/Craft.Net.World.csproj
+
+[432381e] Drew DeVault 2013-05-28 Update THANKS
+2	0	THANKS
+
+[b93c31e] Drew DeVault 2013-05-28 Modify readme
+11	0	README.md
+
+[a34c444] Drew DeVault 2013-05-28 Added docs and reworked README
+71	137	README.md
+1	0	source/Craft.Net.World/Craft.Net.World.csproj
+50	0	source/Craft.Net.World/Level.cs
+50	0	source/Craft.Net.World/RuntimeInfo.cs
+
+[659e4f5] Drew DeVault 2013-05-27 Update fNbt reference
+1	1	externals/fNbt
+
+[ca3b2fc] Drew DeVault 2013-05-27 Fixed Level.Load
+1	1	source/Craft.Net.World/Level.cs
+
+[7e81bae] Drew DeVault 2013-05-27 Fixed bugs preventing Minecraft from loading Craft.Net.World worlds
+20	4	source/Craft.Net.World/Chunk.cs
+43	17	source/Craft.Net.World/Level.cs
+2	2	source/Craft.Net.World/NibbleArray.cs
+7	3	source/Craft.Net.World/Region.cs
+12	1	source/Craft.Net.World/Section.cs
+1	1	source/Craft.Net.World/UnrecognizedEntity.cs
+1	1	source/Test/Craft.Net.World.Test/LevelTest.cs
+7	5	source/Test/Craft.Net.World.Test/WorldTest.cs
+
+[0b32dee] Drew DeVault 2013-05-27 Moved projects into subfolder
+12	12	Craft.Net.sln
+1	1	externals/fNbt
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/ConsoleLogWriter.cs
+2	2	{Craft.Net.Client => source/Craft.Net.Client}/Craft.Net.Client.csproj
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/DotMinecraft.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Events/ChatMessageEventArgs.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Events/ChunkRecievedEventArgs.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Events/DisconnectEventArgs.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Events/EntitySpawnEventArgs.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Events/GameModeChangeEventArgs.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Events/HealthAndFoodEventArgs.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Events/SignUpdateReceivedEventArgs.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/FileLogWriter.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Handlers/ChatHandler.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Handlers/EntityHandlers.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Handlers/LoginHandlers.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Handlers/PacketHandlers.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Handlers/StateHandlers.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Handlers/WorldHandlers.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/ILogProvider.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/LastLogin.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/LevelInformation.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/LogProvider.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/MinecraftClient.Actions.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/MinecraftClient.Events.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/MinecraftClient.Properties.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/MinecraftClient.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/PKCSKeyGenerator.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Properties/AssemblyInfo.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/ReadOnlyWorld.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/RuntimeInfo.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/ServerList.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/ServerPing.cs
+0	0	{Craft.Net.Client => source/Craft.Net.Client}/Session.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/BigInteger.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/Biome.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/BoundingBox.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/ChatColors.cs
+1	1	{Craft.Net.Data => source/Craft.Net.Data}/Craft.Net.Data.csproj
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/Cryptography.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/Difficulty.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/Dimension.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/GameMode.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/GameRules.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/ItemStack.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/MathHelper.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/MetadataByte.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/MetadataDictionary.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/MetadataEntry.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/MetadataFloat.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/MetadataInt.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/MetadataShort.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/MetadataSlot.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/MetadataString.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/MinecraftStream.Stream.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/MinecraftStream.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/ParticleEffect.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/Properties/AssemblyInfo.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/Ray.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/Size.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/SoundEffect.cs
+0	0	{Craft.Net.Data => source/Craft.Net.Data}/Vector3.cs
+0	0	{Craft.Net.Networking => source/Craft.Net.Networking}/AesStream.cs
+0	0	{Craft.Net.Networking => source/Craft.Net.Networking}/BufferedStream.cs
+1	1	{Craft.Net.Networking => source/Craft.Net.Networking}/Craft.Net.Networking.csproj
+0	0	{Craft.Net.Networking => source/Craft.Net.Networking}/PacketReader.cs
+0	0	{Craft.Net.Networking => source/Craft.Net.Networking}/Packets.cs
+0	0	{Craft.Net.Networking => source/Craft.Net.Networking}/Properties/AssemblyInfo.cs
+24	24	{Craft.Net.Server => source/Craft.Net.Server}/AssemblyInfo.cs
+54	54	{Craft.Net.Server => source/Craft.Net.Server}/Channels/TexturePackChannel.cs
+0	0	{Craft.Net.Server => source/Craft.Net.Server}/ChunkHelper.cs
+35	35	{Craft.Net.Server => source/Craft.Net.Server}/ConsoleLogWriter.cs
+4	4	{Craft.Net.Server => source/Craft.Net.Server}/Craft.Net.Server.csproj
+539	539	{Craft.Net.Server => source/Craft.Net.Server}/EntityManager.cs
+17	17	{Craft.Net.Server => source/Craft.Net.Server}/Events/ChatMessageEventArgs.cs
+22	22	{Craft.Net.Server => source/Craft.Net.Server}/Events/PacketEventArgs.cs
+29	29	{Craft.Net.Server => source/Craft.Net.Server}/Events/PlayerDeathEventArgs.cs
+26	26	{Craft.Net.Server => source/Craft.Net.Server}/Events/PlayerLogInEventArgs.cs
+0	0	{Craft.Net.Server => source/Craft.Net.Server}/Events/TabCompleteEventArgs.cs
+42	42	{Craft.Net.Server => source/Craft.Net.Server}/FileLogWriter.cs
+0	0	{Craft.Net.Server => source/Craft.Net.Server}/Handlers/InteractionHandlers.cs
+0	0	{Craft.Net.Server => source/Craft.Net.Server}/Handlers/InventoryHandlers.cs
+0	0	{Craft.Net.Server => source/Craft.Net.Server}/Handlers/LoginHandlers.cs
+0	0	{Craft.Net.Server => source/Craft.Net.Server}/Handlers/PacketHandlers.cs
+0	0	{Craft.Net.Server => source/Craft.Net.Server}/Handlers/PlayerMovementHandlers.cs
+22	22	{Craft.Net.Server => source/Craft.Net.Server}/ILogProvider.cs
+156	156	{Craft.Net.Server => source/Craft.Net.Server}/LogProvider.cs
+285	285	{Craft.Net.Server => source/Craft.Net.Server}/MinecraftClient.cs
+587	587	{Craft.Net.Server => source/Craft.Net.Server}/MinecraftServer.cs
+0	0	{Craft.Net.Server => source/Craft.Net.Server}/PacketContext.cs
+39	39	{Craft.Net.Server => source/Craft.Net.Server}/PluginChannel.cs
+0	0	{Craft.Net.Server => source/Craft.Net.Server}/Scoreboard.cs
+0	0	{Craft.Net.Server => source/Craft.Net.Server}/ScoreboardManager.cs
+52	52	{Craft.Net.Server => source/Craft.Net.Server}/ServerSettings.cs
+0	0	{Craft.Net.Server => source/Craft.Net.Server}/Team.cs
+47	47	{Craft.Net.Server => source/Craft.Net.Server}/WeatherManager.cs
+68	0	source/Craft.Net.TerrainGeneration/Craft.Net.TerrainGeneration.csproj
+131	0	source/Craft.Net.TerrainGeneration/FlatlandGenerator.cs
+36	0	source/Craft.Net.TerrainGeneration/Properties/AssemblyInfo.cs
+0	0	{Craft.Net.World => source/Craft.Net.World}/Chunk.cs
+0	0	{Craft.Net.World => source/Craft.Net.World}/Coordinates.cs
+1	1	{Craft.Net.World => source/Craft.Net.World}/Craft.Net.World.csproj
+0	0	{Craft.Net.World => source/Craft.Net.World}/IDiskEntity.cs
+0	0	{Craft.Net.World => source/Craft.Net.World}/IWorldGenerator.cs
+0	0	{Craft.Net.World => source/Craft.Net.World}/Level.cs
+0	0	{Craft.Net.World => source/Craft.Net.World}/NibbleArray.cs
+0	0	{Craft.Net.World => source/Craft.Net.World}/Properties/AssemblyInfo.cs
+0	0	{Craft.Net.World => source/Craft.Net.World}/Region.cs
+0	0	{Craft.Net.World => source/Craft.Net.World}/Section.cs
+0	0	{Craft.Net.World => source/Craft.Net.World}/TileEntity.cs
+0	0	{Craft.Net.World => source/Craft.Net.World}/UnrecognizedEntity.cs
+0	0	{Craft.Net.World => source/Craft.Net.World}/World.cs
+1	1	{Test => source/Test}/Craft.Net.Networking.Test/Craft.Net.Networking.Test.csproj
+0	0	{Test => source/Test}/Craft.Net.Networking.Test/CryptoTest.cs
+0	0	{Test => source/Test}/Craft.Net.Networking.Test/NbtTest.cs
+0	0	{Test => source/Test}/Craft.Net.Networking.Test/Properties/AssemblyInfo.cs
+0	0	{Test => source/Test}/Craft.Net.Server.Test/Craft.Net.Server.Test.csproj
+0	0	{Test => source/Test}/Craft.Net.Server.Test/PacketTests.cs
+0	0	{Test => source/Test}/Craft.Net.Server.Test/Properties/AssemblyInfo.cs
+1	1	{Test => source/Test}/Craft.Net.World.Test/Craft.Net.World.Test.csproj
+0	0	{Test => source/Test}/Craft.Net.World.Test/LevelTest.cs
+0	0	{Test => source/Test}/Craft.Net.World.Test/Properties/AssemblyInfo.cs
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/data/villages.dat
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/level.dat
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/level.dat_mcr
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/level.dat_old
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/players/SirCmpwn.dat
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/region/r.-1.-1.mca
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/region/r.-1.-2.mca
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/region/r.-1.0.mca
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/region/r.0.-1.mca
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/region/r.0.-2.mca
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/region/r.0.0.mca
+-	-	{Test => source/Test}/Craft.Net.World.Test/Test World/session.lock
+0	0	{Test => source/Test}/Craft.Net.World.Test/WorldTest.cs
+0	0	{TestClient => source/TestClient}/App.config
+0	0	{TestClient => source/TestClient}/Program.cs
+0	0	{TestClient => source/TestClient}/Properties/AssemblyInfo.cs
+0	0	{TestClient => source/TestClient}/TestClient.csproj
+27	27	{TestServer => source/TestServer}/AssemblyInfo.cs
+0	0	{TestServer => source/TestServer}/CustomLeatherItem.cs
+173	173	{TestServer => source/TestServer}/Main.cs
+0	0	{TestServer => source/TestServer}/TestServer.csproj
+
+[9d790f1] Drew DeVault 2013-05-27 Got Craft.Net.World working correctly
+0	1	Craft.Net.Data/Craft.Net.Data.csproj
+18	3	Craft.Net.World/Chunk.cs
+34	1	Craft.Net.World/Coordinates.cs
+1	0	Craft.Net.World/Craft.Net.World.csproj
+37	4	Craft.Net.World/Level.cs
+7	1	{Craft.Net.Data => Craft.Net.World}/NibbleArray.cs
+4	1	Craft.Net.World/Region.cs
+4	0	Craft.Net.World/Section.cs
+82	6	Craft.Net.World/World.cs
+10	0	Craft.Net.sln
+50	0	Test/Craft.Net.World.Test/Craft.Net.World.Test.csproj
+-	-	Test/Craft.Net.World.Test/Test World/data/villages.dat
+-	-	Test/Craft.Net.World.Test/Test World/level.dat
+-	-	Test/Craft.Net.World.Test/Test World/level.dat_mcr
+-	-	Test/Craft.Net.World.Test/Test World/level.dat_old
+-	-	Test/Craft.Net.World.Test/Test World/players/SirCmpwn.dat
+-	-	Test/Craft.Net.World.Test/Test World/region/r.-1.-1.mca
+-	-	Test/Craft.Net.World.Test/Test World/region/r.-1.-2.mca
+-	-	Test/Craft.Net.World.Test/Test World/region/r.-1.0.mca
+-	-	Test/Craft.Net.World.Test/Test World/region/r.0.-1.mca
+-	-	Test/Craft.Net.World.Test/Test World/region/r.0.-2.mca
+-	-	Test/Craft.Net.World.Test/Test World/region/r.0.0.mca
+-	-	Test/Craft.Net.World.Test/Test World/session.lock
+42	1	Test/Craft.Net.World.Test/WorldTest.cs
+1	1	externals/fNbt
+
+[de1baa6] Drew DeVault 2013-05-27 Added entity serialization to chunks
+141	25	Craft.Net.World/Chunk.cs
+80	0	Craft.Net.World/Coordinates.cs
+1	0	Craft.Net.World/Craft.Net.World.csproj
+1	0	Craft.Net.World/IDiskEntity.cs
+6	52	Craft.Net.World/Region.cs
+2	2	Craft.Net.World/TileEntity.cs
+34	0	Craft.Net.World/UnrecognizedEntity.cs
+77	22	Craft.Net.World/World.cs
+
+[df965e3] Drew DeVault 2013-05-27 Fleshed out Section, adds support for Add array
+13	1	Craft.Net.Data/NibbleArray.cs
+2	0	Craft.Net.World/Chunk.cs
+57	10	Craft.Net.World/Coordinates.cs
+2	2	Craft.Net.World/IDiskEntity.cs
+1	1	Craft.Net.World/IWorldGenerator.cs
+13	13	Craft.Net.World/Region.cs
+37	11	Craft.Net.World/Section.cs
+40	2	Craft.Net.World/World.cs
+2	2	Craft.Net.sln
+1	0	Test/Craft.Net.World.Test/Craft.Net.World.Test.csproj
+17	0	Test/Craft.Net.World.Test/WorldTest.cs
+1	1	externals/fNbt
+
+[62d5cba] Drew DeVault 2013-05-27 Added temporary reduced build configuration for easier development
+9	0	Craft.Net.Client/Craft.Net.Client.csproj
+10	0	Craft.Net.Data/Craft.Net.Data.csproj
+10	0	Craft.Net.Networking/Craft.Net.Networking.csproj
+10	0	Craft.Net.Server/Craft.Net.Server.csproj
+10	0	Craft.Net.World/Craft.Net.World.csproj
+18	0	Craft.Net.sln
+9	0	Test/Craft.Net.Networking.Test/Craft.Net.Networking.Test.csproj
+10	0	Test/Craft.Net.Server.Test/Craft.Net.Server.Test.csproj
+9	0	Test/Craft.Net.World.Test/Craft.Net.World.Test.csproj
+9	0	TestClient/TestClient.csproj
+9	0	TestServer/TestServer.csproj
+
+[7efff97] Drew DeVault 2013-05-27 Rename Craft.Net -> Craft.Net.Networking
+2	2	Craft.Net.Client/Craft.Net.Client.csproj
+1	1	{Craft.Net => Craft.Net.Networking}/AesStream.cs
+1	1	{Craft.Net => Craft.Net.Networking}/BufferedStream.cs
+0	0	Craft.Net/Craft.Net.csproj => Craft.Net.Networking/Craft.Net.Networking.csproj
+2	1	{Craft.Net => Craft.Net.Networking}/PacketReader.cs
+1	1	{Craft.Net => Craft.Net.Networking}/Packets.cs
+0	0	{Craft.Net => Craft.Net.Networking}/Properties/AssemblyInfo.cs
+2	2	Craft.Net.Server/Craft.Net.Server.csproj
+2	2	Craft.Net.sln
+2	3	Test/{Craft.Net.Test/Craft.Net.Test.csproj => Craft.Net.Networking.Test/Craft.Net.Networking.Test.csproj}
+2	1	Test/{Craft.Net.Test => Craft.Net.Networking.Test}/CryptoTest.cs
+0	0	Test/{Craft.Net.Test => Craft.Net.Networking.Test}/NbtTest.cs
+0	0	Test/{Craft.Net.Test => Craft.Net.Networking.Test}/Properties/AssemblyInfo.cs
+2	2	Test/Craft.Net.Server.Test/Craft.Net.Server.Test.csproj
+2	2	TestClient/TestClient.csproj
+2	2	TestServer/TestServer.csproj
+0	34	_Craft.Net.Data/Biome.cs
+0	344	_Craft.Net.Data/Block.cs
+0	37	_Craft.Net.Data/BlockChangedEventArgs.cs
+0	15	_Craft.Net.Data/Blocks/ActivatorRailBlock.cs
+0	42	_Craft.Net.Data/Blocks/AirBlock.cs
+0	55	_Craft.Net.Data/Blocks/AnvilBlock.cs
+0	25	_Craft.Net.Data/Blocks/BeaconBlock.cs
+0	109	_Craft.Net.Data/Blocks/BedBlock.cs
+0	20	_Craft.Net.Data/Blocks/BedrockBlock.cs
+0	27	_Craft.Net.Data/Blocks/BirchWoodStairBlock.cs
+0	27	_Craft.Net.Data/Blocks/BookshelfBlock.cs
+0	25	_Craft.Net.Data/Blocks/BrewingStandBlock.cs
+0	20	_Craft.Net.Data/Blocks/BrickBlock.cs
+0	16	_Craft.Net.Data/Blocks/BrickStairBlock.cs
+0	21	_Craft.Net.Data/Blocks/BrownMushroomBlock.cs
+0	75	_Craft.Net.Data/Blocks/CactusBlock.cs
+0	25	_Craft.Net.Data/Blocks/CakeBlock.cs
+0	87	_Craft.Net.Data/Blocks/CarrotBlock.cs
+0	20	_Craft.Net.Data/Blocks/CauldronBlock.cs
+0	25	_Craft.Net.Data/Blocks/ChestBlock.cs
+0	27	_Craft.Net.Data/Blocks/ClayBlock.cs
+0	32	_Craft.Net.Data/Blocks/CoalOreBlock.cs
+0	20	_Craft.Net.Data/Blocks/CobblestoneBlock.cs
+0	15	_Craft.Net.Data/Blocks/CobblestoneStairBlock.cs
+0	20	_Craft.Net.Data/Blocks/CobblestoneWallBlock.cs
+0	26	_Craft.Net.Data/Blocks/CobwebBlock.cs
+0	135	_Craft.Net.Data/Blocks/CocoaPlantBlock.cs
+0	25	_Craft.Net.Data/Blocks/CommandBlock.cs
+0	25	_Craft.Net.Data/Blocks/CraftingTableBlock.cs
+0	15	_Craft.Net.Data/Blocks/DaylightSensorBlock.cs
+0	30	_Craft.Net.Data/Blocks/DeadBushBlock.cs
+0	30	_Craft.Net.Data/Blocks/DetectorRailBlock.cs
+0	29	_Craft.Net.Data/Blocks/DiamondBlock.cs
+0	35	_Craft.Net.Data/Blocks/DiamondOreBlock.cs
+0	25	_Craft.Net.Data/Blocks/DirtBlock.cs
+0	31	_Craft.Net.Data/Blocks/DispenserBlock.cs
+0	124	_Craft.Net.Data/Blocks/DoorBlock.cs
+0	20	_Craft.Net.Data/Blocks/DoubleSlabBlock.cs
+0	35	_Craft.Net.Data/Blocks/DragonEggBlock.cs
+0	31	_Craft.Net.Data/Blocks/DropperBlock.cs
+0	29	_Craft.Net.Data/Blocks/EmeraldBlock.cs
+0	29	_Craft.Net.Data/Blocks/EmeraldOreBlock.cs
+0	20	_Craft.Net.Data/Blocks/EnchantmentTableBlock.cs
+0	20	_Craft.Net.Data/Blocks/EndPortalBlock.cs
+0	20	_Craft.Net.Data/Blocks/EndPortalFrameBlock.cs
+0	20	_Craft.Net.Data/Blocks/EndStoneBlock.cs
+0	25	_Craft.Net.Data/Blocks/EnderChestBlock.cs
+0	78	_Craft.Net.Data/Blocks/FarmlandBlock.cs
+0	20	_Craft.Net.Data/Blocks/FenceBlock.cs
+0	25	_Craft.Net.Data/Blocks/FenceGateBlock.cs
+0	25	_Craft.Net.Data/Blocks/FireBlock.cs
+0	157	_Craft.Net.Data/Blocks/FlowerPotBlock.cs
+0	21	_Craft.Net.Data/Blocks/FurnaceActiveBlock.cs
+0	37	_Craft.Net.Data/Blocks/FurnaceBlock.cs
+0	30	_Craft.Net.Data/Blocks/GlassBlock.cs
+0	25	_Craft.Net.Data/Blocks/GlassPaneBlock.cs
+0	27	_Craft.Net.Data/Blocks/GlowstoneBlock.cs
+0	20	_Craft.Net.Data/Blocks/GoldBlock.cs
+0	20	_Craft.Net.Data/Blocks/GoldOreBlock.cs
+0	92	_Craft.Net.Data/Blocks/GrassBlock.cs
+0	41	_Craft.Net.Data/Blocks/GravelBlock.cs
+0	15	_Craft.Net.Data/Blocks/HeavyWeightedPressurePlateBlock.cs
+0	15	_Craft.Net.Data/Blocks/HopperBlock.cs
+0	25	_Craft.Net.Data/Blocks/HugeBrownMushroomBlock.cs
+0	25	_Craft.Net.Data/Blocks/HugeRedMushroomBlock.cs
+0	25	_Craft.Net.Data/Blocks/IceBlock.cs
+0	20	_Craft.Net.Data/Blocks/IronBarBlock.cs
+0	30	_Craft.Net.Data/Blocks/IronBlock.cs
+0	42	_Craft.Net.Data/Blocks/IronDoorBlock.cs
+0	30	_Craft.Net.Data/Blocks/IronOreBlock.cs
+0	25	_Craft.Net.Data/Blocks/JackOLanternBlock.cs
+0	20	_Craft.Net.Data/Blocks/JukeboxBlock.cs
+0	20	_Craft.Net.Data/Blocks/JungleWoodStairBlock.cs
+0	67	_Craft.Net.Data/Blocks/LadderBlock.cs
+0	20	_Craft.Net.Data/Blocks/LapisLazuliBlock.cs
+0	20	_Craft.Net.Data/Blocks/LapisLazuliOreBlock.cs
+0	20	_Craft.Net.Data/Blocks/LavaFlowingBlock.cs
+0	20	_Craft.Net.Data/Blocks/LavaStillBlock.cs
+0	20	_Craft.Net.Data/Blocks/LeavesBlock.cs
+0	75	_Craft.Net.Data/Blocks/LeverBlock.cs
+0	15	_Craft.Net.Data/Blocks/LightWeightedPressurePlateBlock.cs
+0	15	_Craft.Net.Data/Blocks/LilyPadBlock.cs
+0	20	_Craft.Net.Data/Blocks/LockedChestBlock.cs
+0	27	_Craft.Net.Data/Blocks/MelonBlock.cs
+0	120	_Craft.Net.Data/Blocks/MelonStemBlock.cs
+0	25	_Craft.Net.Data/Blocks/MobSpawnerBlock.cs
+0	20	_Craft.Net.Data/Blocks/MossyCobblestoneBlock.cs
+0	20	_Craft.Net.Data/Blocks/MyceliumBlock.cs
+0	20	_Craft.Net.Data/Blocks/NetherBrickBlock.cs
+0	20	_Craft.Net.Data/Blocks/NetherBrickFenceBlock.cs
+0	15	_Craft.Net.Data/Blocks/NetherBrickStairBlock.cs
+0	25	_Craft.Net.Data/Blocks/NetherPortalBlock.cs
+0	22	_Craft.Net.Data/Blocks/NetherQuartzOreBlock.cs
+0	64	_Craft.Net.Data/Blocks/NetherWartBlock.cs
+0	20	_Craft.Net.Data/Blocks/NetherrackBlock.cs
+0	24	_Craft.Net.Data/Blocks/NoteBlock.cs
+0	20	_Craft.Net.Data/Blocks/OakStairBlock.cs
+0	26	_Craft.Net.Data/Blocks/ObsidianBlock.cs
+0	27	_Craft.Net.Data/Blocks/PistonBlock.cs
+0	20	_Craft.Net.Data/Blocks/PistonHeadBlock.cs
+0	20	_Craft.Net.Data/Blocks/PistonMovementBlock.cs
+0	99	_Craft.Net.Data/Blocks/PotatoBlock.cs
+0	20	_Craft.Net.Data/Blocks/PoweredRailBlock.cs
+0	20	_Craft.Net.Data/Blocks/PumpkinBlock.cs
+0	131	_Craft.Net.Data/Blocks/PumpkinStemBlock.cs
+0	46	_Craft.Net.Data/Blocks/QuartzBlock.cs
+0	15	_Craft.Net.Data/Blocks/QuartzStairBlock.cs
+0	20	_Craft.Net.Data/Blocks/RailBlock.cs
+0	30	_Craft.Net.Data/Blocks/RedFlowerBlock.cs
+0	30	_Craft.Net.Data/Blocks/RedMushroomBlock.cs
+0	15	_Craft.Net.Data/Blocks/RedstoneBlock.cs
+0	15	_Craft.Net.Data/Blocks/RedstoneComparatorBlock.cs
+0	15	_Craft.Net.Data/Blocks/RedstoneComparatorInactiveBlock.cs
+0	22	_Craft.Net.Data/Blocks/RedstoneLampActiveBlock.cs
+0	20	_Craft.Net.Data/Blocks/RedstoneLampBlock.cs
+0	16	_Craft.Net.Data/Blocks/RedstoneOreActiveBlock.cs
+0	44	_Craft.Net.Data/Blocks/RedstoneOreBlock.cs
+0	15	_Craft.Net.Data/Blocks/RedstoneRepeaterActiveBlock.cs
+0	83	_Craft.Net.Data/Blocks/RedstoneRepeaterBlock.cs
+0	58	_Craft.Net.Data/Blocks/RedstoneTorchActiveBlock.cs
+0	64	_Craft.Net.Data/Blocks/RedstoneTorchBlock.cs
+0	32	_Craft.Net.Data/Blocks/RedstoneWireBlock.cs
+0	30	_Craft.Net.Data/Blocks/SandBlock.cs
+0	20	_Craft.Net.Data/Blocks/SandstoneBlock.cs
+0	15	_Craft.Net.Data/Blocks/SandstoneStairBlock.cs
+0	48	_Craft.Net.Data/Blocks/SaplingBlock.cs
+0	92	_Craft.Net.Data/Blocks/SeedsBlock.cs
+0	64	_Craft.Net.Data/Blocks/SignBlock.cs
+0	34	_Craft.Net.Data/Blocks/SignPostBlock.cs
+0	26	_Craft.Net.Data/Blocks/SilverfishStoneBlock.cs
+0	25	_Craft.Net.Data/Blocks/SkullBlock.cs
+0	20	_Craft.Net.Data/Blocks/SlabBlock.cs
+0	20	_Craft.Net.Data/Blocks/SnowBlock.cs
+0	45	_Craft.Net.Data/Blocks/SnowfallBlock.cs
+0	20	_Craft.Net.Data/Blocks/SoulSandBlock.cs
+0	20	_Craft.Net.Data/Blocks/SpongeBlock.cs
+0	20	_Craft.Net.Data/Blocks/SpruceWoodStairBlock.cs
+0	51	_Craft.Net.Data/Blocks/StairBlock.cs
+0	27	_Craft.Net.Data/Blocks/StickyPistonBlock.cs
+0	32	_Craft.Net.Data/Blocks/StoneBlock.cs
+0	20	_Craft.Net.Data/Blocks/StoneBrickBlock.cs
+0	15	_Craft.Net.Data/Blocks/StoneBrickStairBlock.cs
+0	35	_Craft.Net.Data/Blocks/StoneButtonBlock.cs
+0	35	_Craft.Net.Data/Blocks/StonePressurePlateBlock.cs
+0	110	_Craft.Net.Data/Blocks/SugarCaneBlock.cs
+0	15	_Craft.Net.Data/Blocks/TNTBlock.cs
+0	37	_Craft.Net.Data/Blocks/TallGrassBlock.cs
+0	64	_Craft.Net.Data/Blocks/TorchBlock.cs
+0	25	_Craft.Net.Data/Blocks/TrapDoorBlock.cs
+0	15	_Craft.Net.Data/Blocks/TrappedChestBlock.cs
+0	27	_Craft.Net.Data/Blocks/TripwireBlock.cs
+0	26	_Craft.Net.Data/Blocks/TripwireHookBlock.cs
+0	117	_Craft.Net.Data/Blocks/VineBlock.cs
+0	53	_Craft.Net.Data/Blocks/WallSignBlock.cs
+0	20	_Craft.Net.Data/Blocks/WaterFlowingBlock.cs
+0	20	_Craft.Net.Data/Blocks/WaterStillBlock.cs
+0	66	_Craft.Net.Data/Blocks/WoodBlock.cs
+0	20	_Craft.Net.Data/Blocks/WoodenButtonBlock.cs
+0	54	_Craft.Net.Data/Blocks/WoodenDoorBlock.cs
+0	20	_Craft.Net.Data/Blocks/WoodenDoubleSlabBlock.cs
+0	20	_Craft.Net.Data/Blocks/WoodenPlanksBlock.cs
+0	25	_Craft.Net.Data/Blocks/WoodenPressurePlateBlock.cs
+0	20	_Craft.Net.Data/Blocks/WoodenSlabBlock.cs
+0	55	_Craft.Net.Data/Blocks/WoolBlock.cs
+0	20	_Craft.Net.Data/Blocks/YellowFlowerBlock.cs
+0	170	_Craft.Net.Data/BoundingBox.cs
+0	34	_Craft.Net.Data/ChatColors.cs
+0	45	_Craft.Net.Data/Chunk.Lighting.cs
+0	281	_Craft.Net.Data/Chunk.cs
+0	455	_Craft.Net.Data/Craft.Net.Data.csproj
+0	19	_Craft.Net.Data/DamageType.cs
+0	55	_Craft.Net.Data/Entities/BlockEntity.cs
+0	598	_Craft.Net.Data/Entities/Entity.cs
+0	14	_Craft.Net.Data/Entities/IBreedableEntity.cs
+0	13	_Craft.Net.Data/Entities/ITamableEntity.cs
+0	89	_Craft.Net.Data/Entities/ItemEntity.cs
+0	153	_Craft.Net.Data/Entities/ItemFrameEntity.cs
+0	117	_Craft.Net.Data/Entities/LivingEntity.cs
+0	13	_Craft.Net.Data/Entities/ObjectEntity.cs
+0	219	_Craft.Net.Data/Entities/PaintingEntity.cs
+0	430	_Craft.Net.Data/Entities/PlayerEntity.cs
+0	19	_Craft.Net.Data/Events/EntityDamageEventArgs.cs
+0	18	_Craft.Net.Data/Events/EntityEventArgs.cs
+0	16	_Craft.Net.Data/Events/EntityTerrainCollisionEventArgs.cs
+0	13	_Craft.Net.Data/Events/InventoryChangedEventArgs.cs
+0	21	_Craft.Net.Data/Events/WindowChangeEventArgs.cs
+0	18	_Craft.Net.Data/Extensions.cs
+0	80	_Craft.Net.Data/Generation/DebugGenerator.cs
+0	147	_Craft.Net.Data/Generation/FlatlandGenerator.cs
+0	24	_Craft.Net.Data/Generation/IWorldGenerator.cs
+0	21	_Craft.Net.Data/IArmorItem.cs
+0	15	_Craft.Net.Data/IGrowableBlock.cs
+0	437	_Craft.Net.Data/Item.cs
+0	23	_Craft.Net.Data/Items/AppleItem.cs
+0	24	_Craft.Net.Data/Items/ArrowItem.cs
+0	41	_Craft.Net.Data/Items/AxeItem.cs
+0	25	_Craft.Net.Data/Items/BakedPotatoItem.cs
+0	36	_Craft.Net.Data/Items/BedItem.cs
+0	24	_Craft.Net.Data/Items/BlazePowderItem.cs
+0	24	_Craft.Net.Data/Items/BlazeRodItem.cs
+0	18	_Craft.Net.Data/Items/BoatItem.cs
+0	24	_Craft.Net.Data/Items/BoneItem.cs
+0	24	_Craft.Net.Data/Items/BookAndQuillItem.cs
+0	24	_Craft.Net.Data/Items/BookItem.cs
+0	24	_Craft.Net.Data/Items/BottleOEnchantingItem.cs
+0	23	_Craft.Net.Data/Items/BowItem.cs
+0	13	_Craft.Net.Data/Items/BowlItem.cs
+0	24	_Craft.Net.Data/Items/BreadItem.cs
+0	20	_Craft.Net.Data/Items/BrewingStandItem.cs
+0	24	_Craft.Net.Data/Items/BrickItem.cs
+0	35	_Craft.Net.Data/Items/BucketItem.cs
+0	25	_Craft.Net.Data/Items/CakeItem.cs
+0	36	_Craft.Net.Data/Items/CarrotItem.cs
+0	25	_Craft.Net.Data/Items/CarrotOnStickItem.cs
+0	21	_Craft.Net.Data/Items/CauldronItem.cs
+0	34	_Craft.Net.Data/Items/ChainBootsItem.cs
+0	34	_Craft.Net.Data/Items/ChainChestplateItem.cs
+0	34	_Craft.Net.Data/Items/ChainHelmetItem.cs
+0	34	_Craft.Net.Data/Items/ChainLeggingsItem.cs
+0	24	_Craft.Net.Data/Items/ClayItem.cs
+0	23	_Craft.Net.Data/Items/ClockItem.cs
+0	24	_Craft.Net.Data/Items/CoalItem.cs
+0	15	_Craft.Net.Data/Items/ComparatorItem.cs
+0	23	_Craft.Net.Data/Items/CompassItem.cs
+0	24	_Craft.Net.Data/Items/CookedChickenItem.cs
+0	23	_Craft.Net.Data/Items/CookedFishItem.cs
+0	23	_Craft.Net.Data/Items/CookedPorkchopItem.cs
+0	23	_Craft.Net.Data/Items/CookieItem.cs
+0	23	_Craft.Net.Data/Items/DiamondAxeItem.cs
+0	34	_Craft.Net.Data/Items/DiamondBootsItem.cs
+0	34	_Craft.Net.Data/Items/DiamondChestplateItem.cs
+0	33	_Craft.Net.Data/Items/DiamondHelmetItem.cs
+0	23	_Craft.Net.Data/Items/DiamondHoeItem.cs
+0	24	_Craft.Net.Data/Items/DiamondItem.cs
+0	33	_Craft.Net.Data/Items/DiamondLeggingsItem.cs
+0	23	_Craft.Net.Data/Items/DiamondPickaxeItem.cs
+0	23	_Craft.Net.Data/Items/DiamondShovelItem.cs
+0	23	_Craft.Net.Data/Items/DiamondSwordItem.cs
+0	69	_Craft.Net.Data/Items/DyeItem.cs
+0	28	_Craft.Net.Data/Items/EggItem.cs
+0	24	_Craft.Net.Data/Items/EmeraldItem.cs
+0	15	_Craft.Net.Data/Items/EnchantedBookItem.cs
+0	18	_Craft.Net.Data/Items/EnderPearlItem.cs
+0	24	_Craft.Net.Data/Items/EyeOfEnderItem.cs
+0	24	_Craft.Net.Data/Items/FeatherItem.cs
+0	24	_Craft.Net.Data/Items/FermentedSpiderEyeItem.cs
+0	24	_Craft.Net.Data/Items/FireChargeItem.cs
+0	21	_Craft.Net.Data/Items/FireworkRocketItem.cs
+0	15	_Craft.Net.Data/Items/FireworkStarItem.cs
+0	23	_Craft.Net.Data/Items/FishingRodItem.cs
+0	32	_Craft.Net.Data/Items/FlintAndSteelItem.cs
+0	24	_Craft.Net.Data/Items/FlintItem.cs
+0	22	_Craft.Net.Data/Items/FlowerPotItem.cs
+0	17	_Craft.Net.Data/Items/FoodItem.cs
+0	24	_Craft.Net.Data/Items/GhastTearItem.cs
+0	18	_Craft.Net.Data/Items/GlassBottleItem.cs
+0	24	_Craft.Net.Data/Items/GlisteringMelonItem.cs
+0	24	_Craft.Net.Data/Items/GlowstoneDustItem.cs
+0	24	_Craft.Net.Data/Items/GoldIngotItem.cs
+0	24	_Craft.Net.Data/Items/GoldNuggetItem.cs
+0	23	_Craft.Net.Data/Items/GoldenAppleItem.cs
+0	23	_Craft.Net.Data/Items/GoldenAxeItem.cs
+0	34	_Craft.Net.Data/Items/GoldenBootsItem.cs
+0	25	_Craft.Net.Data/Items/GoldenCarrotItem.cs
+0	34	_Craft.Net.Data/Items/GoldenChestplateItem.cs
+0	33	_Craft.Net.Data/Items/GoldenHelmetItem.cs
+0	23	_Craft.Net.Data/Items/GoldenHoeItem.cs
+0	33	_Craft.Net.Data/Items/GoldenLeggingsItem.cs
+0	24	_Craft.Net.Data/Items/GoldenPickaxeItem.cs
+0	23	_Craft.Net.Data/Items/GoldenShovelItem.cs
+0	24	_Craft.Net.Data/Items/GoldenSwordItem.cs
+0	24	_Craft.Net.Data/Items/GunpowderItem.cs
+0	23	_Craft.Net.Data/Items/HoeItem.cs
+0	23	_Craft.Net.Data/Items/IronAxeItem.cs
+0	34	_Craft.Net.Data/Items/IronBootsItem.cs
+0	33	_Craft.Net.Data/Items/IronChestplateItem.cs
+0	39	_Craft.Net.Data/Items/IronDoorItem.cs
+0	33	_Craft.Net.Data/Items/IronHelmetItem.cs
+0	23	_Craft.Net.Data/Items/IronHoeItem.cs
+0	24	_Craft.Net.Data/Items/IronIngotItem.cs
+0	33	_Craft.Net.Data/Items/IronLeggingsItem.cs
+0	23	_Craft.Net.Data/Items/IronPickaxeItem.cs
+0	23	_Craft.Net.Data/Items/IronShovelItem.cs
+0	24	_Craft.Net.Data/Items/IronSwordItem.cs
+0	28	_Craft.Net.Data/Items/ItemFrameItem.cs
+0	30	_Craft.Net.Data/Items/LavaBucketItem.cs
+0	34	_Craft.Net.Data/Items/LeatherBootsItem.cs
+0	33	_Craft.Net.Data/Items/LeatherChestplateItem.cs
+0	33	_Craft.Net.Data/Items/LeatherHelmetItem.cs
+0	24	_Craft.Net.Data/Items/LeatherItem.cs
+0	33	_Craft.Net.Data/Items/LeatherLeggingsItem.cs
+0	24	_Craft.Net.Data/Items/MagmaCreamItem.cs
+0	24	_Craft.Net.Data/Items/MapItem.cs
+0	23	_Craft.Net.Data/Items/MelonItem.cs
+0	23	_Craft.Net.Data/Items/MelonSeedsItem.cs
+0	18	_Craft.Net.Data/Items/MilkItem.cs
+0	19	_Craft.Net.Data/Items/MinecartItem.cs
+0	19	_Craft.Net.Data/Items/MinecartWithChestItem.cs
+0	19	_Craft.Net.Data/Items/MinecartWithFurnaceItem.cs
+0	15	_Craft.Net.Data/Items/MinecartWithHopperItem.cs
+0	15	_Craft.Net.Data/Items/MinecartWithTntItem.cs
+0	13	_Craft.Net.Data/Items/MobEggItem.cs
+0	28	_Craft.Net.Data/Items/MushroomStewItem.cs
+0	18	_Craft.Net.Data/Items/MusicDiscItem.cs
+0	15	_Craft.Net.Data/Items/NetherBrickItem.cs
+0	15	_Craft.Net.Data/Items/NetherQuartzItem.cs
+0	15	_Craft.Net.Data/Items/NetherStarItem.cs
+0	26	_Craft.Net.Data/Items/NetherWartItem.cs
+0	23	_Craft.Net.Data/Items/PaintingItem.cs
+0	24	_Craft.Net.Data/Items/PaperItem.cs
+0	20	_Craft.Net.Data/Items/PickaxeItem.cs
+0	25	_Craft.Net.Data/Items/PoisonousPotatoItem.cs
+0	36	_Craft.Net.Data/Items/PotatoItem.cs
+0	24	_Craft.Net.Data/Items/PotionItem.cs
+0	25	_Craft.Net.Data/Items/PumpkinPieItem.cs
+0	24	_Craft.Net.Data/Items/PumpkinSeedsItem.cs
+0	23	_Craft.Net.Data/Items/RawBeefItem.cs
+0	23	_Craft.Net.Data/Items/RawChickenItem.cs
+0	23	_Craft.Net.Data/Items/RawFishItem.cs
+0	23	_Craft.Net.Data/Items/RawPorkchopItem.cs
+0	20	_Craft.Net.Data/Items/RedstoneItem.cs
+0	32	_Craft.Net.Data/Items/RedstoneRepeaterItem.cs
+0	23	_Craft.Net.Data/Items/RottenFleshItem.cs
+0	18	_Craft.Net.Data/Items/SaddleItem.cs
+0	25	_Craft.Net.Data/Items/SeedsItem.cs
+0	36	_Craft.Net.Data/Items/ShearsItem.cs
+0	29	_Craft.Net.Data/Items/ShovelItem.cs
+0	35	_Craft.Net.Data/Items/SignItem.cs
+0	22	_Craft.Net.Data/Items/SkullItem.cs
+0	24	_Craft.Net.Data/Items/SlimeballItem.cs
+0	24	_Craft.Net.Data/Items/SnowballItem.cs
+0	23	_Craft.Net.Data/Items/SpiderEyeItem.cs
+0	23	_Craft.Net.Data/Items/SteakItem.cs
+0	24	_Craft.Net.Data/Items/StickItem.cs
+0	23	_Craft.Net.Data/Items/StoneAxeItem.cs
+0	24	_Craft.Net.Data/Items/StoneHoeItem.cs
+0	23	_Craft.Net.Data/Items/StonePickaxeItem.cs
+0	23	_Craft.Net.Data/Items/StoneShovelItem.cs
+0	24	_Craft.Net.Data/Items/StoneSwordItem.cs
+0	22	_Craft.Net.Data/Items/StringItem.cs
+0	23	_Craft.Net.Data/Items/SugarCanesItem.cs
+0	24	_Craft.Net.Data/Items/SugarItem.cs
+0	15	_Craft.Net.Data/Items/SwordItem.cs
+0	95	_Craft.Net.Data/Items/ToolItem.cs
+0	31	_Craft.Net.Data/Items/WaterBucketItem.cs
+0	24	_Craft.Net.Data/Items/WheatItem.cs
+0	23	_Craft.Net.Data/Items/WoodenAxeItem.cs
+0	39	_Craft.Net.Data/Items/WoodenDoorItem.cs
+0	24	_Craft.Net.Data/Items/WoodenHoeItem.cs
+0	23	_Craft.Net.Data/Items/WoodenPickaxeItem.cs
+0	23	_Craft.Net.Data/Items/WoodenShovelItem.cs
+0	23	_Craft.Net.Data/Items/WoodenSwordItem.cs
+0	24	_Craft.Net.Data/Items/WrittenBookItem.cs
+0	419	_Craft.Net.Data/Level.cs
+0	200	_Craft.Net.Data/MathHelper.cs
+0	10	_Craft.Net.Data/NbtSerialization/IgnoreOnNullAttribute.cs
+0	11	_Craft.Net.Data/NbtSerialization/NbtIgnoreAttribute.cs
+0	151	_Craft.Net.Data/NbtSerialization/NbtSerializer.cs
+0	22	_Craft.Net.Data/NbtSerialization/TagNameAttribute.cs
+0	67	_Craft.Net.Data/NibbleArray.cs
+0	128	_Craft.Net.Data/PlayerAbilities.cs
+0	36	_Craft.Net.Data/Properties/AssemblyInfo.cs
+0	139	_Craft.Net.Data/Ray.cs
+0	344	_Craft.Net.Data/Region.cs
+0	113	_Craft.Net.Data/SavedLevel.cs
+0	134	_Craft.Net.Data/Section.cs
+0	25	_Craft.Net.Data/Size.cs
+0	179	_Craft.Net.Data/SoundEffect.cs
+0	62	_Craft.Net.Data/TileEntity.cs
+0	19	_Craft.Net.Data/TimedBlockUpdate.cs
+0	13	_Craft.Net.Data/Transparency.cs
+0	320	_Craft.Net.Data/Vector3.cs
+0	122	_Craft.Net.Data/Window.cs
+0	92	_Craft.Net.Data/WindowArea.cs
+0	54	_Craft.Net.Data/Windows/ArmorWindowArea.cs
+0	23	_Craft.Net.Data/Windows/CraftingWindowArea.cs
+0	86	_Craft.Net.Data/Windows/InventoryWindow.cs
+0	99	_Craft.Net.Data/World.Lighting.cs
+0	437	_Craft.Net.Data/World.cs
+
+[d1b3a7c] Drew DeVault 2013-05-27 Moved data types into Craft.Net.Data, fixed build errors in Craft.Net.World
+1	1	{Craft.Net => Craft.Net.Data}/BigInteger.cs
+1	1	{Craft.Net.World => Craft.Net.Data}/Biome.cs
+1	1	{Craft.Net.World/Math => Craft.Net.Data}/BoundingBox.cs
+34	0	Craft.Net.Data/ChatColors.cs
+87	0	Craft.Net.Data/Craft.Net.Data.csproj
+2	1	{Craft.Net => Craft.Net.Data}/Cryptography.cs
+1	1	{Craft.Net => Craft.Net.Data}/Difficulty.cs
+1	1	{Craft.Net => Craft.Net.Data}/Dimension.cs
+1	1	{Craft.Net => Craft.Net.Data}/GameMode.cs
+1	1	{Craft.Net => Craft.Net.Data}/GameRules.cs
+1	1	{Craft.Net => Craft.Net.Data}/ItemStack.cs
+1	1	{Craft.Net.World/Math => Craft.Net.Data}/MathHelper.cs
+1	1	{Craft.Net/Metadata => Craft.Net.Data}/MetadataByte.cs
+1	1	{Craft.Net/Metadata => Craft.Net.Data}/MetadataDictionary.cs
+1	1	{Craft.Net/Metadata => Craft.Net.Data}/MetadataEntry.cs
+1	1	{Craft.Net/Metadata => Craft.Net.Data}/MetadataFloat.cs
+1	1	{Craft.Net/Metadata => Craft.Net.Data}/MetadataInt.cs
+1	1	{Craft.Net/Metadata => Craft.Net.Data}/MetadataShort.cs
+1	1	{Craft.Net/Metadata => Craft.Net.Data}/MetadataSlot.cs
+1	1	{Craft.Net/Metadata => Craft.Net.Data}/MetadataString.cs
+1	1	{Craft.Net => Craft.Net.Data}/MinecraftStream.Stream.cs
+1	1	{Craft.Net => Craft.Net.Data}/MinecraftStream.cs
+1	1	{Craft.Net.World/Math => Craft.Net.Data}/NibbleArray.cs
+1	1	{Craft.Net => Craft.Net.Data}/ParticleEffect.cs
+36	0	Craft.Net.Data/Properties/AssemblyInfo.cs
+1	1	{Craft.Net.World/Math => Craft.Net.Data}/Ray.cs
+1	1	{Craft.Net.World/Math => Craft.Net.Data}/Size.cs
+1	1	{Craft.Net => Craft.Net.Data}/SoundEffect.cs
+1	1	{Craft.Net.World/Math => Craft.Net.Data}/Vector3.cs
+17	0	Craft.Net.World/Chunk.cs
+7	7	Craft.Net.World/Coordinates.cs
+4	10	Craft.Net.World/Craft.Net.World.csproj
+2	7	Craft.Net.World/IWorldGenerator.cs
+1	0	Craft.Net.World/Level.cs
+21	26	Craft.Net.World/Region.cs
+1	0	Craft.Net.World/Section.cs
+30	0	Craft.Net.World/TileEntity.cs
+9	1	Craft.Net.sln
+4	19	Craft.Net/Craft.Net.csproj
+2	1	Craft.Net/PacketReader.cs
+1	1	Craft.Net/Packets.cs
+
+[2b564c5] Drew DeVault 2013-05-27 Move Craft.Net.Data and switch to fNbt fork
+1	1	.gitmodules
+1	1	Craft.Net.World/Chunk.cs
+4	0	Craft.Net.World/Craft.Net.World.csproj
+0	1	Craft.Net.World/IWorldGenerator.cs
+1	2	Craft.Net.World/Level.cs
+0	1	Craft.Net.World/Region.cs
+1	2	Craft.Net.World/Section.cs
+0	1	Craft.Net.World/World.cs
+0	5	Craft.Net/Craft.Net.csproj
+1	1	Craft.Net/GameRules.cs
+1	1	Craft.Net/ItemStack.cs
+0	14	Craft.Net/Nbt/INbtSerializable.cs
+0	10	Craft.Net/Nbt/IgnoreOnNullAttribute.cs
+0	11	Craft.Net/Nbt/NbtIgnoreAttribute.cs
+0	242	Craft.Net/Nbt/NbtSerializer.cs
+0	22	Craft.Net/Nbt/TagNameAttribute.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Biome.cs
+344	344	{Craft.Net.Data => _Craft.Net.Data}/Block.cs
+36	36	{Craft.Net.Data => _Craft.Net.Data}/BlockChangedEventArgs.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/ActivatorRailBlock.cs
+42	42	{Craft.Net.Data => _Craft.Net.Data}/Blocks/AirBlock.cs
+55	55	{Craft.Net.Data => _Craft.Net.Data}/Blocks/AnvilBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/BeaconBlock.cs
+109	109	{Craft.Net.Data => _Craft.Net.Data}/Blocks/BedBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/BedrockBlock.cs
+27	27	{Craft.Net.Data => _Craft.Net.Data}/Blocks/BirchWoodStairBlock.cs
+27	27	{Craft.Net.Data => _Craft.Net.Data}/Blocks/BookshelfBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/BrewingStandBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/BrickBlock.cs
+16	16	{Craft.Net.Data => _Craft.Net.Data}/Blocks/BrickStairBlock.cs
+21	21	{Craft.Net.Data => _Craft.Net.Data}/Blocks/BrownMushroomBlock.cs
+75	75	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CactusBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CakeBlock.cs
+87	87	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CarrotBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CauldronBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/ChestBlock.cs
+27	27	{Craft.Net.Data => _Craft.Net.Data}/Blocks/ClayBlock.cs
+32	32	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CoalOreBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CobblestoneBlock.cs
+15	15	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CobblestoneStairBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CobblestoneWallBlock.cs
+26	26	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CobwebBlock.cs
+135	135	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CocoaPlantBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CommandBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/CraftingTableBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/DaylightSensorBlock.cs
+30	30	{Craft.Net.Data => _Craft.Net.Data}/Blocks/DeadBushBlock.cs
+30	30	{Craft.Net.Data => _Craft.Net.Data}/Blocks/DetectorRailBlock.cs
+29	29	{Craft.Net.Data => _Craft.Net.Data}/Blocks/DiamondBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/DiamondOreBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/DirtBlock.cs
+31	31	{Craft.Net.Data => _Craft.Net.Data}/Blocks/DispenserBlock.cs
+124	124	{Craft.Net.Data => _Craft.Net.Data}/Blocks/DoorBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/DoubleSlabBlock.cs
+35	35	{Craft.Net.Data => _Craft.Net.Data}/Blocks/DragonEggBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/DropperBlock.cs
+29	29	{Craft.Net.Data => _Craft.Net.Data}/Blocks/EmeraldBlock.cs
+29	29	{Craft.Net.Data => _Craft.Net.Data}/Blocks/EmeraldOreBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/EnchantmentTableBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/EndPortalBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/EndPortalFrameBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/EndStoneBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/EnderChestBlock.cs
+78	78	{Craft.Net.Data => _Craft.Net.Data}/Blocks/FarmlandBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/FenceBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/FenceGateBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/FireBlock.cs
+157	157	{Craft.Net.Data => _Craft.Net.Data}/Blocks/FlowerPotBlock.cs
+21	21	{Craft.Net.Data => _Craft.Net.Data}/Blocks/FurnaceActiveBlock.cs
+37	37	{Craft.Net.Data => _Craft.Net.Data}/Blocks/FurnaceBlock.cs
+30	30	{Craft.Net.Data => _Craft.Net.Data}/Blocks/GlassBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/GlassPaneBlock.cs
+27	27	{Craft.Net.Data => _Craft.Net.Data}/Blocks/GlowstoneBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/GoldBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/GoldOreBlock.cs
+92	92	{Craft.Net.Data => _Craft.Net.Data}/Blocks/GrassBlock.cs
+41	41	{Craft.Net.Data => _Craft.Net.Data}/Blocks/GravelBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/HeavyWeightedPressurePlateBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/HopperBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/HugeBrownMushroomBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/HugeRedMushroomBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/IceBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/IronBarBlock.cs
+30	30	{Craft.Net.Data => _Craft.Net.Data}/Blocks/IronBlock.cs
+42	42	{Craft.Net.Data => _Craft.Net.Data}/Blocks/IronDoorBlock.cs
+30	30	{Craft.Net.Data => _Craft.Net.Data}/Blocks/IronOreBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/JackOLanternBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/JukeboxBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/JungleWoodStairBlock.cs
+67	67	{Craft.Net.Data => _Craft.Net.Data}/Blocks/LadderBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/LapisLazuliBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/LapisLazuliOreBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/LavaFlowingBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/LavaStillBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/LeavesBlock.cs
+75	75	{Craft.Net.Data => _Craft.Net.Data}/Blocks/LeverBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/LightWeightedPressurePlateBlock.cs
+15	15	{Craft.Net.Data => _Craft.Net.Data}/Blocks/LilyPadBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/LockedChestBlock.cs
+27	27	{Craft.Net.Data => _Craft.Net.Data}/Blocks/MelonBlock.cs
+120	120	{Craft.Net.Data => _Craft.Net.Data}/Blocks/MelonStemBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/MobSpawnerBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/MossyCobblestoneBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/MyceliumBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/NetherBrickBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/NetherBrickFenceBlock.cs
+15	15	{Craft.Net.Data => _Craft.Net.Data}/Blocks/NetherBrickStairBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/NetherPortalBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/NetherQuartzOreBlock.cs
+64	64	{Craft.Net.Data => _Craft.Net.Data}/Blocks/NetherWartBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/NetherrackBlock.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Blocks/NoteBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/OakStairBlock.cs
+26	26	{Craft.Net.Data => _Craft.Net.Data}/Blocks/ObsidianBlock.cs
+27	27	{Craft.Net.Data => _Craft.Net.Data}/Blocks/PistonBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/PistonHeadBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/PistonMovementBlock.cs
+99	99	{Craft.Net.Data => _Craft.Net.Data}/Blocks/PotatoBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/PoweredRailBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/PumpkinBlock.cs
+131	131	{Craft.Net.Data => _Craft.Net.Data}/Blocks/PumpkinStemBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/QuartzBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/QuartzStairBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RailBlock.cs
+30	30	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedFlowerBlock.cs
+30	30	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedMushroomBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneComparatorBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneComparatorInactiveBlock.cs
+22	22	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneLampActiveBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneLampBlock.cs
+16	16	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneOreActiveBlock.cs
+44	44	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneOreBlock.cs
+15	15	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneRepeaterActiveBlock.cs
+83	83	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneRepeaterBlock.cs
+58	58	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneTorchActiveBlock.cs
+64	64	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneTorchBlock.cs
+32	32	{Craft.Net.Data => _Craft.Net.Data}/Blocks/RedstoneWireBlock.cs
+30	30	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SandBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SandstoneBlock.cs
+15	15	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SandstoneStairBlock.cs
+48	48	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SaplingBlock.cs
+92	92	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SeedsBlock.cs
+64	64	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SignBlock.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SignPostBlock.cs
+26	26	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SilverfishStoneBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SkullBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SlabBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SnowBlock.cs
+45	45	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SnowfallBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SoulSandBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SpongeBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SpruceWoodStairBlock.cs
+51	51	{Craft.Net.Data => _Craft.Net.Data}/Blocks/StairBlock.cs
+27	27	{Craft.Net.Data => _Craft.Net.Data}/Blocks/StickyPistonBlock.cs
+32	32	{Craft.Net.Data => _Craft.Net.Data}/Blocks/StoneBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/StoneBrickBlock.cs
+15	15	{Craft.Net.Data => _Craft.Net.Data}/Blocks/StoneBrickStairBlock.cs
+35	35	{Craft.Net.Data => _Craft.Net.Data}/Blocks/StoneButtonBlock.cs
+35	35	{Craft.Net.Data => _Craft.Net.Data}/Blocks/StonePressurePlateBlock.cs
+110	110	{Craft.Net.Data => _Craft.Net.Data}/Blocks/SugarCaneBlock.cs
+15	15	{Craft.Net.Data => _Craft.Net.Data}/Blocks/TNTBlock.cs
+37	37	{Craft.Net.Data => _Craft.Net.Data}/Blocks/TallGrassBlock.cs
+64	64	{Craft.Net.Data => _Craft.Net.Data}/Blocks/TorchBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/TrapDoorBlock.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Blocks/TrappedChestBlock.cs
+27	27	{Craft.Net.Data => _Craft.Net.Data}/Blocks/TripwireBlock.cs
+26	26	{Craft.Net.Data => _Craft.Net.Data}/Blocks/TripwireHookBlock.cs
+117	117	{Craft.Net.Data => _Craft.Net.Data}/Blocks/VineBlock.cs
+53	53	{Craft.Net.Data => _Craft.Net.Data}/Blocks/WallSignBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/WaterFlowingBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/WaterStillBlock.cs
+66	66	{Craft.Net.Data => _Craft.Net.Data}/Blocks/WoodBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/WoodenButtonBlock.cs
+54	54	{Craft.Net.Data => _Craft.Net.Data}/Blocks/WoodenDoorBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/WoodenDoubleSlabBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/WoodenPlanksBlock.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Blocks/WoodenPressurePlateBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/WoodenSlabBlock.cs
+55	55	{Craft.Net.Data => _Craft.Net.Data}/Blocks/WoolBlock.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Blocks/YellowFlowerBlock.cs
+170	170	{Craft.Net.Data => _Craft.Net.Data}/BoundingBox.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/ChatColors.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Chunk.Lighting.cs
+281	281	{Craft.Net.Data => _Craft.Net.Data}/Chunk.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Craft.Net.Data.csproj
+19	19	{Craft.Net.Data => _Craft.Net.Data}/DamageType.cs
+55	55	{Craft.Net.Data => _Craft.Net.Data}/Entities/BlockEntity.cs
+597	597	{Craft.Net.Data => _Craft.Net.Data}/Entities/Entity.cs
+14	14	{Craft.Net.Data => _Craft.Net.Data}/Entities/IBreedableEntity.cs
+13	13	{Craft.Net.Data => _Craft.Net.Data}/Entities/ITamableEntity.cs
+89	89	{Craft.Net.Data => _Craft.Net.Data}/Entities/ItemEntity.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Entities/ItemFrameEntity.cs
+117	117	{Craft.Net.Data => _Craft.Net.Data}/Entities/LivingEntity.cs
+13	13	{Craft.Net.Data => _Craft.Net.Data}/Entities/ObjectEntity.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Entities/PaintingEntity.cs
+429	429	{Craft.Net.Data => _Craft.Net.Data}/Entities/PlayerEntity.cs
+19	19	{Craft.Net.Data => _Craft.Net.Data}/Events/EntityDamageEventArgs.cs
+18	18	{Craft.Net.Data => _Craft.Net.Data}/Events/EntityEventArgs.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Events/EntityTerrainCollisionEventArgs.cs
+13	13	{Craft.Net.Data => _Craft.Net.Data}/Events/InventoryChangedEventArgs.cs
+21	21	{Craft.Net.Data => _Craft.Net.Data}/Events/WindowChangeEventArgs.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Extensions.cs
+79	79	{Craft.Net.Data => _Craft.Net.Data}/Generation/DebugGenerator.cs
+146	146	{Craft.Net.Data => _Craft.Net.Data}/Generation/FlatlandGenerator.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Generation/IWorldGenerator.cs
+21	21	{Craft.Net.Data => _Craft.Net.Data}/IArmorItem.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/IGrowableBlock.cs
+437	437	{Craft.Net.Data => _Craft.Net.Data}/Item.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/AppleItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/ArrowItem.cs
+41	41	{Craft.Net.Data => _Craft.Net.Data}/Items/AxeItem.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Items/BakedPotatoItem.cs
+36	36	{Craft.Net.Data => _Craft.Net.Data}/Items/BedItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/BlazePowderItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/BlazeRodItem.cs
+18	18	{Craft.Net.Data => _Craft.Net.Data}/Items/BoatItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/BoneItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/BookAndQuillItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/BookItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/BottleOEnchantingItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/BowItem.cs
+13	13	{Craft.Net.Data => _Craft.Net.Data}/Items/BowlItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/BreadItem.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Items/BrewingStandItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/BrickItem.cs
+35	35	{Craft.Net.Data => _Craft.Net.Data}/Items/BucketItem.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Items/CakeItem.cs
+36	36	{Craft.Net.Data => _Craft.Net.Data}/Items/CarrotItem.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Items/CarrotOnStickItem.cs
+21	21	{Craft.Net.Data => _Craft.Net.Data}/Items/CauldronItem.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Items/ChainBootsItem.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Items/ChainChestplateItem.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Items/ChainHelmetItem.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Items/ChainLeggingsItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/ClayItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/ClockItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/CoalItem.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Items/ComparatorItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/CompassItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/CookedChickenItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/CookedFishItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/CookedPorkchopItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/CookieItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/DiamondAxeItem.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Items/DiamondBootsItem.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Items/DiamondChestplateItem.cs
+33	33	{Craft.Net.Data => _Craft.Net.Data}/Items/DiamondHelmetItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/DiamondHoeItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/DiamondItem.cs
+33	33	{Craft.Net.Data => _Craft.Net.Data}/Items/DiamondLeggingsItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/DiamondPickaxeItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/DiamondShovelItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/DiamondSwordItem.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Items/DyeItem.cs
+28	28	{Craft.Net.Data => _Craft.Net.Data}/Items/EggItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/EmeraldItem.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Items/EnchantedBookItem.cs
+18	18	{Craft.Net.Data => _Craft.Net.Data}/Items/EnderPearlItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/EyeOfEnderItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/FeatherItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/FermentedSpiderEyeItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/FireChargeItem.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Items/FireworkRocketItem.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Items/FireworkStarItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/FishingRodItem.cs
+32	32	{Craft.Net.Data => _Craft.Net.Data}/Items/FlintAndSteelItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/FlintItem.cs
+22	22	{Craft.Net.Data => _Craft.Net.Data}/Items/FlowerPotItem.cs
+17	17	{Craft.Net.Data => _Craft.Net.Data}/Items/FoodItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/GhastTearItem.cs
+18	18	{Craft.Net.Data => _Craft.Net.Data}/Items/GlassBottleItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/GlisteringMelonItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/GlowstoneDustItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldIngotItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldNuggetItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldenAppleItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldenAxeItem.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldenBootsItem.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldenCarrotItem.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldenChestplateItem.cs
+33	33	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldenHelmetItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldenHoeItem.cs
+33	33	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldenLeggingsItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldenPickaxeItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldenShovelItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/GoldenSwordItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/GunpowderItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/HoeItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/IronAxeItem.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Items/IronBootsItem.cs
+33	33	{Craft.Net.Data => _Craft.Net.Data}/Items/IronChestplateItem.cs
+39	39	{Craft.Net.Data => _Craft.Net.Data}/Items/IronDoorItem.cs
+33	33	{Craft.Net.Data => _Craft.Net.Data}/Items/IronHelmetItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/IronHoeItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/IronIngotItem.cs
+33	33	{Craft.Net.Data => _Craft.Net.Data}/Items/IronLeggingsItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/IronPickaxeItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/IronShovelItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/IronSwordItem.cs
+28	28	{Craft.Net.Data => _Craft.Net.Data}/Items/ItemFrameItem.cs
+30	30	{Craft.Net.Data => _Craft.Net.Data}/Items/LavaBucketItem.cs
+34	34	{Craft.Net.Data => _Craft.Net.Data}/Items/LeatherBootsItem.cs
+33	33	{Craft.Net.Data => _Craft.Net.Data}/Items/LeatherChestplateItem.cs
+33	33	{Craft.Net.Data => _Craft.Net.Data}/Items/LeatherHelmetItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/LeatherItem.cs
+33	33	{Craft.Net.Data => _Craft.Net.Data}/Items/LeatherLeggingsItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/MagmaCreamItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/MapItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/MelonItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/MelonSeedsItem.cs
+18	18	{Craft.Net.Data => _Craft.Net.Data}/Items/MilkItem.cs
+19	19	{Craft.Net.Data => _Craft.Net.Data}/Items/MinecartItem.cs
+19	19	{Craft.Net.Data => _Craft.Net.Data}/Items/MinecartWithChestItem.cs
+19	19	{Craft.Net.Data => _Craft.Net.Data}/Items/MinecartWithFurnaceItem.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Items/MinecartWithHopperItem.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Items/MinecartWithTntItem.cs
+13	13	{Craft.Net.Data => _Craft.Net.Data}/Items/MobEggItem.cs
+28	28	{Craft.Net.Data => _Craft.Net.Data}/Items/MushroomStewItem.cs
+18	18	{Craft.Net.Data => _Craft.Net.Data}/Items/MusicDiscItem.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Items/NetherBrickItem.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/Items/NetherQuartzItem.cs
+15	15	{Craft.Net.Data => _Craft.Net.Data}/Items/NetherStarItem.cs
+26	26	{Craft.Net.Data => _Craft.Net.Data}/Items/NetherWartItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/PaintingItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/PaperItem.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Items/PickaxeItem.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Items/PoisonousPotatoItem.cs
+36	36	{Craft.Net.Data => _Craft.Net.Data}/Items/PotatoItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/PotionItem.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Items/PumpkinPieItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/PumpkinSeedsItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/RawBeefItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/RawChickenItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/RawFishItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/RawPorkchopItem.cs
+20	20	{Craft.Net.Data => _Craft.Net.Data}/Items/RedstoneItem.cs
+32	32	{Craft.Net.Data => _Craft.Net.Data}/Items/RedstoneRepeaterItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/RottenFleshItem.cs
+18	18	{Craft.Net.Data => _Craft.Net.Data}/Items/SaddleItem.cs
+25	25	{Craft.Net.Data => _Craft.Net.Data}/Items/SeedsItem.cs
+36	36	{Craft.Net.Data => _Craft.Net.Data}/Items/ShearsItem.cs
+29	29	{Craft.Net.Data => _Craft.Net.Data}/Items/ShovelItem.cs
+35	35	{Craft.Net.Data => _Craft.Net.Data}/Items/SignItem.cs
+22	22	{Craft.Net.Data => _Craft.Net.Data}/Items/SkullItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/SlimeballItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/SnowballItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/SpiderEyeItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/SteakItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/StickItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/StoneAxeItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/StoneHoeItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/StonePickaxeItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/StoneShovelItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/StoneSwordItem.cs
+22	22	{Craft.Net.Data => _Craft.Net.Data}/Items/StringItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/SugarCanesItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/SugarItem.cs
+15	15	{Craft.Net.Data => _Craft.Net.Data}/Items/SwordItem.cs
+95	95	{Craft.Net.Data => _Craft.Net.Data}/Items/ToolItem.cs
+31	31	{Craft.Net.Data => _Craft.Net.Data}/Items/WaterBucketItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/WheatItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/WoodenAxeItem.cs
+39	39	{Craft.Net.Data => _Craft.Net.Data}/Items/WoodenDoorItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/WoodenHoeItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/WoodenPickaxeItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/WoodenShovelItem.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Items/WoodenSwordItem.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Items/WrittenBookItem.cs
+419	419	{Craft.Net.Data => _Craft.Net.Data}/Level.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/MathHelper.cs
+10	10	{Craft.Net.Data => _Craft.Net.Data}/NbtSerialization/IgnoreOnNullAttribute.cs
+11	11	{Craft.Net.Data => _Craft.Net.Data}/NbtSerialization/NbtIgnoreAttribute.cs
+151	151	{Craft.Net.Data => _Craft.Net.Data}/NbtSerialization/NbtSerializer.cs
+22	22	{Craft.Net.Data => _Craft.Net.Data}/NbtSerialization/TagNameAttribute.cs
+66	66	{Craft.Net.Data => _Craft.Net.Data}/NibbleArray.cs
+128	128	{Craft.Net.Data => _Craft.Net.Data}/PlayerAbilities.cs
+36	36	{Craft.Net.Data => _Craft.Net.Data}/Properties/AssemblyInfo.cs
+139	139	{Craft.Net.Data => _Craft.Net.Data}/Ray.cs
+343	343	{Craft.Net.Data => _Craft.Net.Data}/Region.cs
+113	113	{Craft.Net.Data => _Craft.Net.Data}/SavedLevel.cs
+133	133	{Craft.Net.Data => _Craft.Net.Data}/Section.cs
+24	24	{Craft.Net.Data => _Craft.Net.Data}/Size.cs
+179	179	{Craft.Net.Data => _Craft.Net.Data}/SoundEffect.cs
+62	62	{Craft.Net.Data => _Craft.Net.Data}/TileEntity.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/TimedBlockUpdate.cs
+13	13	{Craft.Net.Data => _Craft.Net.Data}/Transparency.cs
+298	298	{Craft.Net.Data => _Craft.Net.Data}/Vector3.cs
+122	122	{Craft.Net.Data => _Craft.Net.Data}/Window.cs
+92	92	{Craft.Net.Data => _Craft.Net.Data}/WindowArea.cs
+54	54	{Craft.Net.Data => _Craft.Net.Data}/Windows/ArmorWindowArea.cs
+23	23	{Craft.Net.Data => _Craft.Net.Data}/Windows/CraftingWindowArea.cs
+86	86	{Craft.Net.Data => _Craft.Net.Data}/Windows/InventoryWindow.cs
+0	0	{Craft.Net.Data => _Craft.Net.Data}/World.Lighting.cs
+436	436	{Craft.Net.Data => _Craft.Net.Data}/World.cs
+1	0	externals/fNbt
+
+[d59e9ad] Drew DeVault 2013-05-27 Moving data types around
+0	1	Craft.Net.World/Chunk.cs
+38	0	Craft.Net.World/Coordinates.cs
+7	4	Craft.Net.World/Craft.Net.World.csproj
+7	6	Craft.Net.World/Level.cs
+1	1	{Craft.Net/Utilities => Craft.Net.World/Math}/BoundingBox.cs
+1	1	{Craft.Net/Utilities => Craft.Net.World/Math}/MathHelper.cs
+1	1	{Craft.Net/Utilities => Craft.Net.World/Math}/NibbleArray.cs
+1	1	{Craft.Net/Utilities => Craft.Net.World/Math}/Ray.cs
+1	1	{Craft.Net/Utilities => Craft.Net.World/Math}/Size.cs
+1	1	{Craft.Net/Utilities => Craft.Net.World/Math}/Vector3.cs
+1	1	Craft.Net.World/Region.cs
+2	2	Craft.Net.World/World.cs
+0	6	Craft.Net/Craft.Net.csproj
+0	1	externals/fNbt
+
+[7d8d7c2] Drew DeVault 2013-05-27 Merge master into refactoring
+[a271f8f] Drew DeVault 2013-05-27 Update fNbt
+1	1	externals/fNbt
+
+[f480ba5] Drew DeVault 2013-05-26 Added support for dropping item stacks in creative mode
+4	1	Craft.Net.Server/Handlers/InventoryHandlers.cs
+
+[f478f03] Drew DeVault 2013-05-26 Added overloads to do DNS lookups and such for the user
+29	0	Craft.Net.Client/MinecraftClient.cs
+5	0	Craft.Net.Client/ServerPing.cs
+5	1	Craft.Net.Server/Handlers/InventoryHandlers.cs
+2	27	TestClient/Program.cs
+
+[3be8aef] Drew DeVault 2013-05-26 Fix client bug related to connecting to online mode servers in offline mode
+1	1	Craft.Net.Client/Handlers/LoginHandlers.cs
+
+[a424a9f] Drew DeVault 2013-05-25 Added TabCompleteEventArgs.Client
+3	1	Craft.Net.Server/Events/TabCompleteEventArgs.cs
+1	1	Craft.Net.Server/Handlers/PacketHandlers.cs
+
+[464e36d] Drew DeVault 2013-05-25 Added TabCompleteEventArgs.Handled to avoid sending responses unless needed
+2	0	Craft.Net.Server/Events/TabCompleteEventArgs.cs
+5	2	Craft.Net.Server/Handlers/PacketHandlers.cs
+
+[5ddf97a] Drew DeVault 2013-05-25 Added tab complete event, closes #151
+1	0	Craft.Net.Server/Craft.Net.Server.csproj
+17	0	Craft.Net.Server/Events/TabCompleteEventArgs.cs
+10	0	Craft.Net.Server/Handlers/PacketHandlers.cs
+9	0	Craft.Net.Server/MinecraftServer.cs
+
+[8277e52] Drew DeVault 2013-05-25 Removed test code from flatland generator
+0	9	Craft.Net.Data/Generation/FlatlandGenerator.cs
+
+[b30f227] Drew DeVault 2013-05-25 Fix formatting issue with pull request
+0	2	Craft.Net.Data/Level.cs
+
+[3303737] Drew DeVault 2013-05-25 Merge remote-tracking branch 'aholmes/master'
+[330e914] Drew DeVault 2013-05-25 Slowed down death by void
+8	2	Craft.Net.Data/Entities/LivingEntity.cs
+
+[6e4ea7e] Drew DeVault 2013-05-25 Fix death spamming when falling into the void
+1	1	Craft.Net.Data/Entities/LivingEntity.cs
+
+[05f5b3a] Drew DeVault 2013-05-25 Drop inventory on player death
+1	1	Craft.Net.Data/Entities/ItemEntity.cs
+17	2	Craft.Net.Server/EntityManager.cs
+
+[10d2208] Drew DeVault 2013-05-25 Merge branch 'master' of github.com:SirCmpwn/Craft.Net
+[a6468df] Drew DeVault 2013-05-25 Fix #158
+13	2	Craft.Net.Server/EntityManager.cs
+
+[be3e34c] Aaron Holmes 2013-05-25 Correct whitespace
+1	1	Craft.Net.Server/Handlers/LoginHandlers.cs
+
+[778c19a] Aaron Holmes 2013-05-25 Fix issue with players respawning under the map. This is done by adding the PlayerEntity.Height to Level.SpawnPoint.
+7	3	Craft.Net.Data/Level.cs
+2	1	Craft.Net.Server/Handlers/LoginHandlers.cs
+
+[ebaa56f] Drew DeVault 2013-05-24 Merge pull request #156 from aholmes/master
+[12c2633] Aaron Holmes 2013-05-24 Fix server crash when sending packets to disconnected clients #155
+28	23	Craft.Net.Server/EntityManager.cs
+
+[2ab8fa6] Drew DeVault 2013-05-24 Reponse to cancellation request
+8	2	Craft.Net.Client/MinecraftClient.Actions.cs
+
+[38f03b7] Drew DeVault 2013-05-24 Cancel current client move operation before starting another
+9	2	Craft.Net.Client/MinecraftClient.Actions.cs
+
+[4132736] Drew DeVault 2013-05-24 Added MinecraftClient.MoveTo
+6	0	Craft.Net.Client/MinecraftClient.Actions.cs
+
+[dc43e73] Drew DeVault 2013-05-16 Upped protocol version
+1	1	Craft.Net/PacketReader.cs
+5	5	README.md
+0	5	TestServer/Main.cs
+
+[903079b] ggrote 2013-04-29 added userid to session
+6	16	Craft.Net.Client/Session.cs
+
+[617af5e] ggrote 2013-04-28 name refactoring
+2	2	Craft.Net.Client/Handlers/EntityHandlers.cs
+2	1	Craft.Net.Client/Handlers/LoginHandlers.cs
+1	1	Craft.Net.Client/Handlers/StateHandlers.cs
+2	1	Craft.Net.Client/MinecraftClient.Properties.cs
+1	1	Craft.Net.Client/MinecraftClient.cs
+
+[7c5b15f] ggrote 2013-04-25 - changed ChatHandler to use indexof and remove instead of regex - reverted EntityHandlers.cs - removed braces and changed formatting - changed Move to start an async thread for movement - removed ProtocolVersion and FriendlyVersion as they are not used anymore
+11	4	Craft.Net.Client/Handlers/ChatHandler.cs
+2	5	Craft.Net.Client/Handlers/EntityHandlers.cs
+0	1	Craft.Net.Client/Handlers/LoginHandlers.cs
+7	10	Craft.Net.Client/Handlers/WorldHandlers.cs
+39	32	Craft.Net.Client/MinecraftClient.Actions.cs
+0	10	Craft.Net.Client/MinecraftClient.cs
+0	3	Craft.Net/Packets.cs
+6	5	TestClient/Program.cs
+
+[b43d7dc] Drew DeVault 2013-04-18 Added another changed packet
+4	1	Craft.Net/Packets.cs
+
+[e187742] Drew DeVault 2013-04-18 In-progress protocol updates
+3	3	Craft.Net.Client/Events/HealthAndFoodEventArgs.cs
+1	1	Craft.Net.Client/MinecraftClient.Properties.cs
+2	2	Craft.Net.Data/Entities/LivingEntity.cs
+2	2	Craft.Net.Data/Events/EntityDamageEventArgs.cs
+3	2	Craft.Net.Data/Level.cs
+13	4	Craft.Net/Packets.cs
+
+[28052d4] Drew DeVault 2013-04-18 Update protocol version, add new blocks/items
+21	0	Craft.Net.Data/Blocks/CarpetBlock.cs
+43	0	Craft.Net.Data/Blocks/HayBaleBlock.cs
+7	0	Craft.Net.Data/Craft.Net.Data.csproj
+15	0	Craft.Net.Data/Items/DiamondHorseArmorItem.cs
+15	0	Craft.Net.Data/Items/GoldHorseArmorItem.cs
+15	0	Craft.Net.Data/Items/HorseSaddleItem.cs
+15	0	Craft.Net.Data/Items/IronHorseArmorItem.cs
+15	0	Craft.Net.Data/Items/LeashItem.cs
+1	1	Craft.Net/PacketReader.cs
+
+[cd32db8] ggrote 2013-04-18 - added cleaned chat message to Events/ChatMessageEventArgs.cs - fixed player position (y/stance) - added UpdateSign Handler - fixed MapChunkBulk and ChunkData Handlers - moved reading chunk from stream into single method - added LookAt and "basic" Move to MinecraftClient.Actions - fixed finding blocks by position
+5	0	Craft.Net.Client/Craft.Net.Client.csproj
+3	1	Craft.Net.Client/Events/ChatMessageEventArgs.cs
+22	0	Craft.Net.Client/Events/SignUpdateReceivedEventArgs.cs
+19	0	Craft.Net.Client/Handlers/ChatHandler.cs
+10	7	Craft.Net.Client/Handlers/EntityHandlers.cs
+2	1	Craft.Net.Client/Handlers/LoginHandlers.cs
+3	16	Craft.Net.Client/Handlers/PacketHandlers.cs
+1	1	Craft.Net.Client/Handlers/StateHandlers.cs
+93	74	Craft.Net.Client/Handlers/WorldHandlers.cs
+61	0	Craft.Net.Client/MinecraftClient.Actions.cs
+6	0	Craft.Net.Client/MinecraftClient.Events.cs
+1	3	Craft.Net.Client/MinecraftClient.Properties.cs
+7	2	Craft.Net.Client/MinecraftClient.cs
+10	0	Craft.Net.Data/MathHelper.cs
+5	5	Craft.Net.Data/World.cs
+31	6	Craft.Net/Packets.cs
+21	13	TestClient/Program.cs
+
+[5fa9838] Drew DeVault 2013-04-03 Added NBT serialization bindings to Chunks and Sections
+15	0	Craft.Net.World/Chunk.cs
+0	1	Craft.Net.World/Region.cs
+3	0	Craft.Net.World/Section.cs
+
+[8be1d3a] Drew DeVault 2013-04-03 Added INbtSerializable for custom serialization
+1	0	Craft.Net.World/Craft.Net.World.csproj
+1	0	Craft.Net/Craft.Net.csproj
+14	0	Craft.Net/Nbt/INbtSerializable.cs
+32	17	Craft.Net/Nbt/NbtSerializer.cs
+24	1	Test/Craft.Net.Test/NbtTest.cs
+
+[90aada9] Drew DeVault 2013-04-03 Added NBT_List serialization
+1	0	Craft.Net.World/Chunk.cs
+13	0	Craft.Net.World/IDiskEntity.cs
+61	19	Craft.Net/ItemStack.cs
+2	1	Craft.Net/Metadata/MetadataSlot.cs
+1	1	Craft.Net/Nbt/IgnoreOnNullAttribute.cs
+89	13	Craft.Net/Nbt/NbtSerializer.cs
+6	6	Test/Craft.Net.Server.Test/Craft.Net.Server.Test.csproj
+8	3	Test/Craft.Net.Test/Craft.Net.Test.csproj
+1	1	Test/Craft.Net.Test/{TestCrypto.cs => CryptoTest.cs}
+91	0	Test/Craft.Net.Test/NbtTest.cs
+4	6	Test/Craft.Net.World.Test/Craft.Net.World.Test.csproj
+1	1	externals/fNbt
+
+[78e3a90] Drew DeVault 2013-04-03 Removing majority of code in other classes, will be rewritten
+3	187	Craft.Net.World/Chunk.cs
+1	0	Craft.Net.World/Level.cs
+40	40	Craft.Net.World/Region.cs
+6	3	Craft.Net.World/World.cs
+
+[80bf386] Drew DeVault 2013-04-02 Further work on adding back Level functionality, now supports unlimited worlds
+12	0	Craft.Net.World/Craft.Net.World.csproj
+19	0	Craft.Net.World/Level.cs
+7	67	Craft.Net.World/Section.cs
+12	217	Craft.Net.World/World.cs
+
+[f703e37] Drew DeVault 2013-04-02 Finished most of Level refactoring
+3	5	Craft.Net.World/Craft.Net.World.csproj
+2	2	Craft.Net.World/IWorldGenerator.cs
+59	3	Craft.Net.World/Level.cs
+2	2	Test/Craft.Net.Server.Test/Craft.Net.Server.Test.csproj
+1	1	Test/Craft.Net.Test/Craft.Net.Test.csproj
+11	1	Test/Craft.Net.World.Test/Craft.Net.World.Test.csproj
+11	0	Test/Craft.Net.World.Test/LevelTest.cs
+
+[54acd4a] Drew DeVault 2013-04-02 Reorganizing unit tests
+0	128	Craft.Net.Data.Test/Craft.Net.Data.Test.csproj
+0	20	Craft.Net.Data.Test/DataUtilityTest.cs
+0	120	Craft.Net.Data.Test/EntityTest.cs
+0	152	Craft.Net.Data.Test/ItemTest.cs
+0	59	Craft.Net.Data.Test/LightingTest.cs
+0	32	Craft.Net.Data.Test/MetadataTest.cs
+0	36	Craft.Net.Data.Test/NbtTest.cs
+-	-	Craft.Net.Data.Test/TestWorld/data/villages.dat
+-	-	Craft.Net.Data.Test/TestWorld/level.dat
+-	-	Craft.Net.Data.Test/TestWorld/level.dat_mcr
+-	-	Craft.Net.Data.Test/TestWorld/level.dat_old
+-	-	Craft.Net.Data.Test/TestWorld/players/SirCmpwn.dat
+-	-	Craft.Net.Data.Test/TestWorld/region/r.-1.-1.mca
+-	-	Craft.Net.Data.Test/TestWorld/region/r.-1.0.mca
+-	-	Craft.Net.Data.Test/TestWorld/region/r.0.-1.mca
+-	-	Craft.Net.Data.Test/TestWorld/region/r.0.0.mca
+-	-	Craft.Net.Data.Test/TestWorld/session.lock
+0	70	Craft.Net.Data.Test/WorldTest.cs
+19	4	Craft.Net.sln
+0	0	{Craft.Net.Server.Test => Test/Craft.Net.Server.Test}/Craft.Net.Server.Test.csproj
+172	172	{Craft.Net.Server.Test => Test/Craft.Net.Server.Test}/PacketTests.cs
+36	36	{Craft.Net.Server.Test => Test/Craft.Net.Server.Test}/Properties/AssemblyInfo.cs
+0	0	{Craft.Net.Test => Test/Craft.Net.Test}/Craft.Net.Test.csproj
+0	0	{Craft.Net.Test => Test/Craft.Net.Test}/Properties/AssemblyInfo.cs
+0	0	{Craft.Net.Test => Test/Craft.Net.Test}/TestCrypto.cs
+61	0	Test/Craft.Net.World.Test/Craft.Net.World.Test.csproj
+12	0	Test/Craft.Net.World.Test/LevelTest.cs
+36	36	{Craft.Net.Data.Test => Test/Craft.Net.World.Test}/Properties/AssemblyInfo.cs
+1	1	externals/fNbt
+
+[4f86273] Drew DeVault 2013-04-02 Started refactoring Level
+34	0	Craft.Net.World/Biome.cs
+277	0	Craft.Net.World/Chunk.cs
+17	1	Craft.Net.World/Craft.Net.World.csproj
+27	0	Craft.Net.World/IWorldGenerator.cs
+202	0	Craft.Net.World/Level.cs
+343	0	Craft.Net.World/Region.cs
+136	0	Craft.Net.World/Section.cs
+241	0	Craft.Net.World/World.cs
+5	0	Craft.Net/Craft.Net.csproj
+99	0	Craft.Net/GameRules.cs
+10	0	Craft.Net/Nbt/IgnoreOnNullAttribute.cs
+11	0	Craft.Net/Nbt/NbtIgnoreAttribute.cs
+151	0	Craft.Net/Nbt/NbtSerializer.cs
+22	0	Craft.Net/Nbt/TagNameAttribute.cs
+
+[701b107] Drew DeVault 2013-04-02 Define Craft.Net.Utilities
+59	0	Craft.Net.World/Craft.Net.World.csproj
+36	0	Craft.Net.World/Properties/AssemblyInfo.cs
+8	0	Craft.Net.sln
+6	0	Craft.Net/Craft.Net.csproj
+170	0	Craft.Net/Utilities/BoundingBox.cs
+128	0	Craft.Net/Utilities/MathHelper.cs
+67	0	Craft.Net/Utilities/NibbleArray.cs
+139	0	Craft.Net/Utilities/Ray.cs
+25	0	Craft.Net/Utilities/Size.cs
+320	0	Craft.Net/Utilities/Vector3.cs
+
+[de7e51b] Drew DeVault 2013-04-02 Removed Craft.Net.Data from build
+0	4	Craft.Net.Client/Craft.Net.Client.csproj
+0	4	Craft.Net.Server.Test/Craft.Net.Server.Test.csproj
+0	4	Craft.Net.Server/Craft.Net.Server.csproj
+27	43	Craft.Net.sln
+0	4	TestClient/TestClient.csproj
+0	4	TestServer/TestServer.csproj
+1	1	externals/fNbt
+
+[c50bb26] Drew DeVault 2013-03-24 Update README.md
+5	6	README.md
+
+[7dcdfc8] Drew DeVault 2013-03-23 Added to Craft.Net.Data.Level to allow for singleplayer levels to be saved
+19	2	Craft.Net.Data/Level.cs
+2	0	Craft.Net.Data/NbtSerialization/NbtSerializer.cs
+4	0	Craft.Net.Data/SavedLevel.cs
+
+[34654cd] Drew DeVault 2013-03-23 Changed visibility of AcceptConnectionAsync
+13	9	Craft.Net.Server/MinecraftServer.cs
+
+[206dfd7] Drew DeVault 2013-03-23 Fixed hardness and drop for diamond ore
+13	13	Craft.Net.Data.Test/Craft.Net.Data.Test.csproj
+35	24	Craft.Net.Data/Blocks/DiamondOreBlock.cs
+19	20	Craft.Net.Server.Test/Craft.Net.Server.Test.csproj
+15	15	Craft.Net.Server/Craft.Net.Server.csproj
+0	2	Craft.Net.Test/Craft.Net.Test.csproj
+98	98	Craft.Net.sln
+5	3	TestClient/TestClient.csproj
+3	2	TestServer/TestServer.csproj
+
+[cf1896f] Drew DeVault 2013-03-23 Fixed bugs with compiling on mono
+1	2	Craft.Net.Server/Scoreboard.cs
+2	3	Craft.Net.Server/ScoreboardManager.cs
+1	1	Craft.Net.sln
+1	1	externals/fNbt
+
+[28edb02] Drew DeVault 2013-03-23 Updated README to mention issues with certs on mono
+7	0	README.md
+
+[9d2eb61] Drew DeVault 2013-03-23 Merge branch 'master' of github.com:SirCmpwn/Craft.Net into HEAD
+[a5b926f] Drew DeVault 2013-03-23 Fixed various bugs with Linux/Mac support
+12	8	Craft.Net.Client/Craft.Net.Client.csproj
+18	0	Craft.Net.Client/DotMinecraft.cs
+1	2	Craft.Net.Client/LastLogin.cs
+50	0	Craft.Net.Client/RuntimeInfo.cs
+1	1	Craft.Net.Client/ServerList.cs
+4	3	Craft.Net.Data/Craft.Net.Data.csproj
+5	3	Craft.Net/Craft.Net.csproj
+
+[6932fd6] Drew DeVault 2013-03-22 Update README.md
+3	2	README.md
+
+[df2f710] Drew DeVault 2013-03-21 Added ChunkRecieved event
+1	0	Craft.Net.Client/Craft.Net.Client.csproj
+20	0	Craft.Net.Client/Events/ChunkRecievedEventArgs.cs
+3	0	Craft.Net.Client/Handlers/WorldHandlers.cs
+6	0	Craft.Net.Client/MinecraftClient.Events.cs
+
+[94c0d9d] Drew DeVault 2013-03-21 Fix bug with 0x38 packets without light
+5	2	Craft.Net.Client/Handlers/WorldHandlers.cs
+
+[53f7fdd] Drew DeVault 2013-03-21 Parse chunk packets in client
+3	0	Craft.Net.Client/Handlers/PacketHandlers.cs
+74	1	Craft.Net.Client/Handlers/WorldHandlers.cs
+6	2	Craft.Net.Client/ReadOnlyWorld.cs
+24	3	Craft.Net.Data/Level.cs
+18	0	Craft.Net.Data/World.cs
+5	0	TestClient/Program.cs
+
+[a7e85ca] Drew DeVault 2013-03-21 Added ability to save read only worlds, unload chunks
+3	0	Craft.Net.Client/Craft.Net.Client.csproj
+7	0	Craft.Net.Client/Handlers/WorldHandlers.cs
+18	0	Craft.Net.Client/ReadOnlyWorld.cs
+5	0	Craft.Net.Data/Region.cs
+34	2	Craft.Net.Data/World.cs
+
+[aabfdde] Drew DeVault 2013-03-21 Added read-only world classes for clients
+4	0	Craft.Net.Client/Craft.Net.Client.csproj
+19	0	Craft.Net.Client/Events/GameModeChangeEventArgs.cs
+2	4	Craft.Net.Client/Handlers/LoginHandlers.cs
+21	0	Craft.Net.Client/Handlers/WorldHandlers.cs
+23	0	Craft.Net.Client/LevelInformation.cs
+2	1	Craft.Net.Client/MinecraftClient.Properties.cs
+94	0	Craft.Net.Client/ReadOnlyWorld.cs
+23	0	Craft.Net.Data/NibbleArray.cs
+2	2	Craft.Net.Data/World.cs
+
+[612462f] Drew DeVault 2013-03-13 Fixed hunger/eating issues, closes #137
+7	3	Craft.Net.Server/EntityManager.cs
+7	1	TestServer/Main.cs
+
+[81365e1] Drew DeVault 2013-03-13 Fixed door orientation, closes #144
+27	2	Craft.Net.Data/Blocks/DoorBlock.cs
+2	0	Craft.Net.Data/Items/IronDoorItem.cs
+1	2	Craft.Net.Data/Items/WoodenDoorItem.cs
+
+[b9f5d58] Drew DeVault 2013-03-13 Made stair up/down orientation use cursor position
+7	2	Craft.Net.Data/Blocks/StairBlock.cs
+
+[b270852] Ammar Askar 2013-03-14 Fix stair orientation (closes #146)
+4	4	Craft.Net.Data/Blocks/StairBlock.cs
+9	9	Craft.Net.Data/MathHelper.cs
+
+[73fbbd1] Drew DeVault 2013-03-13 Changed visibility of constructors in metadata entry classes
+1	1	Craft.Net/Metadata/MetadataByte.cs
+1	1	Craft.Net/Metadata/MetadataFloat.cs
+1	1	Craft.Net/Metadata/MetadataInt.cs
+1	1	Craft.Net/Metadata/MetadataShort.cs
+1	1	Craft.Net/Metadata/MetadataSlot.cs
+1	1	Craft.Net/Metadata/MetadataString.cs
+
+[01a0ad6] Drew DeVault 2013-03-13 Changed metadata dictionary decoder to use correct metadata entry constructor
+1	1	Craft.Net/Metadata/MetadataDictionary.cs
+
+[64684a3] Drew DeVault 2013-03-13 Added internal default constructors to metadata items, fixes deserialization
+4	0	Craft.Net/Metadata/MetadataByte.cs
+4	0	Craft.Net/Metadata/MetadataFloat.cs
+4	0	Craft.Net/Metadata/MetadataInt.cs
+4	0	Craft.Net/Metadata/MetadataShort.cs
+4	0	Craft.Net/Metadata/MetadataSlot.cs
+4	0	Craft.Net/Metadata/MetadataString.cs
+
+[6f0a7f7] Drew DeVault 2013-03-13 Removed test code from ItemEntity
+0	1	Craft.Net.Data/Entities/ItemEntity.cs
+
+[16cf484] Drew DeVault 2013-03-13 Fixed metadata encoding for strings
+1	1	Craft.Net/Metadata/MetadataString.cs
+
+[67b41de] Drew DeVault 2013-03-13 Improved metadata dictionary usage
+1	1	Craft.Net.Data.Test/MetadataTest.cs
+2	2	Craft.Net.Data/Entities/Entity.cs
+2	1	Craft.Net.Data/Entities/ItemEntity.cs
+2	2	Craft.Net.Data/Entities/ItemFrameEntity.cs
+1	1	Craft.Net.Data/Entities/PlayerEntity.cs
+5	4	Craft.Net/Metadata/MetadataByte.cs
+6	5	Craft.Net/Metadata/MetadataDictionary.cs
+36	10	Craft.Net/Metadata/MetadataEntry.cs
+5	4	Craft.Net/Metadata/MetadataFloat.cs
+5	4	Craft.Net/Metadata/MetadataInt.cs
+5	4	Craft.Net/Metadata/MetadataShort.cs
+5	4	Craft.Net/Metadata/MetadataSlot.cs
+5	4	Craft.Net/Metadata/MetadataString.cs
+
+[d4585dc] Drew DeVault 2013-03-08 Added team support
+1	0	Craft.Net.Data/ChatColors.cs
+1	0	Craft.Net.Server/Craft.Net.Server.csproj
+9	1	Craft.Net.Server/Handlers/PacketHandlers.cs
+46	2	Craft.Net.Server/ScoreboardManager.cs
+117	0	Craft.Net.Server/Team.cs
+6	4	Craft.Net/Packets.cs
+8	0	TestServer/Main.cs
+
+[7404dc9] Drew DeVault 2013-03-08 Added scoreboard management to Craft.Net.Server
+2	0	Craft.Net.Server/Craft.Net.Server.csproj
+5	0	Craft.Net.Server/MinecraftServer.cs
+61	0	Craft.Net.Server/Scoreboard.cs
+72	0	Craft.Net.Server/ScoreboardManager.cs
+11	0	TestServer/Main.cs
+
+[13be25b] Drew DeVault 2013-03-08 Completed update to 1.5 pre-release
+1	0	Craft.Net.Data/Level.cs
+78	0	Craft.Net.Server.Test/PacketTests.cs
+1	0	Craft.Net/Craft.Net.csproj
+2	2	Craft.Net/PacketReader.cs
+206	1	Craft.Net/Packets.cs
+45	0	Craft.Net/ParticleEffect.cs
+6	6	README.md
+
+[e3b1eae] Drew DeVault 2013-01-24 Updated packet and field names to reflect use
+1	1	Craft.Net.Server/MinecraftServer.cs
+3	3	Craft.Net/PacketReader.cs
+38	32	Craft.Net/Packets.cs
+5	5	README.md
+
+[a48573a] Drew DeVault 2013-01-24 Added 13w04a packets
+1	1	Craft.Net/PacketReader.cs
+82	0	Craft.Net/Packets.cs
+
+[76ff153] Drew DeVault 2013-01-24 Merge branch 'snapshot' of https://github.com/SirCmpwn/Craft.Net
+[2aedb21] Drew DeVault 2013-01-17 Added note about snapshots to readme
+10	0	README.md
+
+[dbd3237] Drew DeVault 2013-01-17 Updated version info in readme
+5	5	README.md
+
+[5f18f04] Drew DeVault 2013-01-17 Added log-like quartz orientation
+31	0	Craft.Net.Data/Blocks/QuartzBlock.cs
+1	0	Craft.Net.Data/Blocks/SaplingBlock.cs
+1	0	Craft.Net.Data/Craft.Net.Data.csproj
+1	1	Craft.Net.Server/MinecraftServer.cs
+25	0	TestServer/CustomLeatherItem.cs
+2	0	TestServer/Main.cs
+1	0	TestServer/TestServer.csproj
+
+[b48139b] Drew DeVault 2013-01-17 Added minecart with hopper item
+15	0	Craft.Net.Data/Items/MinecartWithHopperItem.cs
+
+[4f908e4] Drew DeVault 2013-01-17 Added dropper block
+31	0	Craft.Net.Data/Blocks/DropperBlock.cs
+1	0	Craft.Net.Data/Craft.Net.Data.csproj
+
+[7f83330] Drew DeVault 2013-01-17 Updated to 13w03a protocol
+1	1	Craft.Net.Server/MinecraftServer.cs
+1	1	Craft.Net/PacketReader.cs
+1	1	externals/fNbt
+
+[527f2eb] Drew DeVault 2013-01-17 Merge branch 'snapshot' of https://github.com/SirCmpwn/Craft.Net
+[afe346f] Drew DeVault 2013-01-16 Fixed bug with disconnect event handler not being raised in client
+0	1	Craft.Net.Client/Handlers/LoginHandlers.cs
+4	0	Craft.Net.Client/MinecraftClient.cs
+1	0	TestClient/Program.cs
+
+[2bc743c] Drew DeVault 2013-01-15 Added ServerList.Server.ToString overload
+5	0	Craft.Net.Client/ServerList.cs
+
+[477c5ec] Drew DeVault 2013-01-15 Updated Craft.Net.Client.Session to throw an exception on login error
+1	1	Craft.Net.Client/Session.cs
+
+[76cd41e] Drew DeVault 2013-01-15 Added vanilla server list editing to Craft.Net.Client
+5	0	Craft.Net.Client/Craft.Net.Client.csproj
+87	0	Craft.Net.Client/ServerList.cs
+42	0	Craft.Net.Data.Test/LightingTest.cs
+9	0	Craft.Net.Data/Generation/FlatlandGenerator.cs
+10	0	Craft.Net.Data/World.Lighting.cs
+1	1	externals/fNbt
+
+[7223aba] Drew DeVault 2013-01-15 Added player death handling/respawn
+2	0	Craft.Net.Client/Craft.Net.Client.csproj
+31	0	Craft.Net.Client/Events/HealthAndFoodEventArgs.cs
+2	2	Craft.Net.Client/Handlers/EntityHandlers.cs
+7	1	Craft.Net.Client/Handlers/LoginHandlers.cs
+3	0	Craft.Net.Client/Handlers/PacketHandlers.cs
+35	0	Craft.Net.Client/Handlers/StateHandlers.cs
+18	0	Craft.Net.Client/MinecraftClient.Events.cs
+7	1	Craft.Net.Client/MinecraftClient.Properties.cs
+11	1	Craft.Net.Client/MinecraftClient.cs
+1	1	Craft.Net.Data/Level.cs
+15	1	Craft.Net.Data/World.cs
+11	5	Craft.Net.Server/MinecraftServer.cs
+14	6	Craft.Net.Server/WeatherManager.cs
+4	0	TestClient/Program.cs
+2	1	TestServer/Main.cs
+1	1	externals/fNbt
+
+[b777645] Drew DeVault 2013-01-10 Fixed test project target version
+2	1	Craft.Net.Test/Craft.Net.Test.csproj
+3	3	Craft.Net.sln
+1	1	externals/fNbt
+
+[de7cfbd] Drew DeVault 2013-01-10 Added Minecart with TNT
+15	0	Craft.Net.Data/Items/MinecartWithTntItem.cs
+
+[362a70f] Drew DeVault 2013-01-10 Merge branch 'master' into snapshot
+[3fbaa2b] Drew DeVault 2013-01-10 Including missing file
+1	1	Craft.Net/Craft.Net.csproj
+
+[c34f337] Drew DeVault 2013-01-10 Improved project configuration to better support platform-specific dependencies
+2	0	Craft.Net/AesStream.cs
+1	1	Craft.Net/Craft.Net.csproj
+
+[10de619] Drew DeVault 2013-01-10 Added mono-specific AesStream code
+8	0	Craft.Net.Client/Craft.Net.Client.csproj
+10	0	Craft.Net.Data.Test/Craft.Net.Data.Test.csproj
+9	0	Craft.Net.Data/Craft.Net.Data.csproj
+9	0	Craft.Net.Server.Test/Craft.Net.Server.Test.csproj
+9	0	Craft.Net.Server/Craft.Net.Server.csproj
+66	0	Craft.Net.Test/Craft.Net.Test.csproj
+36	0	Craft.Net.Test/Properties/AssemblyInfo.cs
+31	0	Craft.Net.Test/TestCrypto.cs
+28	1	Craft.Net.sln
+45	1	Craft.Net/AesStream.cs
+12	0	Craft.Net/Craft.Net.csproj
+6	1	README.md
+8	0	TestClient/TestClient.csproj
+10	0	TestServer/TestServer.csproj
+-	-	lib/BouncyCastle.Crypto.dll
+
+[480fd3c] Drew DeVault 2013-01-10 Added nether quartz drop
+7	0	Craft.Net.Data/Blocks/NetherQuartzOreBlock.cs
+1	0	Craft.Net.Data/Craft.Net.Data.csproj
+
+[3c84ee8] Drew DeVault 2013-01-10 Initial update to 13w02a
+15	0	Craft.Net.Data/Blocks/ActivatorRailBlock.cs
+15	0	Craft.Net.Data/Blocks/DaylightSensorBlock.cs
+15	0	Craft.Net.Data/Blocks/HeavyWeightedPressurePlateBlock.cs
+15	0	Craft.Net.Data/Blocks/HopperBlock.cs
+15	0	Craft.Net.Data/Blocks/LightWeightedPressurePlateBlock.cs
+15	0	Craft.Net.Data/Blocks/NetherQuartzOreBlock.cs
+15	0	Craft.Net.Data/Blocks/QuartzBlock.cs
+15	0	Craft.Net.Data/Blocks/QuartzStairBlock.cs
+15	0	Craft.Net.Data/Blocks/RedstoneBlock.cs
+15	0	Craft.Net.Data/Blocks/RedstoneComparatorBlock.cs
+15	0	Craft.Net.Data/Blocks/RedstoneComparatorInactiveBlock.cs
+15	0	Craft.Net.Data/Blocks/TrappedChestBlock.cs
+15	0	Craft.Net.Data/Craft.Net.Data.csproj
+15	0	Craft.Net.Data/Item.cs
+15	0	Craft.Net.Data/Items/ComparatorItem.cs
+15	0	Craft.Net.Data/Items/NetherBrickItem.cs
+15	0	Craft.Net.Data/Items/NetherQuartzItem.cs
+1	1	Craft.Net.Server/Handlers/PacketHandlers.cs
+1	5	Craft.Net.Server/MinecraftServer.cs
+1	1	Craft.Net/PacketReader.cs
+5	1	Craft.Net/Packets.cs
+5	5	README.md
