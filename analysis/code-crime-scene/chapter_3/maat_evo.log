@@ -1,0 +1,458 @@
+[d804759] Adam Petersen 2013-09-24 Documented tree map visualizations
+5	1	README.md
+-	-	doc/imgs/tree_map_sample.png
+
+[1bafb6d] Adam Petersen 2013-09-24 Release 0.3.1
+1	1	project.clj
+
+[0a05fba] Adam Petersen 2013-09-17 Added an identity analysis as debug aid
+5	1	README.md
+5	5	src/code_maat/analysis/authors.clj
+3	4	src/code_maat/app/app.clj
+1	1	src/code_maat/core.clj
+18	1	test/code_maat/end_to_end/scenario_tests.clj
+
+[540e8de] Adam Petersen 2013-09-07 refactoring: simplified some maps and filters
+1	1	project.clj
+23	21	src/code_maat/analysis/logical_coupling.clj
+13	17	src/code_maat/parsers/hiccup_based_parser.clj
+0	1	test/code_maat/analysis/logical_coupling_test.clj
+
+[475e5eb] Adam Petersen 2013-09-05 Complete support for Mercurial
+7	2	README.md
+1	1	project.clj
+24	15	src/code_maat/app/app.clj
+1	1	src/code_maat/core.clj
+0	0	test/code_maat/end_to_end/empty.hg
+18	0	test/code_maat/end_to_end/mercurial_live_data_test.clj
+26	12	test/code_maat/end_to_end/scenario_tests.clj
+6	0	test/code_maat/end_to_end/simple_hg.txt
+493	0	test/code_maat/end_to_end/tpp_hg.log
+
+[70bcebc] Adam Petersen 2013-09-05 parsers: extracted the common parts into a hiccup-based parser shared between git and hg
+5	72	src/code_maat/parsers/git.clj
+84	0	src/code_maat/parsers/hiccup_based_parser.clj
+7	20	src/code_maat/parsers/mercurial.clj
+19	59	test/code_maat/parsers/git_test.clj
+13	19	test/code_maat/parsers/mercurial_test.clj
+
+[7f4c5df] Adam Petersen 2013-09-05 Mercurial: basic parsing implemented
+1	1	project.clj
+58	0	src/code_maat/parsers/mercurial.clj
+43	0	test/code_maat/parsers/mercurial_test.clj
+
+[8f21dda] Adam Petersen 2013-09-03 Made the scenarios data-driven to cover git too.
+2	0	.gitignore
+4	4	project.clj
+3	2	src/code_maat/parsers/svn.clj
+31	0	src/code_maat/test/data_driven.clj
+0	0	test/code_maat/end_to_end/empty.git
+68	33	test/code_maat/end_to_end/scenario_tests.clj
+5	17	test/code_maat/end_to_end/simple_git.txt
+6	6	test/code_maat/parsers/svn_test.clj
+
+[bda51b5] Adam Petersen 2013-09-03 Documented version 0.2
+56	41	README.md
+1	1	project.clj
+
+[ba94514] Adam Petersen 2013-09-01 coupling: introduced a filter on max coupling
+5	6	src/code_maat/analysis/logical_coupling.clj
+3	1	src/code_maat/core.clj
+2	1	test/code_maat/analysis/test_data.clj
+
+[834a72c] Adam Petersen 2013-08-30 summary: documented the functionality
+4	1	src/code_maat/analysis/summary.clj
+
+[b23000c] Adam Petersen 2013-08-30 new analysis: summary, used to get an overview of the mined data
+5	1	src/code_maat/analysis/entities.clj
+25	0	src/code_maat/analysis/summary.clj
+4	2	src/code_maat/app/app.clj
+1	1	src/code_maat/core.clj
+
+[8a6970c] Adam Petersen 2013-08-30 git: added an end to end test on live data from mono
+18	0	test/code_maat/end_to_end/git_live_data_test.clj
+230	0	test/code_maat/end_to_end/mono_git.log
+
+[48cf17a] Adam Petersen 2013-08-30 Dropped the filtering options; this functionality is better off by using the VCS to limit the log
+0	1	src/code_maat/app/app.clj
+1	7	src/code_maat/core.clj
+2	16	src/code_maat/parsers/git.clj
+0	13	src/code_maat/parsers/svn.clj
+1	10	test/code_maat/end_to_end/scenario_tests.clj
+1	6	test/code_maat/parsers/svn_test.clj
+
+[51f0fb2] Adam Petersen 2013-08-30 git: redesigned to work with a more compact git log - optimize for memory
+25	33	src/code_maat/parsers/git.clj
+32	94	test/code_maat/parsers/git_test.clj
+
+[990442e] Adam Petersen 2013-08-29 Adapted the grammar after live tests (git)
+1	1	project.clj
+2	2	src/code_maat/parsers/git.clj
+
+[b777738] Adam Petersen 2013-08-29 git: parse merges and reverts too (grammar change)
+10	9	src/code_maat/parsers/git.clj
+32	0	test/code_maat/parsers/git_test.clj
+
+[a527b79] Adam Petersen 2013-08-29 git: proper error messages from instaparse
+6	2	src/code_maat/parsers/git.clj
+0	7	test/code_maat/end_to_end/scenario_tests.clj
+18	0	test/code_maat/end_to_end/simple_git.txt
+21	0	test/code_maat/end_to_end/svn_live_data_test.clj
+
+[9519aac] Adam Petersen 2013-08-29 Correct coupling output in case of zero entries (boundary case)
+2	2	src/code_maat/analysis/authors.clj
+6	4	src/code_maat/analysis/logical_coupling.clj
+1	1	test/code_maat/end_to_end/scenario_tests.clj
+
+[80ab475] Adam Petersen 2013-08-28 git: implemented input filtering on number of entities and start-date
+1	1	src/code_maat/app/app.clj
+15	3	src/code_maat/parsers/git.clj
+0	8	src/code_maat/parsers/svn.clj
+1	1	test/code_maat/parsers/git_test.clj
+
+[72adc01] Adam Petersen 2013-08-28 Refactoring: extracted the front-end filtering into a separate module
+48	0	src/code_maat/parsers/limitters.clj
+8	30	src/code_maat/parsers/svn.clj
+
+[3789227] Adam Petersen 2013-08-28 git: throw an exception upon invalid input (parse failure)
+2	0	src/code_maat/app/app.clj
+26	17	src/code_maat/parsers/git.clj
+4	1	test/code_maat/parsers/git_test.clj
+
+[5496b5a] Adam Petersen 2013-08-28 git: coupling works - was an error in the parser since the log looked different for binary blob entries
+2	4	src/code_maat/parsers/git.clj
+
+[b23590c] Adam Petersen 2013-08-28 git: authors and revisions implemented
+1	0	.gitignore
+5	0	README.md
+33	10	src/code_maat/app/app.clj
+1	1	src/code_maat/core.clj
+8	10	src/code_maat/parsers/git.clj
+6	4	test/code_maat/end_to_end/scenario_tests.clj
+3	3	test/code_maat/parsers/git_test.clj
+
+[de048f2] Adam Petersen 2013-08-27 git parser: replaced zipper based solution with simpler get-in
+15	17	src/code_maat/parsers/git.clj
+7	0	test/code_maat/parsers/git_test.clj
+
+[202a0a2] Adam Petersen 2013-08-27 git: use zippers to work the parse result
+60	4	src/code_maat/parsers/git.clj
+26	5	test/code_maat/parsers/git_test.clj
+
+[4558484] Adam Petersen 2013-08-26 Surpressed git parse output that I don't need right now
+13	5	src/code_maat/parsers/git.clj
+3	1	src/code_maat/parsers/svn.clj
+20	24	test/code_maat/parsers/git_test.clj
+
+[7757d31] Adam Petersen 2013-08-26 Added a basic git parser
+3	2	project.clj
+57	0	src/code_maat/parsers/git.clj
+97	0	test/code_maat/parsers/git_test.clj
+
+[2d8e52c] Adam Petersen 2013-08-26 Prepare first version
+1	1	project.clj
+
+[9b0e99d] Adam Petersen 2013-08-23 Added licensing info to the source files
+5	0	project.clj
+5	0	src/code_maat/analysis/authors.clj
+5	0	src/code_maat/analysis/entities.clj
+5	0	src/code_maat/analysis/logical_coupling.clj
+5	0	src/code_maat/analysis/math.clj
+5	0	src/code_maat/analysis/workarounds.clj
+5	0	src/code_maat/app/app.clj
+5	0	src/code_maat/core.clj
+5	0	src/code_maat/dataset/dataset.clj
+5	0	src/code_maat/output/csv.clj
+5	0	src/code_maat/output/filters.clj
+5	0	src/code_maat/parsers/svn.clj
+5	0	src/code_maat/parsers/xml.clj
+5	0	test/code_maat/analysis/authors_test.clj
+5	0	test/code_maat/analysis/entities_test.clj
+5	0	test/code_maat/analysis/logical_coupling_test.clj
+5	0	test/code_maat/analysis/test_data.clj
+5	0	test/code_maat/dataset/dataset_test.clj
+5	0	test/code_maat/end_to_end/scenario_tests.clj
+5	0	test/code_maat/parsers/svn_test.clj
+
+[0ab4be1] Adam Petersen Tornhill 2013-08-22 Update README.md
+3	3	README.md
+
+[b815f18] Adam Petersen 2013-08-22 Finished the initial documentation
+35	27	README.md
+
+[fd5a7e8] Adam Petersen 2013-08-22 Added a (flush), needed for a standalone jar
+2	3	README.md
+1	1	src/code_maat/core.clj
+
+[6bc9967] Adam Petersen 2013-08-22 Documentation
+4	0	README.md
+
+[e5948c8] Adam Petersen 2013-08-22 Wrote a draft of the README
+92	2	README.md
+-	-	doc/imgs/coupling_sample.png
+3	1	project.clj
+3	2	src/code_maat/core.clj
+
+[683554d] Adam Petersen 2013-08-21 Replaced own ceil function with the one from numeric-tower
+1	0	project.clj
+3	2	src/code_maat/analysis/logical_coupling.clj
+1	4	src/code_maat/analysis/math.clj
+
+[2b068a3] Adam Petersen 2013-08-20  Prototyped between date parse option - letting it rest for a while
+14	6	src/code_maat/parsers/svn.clj
+
+[c72d12c] Adam Petersen 2013-08-20 Moved ceil to math (do not have internet access to download some contrib)
+1	4	src/code_maat/analysis/logical_coupling.clj
+4	1	src/code_maat/analysis/math.clj
+
+[0b4924e] Adam Petersen 2013-08-20 coupling: present results in integers
+1	0	.gitignore
+5	1	src/code_maat/analysis/logical_coupling.clj
+7	7	test/code_maat/analysis/logical_coupling_test.clj
+1	1	test/code_maat/end_to_end/scenario_tests.clj
+
+[877b956] Adam Petersen 2013-08-20 coupling: removed dead code
+12	62	src/code_maat/analysis/logical_coupling.clj
+7	0	src/code_maat/analysis/math.clj
+
+[190c623] Adam Petersen 2013-08-20 More tests of boundary cases
+1	0	src/code_maat/analysis/logical_coupling.clj
+15	1	src/code_maat/app/app.clj
+3	1	test/code_maat/end_to_end/scenario_tests.clj
+
+[bd9fb4b] Adam Petersen 2013-08-20 coupling: small refactoring
+19	14	src/code_maat/analysis/logical_coupling.clj
+
+[c1c4229] Adam Petersen 2013-08-20 Simplified logical coupling (removed a map+flatten)
+13	10	src/code_maat/analysis/logical_coupling.clj
+1	0	test/code_maat/analysis/logical_coupling_test.clj
+
+[f2f75e5] Adam Petersen 2013-08-20 End-to-end tests for boundary cases
+3	3	src/code_maat/analysis/logical_coupling.clj
+5	3	src/code_maat/app/app.clj
+3	0	test/code_maat/end_to_end/empty.xml
+11	0	test/code_maat/end_to_end/scenario_tests.clj
+
+[67a4379] Adam Petersen 2013-08-20 End-to-end test with live data from statsvn
+1	1	src/code_maat/app/app.clj
+17	6	test/code_maat/end_to_end/scenario_tests.clj
+9629	0	test/code_maat/end_to_end/statsvn.log
+
+[d286b67] Adam Petersen 2013-08-19 svn: Do not filter on the kind of file; some svn versions do not include it and we probably want to analyze everything anyway
+2	3	src/code_maat/parsers/svn.clj
+0	3	test/code_maat/end_to_end/simple.xml
+0	3	test/code_maat/parsers/svn_test.clj
+
+[cb73fa0] Adam Petersen 2013-08-19 Basic error handling for invalid input
+6	3	src/code_maat/app/app.clj
+8	5	src/code_maat/core.clj
+10	6	src/code_maat/parsers/svn.clj
+
+[142ddc0] Adam Petersen 2013-08-19 Removed default limitation on the number of rows
+1	1	src/code_maat/core.clj
+4	7	src/code_maat/parsers/svn.clj
+
+[706aa95] Adam Petersen 2013-08-19 svn parse: optimization: replaced a map+flatten with a simpler reduce. 30 percent increase in speed.
+9	6	src/code_maat/parsers/svn.clj
+2	2	test/code_maat/parsers/svn_test.clj
+
+[f847b44] Adam Petersen 2013-08-19 Measured optimization: lazy seq returned from the svn parser
+0	4	src/code_maat/app/app.clj
+
+[e15010d] Adam Petersen 2013-08-19 svn: implemented a start-date filter. Older entries are ignored during the parse
+3	2	src/code_maat/core.clj
+33	4	src/code_maat/parsers/svn.clj
+11	0	test/code_maat/end_to_end/scenario_tests.clj
+
+[1b2a690] Adam Petersen 2013-08-19 svn: small refactoring to prepare for date handling
+3	1	src/code_maat/core.clj
+10	5	src/code_maat/parsers/svn.clj
+
+[c512afc] Adam Petersen 2013-08-19 Removed temp files from git
+6	5	src/code_maat/analysis/authors.clj
+5	1	src/code_maat/dataset/dataset.clj
+4	4	test/code_maat/analysis/authors_test.clj
+5	1	test/code_maat/dataset/dataset_test.clj
+
+[f7691a4] Adam Petersen 2013-08-19 Removed backup file
+1	0	.gitignore
+
+[34ce06b] Adam Petersen 2013-08-19 End-to-end tests with csv support
+1	0	project.clj
+2	2	src/code_maat/app/app.clj
+5	2	src/code_maat/output/csv.clj
+15	7	test/code_maat/end_to_end/scenario_tests.clj
+
+[8fe1031] Adam Petersen 2013-08-18 Refactored logical coupling, subtle patterns removed
+20	19	src/code_maat/analysis/logical_coupling.clj
+
+[554d2ae] Adam Petersen 2013-08-18 Upgraded Clojure and Incanter to latest versions, got a power boost
+2	2	project.clj
+
+[915492f] Adam Petersen 2013-08-18 Removed dead code
+1	64	src/code_maat/analysis/logical_coupling.clj
+11	38	test/code_maat/analysis/logical_coupling_test.clj
+
+[548b10d] Adam Petersen 2013-08-17 Sort coupling on both degree and the number of revisions
+1	1	src/code_maat/analysis/logical_coupling.clj
+
+[5947856] Adam Petersen 2013-08-17 Coupling optimized to O(N)
+3	3	src/code_maat/analysis/authors.clj
+3	3	src/code_maat/analysis/entities.clj
+19	9	src/code_maat/analysis/logical_coupling.clj
+5	2	src/code_maat/app/app.clj
+7	1	src/code_maat/core.clj
+7	2	test/code_maat/analysis/authors_test.clj
+6	2	test/code_maat/analysis/entities_test.clj
+17	10	test/code_maat/analysis/logical_coupling_test.clj
+7	1	test/code_maat/analysis/test_data.clj
+8	5	test/code_maat/end_to_end/scenario_tests.clj
+
+[d30e83d] Adam Petersen 2013-08-17 Coupling optimized and activated. Remove dead code next.
+1	1	src/code_maat/app/app.clj
+
+[6e2ecd6] Adam Petersen 2013-08-17 Coupling: refactored to threading macro
+12	6	src/code_maat/analysis/logical_coupling.clj
+
+[3bd8360] Adam Petersen 2013-08-17 Working prototype for coupling re-write
+41	8	src/code_maat/analysis/logical_coupling.clj
+32	7	test/code_maat/analysis/logical_coupling_test.clj
+
+[a305436] Adam Petersen 2013-08-16 Coupling: prototyping a new, more efficient algorithm
+5	3	src/code_maat/analysis/entities.clj
+97	2	src/code_maat/analysis/logical_coupling.clj
+2	2	src/code_maat/app/app.clj
+38	0	test/code_maat/analysis/logical_coupling_test.clj
+
+[bc0d88a] Adam Petersen 2013-08-16 Refactored logical coupling: introduced threading macros
+32	27	src/code_maat/analysis/logical_coupling.clj
+
+[bd5156c] Adam Petersen 2013-08-16 Refactored authors: threading macros used
+15	8	src/code_maat/analysis/authors.clj
+2	1	test/code_maat/end_to_end/scenario_tests.clj
+
+[d644765] Adam Petersen 2013-08-16 Support analysis selection from the cmd line
+18	6	src/code_maat/app/app.clj
+2	1	src/code_maat/core.clj
+
+[49b2371] Adam Petersen 2013-08-15 Removed workarounds in logical coupling analysis by introduction of the dataset module
+4	17	src/code_maat/analysis/logical_coupling.clj
+
+[6b50ad8] Adam Petersen 2013-08-15 Introduced the new dataset module for authors and entities analysis
+12	13	src/code_maat/analysis/authors.clj
+11	11	src/code_maat/analysis/entities.clj
+13	1	src/code_maat/dataset/dataset.clj
+
+[98d54f4] Adam Petersen 2013-08-15 Introduced a dataset layer to provide consistent return values from queries and selections (do not differentiate between none, single and multiple matches - all return a seq
+28	0	src/code_maat/dataset/dataset.clj
+6	1	test/code_maat/analysis/test_data.clj
+25	0	test/code_maat/dataset/dataset_test.clj
+
+[d8d4bde] Adam Petersen 2013-08-15 Include entity revision info in the top author analysis
+15	10	src/code_maat/analysis/authors.clj
+3	7	src/code_maat/app/app.clj
+3	1	src/code_maat/core.clj
+4	4	test/code_maat/analysis/authors_test.clj
+
+[291b28d] Adam Petersen 2013-08-15 Working logical coupling but way too slow
+21	7	src/code_maat/analysis/logical_coupling.clj
+4	2	src/code_maat/app/app.clj
+1	2	src/code_maat/core.clj
+19	8	test/code_maat/analysis/logical_coupling_test.clj
+
+[53ec5e2] Adam Petersen 2013-08-15 logical coupling bug fixed: in case of only one shared commit, count gave the wrong number of rows. Use incanter/row instead (of course).
+1	1	src/code_maat/analysis/logical_coupling.clj
+10	10	test/code_maat/analysis/logical_coupling_test.clj
+
+[2345015] Adam Petersen 2013-08-15 Coupling complete, but with a bug (wrong value for degenerate cases)
+33	2	src/code_maat/analysis/logical_coupling.clj
+11	2	test/code_maat/analysis/logical_coupling_test.clj
+
+[e9fa359] Adam Petersen 2013-08-15 Logical coupling: calculate the number of shared and average refs forming the basis for the analysis
+16	4	src/code_maat/analysis/entities.clj
+62	10	src/code_maat/analysis/logical_coupling.clj
+8	1	test/code_maat/analysis/entities_test.clj
+24	4	test/code_maat/analysis/logical_coupling_test.clj
+
+[06fa16d] Adam Petersen 2013-08-13 Started with analysis of logical coupling.
+2	1	project.clj
+42	0	src/code_maat/analysis/logical_coupling.clj
+2	1	src/code_maat/output/filters.clj
+21	0	test/code_maat/analysis/logical_coupling_test.clj
+9	5	test/code_maat/end_to_end/scenario_tests.clj
+
+[8f70dd9] Adam Petersen 2013-08-13 Introduced a command line interface using cli. Defined a clear API towards the application logic for other front-ends to use.
+3	1	project.clj
+14	2	src/code_maat/app/app.clj
+24	7	src/code_maat/core.clj
+9	6	test/code_maat/end_to_end/scenario_tests.clj
+
+[83ebd09] Adam Petersen 2013-08-12 Started a separation of concerns regarding output formats
+3	15	src/code_maat/app/app.clj
+8	2	src/code_maat/core.clj
+14	0	src/code_maat/output/csv.clj
+5	0	src/code_maat/output/filters.clj
+11	2	test/code_maat/end_to_end/scenario_tests.clj
+
+[dd292a3] Adam Petersen 2013-08-12 Removed dead code
+0	2	src/code_maat/parsers/svn.clj
+
+[f0cb681] Adam Petersen 2013-08-12 svn: parse all types of file actions (create, modify, delete, etc)
+19	6	src/code_maat/parsers/svn.clj
+13	1	test/code_maat/parsers/svn_test.clj
+
+[3cfb874] Adam Petersen 2013-08-12 Analyze entities by number of revisions
+3	9	src/code_maat/analysis/authors.clj
+21	2	src/code_maat/analysis/entities.clj
+8	0	src/code_maat/analysis/workarounds.clj
+14	4	src/code_maat/app/app.clj
+9	1	src/code_maat/parsers/svn.clj
+2	7	test/code_maat/analysis/authors_test.clj
+6	1	test/code_maat/analysis/entities_test.clj
+9	4	test/code_maat/analysis/test_data.clj
+
+[4951c82] Adam Petersen 2013-08-12 Complete unit test for authors
+4	1	src/code_maat/analysis/authors.clj
+26	3	test/code_maat/analysis/authors_test.clj
+1	2	test/code_maat/analysis/test_data.clj
+
+[50d1b02] Adam Petersen 2013-08-12 Optimize the author count using Incanter group-by
+9	6	src/code_maat/analysis/authors.clj
+10	6	src/code_maat/app/app.clj
+12	4	src/code_maat/parsers/svn.clj
+6	1	test/code_maat/parsers/svn_test.clj
+
+[2a3365c] Adam Petersen 2013-08-11 Basic author analysis on svn complete
+2	1	project.clj
+35	28	src/code_maat/analysis/authors.clj
+23	0	src/code_maat/app/app.clj
+4	5	src/code_maat/core.clj
+18	13	src/code_maat/parsers/svn.clj
+8	0	test/code_maat/end_to_end/scenario_tests.clj
+34	0	test/code_maat/end_to_end/simple.xml
+22	23	test/code_maat/parsers/svn_test.clj
+
+[64868e5] Adam Petersen 2013-08-09 Added a basic svn parser
+2	1	project.clj
+32	0	src/code_maat/parsers/svn.clj
+12	0	src/code_maat/parsers/xml.clj
+78	0	test/code_maat/parsers/svn_test.clj
+
+[8e7b6fb] Adam Petersen 2013-08-09 private todo
+1	0	.gitignore
+
+[97dc286] Adam Petersen 2013-08-09 Introduced entities
+4	8	src/code_maat/analysis/authors.clj
+6	0	src/code_maat/analysis/entities.clj
+3	11	test/code_maat/analysis/authors_test.clj
+8	0	test/code_maat/analysis/entities_test.clj
+10	0	test/code_maat/analysis/test_data.clj
+
+[0f9f72a] Adam Petersen 2013-08-09 Authors module implemented
+11	0	.gitignore
+13	0	README.md
+3	0	doc/intro.md
+7	0	project.clj
+46	0	src/code_maat/analysis/authors.clj
+6	0	src/code_maat/core.clj
+17	0	test/code_maat/analysis/authors_test.clj
