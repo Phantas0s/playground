@@ -1,3 +1,5 @@
+## WORKFLOW
+
 1. Clone your project and cd in it
 
 2. Travelling back in a precise date
@@ -42,3 +44,25 @@ cloc ./ --by-file --csv --quiet --report-file=maat_lines.csv
 ```bash
 python2 scripts/merge_comp_freqs.py maat_freqs.csv maat_lines.csv
 ```
+
+
+## ANALYSIS
+
+### Change frequencies
+
+```
+git log --pretty=format:'[%h] %an %ad %s' \
+--date=short --stat --before=2021-11-01
+```
+
+* --pretty=format:
+    * `%h` - Abbreviated commit hash
+    * `%an` - Author name
+    * `%ad` - Author date (respect `--date` option)
+    * `%s` - subject
+* --numstat
+    * Display number of added and deleted lines
+* --date=short
+    * Show the date in simple format (YYYY-MM-DD)
+* --before
+* --after
